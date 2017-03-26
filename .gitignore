@@ -72,3 +72,11 @@ fastlane/screenshots
 fastlane/test_output
 
 # End of https://www.gitignore.io/api/swift
+
+Project Espinilla/Project Espinilla.xcodeproj/project.xcworkspace/xcuserdata/Matt.xcuserdatad/UserInterfaceState.xcuserstate
+
+Project Espinilla/Project_Espinilla.xcodeproj/project.pbxproj
+
+Project Espinilla/Project_Espinilla.xcodeproj/project.pbxproj
+
+*.pbxproj
