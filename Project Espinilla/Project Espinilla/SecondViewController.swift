@@ -8,7 +8,7 @@
 
 import UIKit
 
-class SecondViewController: UIViewController, UITableViewDataSource {
+class SecondViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
