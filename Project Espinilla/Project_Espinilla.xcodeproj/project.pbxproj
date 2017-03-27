@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		41028DB11E6E6D810007386A /* FormsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41028DB01E6E6D810007386A /* FormsTableViewCell.swift */; };
+		4137E1D31E65255A00EF3418 /* ThirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4137E1D21E65255A00EF3418 /* ThirdViewController.swift */; };
 		C960EBB11E5E120800748B74 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C960EBB01E5E120800748B74 /* AppDelegate.swift */; };
 		C960EBB31E5E120800748B74 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C960EBB21E5E120800748B74 /* FirstViewController.swift */; };
 		C960EBB51E5E120800748B74 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C960EBB41E5E120800748B74 /* SecondViewController.swift */; };
@@ -102,7 +104,9 @@
 				C960EBB01E5E120800748B74 /* AppDelegate.swift */,
 				C960EBB21E5E120800748B74 /* FirstViewController.swift */,
 				C960EBB41E5E120800748B74 /* SecondViewController.swift */,
+				4137E1D21E65255A00EF3418 /* ThirdViewController.swift */,
 				C960EBB61E5E120800748B74 /* Main.storyboard */,
+				41028DB01E6E6D810007386A /* FormsTableViewCell.swift */,
 				C960EBB91E5E120800748B74 /* Assets.xcassets */,
 				C960EBBB1E5E120800748B74 /* LaunchScreen.storyboard */,
 				C960EBBE1E5E120800748B74 /* Info.plist */,
@@ -199,6 +203,7 @@
 				TargetAttributes = {
 					C960EBAC1E5E120700748B74 = {
 						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = C52HDD9D9Q;
 						ProvisioningStyle = Automatic;
 					};
 					C960EBC21E5E120800748B74 = {
@@ -266,7 +271,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				C960EBB51E5E120800748B74 /* SecondViewController.swift in Sources */,
+				41028DB11E6E6D810007386A /* FormsTableViewCell.swift in Sources */,
 				C960EBB11E5E120800748B74 /* AppDelegate.swift in Sources */,
+				4137E1D31E65255A00EF3418 /* ThirdViewController.swift in Sources */,
 				C960EBB31E5E120800748B74 /* FirstViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -419,9 +426,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = C52HDD9D9Q;
 				INFOPLIST_FILE = "Project Espinilla/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "mjcrepeau.Project-Espinilla";
+				PRODUCT_BUNDLE_IDENTIFIER = "mjcrepeau.Project-EspinillaiOS";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -431,9 +439,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = C52HDD9D9Q;
 				INFOPLIST_FILE = "Project Espinilla/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "mjcrepeau.Project-Espinilla";
+				PRODUCT_BUNDLE_IDENTIFIER = "mjcrepeau.Project-EspinillaiOS";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
