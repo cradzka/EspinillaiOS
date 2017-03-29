@@ -7,8 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		41028DB11E6E6D810007386A /* FormsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41028DB01E6E6D810007386A /* FormsTableViewCell.swift */; };
-		4137E1D31E65255A00EF3418 /* ThirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4137E1D21E65255A00EF3418 /* ThirdViewController.swift */; };
+		41028DB11E6E6D810007386A /* (null) in Sources */ = {isa = PBXBuildFile; };
+		4137E1D31E65255A00EF3418 /* (null) in Sources */ = {isa = PBXBuildFile; };
 		C960EBB11E5E120800748B74 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C960EBB01E5E120800748B74 /* AppDelegate.swift */; };
 		C960EBB31E5E120800748B74 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C960EBB21E5E120800748B74 /* FirstViewController.swift */; };
 		C960EBB51E5E120800748B74 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C960EBB41E5E120800748B74 /* SecondViewController.swift */; };
@@ -17,6 +17,13 @@
 		C960EBBD1E5E120800748B74 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C960EBBB1E5E120800748B74 /* LaunchScreen.storyboard */; };
 		C960EBC81E5E120800748B74 /* Project_EspinillaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C960EBC71E5E120800748B74 /* Project_EspinillaTests.swift */; };
 		C960EBD31E5E120800748B74 /* Project_EspinillaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C960EBD21E5E120800748B74 /* Project_EspinillaUITests.swift */; };
+		E17340E31E89FEF800AD2280 /* TestView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E17340E21E89FEF800AD2280 /* TestView.xib */; };
+		E17340E61E8A000C00AD2280 /* MyModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E17340E41E8A000C00AD2280 /* MyModel.xcdatamodeld */; };
+		E17E9B021E88BFAD0015F8E2 /* RoundViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E17E9B011E88BFAD0015F8E2 /* RoundViewController.swift */; };
+		E17E9B061E8984A60015F8E2 /* BuildingViewTileCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E17E9B051E8984A60015F8E2 /* BuildingViewTileCell.swift */; };
+		E17E9B081E8985C20015F8E2 /* IssueViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E17E9B071E8985C20015F8E2 /* IssueViewCell.swift */; };
+		E17E9B0A1E898B6E0015F8E2 /* BuildingViewTileCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E17E9B091E898B6E0015F8E2 /* BuildingViewTileCell.xib */; };
+		E17E9B0C1E898C3B0015F8E2 /* IssuePreviewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E17E9B0B1E898C3B0015F8E2 /* IssuePreviewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +58,13 @@
 		C960EBCE1E5E120800748B74 /* Project_EspinillaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Project_EspinillaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C960EBD21E5E120800748B74 /* Project_EspinillaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Project_EspinillaUITests.swift; sourceTree = "<group>"; };
 		C960EBD41E5E120800748B74 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E17340E21E89FEF800AD2280 /* TestView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TestView.xib; sourceTree = "<group>"; };
+		E17340E51E8A000C00AD2280 /* MyModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MyModel.xcdatamodel; sourceTree = "<group>"; };
+		E17E9B011E88BFAD0015F8E2 /* RoundViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundViewController.swift; sourceTree = "<group>"; };
+		E17E9B051E8984A60015F8E2 /* BuildingViewTileCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BuildingViewTileCell.swift; sourceTree = "<group>"; };
+		E17E9B071E8985C20015F8E2 /* IssueViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IssueViewCell.swift; sourceTree = "<group>"; };
+		E17E9B091E898B6E0015F8E2 /* BuildingViewTileCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BuildingViewTileCell.xib; sourceTree = "<group>"; };
+		E17E9B0B1E898C3B0015F8E2 /* IssuePreviewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = IssuePreviewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,12 +118,17 @@
 				C960EBB01E5E120800748B74 /* AppDelegate.swift */,
 				C960EBB21E5E120800748B74 /* FirstViewController.swift */,
 				C960EBB41E5E120800748B74 /* SecondViewController.swift */,
-				4137E1D21E65255A00EF3418 /* ThirdViewController.swift */,
 				C960EBB61E5E120800748B74 /* Main.storyboard */,
-				41028DB01E6E6D810007386A /* FormsTableViewCell.swift */,
 				C960EBB91E5E120800748B74 /* Assets.xcassets */,
 				C960EBBB1E5E120800748B74 /* LaunchScreen.storyboard */,
 				C960EBBE1E5E120800748B74 /* Info.plist */,
+				E17E9B011E88BFAD0015F8E2 /* RoundViewController.swift */,
+				E17E9B051E8984A60015F8E2 /* BuildingViewTileCell.swift */,
+				E17E9B071E8985C20015F8E2 /* IssueViewCell.swift */,
+				E17E9B091E898B6E0015F8E2 /* BuildingViewTileCell.xib */,
+				E17E9B0B1E898C3B0015F8E2 /* IssuePreviewCell.xib */,
+				E17340E21E89FEF800AD2280 /* TestView.xib */,
+				E17340E41E8A000C00AD2280 /* MyModel.xcdatamodeld */,
 			);
 			name = Project_Espinilla;
 			path = "Project Espinilla";
@@ -243,9 +262,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E17340E31E89FEF800AD2280 /* TestView.xib in Resources */,
+				E17E9B0A1E898B6E0015F8E2 /* BuildingViewTileCell.xib in Resources */,
 				C960EBBD1E5E120800748B74 /* LaunchScreen.storyboard in Resources */,
 				C960EBBA1E5E120800748B74 /* Assets.xcassets in Resources */,
 				C960EBB81E5E120800748B74 /* Main.storyboard in Resources */,
+				E17E9B0C1E898C3B0015F8E2 /* IssuePreviewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -271,10 +293,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				C960EBB51E5E120800748B74 /* SecondViewController.swift in Sources */,
-				41028DB11E6E6D810007386A /* FormsTableViewCell.swift in Sources */,
+				41028DB11E6E6D810007386A /* (null) in Sources */,
+				E17E9B081E8985C20015F8E2 /* IssueViewCell.swift in Sources */,
+				E17E9B061E8984A60015F8E2 /* BuildingViewTileCell.swift in Sources */,
 				C960EBB11E5E120800748B74 /* AppDelegate.swift in Sources */,
-				4137E1D31E65255A00EF3418 /* ThirdViewController.swift in Sources */,
+				E17340E61E8A000C00AD2280 /* MyModel.xcdatamodeld in Sources */,
+				4137E1D31E65255A00EF3418 /* (null) in Sources */,
 				C960EBB31E5E120800748B74 /* FirstViewController.swift in Sources */,
+				E17E9B021E88BFAD0015F8E2 /* RoundViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -542,6 +568,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		E17340E41E8A000C00AD2280 /* MyModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				E17340E51E8A000C00AD2280 /* MyModel.xcdatamodel */,
+			);
+			currentVersion = E17340E51E8A000C00AD2280 /* MyModel.xcdatamodel */;
+			path = MyModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = C960EBA51E5E120700748B74 /* Project object */;
 }
