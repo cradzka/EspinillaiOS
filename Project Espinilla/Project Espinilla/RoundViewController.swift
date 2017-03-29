@@ -17,27 +17,27 @@ class RoundViewController: UIViewController {
     @IBOutlet weak var initialCollectionViewLayout: UICollectionViewFlowLayout!
     
     var collectionDelegate: UICollectionViewDelegate!
-    var indexPath: IndexPath!
     var buildingNames: Array<String> = ["West", "President's", "Driscoll"]
-    
+    var dataAndDelegate: RoundCollectionViewDataSource!
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        initialCollectionView.backgroundColor = UIColor.clear
-        initialCollectionView!.register(UINib(nibName: "BuildingViewTileCell", bundle: nil), forCellWithReuseIdentifier: "BuildingViewTileCell")
         
-        initialCollectionView.dataSource = RoundCollectionViewDataSource(numberOfBuildings: buildingNames.count, buildingNameList: buildingNames)
-        //collectionDelegate = initialCollectionView.delegate
+        initialCollectionView.backgroundColor = UIColor.blue
+        initialCollectionView!.register(UINib(nibName: "BuildingViewTileCell", bundle: nil), forCellWithReuseIdentifier: "BuildingViewTileCell")
+        initialCollectionView.setCollectionViewLayout(initialCollectionViewLayout, animated: false)
+
+        dataAndDelegate = RoundCollectionViewDataSource(numberOfBuildings: buildingNames.count,buildingNameList: buildingNames)
+        initialCollectionView.dataSource = dataAndDelegate
+        initialCollectionView.delegate = dataAndDelegate
         
         areaLabel.text = "Your Area"
+        
         initialStackView.addArrangedSubview(areaLabel)
         initialStackView.addArrangedSubview(initialCollectionView)
-        initialView.addSubview(initialStackView)
     }
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
 }

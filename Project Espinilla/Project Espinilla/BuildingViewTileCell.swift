@@ -28,12 +28,24 @@ class BuildingViewTileCell: UICollectionViewCell {
 
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
-
         /*
-        self.contentView.addSubview(buildingTileStack)
-        self.contentView.addSubview(roundLabelStack)
+        buildingTileStack.decodeRestorableState(with: aDecoder)
+        buildingLabel.decodeRestorableState(with: aDecoder)
+        issueTableView.decodeRestorableState(with: aDecoder)
+        roundLabelStack.decodeRestorableState(with: aDecoder)
+        round1Label.decodeRestorableState(with: aDecoder)
+        round2Label.decodeRestorableState(with: aDecoder)
+        round3Label.decodeRestorableState(with: aDecoder)
+        roundStarStack.decodeRestorableState(with: aDecoder)
+        roundSwipeBar.decodeRestorableState(with: aDecoder)
         */
     }
+    
+    /*
+    required init?(frame aFrame: CGRect) {
+        super.init(frame: aFrame)
+    }
+    */
 }
 
 /*

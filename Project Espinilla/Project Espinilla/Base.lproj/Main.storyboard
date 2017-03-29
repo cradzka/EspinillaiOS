@@ -79,7 +79,8 @@
                                     </collectionView>
                                 </subviews>
                                 <constraints>
-                                    <constraint firstItem="0tY-6Q-iQL" firstAttribute="top" secondItem="D6F-eh-eMC" secondAttribute="top" id="RCg-PJ-el5"/>
+                                    <constraint firstItem="ipi-Ve-9Cz" firstAttribute="leading" secondItem="D6F-eh-eMC" secondAttribute="leading" id="P5c-zN-HzK"/>
+                                    <constraint firstItem="0tY-6Q-iQL" firstAttribute="leading" secondItem="D6F-eh-eMC" secondAttribute="leading" id="zd3-ex-IDa"/>
                                     <constraint firstAttribute="bottom" secondItem="ipi-Ve-9Cz" secondAttribute="bottom" id="zlt-n7-gwu"/>
                                 </constraints>
                             </stackView>
@@ -89,7 +90,7 @@
                             <constraint firstItem="D6F-eh-eMC" firstAttribute="width" secondItem="Iht-I4-iGU" secondAttribute="width" id="CEw-FE-Vjl"/>
                             <constraint firstItem="KJz-Os-BUF" firstAttribute="top" secondItem="D6F-eh-eMC" secondAttribute="bottom" id="FZ1-e9-Np8"/>
                             <constraint firstItem="D6F-eh-eMC" firstAttribute="centerX" secondItem="Iht-I4-iGU" secondAttribute="centerX" id="frC-xU-4su"/>
-                            <constraint firstItem="D6F-eh-eMC" firstAttribute="top" secondItem="G4c-VA-idN" secondAttribute="bottom" constant="81" id="x2f-8V-Zb4"/>
+                            <constraint firstItem="D6F-eh-eMC" firstAttribute="top" secondItem="G4c-VA-idN" secondAttribute="bottom" constant="81" id="iAz-Oi-r8H"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Rounds" image="first" id="NDN-3z-lT5"/>
