@@ -16,22 +16,22 @@ class RoundViewController: UIViewController {
     @IBOutlet weak var initialCollectionView: UICollectionView!
     @IBOutlet weak var initialCollectionViewLayout: UICollectionViewFlowLayout!
     
+    var collectionDelegate: UICollectionViewDelegate!
+    var indexPath: IndexPath!
+    var buildingNames: Array<String> = ["West", "President's", "Driscoll"]
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        areaLabel.text = "Your Area"
-        initialCollectionView = UICollectionView(frame: self.view.frame, collectionViewLayout: initialCollectionViewLayout)
-        //initialCollectionView.dataSource = self
-        //initialCollectionView.delegate = initialCollectionView.delegate
+
         initialCollectionView.backgroundColor = UIColor.clear
         initialCollectionView!.register(UINib(nibName: "BuildingViewTileCell", bundle: nil), forCellWithReuseIdentifier: "BuildingViewTileCell")
         
-        //let cell = initialCollectionView.dequeueReusableCellWithReuseIdentifier("BuildingViewTileCell", forIndexPath: indexPath) as! BuildingViewTileCell
-       
+        initialCollectionView.dataSource = RoundCollectionViewDataSource(numberOfBuildings: buildingNames.count, buildingNameList: buildingNames)
+        //collectionDelegate = initialCollectionView.delegate
         
+        areaLabel.text = "Your Area"
         initialStackView.addArrangedSubview(areaLabel)
-        initialStackView.addArrangedSubview(cell)
-        
+        initialStackView.addArrangedSubview(initialCollectionView)
         initialView.addSubview(initialStackView)
     }
     

@@ -25,23 +25,95 @@ class BuildingViewTileCell: UICollectionViewCell {
     
     @IBOutlet weak var roundSwipeBar: UIImageView!
     
+
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
-        
-        buildingLabel.text = "West"
-        
-        round1Label.text = "Round #1"
-        round2Label.text = "Round #2"
-        round3Label.text = "Round #3"
-        
-        buildingTileStack.addArrangedSubview(buildingLabel)
-        buildingTileStack.addArrangedSubview(issueTableView)
-        buildingTileStack.addArrangedSubview(roundLabelStack)
-        buildingTileStack.addArrangedSubview(roundSwipeBar)
-        
-        roundLabelStack.addArrangedSubview(round3Label)
-        roundLabelStack.addArrangedSubview(round2Label)
-        roundLabelStack.addArrangedSubview(round1Label)
-        
+
+        /*
+        self.contentView.addSubview(buildingTileStack)
+        self.contentView.addSubview(roundLabelStack)
+        */
     }
 }
+
+/*
+ @IBInspectable
+ var myInitialStackView: UIStackView? {
+ get {
+ return buildingTileStack
+ }
+ set(myInitialStackView) {
+ buildingTileStack = myInitialStackView
+ }
+ }
+ 
+ @IBInspectable
+ var myLabelText: String? {
+ get {
+ return buildingLabel.text
+ }
+ set(myLabelText) {
+ buildingLabel.text = myLabelText
+ }
+ }
+ 
+ @IBInspectable
+ var myTableView: UITableView? {
+ get {
+ return issueTableView
+ }
+ set(myTableView) {
+ issueTableView = myTableView
+ }
+ }
+ 
+ @IBInspectable
+ var myRoundLabelStack: UIStackView? {
+ get {
+ return roundLabelStack
+ }
+ set(myRoundLabelStack) {
+ roundLabelStack = myRoundLabelStack
+ }
+ }
+ 
+ @IBInspectable
+ var myRound1Label: String? {
+ get {
+ return round1Label.text
+ }
+ set(myRound1Label) {
+ round1Label.text = myRound1Label
+ }
+ }
+ 
+ @IBInspectable
+ var myRound2Label: String? {
+ get {
+ return round2Label.text
+ }
+ set(myRound2Label) {
+ round2Label.text = myRound2Label
+ }
+ }
+ 
+ @IBInspectable
+ var myRound3Label: String? {
+ get {
+ return round3Label.text
+ }
+ set(myRound3Label) {
+ round3Label.text = myRound3Label
+ }
+ }
+ 
+ @IBInspectable
+ var myRoundSwipeBar: UIImage? {
+ get {
+ return roundSwipeBar.image
+ }
+ set(myRoundSwipeBar) {
+ roundSwipeBar.image = myRoundSwipeBar
+ }
+ }
+ */
