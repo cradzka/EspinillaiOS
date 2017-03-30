@@ -31,9 +31,22 @@ class BaseViewController: UIViewController, SlideMenuDelegate {
         case 1:
             print("DutySchedule\n", terminator: "")
             
-            //self.openViewControllerBasedOnIdentifier("DutyScheduleVC")
+            self.openViewControllerBasedOnIdentifier("DutyScheduleVC")
             
             break
+        case 2:
+            print("Settings\n", terminator: "")
+            
+            self.openViewControllerBasedOnIdentifier("SettingsVC")
+            
+            break
+        case 3:
+            print("Account\n", terminator: "")
+            
+            self.openViewControllerBasedOnIdentifier("AccountVC")
+            
+            break
+
         default:
             print("default\n", terminator: "")
         }
