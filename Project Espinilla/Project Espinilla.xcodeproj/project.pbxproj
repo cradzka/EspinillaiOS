@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		41028DB11E6E6D810007386A /* FormsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41028DB01E6E6D810007386A /* FormsTableViewCell.swift */; };
 		4137E1D31E65255A00EF3418 /* ThirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4137E1D21E65255A00EF3418 /* ThirdViewController.swift */; };
+		41CBC3DE1E8CAB4100B06220 /* ReferenceCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 41CBC3DD1E8CAB4100B06220 /* ReferenceCell.xib */; };
+		41CBC3E01E8CAD7200B06220 /* ReferenceCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41CBC3DF1E8CAD7200B06220 /* ReferenceCell.swift */; };
+		41CBC3E21E8CB0E400B06220 /* ReferenceCollectionViewDataSourceAndDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41CBC3E11E8CB0E400B06220 /* ReferenceCollectionViewDataSourceAndDelegate.swift */; };
 		C960EBB11E5E120800748B74 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C960EBB01E5E120800748B74 /* AppDelegate.swift */; };
 		C960EBB31E5E120800748B74 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C960EBB21E5E120800748B74 /* FirstViewController.swift */; };
 		C960EBB51E5E120800748B74 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C960EBB41E5E120800748B74 /* SecondViewController.swift */; };
@@ -39,6 +42,9 @@
 /* Begin PBXFileReference section */
 		41028DB01E6E6D810007386A /* FormsTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FormsTableViewCell.swift; sourceTree = "<group>"; };
 		4137E1D21E65255A00EF3418 /* ThirdViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThirdViewController.swift; sourceTree = "<group>"; };
+		41CBC3DD1E8CAB4100B06220 /* ReferenceCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ReferenceCell.xib; sourceTree = "<group>"; };
+		41CBC3DF1E8CAD7200B06220 /* ReferenceCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReferenceCell.swift; sourceTree = "<group>"; };
+		41CBC3E11E8CB0E400B06220 /* ReferenceCollectionViewDataSourceAndDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReferenceCollectionViewDataSourceAndDelegate.swift; sourceTree = "<group>"; };
 		C960EBAD1E5E120800748B74 /* Project Espinilla.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Project Espinilla.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C960EBB01E5E120800748B74 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C960EBB21E5E120800748B74 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
@@ -106,8 +112,11 @@
 				C960EBB01E5E120800748B74 /* AppDelegate.swift */,
 				C960EBB21E5E120800748B74 /* FirstViewController.swift */,
 				C960EBB41E5E120800748B74 /* SecondViewController.swift */,
+				41CBC3DF1E8CAD7200B06220 /* ReferenceCell.swift */,
 				4137E1D21E65255A00EF3418 /* ThirdViewController.swift */,
 				C960EBB61E5E120800748B74 /* Main.storyboard */,
+				41CBC3DD1E8CAB4100B06220 /* ReferenceCell.xib */,
+				41CBC3E11E8CB0E400B06220 /* ReferenceCollectionViewDataSourceAndDelegate.swift */,
 				41028DB01E6E6D810007386A /* FormsTableViewCell.swift */,
 				C960EBB91E5E120800748B74 /* Assets.xcassets */,
 				C960EBBB1E5E120800748B74 /* LaunchScreen.storyboard */,
@@ -242,6 +251,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C960EBBD1E5E120800748B74 /* LaunchScreen.storyboard in Resources */,
+				41CBC3DE1E8CAB4100B06220 /* ReferenceCell.xib in Resources */,
 				C960EBBA1E5E120800748B74 /* Assets.xcassets in Resources */,
 				C960EBB81E5E120800748B74 /* Main.storyboard in Resources */,
 			);
@@ -269,9 +279,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				C960EBB51E5E120800748B74 /* SecondViewController.swift in Sources */,
+				41CBC3E01E8CAD7200B06220 /* ReferenceCell.swift in Sources */,
 				41028DB11E6E6D810007386A /* FormsTableViewCell.swift in Sources */,
 				C960EBB11E5E120800748B74 /* AppDelegate.swift in Sources */,
 				4137E1D31E65255A00EF3418 /* ThirdViewController.swift in Sources */,
+				41CBC3E21E8CB0E400B06220 /* ReferenceCollectionViewDataSourceAndDelegate.swift in Sources */,
 				C960EBB31E5E120800748B74 /* FirstViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
