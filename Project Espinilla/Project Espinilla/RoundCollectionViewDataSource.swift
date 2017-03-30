@@ -58,12 +58,13 @@ class RoundCollectionViewDataSource: NSObject, UICollectionViewDataSource, UICol
         cell.buildingTileStack.addArrangedSubview(cell.buildingLabel)
         cell.buildingTileStack.addArrangedSubview(cell.issueTableView)
         
-        cell.round1Label.text = "Round #1"
-        cell.round2Label.text = "Round #2"
-        cell.round3Label.text = "Round #3"
         cell.round1Label.font = UIFont.init(name: "Gill Sans", size: 17.0)
         cell.round2Label.font = UIFont.init(name: "Gill Sans", size: 17.0)
         cell.round3Label.font = UIFont.init(name: "Gill Sans", size: 17.0)
+        cell.round1Label.text = "Round #1"
+        cell.round2Label.text = "Round #2"
+        cell.round3Label.text = "Round #3"
+        
         cell.roundLabelStack.addArrangedSubview(cell.round1Label)
         cell.roundLabelStack.addArrangedSubview(cell.round2Label)
         cell.roundLabelStack.addArrangedSubview(cell.round3Label)
@@ -76,27 +77,10 @@ class RoundCollectionViewDataSource: NSObject, UICollectionViewDataSource, UICol
         return cell
     }
     
-    //No real implimentation yet, may not need it...?
     func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind: String, at: IndexPath) -> UICollectionReusableView {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "BuildingViewTileCell", for: at) as! BuildingViewTileCell
-        cell.buildingLabel.text = names[cellInitializationIndex]
+        let headerView = collectionView.dequeueReusableSupplementaryView(ofKind: UICollectionElementKindSectionHeader, withReuseIdentifier: "initialCollectionViewHeader", for: at) as! BuildingTileCollectionViewHeader
+        headerView.backgroundColor = UIColor.lightGray
 
-        cell.buildingTileStack.addArrangedSubview(cell.buildingLabel)
-        cell.buildingTileStack.addArrangedSubview(cell.issueTableView)
-        cell.round1Label.text = "Round #1"
-        cell.round2Label.text = "Round #2"
-        cell.round3Label.text = "Round #3"
-        cell.roundLabelStack.addArrangedSubview(cell.round1Label)
-        cell.roundLabelStack.addArrangedSubview(cell.round2Label)
-        cell.roundLabelStack.addArrangedSubview(cell.round3Label)
-        cell.buildingTileStack.addArrangedSubview(cell.roundLabelStack)
-        cell.buildingTileStack.addArrangedSubview(cell.roundSwipeBar)
-        cell.contentView.addSubview(cell.buildingTileStack)
-        
-        return cell
-    }
-    
-    func collectionView(_ collectionView: UICollectionView, willDisplaySupplementaryView view: UICollectionReusableView, forElementKind elementKind: String, at indexPath: IndexPath) {
-        //code
+        return headerView
     }
 }

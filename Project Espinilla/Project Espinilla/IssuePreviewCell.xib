@@ -18,8 +18,8 @@
                 <rect key="frame" x="0.0" y="0.0" width="350" height="49"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Mitch: Blah Blah Blah" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="jFs-sC-lbl">
-                        <rect key="frame" x="16" y="0.0" width="326" height="43"/>
+                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Mitch: Blah Blah Blahsl jsdksjdl sdjkashd kjsahdj safhjsf sjkfhs jkdhas jdhsa jdkhsadj sadjksajaksdh " textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="jFs-sC-lbl">
+                        <rect key="frame" x="0.0" y="0.0" width="350" height="83"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -31,6 +31,7 @@
                 <outlet property="issueContent" destination="Rsh-MT-38Z" id="Yyp-6i-l0N"/>
                 <outlet property="issueText" destination="jFs-sC-lbl" id="gIf-M0-WDx"/>
             </connections>
+            <point key="canvasLocation" x="-399" y="156"/>
         </tableViewCell>
     </objects>
 </document>

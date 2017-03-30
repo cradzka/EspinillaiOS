@@ -10,6 +10,7 @@ import UIKit
 
 class RoundViewController: UIViewController {
     
+    @IBOutlet var initialView: UIView!
     @IBOutlet weak var initialStackView: UIStackView!
     @IBOutlet weak var initialCollectionView: UICollectionView!
     @IBOutlet weak var initialCollectionViewLayout: UICollectionViewFlowLayout!
@@ -22,18 +23,19 @@ class RoundViewController: UIViewController {
         
         initialCollectionView.backgroundColor = UIColor.lightGray
         initialCollectionView!.register(UINib(nibName: "BuildingViewTileCell", bundle: nil), forCellWithReuseIdentifier: "BuildingViewTileCell")
+        initialCollectionView!.register(UINib(nibName: "BuildingTileCollectionViewHeader", bundle: nil), forSupplementaryViewOfKind: UICollectionElementKindSectionHeader, withReuseIdentifier: "initialCollectionViewHeader")
+        
         initialCollectionView.setCollectionViewLayout(initialCollectionViewLayout, animated: false)
-
+        
         dataAndDelegate = RoundCollectionViewDataSource(numberOfBuildings: buildingNames.count,buildingNameList: buildingNames, collectionLayout:initialCollectionViewLayout)
         initialCollectionView.dataSource = dataAndDelegate
         initialCollectionView.delegate = dataAndDelegate
-
 
         initialStackView.addArrangedSubview(initialCollectionView)
     }
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+        // Dispose of any resources that can be recreated."UICollectionElementKindSectionHeader"
     }
 }
