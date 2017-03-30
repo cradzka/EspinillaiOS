@@ -10,29 +10,25 @@ import UIKit
 
 class RoundViewController: UIViewController {
     
-    @IBOutlet var initialView: UIView!
     @IBOutlet weak var initialStackView: UIStackView!
-    @IBOutlet weak var areaLabel: UILabel!
     @IBOutlet weak var initialCollectionView: UICollectionView!
     @IBOutlet weak var initialCollectionViewLayout: UICollectionViewFlowLayout!
     
     var collectionDelegate: UICollectionViewDelegate!
-    var buildingNames: Array<String> = ["West", "President's", "Driscoll"]
+    var buildingNames: Array<String> = ["West", "Presidents", "Driscoll"]
     var dataAndDelegate: RoundCollectionViewDataSource!
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        initialCollectionView.backgroundColor = UIColor.blue
+        initialCollectionView.backgroundColor = UIColor.lightGray
         initialCollectionView!.register(UINib(nibName: "BuildingViewTileCell", bundle: nil), forCellWithReuseIdentifier: "BuildingViewTileCell")
         initialCollectionView.setCollectionViewLayout(initialCollectionViewLayout, animated: false)
 
-        dataAndDelegate = RoundCollectionViewDataSource(numberOfBuildings: buildingNames.count,buildingNameList: buildingNames)
+        dataAndDelegate = RoundCollectionViewDataSource(numberOfBuildings: buildingNames.count,buildingNameList: buildingNames, collectionLayout:initialCollectionViewLayout)
         initialCollectionView.dataSource = dataAndDelegate
         initialCollectionView.delegate = dataAndDelegate
-        
-        areaLabel.text = "Your Area"
-        
-        initialStackView.addArrangedSubview(areaLabel)
+
+
         initialStackView.addArrangedSubview(initialCollectionView)
     }
     

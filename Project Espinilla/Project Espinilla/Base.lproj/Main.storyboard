@@ -54,35 +54,33 @@
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="D6F-eh-eMC" userLabel="Initial Stack View">
                                 <rect key="frame" x="0.0" y="101" width="375" height="517"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0tY-6Q-iQL">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="23"/>
-                                        <attributedString key="attributedText">
-                                            <fragment content="   Your Area">
-                                                <attributes>
-                                                    <font key="NSFont" size="20" name="GillSans"/>
-                                                    <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                                </attributes>
-                                            </fragment>
-                                        </attributedString>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <collectionView clipsSubviews="YES" contentMode="center" directionalLockEnabled="YES" bounces="NO" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="ipi-Ve-9Cz">
-                                        <rect key="frame" x="0.0" y="23" width="375" height="494"/>
+                                    <collectionView clipsSubviews="YES" contentMode="center" directionalLockEnabled="YES" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="ipi-Ve-9Cz">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="517"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="Tmb-E0-LeU">
-                                            <size key="itemSize" width="365" height="320"/>
-                                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                        <edgeInsets key="layoutMargins" top="8" left="12" bottom="8" right="12"/>
+                                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="15" id="Tmb-E0-LeU">
+                                            <size key="itemSize" width="375" height="320"/>
+                                            <size key="headerReferenceSize" width="50" height="50"/>
                                             <size key="footerReferenceSize" width="0.0" height="0.0"/>
-                                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                            <inset key="sectionInset" minX="0.0" minY="5" maxX="0.0" maxY="0.0"/>
                                         </collectionViewFlowLayout>
                                         <cells/>
+                                        <collectionReusableView key="sectionHeaderView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" reuseIdentifier="initialCollectionViewHeader" id="dIJ-Lk-yMz">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="50"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Your Area" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jUO-CC-Bhs">
+                                                    <rect key="frame" x="15" y="15" width="84" height="21"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="20"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <edgeInsets key="layoutMargins" top="8" left="15" bottom="8" right="8"/>
+                                        </collectionReusableView>
                                     </collectionView>
                                 </subviews>
-                                <constraints>
-                                    <constraint firstItem="ipi-Ve-9Cz" firstAttribute="leading" secondItem="D6F-eh-eMC" secondAttribute="leading" id="P5c-zN-HzK"/>
-                                    <constraint firstItem="0tY-6Q-iQL" firstAttribute="leading" secondItem="D6F-eh-eMC" secondAttribute="leading" id="zd3-ex-IDa"/>
-                                    <constraint firstAttribute="bottom" secondItem="ipi-Ve-9Cz" secondAttribute="bottom" id="zlt-n7-gwu"/>
-                                </constraints>
                             </stackView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -95,7 +93,6 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="Rounds" image="first" id="NDN-3z-lT5"/>
                     <connections>
-                        <outlet property="areaLabel" destination="0tY-6Q-iQL" id="Xdv-dd-EBD"/>
                         <outlet property="initialCollectionView" destination="ipi-Ve-9Cz" id="Nef-wQ-XP9"/>
                         <outlet property="initialCollectionViewLayout" destination="Tmb-E0-LeU" id="zQj-n6-WNw"/>
                         <outlet property="initialStackView" destination="D6F-eh-eMC" id="gTJ-da-4MK"/>
