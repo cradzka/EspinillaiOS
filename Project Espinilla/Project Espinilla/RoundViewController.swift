@@ -30,7 +30,8 @@ class RoundViewController: UIViewController {
         dataAndDelegate = RoundCollectionViewDataSource(numberOfBuildings: buildingNames.count,buildingNameList: buildingNames, collectionLayout:initialCollectionViewLayout)
         initialCollectionView.dataSource = dataAndDelegate
         initialCollectionView.delegate = dataAndDelegate
-
+        
+        initialCollectionViewLayout.minimumLineSpacing = 30
         initialStackView.addArrangedSubview(initialCollectionView)
     }
     

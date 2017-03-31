@@ -225,7 +225,7 @@
 				TargetAttributes = {
 					C960EBAC1E5E120700748B74 = {
 						CreatedOnToolsVersion = 8.2.1;
-						DevelopmentTeam = C52HDD9D9Q;
+						DevelopmentTeam = 2K2JUTG8W2;
 						ProvisioningStyle = Automatic;
 					};
 					C960EBC21E5E120800748B74 = {
@@ -240,7 +240,7 @@
 					};
 				};
 			};
-			buildConfigurationList = C960EBA81E5E120700748B74 /* Build configuration list for PBXProject "Project_Espinilla" */;
+			buildConfigurationList = C960EBA81E5E120700748B74 /* Build configuration list for PBXProject "Project Espinilla" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -456,10 +456,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = C52HDD9D9Q;
+				DEVELOPMENT_TEAM = 2K2JUTG8W2;
 				INFOPLIST_FILE = "Project Espinilla/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "mjcrepeau.Project-EspinillaiOS";
+				PRODUCT_BUNDLE_IDENTIFIER = "cradzka.Project-EspinillaiOS";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -469,10 +469,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = C52HDD9D9Q;
+				DEVELOPMENT_TEAM = 2K2JUTG8W2;
 				INFOPLIST_FILE = "Project Espinilla/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "mjcrepeau.Project-EspinillaiOS";
+				PRODUCT_BUNDLE_IDENTIFIER = "cradzka.Project-EspinillaiOS";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -535,7 +535,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		C960EBA81E5E120700748B74 /* Build configuration list for PBXProject "Project_Espinilla" */ = {
+		C960EBA81E5E120700748B74 /* Build configuration list for PBXProject "Project Espinilla" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				C960EBD51E5E120800748B74 /* Debug */,

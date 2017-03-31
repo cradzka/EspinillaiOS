@@ -53,7 +53,7 @@ class RoundCollectionViewDataSource: NSObject, UICollectionViewDataSource, UICol
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "BuildingViewTileCell", for: indexPath) as! BuildingViewTileCell
 
         cell.buildingLabel.text = names[indexPath.row]
-        cell.buildingLabel.font = UIFont.init(name: "Gill Sans", size: 17.0)
+        cell.buildingLabel.font = UIFont.init(name: "Gill Sans", size: 23.0)
         cell.contentView.backgroundColor = UIColor.white
         cell.buildingTileStack.addArrangedSubview(cell.buildingLabel)
         cell.buildingTileStack.addArrangedSubview(cell.issueTableView)
@@ -70,6 +70,13 @@ class RoundCollectionViewDataSource: NSObject, UICollectionViewDataSource, UICol
         cell.roundLabelStack.addArrangedSubview(cell.round3Label)
         cell.buildingTileStack.addArrangedSubview(cell.roundLabelStack)
         
+        cell.roundStar1Image.image = #imageLiteral(resourceName: "checkMark")
+        cell.roundStar2Image.image = #imageLiteral(resourceName: "checkMark")
+        cell.roundStar3Image.image = #imageLiteral(resourceName: "checkMark")
+        
+        cell.roundLabelStack.addArrangedSubview(cell.roundStar1Image)
+        cell.roundLabelStack.addArrangedSubview(cell.roundStar2Image)
+        cell.roundLabelStack.addArrangedSubview(cell.roundStar3Image)
         cell.roundSwipeBar.image = #imageLiteral(resourceName: "outOfRangeImage")
         cell.buildingTileStack.addArrangedSubview(cell.roundSwipeBar)
         

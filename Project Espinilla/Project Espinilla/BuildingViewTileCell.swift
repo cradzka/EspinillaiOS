@@ -25,7 +25,10 @@ class BuildingViewTileCell: UICollectionViewCell {
     
     @IBOutlet weak var roundSwipeBar: UIImageView!
     
-
+    @IBOutlet weak var roundStar1Image: UIImageView!
+    @IBOutlet weak var roundStar2Image: UIImageView!
+    @IBOutlet weak var roundStar3Image: UIImageView!
+    
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
     }

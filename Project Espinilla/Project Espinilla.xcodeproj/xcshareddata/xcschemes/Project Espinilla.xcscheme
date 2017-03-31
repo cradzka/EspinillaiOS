@@ -17,7 +17,7 @@
                BlueprintIdentifier = "C960EBAC1E5E120700748B74"
                BuildableName = "Project_Espinilla.app"
                BlueprintName = "Project_Espinilla"
-               ReferencedContainer = "container:Project_Espinilla.xcodeproj">
+               ReferencedContainer = "container:Project Espinilla.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -35,7 +35,7 @@
                BlueprintIdentifier = "C960EBC21E5E120800748B74"
                BuildableName = "Project_EspinillaTests.xctest"
                BlueprintName = "Project_EspinillaTests"
-               ReferencedContainer = "container:Project_Espinilla.xcodeproj">
+               ReferencedContainer = "container:Project Espinilla.xcodeproj">
             </BuildableReference>
          </TestableReference>
          <TestableReference
@@ -45,7 +45,7 @@
                BlueprintIdentifier = "C960EBCD1E5E120800748B74"
                BuildableName = "Project_EspinillaUITests.xctest"
                BlueprintName = "Project_EspinillaUITests"
-               ReferencedContainer = "container:Project_Espinilla.xcodeproj">
+               ReferencedContainer = "container:Project Espinilla.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -55,7 +55,7 @@
             BlueprintIdentifier = "C960EBAC1E5E120700748B74"
             BuildableName = "Project_Espinilla.app"
             BlueprintName = "Project_Espinilla"
-            ReferencedContainer = "container:Project_Espinilla.xcodeproj">
+            ReferencedContainer = "container:Project Espinilla.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -78,7 +78,7 @@
             BlueprintIdentifier = "C960EBAC1E5E120700748B74"
             BuildableName = "Project_Espinilla.app"
             BlueprintName = "Project_Espinilla"
-            ReferencedContainer = "container:Project_Espinilla.xcodeproj">
+            ReferencedContainer = "container:Project Espinilla.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -97,7 +97,7 @@
             BlueprintIdentifier = "C960EBAC1E5E120700748B74"
             BuildableName = "Project_Espinilla.app"
             BlueprintName = "Project_Espinilla"
-            ReferencedContainer = "container:Project_Espinilla.xcodeproj">
+            ReferencedContainer = "container:Project Espinilla.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>
