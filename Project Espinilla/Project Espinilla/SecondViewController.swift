@@ -17,13 +17,16 @@ class SecondViewController: UIViewController {
     @IBOutlet weak var initialCollectionViewLayout: UICollectionViewFlowLayout!
     
     var collectionDelegate: UICollectionViewDelegate!
-    var categoryNames: Array<String> = ["Conflict Resolution", "Crisis Prevention", "Rules and Regulations"]
+    var categoryNames: Array<String> = ["Conflict Resolution", "Crisis Prevention", "Rules and Regulations", "Tim's Diary", "Miscellaneous"]
+    var conflictResolutionNames: Array<String> = ["Roomate Conflicts", "Noise Complaints", "Party Busting", "Confrontation"]
+    var crisisPreventionNames: Array<String> = ["Suicidal Resident", "Medical Emergency", "Academic Crisis", "Prevention"]
+    var rulesAndRegulationsNames: Array<String> = ["Other", "Kristina", "Tim"]
     var dataAndDelegate: ReferenceCollectionViewDataSourceAndDelegate!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        initialCollectionView.backgroundColor = UIColor.blue
+        initialCollectionView.backgroundColor = UIColor.lightGray
         initialCollectionView!.register(UINib(nibName: "ReferenceCell", bundle: nil), forCellWithReuseIdentifier: "ReferenceCell")
         initialCollectionView.setCollectionViewLayout(initialCollectionViewLayout, animated: false)
         
@@ -39,4 +42,3 @@ class SecondViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 }
-

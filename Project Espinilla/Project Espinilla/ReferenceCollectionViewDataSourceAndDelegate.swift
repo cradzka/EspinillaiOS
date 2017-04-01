@@ -10,7 +10,7 @@ import UIKit
 
 class ReferenceCollectionViewDataSourceAndDelegate: NSObject, UICollectionViewDataSource, UICollectionViewDelegate {
 
-    var sections = 1
+    var sections = 3
     var items: Int
     var names: Array<String>
     var cellInitializationIndex: Int
@@ -35,7 +35,7 @@ class ReferenceCollectionViewDataSourceAndDelegate: NSObject, UICollectionViewDa
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "ReferenceCell", for: indexPath) as! ReferenceCell
         cell.ReferenceLabel.text = names[indexPath.row]
         cell.ReferenceLabel.font = UIFont.init(name: "Gill Sans", size: 17.0)
-        cell.contentView.backgroundColor = UIColor.green
+        cell.contentView.backgroundColor = UIColor.white
         cell.ReferenceCellStack.addArrangedSubview(cell.ReferenceLabel)
         
         cell.ReferenceImageView.image = #imageLiteral(resourceName: "refImage")
