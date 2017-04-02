@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		352C6A951E8CA37F00CEC21A /* FormTileCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 352C6A941E8CA37F00CEC21A /* FormTileCell.swift */; };
+		352C6A9B1E8CB07F00CEC21A /* FormViewControllerDataAndDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 352C6A9A1E8CB07F00CEC21A /* FormViewControllerDataAndDelegate.swift */; };
+		35F6C98F1E907E0D003B8952 /* FormTileCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 352C6A961E8CA39E00CEC21A /* FormTileCell.xib */; };
 		41028DB11E6E6D810007386A /* FormsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41028DB01E6E6D810007386A /* FormsTableViewCell.swift */; };
 		4137E1D31E65255A00EF3418 /* ThirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4137E1D21E65255A00EF3418 /* ThirdViewController.swift */; };
 		C960EBB11E5E120800748B74 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C960EBB01E5E120800748B74 /* AppDelegate.swift */; };
@@ -37,6 +40,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		352C6A941E8CA37F00CEC21A /* FormTileCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FormTileCell.swift; sourceTree = "<group>"; };
+		352C6A961E8CA39E00CEC21A /* FormTileCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FormTileCell.xib; sourceTree = "<group>"; };
+		352C6A9A1E8CB07F00CEC21A /* FormViewControllerDataAndDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FormViewControllerDataAndDelegate.swift; sourceTree = "<group>"; };
 		41028DB01E6E6D810007386A /* FormsTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FormsTableViewCell.swift; sourceTree = "<group>"; };
 		4137E1D21E65255A00EF3418 /* ThirdViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThirdViewController.swift; sourceTree = "<group>"; };
 		C960EBAD1E5E120800748B74 /* Project Espinilla.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Project Espinilla.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -107,7 +113,10 @@
 				C960EBB21E5E120800748B74 /* FirstViewController.swift */,
 				C960EBB41E5E120800748B74 /* SecondViewController.swift */,
 				4137E1D21E65255A00EF3418 /* ThirdViewController.swift */,
+				352C6A9A1E8CB07F00CEC21A /* FormViewControllerDataAndDelegate.swift */,
 				C960EBB61E5E120800748B74 /* Main.storyboard */,
+				352C6A941E8CA37F00CEC21A /* FormTileCell.swift */,
+				352C6A961E8CA39E00CEC21A /* FormTileCell.xib */,
 				41028DB01E6E6D810007386A /* FormsTableViewCell.swift */,
 				C960EBB91E5E120800748B74 /* Assets.xcassets */,
 				C960EBBB1E5E120800748B74 /* LaunchScreen.storyboard */,
@@ -245,6 +254,7 @@
 				C960EBBD1E5E120800748B74 /* LaunchScreen.storyboard in Resources */,
 				C960EBBA1E5E120800748B74 /* Assets.xcassets in Resources */,
 				C960EBB81E5E120800748B74 /* Main.storyboard in Resources */,
+				35F6C98F1E907E0D003B8952 /* FormTileCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -272,7 +282,9 @@
 				C960EBB51E5E120800748B74 /* SecondViewController.swift in Sources */,
 				41028DB11E6E6D810007386A /* FormsTableViewCell.swift in Sources */,
 				C960EBB11E5E120800748B74 /* AppDelegate.swift in Sources */,
+				352C6A951E8CA37F00CEC21A /* FormTileCell.swift in Sources */,
 				4137E1D31E65255A00EF3418 /* ThirdViewController.swift in Sources */,
+				352C6A9B1E8CB07F00CEC21A /* FormViewControllerDataAndDelegate.swift in Sources */,
 				C960EBB31E5E120800748B74 /* FirstViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
