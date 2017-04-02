@@ -50,15 +50,24 @@ class FormViewControllerDataAndDelegate: NSObject, UICollectionViewDataSource, U
 
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "formTileCell", for: indexPath) as! FormTileCell
 
+        cell.FormName.font = UIFont.init(name: "Gill Sans", size: 17.0)
+        cell.FieldsLeft.font = UIFont.init(name: "Gill Sans", size: 17.0)
+        cell.Hall.font = UIFont.init(name: "Gill Sans", size: 17.0)
+        cell.RAName.font = UIFont.init(name: "Gill Sans", size: 17.0)
+
+        
         cell.FormName.text = "Housing Survey"
         cell.FieldsLeft.text = "12 Fields Remaining"
         cell.Hall.text = "West Hall"
         cell.RAName.text = "Carter"
+        cell.SlideOut.image = #imageLiteral(resourceName: "3Dots")
+
         
         cell.formStackView.addArrangedSubview(cell.FormName)
         cell.formStackView.addArrangedSubview(cell.FieldsLeft)
         cell.formStackView.addArrangedSubview(cell.Hall)
         cell.formStackView.addArrangedSubview(cell.RAName)
+        //cell.formStackView.addArrangedSubview(cell.SlideOut)
         cell.contentView.addSubview(cell.formStackView)
 
         return cell

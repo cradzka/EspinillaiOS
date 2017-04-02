@@ -12,6 +12,8 @@ class FormTileCell: UICollectionViewCell {
 
     @IBOutlet weak var FormName: UILabel!
     
+    @IBOutlet weak var SlideOut: UIImageView!
+    
     @IBOutlet weak var RAName: UILabel!
     
     @IBOutlet weak var FieldsLeft: UILabel!
