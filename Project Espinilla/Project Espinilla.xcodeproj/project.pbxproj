@@ -15,12 +15,13 @@
 		C960EBB81E5E120800748B74 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C960EBB61E5E120800748B74 /* Main.storyboard */; };
 		C960EBBA1E5E120800748B74 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C960EBB91E5E120800748B74 /* Assets.xcassets */; };
 		C960EBBD1E5E120800748B74 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C960EBBB1E5E120800748B74 /* LaunchScreen.storyboard */; };
-		C960EBC81E5E120800748B74 /* Project_EspinillaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C960EBC71E5E120800748B74 /* Project_EspinillaTests.swift */; };
-		C960EBD31E5E120800748B74 /* Project_EspinillaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C960EBD21E5E120800748B74 /* Project_EspinillaUITests.swift */; };
+		C960EBC81E5E120800748B74 /* Project EspinillaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C960EBC71E5E120800748B74 /* Project EspinillaTests.swift */; };
+		C960EBD31E5E120800748B74 /* Project EspinillaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C960EBD21E5E120800748B74 /* Project EspinillaUITests.swift */; };
+		E104539A1E90705500F64FCF /* IssuePreviewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E10453991E90705500F64FCF /* IssuePreviewCell.swift */; };
+		E104539C1E90992700F64FCF /* IssuePreviewCellDataAndDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E104539B1E90992700F64FCF /* IssuePreviewCellDataAndDelegate.swift */; };
 		E17BE3B11E8B971D00D19EEC /* RoundCollectionViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = E17BE3B01E8B971D00D19EEC /* RoundCollectionViewDataSource.swift */; };
 		E17E9B021E88BFAD0015F8E2 /* RoundViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E17E9B011E88BFAD0015F8E2 /* RoundViewController.swift */; };
 		E17E9B061E8984A60015F8E2 /* BuildingViewTileCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E17E9B051E8984A60015F8E2 /* BuildingViewTileCell.swift */; };
-		E17E9B081E8985C20015F8E2 /* IssueViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E17E9B071E8985C20015F8E2 /* IssueViewCell.swift */; };
 		E17E9B0A1E898B6E0015F8E2 /* BuildingViewTileCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E17E9B091E898B6E0015F8E2 /* BuildingViewTileCell.xib */; };
 		E17E9B0C1E898C3B0015F8E2 /* IssuePreviewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E17E9B0B1E898C3B0015F8E2 /* IssuePreviewCell.xib */; };
 		E192C9CF1E8CD1A300286C9A /* BuildingTileCollectionViewHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = E192C9CE1E8CD1A300286C9A /* BuildingTileCollectionViewHeader.swift */; };
@@ -45,7 +46,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		C960EBAD1E5E120800748B74 /* Project_Espinilla.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Project_Espinilla.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C960EBAD1E5E120800748B74 /* Project Espinilla.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Project Espinilla.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C960EBB01E5E120800748B74 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C960EBB21E5E120800748B74 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
 		C960EBB41E5E120800748B74 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
@@ -53,16 +54,17 @@
 		C960EBB91E5E120800748B74 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C960EBBC1E5E120800748B74 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C960EBBE1E5E120800748B74 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		C960EBC31E5E120800748B74 /* Project_EspinillaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Project_EspinillaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		C960EBC71E5E120800748B74 /* Project_EspinillaTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Project_EspinillaTests.swift; sourceTree = "<group>"; };
+		C960EBC31E5E120800748B74 /* Project EspinillaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Project EspinillaTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C960EBC71E5E120800748B74 /* Project EspinillaTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Project EspinillaTests.swift"; sourceTree = "<group>"; };
 		C960EBC91E5E120800748B74 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		C960EBCE1E5E120800748B74 /* Project_EspinillaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Project_EspinillaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		C960EBD21E5E120800748B74 /* Project_EspinillaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Project_EspinillaUITests.swift; sourceTree = "<group>"; };
+		C960EBCE1E5E120800748B74 /* Project EspinillaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Project EspinillaUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C960EBD21E5E120800748B74 /* Project EspinillaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Project EspinillaUITests.swift"; sourceTree = "<group>"; };
 		C960EBD41E5E120800748B74 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E10453991E90705500F64FCF /* IssuePreviewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IssuePreviewCell.swift; sourceTree = "<group>"; };
+		E104539B1E90992700F64FCF /* IssuePreviewCellDataAndDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IssuePreviewCellDataAndDelegate.swift; sourceTree = "<group>"; };
 		E17BE3B01E8B971D00D19EEC /* RoundCollectionViewDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundCollectionViewDataSource.swift; sourceTree = "<group>"; };
 		E17E9B011E88BFAD0015F8E2 /* RoundViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundViewController.swift; sourceTree = "<group>"; };
 		E17E9B051E8984A60015F8E2 /* BuildingViewTileCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BuildingViewTileCell.swift; sourceTree = "<group>"; };
-		E17E9B071E8985C20015F8E2 /* IssueViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IssueViewCell.swift; sourceTree = "<group>"; };
 		E17E9B091E898B6E0015F8E2 /* BuildingViewTileCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BuildingViewTileCell.xib; sourceTree = "<group>"; };
 		E17E9B0B1E898C3B0015F8E2 /* IssuePreviewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = IssuePreviewCell.xib; sourceTree = "<group>"; };
 		E192C9CE1E8CD1A300286C9A /* BuildingTileCollectionViewHeader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BuildingTileCollectionViewHeader.swift; sourceTree = "<group>"; };
@@ -97,9 +99,9 @@
 		C960EBA41E5E120700748B74 = {
 			isa = PBXGroup;
 			children = (
-				C960EBAF1E5E120800748B74 /* Project_Espinilla */,
-				C960EBC61E5E120800748B74 /* Project_EspinillaTests */,
-				C960EBD11E5E120800748B74 /* Project_EspinillaUITests */,
+				C960EBAF1E5E120800748B74 /* Project Espinilla */,
+				C960EBC61E5E120800748B74 /* Project EspinillaTests */,
+				C960EBD11E5E120800748B74 /* Project EspinillaUITests */,
 				C960EBAE1E5E120800748B74 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -107,16 +109,17 @@
 		C960EBAE1E5E120800748B74 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				C960EBAD1E5E120800748B74 /* Project_Espinilla.app */,
-				C960EBC31E5E120800748B74 /* Project_EspinillaTests.xctest */,
-				C960EBCE1E5E120800748B74 /* Project_EspinillaUITests.xctest */,
+				C960EBAD1E5E120800748B74 /* Project Espinilla.app */,
+				C960EBC31E5E120800748B74 /* Project EspinillaTests.xctest */,
+				C960EBCE1E5E120800748B74 /* Project EspinillaUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		C960EBAF1E5E120800748B74 /* Project_Espinilla */ = {
+		C960EBAF1E5E120800748B74 /* Project Espinilla */ = {
 			isa = PBXGroup;
 			children = (
+				E10453991E90705500F64FCF /* IssuePreviewCell.swift */,
 				C960EBB01E5E120800748B74 /* AppDelegate.swift */,
 				C960EBB21E5E120800748B74 /* FirstViewController.swift */,
 				C960EBB41E5E120800748B74 /* SecondViewController.swift */,
@@ -127,42 +130,39 @@
 				E17E9B011E88BFAD0015F8E2 /* RoundViewController.swift */,
 				E17BE3B01E8B971D00D19EEC /* RoundCollectionViewDataSource.swift */,
 				E17E9B051E8984A60015F8E2 /* BuildingViewTileCell.swift */,
-				E17E9B071E8985C20015F8E2 /* IssueViewCell.swift */,
 				E17E9B091E898B6E0015F8E2 /* BuildingViewTileCell.xib */,
 				E17E9B0B1E898C3B0015F8E2 /* IssuePreviewCell.xib */,
 				E192C9CE1E8CD1A300286C9A /* BuildingTileCollectionViewHeader.swift */,
 				E192C9D01E8CD33400286C9A /* BuildingTileCollectionViewHeader.xib */,
+				E104539B1E90992700F64FCF /* IssuePreviewCellDataAndDelegate.swift */,
 			);
-			name = Project_Espinilla;
 			path = "Project Espinilla";
 			sourceTree = "<group>";
 		};
-		C960EBC61E5E120800748B74 /* Project_EspinillaTests */ = {
+		C960EBC61E5E120800748B74 /* Project EspinillaTests */ = {
 			isa = PBXGroup;
 			children = (
-				C960EBC71E5E120800748B74 /* Project_EspinillaTests.swift */,
+				C960EBC71E5E120800748B74 /* Project EspinillaTests.swift */,
 				C960EBC91E5E120800748B74 /* Info.plist */,
 			);
-			name = Project_EspinillaTests;
 			path = "Project EspinillaTests";
 			sourceTree = "<group>";
 		};
-		C960EBD11E5E120800748B74 /* Project_EspinillaUITests */ = {
+		C960EBD11E5E120800748B74 /* Project EspinillaUITests */ = {
 			isa = PBXGroup;
 			children = (
-				C960EBD21E5E120800748B74 /* Project_EspinillaUITests.swift */,
+				C960EBD21E5E120800748B74 /* Project EspinillaUITests.swift */,
 				C960EBD41E5E120800748B74 /* Info.plist */,
 			);
-			name = Project_EspinillaUITests;
 			path = "Project EspinillaUITests";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		C960EBAC1E5E120700748B74 /* Project_Espinilla */ = {
+		C960EBAC1E5E120700748B74 /* Project Espinilla */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = C960EBD71E5E120800748B74 /* Build configuration list for PBXNativeTarget "Project_Espinilla" */;
+			buildConfigurationList = C960EBD71E5E120800748B74 /* Build configuration list for PBXNativeTarget "Project Espinilla" */;
 			buildPhases = (
 				C960EBA91E5E120700748B74 /* Sources */,
 				C960EBAA1E5E120700748B74 /* Frameworks */,
@@ -172,14 +172,14 @@
 			);
 			dependencies = (
 			);
-			name = Project_Espinilla;
+			name = "Project Espinilla";
 			productName = "Project Espinilla";
-			productReference = C960EBAD1E5E120800748B74 /* Project_Espinilla.app */;
+			productReference = C960EBAD1E5E120800748B74 /* Project Espinilla.app */;
 			productType = "com.apple.product-type.application";
 		};
-		C960EBC21E5E120800748B74 /* Project_EspinillaTests */ = {
+		C960EBC21E5E120800748B74 /* Project EspinillaTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = C960EBDA1E5E120800748B74 /* Build configuration list for PBXNativeTarget "Project_EspinillaTests" */;
+			buildConfigurationList = C960EBDA1E5E120800748B74 /* Build configuration list for PBXNativeTarget "Project EspinillaTests" */;
 			buildPhases = (
 				C960EBBF1E5E120800748B74 /* Sources */,
 				C960EBC01E5E120800748B74 /* Frameworks */,
@@ -190,14 +190,14 @@
 			dependencies = (
 				C960EBC51E5E120800748B74 /* PBXTargetDependency */,
 			);
-			name = Project_EspinillaTests;
+			name = "Project EspinillaTests";
 			productName = "Project EspinillaTests";
-			productReference = C960EBC31E5E120800748B74 /* Project_EspinillaTests.xctest */;
+			productReference = C960EBC31E5E120800748B74 /* Project EspinillaTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		C960EBCD1E5E120800748B74 /* Project_EspinillaUITests */ = {
+		C960EBCD1E5E120800748B74 /* Project EspinillaUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = C960EBDD1E5E120800748B74 /* Build configuration list for PBXNativeTarget "Project_EspinillaUITests" */;
+			buildConfigurationList = C960EBDD1E5E120800748B74 /* Build configuration list for PBXNativeTarget "Project EspinillaUITests" */;
 			buildPhases = (
 				C960EBCA1E5E120800748B74 /* Sources */,
 				C960EBCB1E5E120800748B74 /* Frameworks */,
@@ -208,9 +208,9 @@
 			dependencies = (
 				C960EBD01E5E120800748B74 /* PBXTargetDependency */,
 			);
-			name = Project_EspinillaUITests;
+			name = "Project EspinillaUITests";
 			productName = "Project EspinillaUITests";
-			productReference = C960EBCE1E5E120800748B74 /* Project_EspinillaUITests.xctest */;
+			productReference = C960EBCE1E5E120800748B74 /* Project EspinillaUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -253,9 +253,9 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				C960EBAC1E5E120700748B74 /* Project_Espinilla */,
-				C960EBC21E5E120800748B74 /* Project_EspinillaTests */,
-				C960EBCD1E5E120800748B74 /* Project_EspinillaUITests */,
+				C960EBAC1E5E120700748B74 /* Project Espinilla */,
+				C960EBC21E5E120800748B74 /* Project EspinillaTests */,
+				C960EBCD1E5E120800748B74 /* Project EspinillaUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -295,10 +295,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E104539A1E90705500F64FCF /* IssuePreviewCell.swift in Sources */,
+				E104539C1E90992700F64FCF /* IssuePreviewCellDataAndDelegate.swift in Sources */,
 				E192C9CF1E8CD1A300286C9A /* BuildingTileCollectionViewHeader.swift in Sources */,
 				C960EBB51E5E120800748B74 /* SecondViewController.swift in Sources */,
 				41028DB11E6E6D810007386A /* (null) in Sources */,
-				E17E9B081E8985C20015F8E2 /* IssueViewCell.swift in Sources */,
 				E17E9B061E8984A60015F8E2 /* BuildingViewTileCell.swift in Sources */,
 				C960EBB11E5E120800748B74 /* AppDelegate.swift in Sources */,
 				E17BE3B11E8B971D00D19EEC /* RoundCollectionViewDataSource.swift in Sources */,
@@ -312,7 +313,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C960EBC81E5E120800748B74 /* Project_EspinillaTests.swift in Sources */,
+				C960EBC81E5E120800748B74 /* Project EspinillaTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -320,7 +321,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C960EBD31E5E120800748B74 /* Project_EspinillaUITests.swift in Sources */,
+				C960EBD31E5E120800748B74 /* Project EspinillaUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -329,12 +330,12 @@
 /* Begin PBXTargetDependency section */
 		C960EBC51E5E120800748B74 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = C960EBAC1E5E120700748B74 /* Project_Espinilla */;
+			target = C960EBAC1E5E120700748B74 /* Project Espinilla */;
 			targetProxy = C960EBC41E5E120800748B74 /* PBXContainerItemProxy */;
 		};
 		C960EBD01E5E120800748B74 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = C960EBAC1E5E120700748B74 /* Project_Espinilla */;
+			target = C960EBAC1E5E120700748B74 /* Project Espinilla */;
 			targetProxy = C960EBCF1E5E120800748B74 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -488,7 +489,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "mjcrepeau.Project-EspinillaTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Project_Espinilla.app/Project_Espinilla";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Project Espinilla.app/Project Espinilla";
 			};
 			name = Debug;
 		};
@@ -502,7 +503,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "mjcrepeau.Project-EspinillaTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Project_Espinilla.app/Project_Espinilla";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Project Espinilla.app/Project Espinilla";
 			};
 			name = Release;
 		};
@@ -544,7 +545,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		C960EBD71E5E120800748B74 /* Build configuration list for PBXNativeTarget "Project_Espinilla" */ = {
+		C960EBD71E5E120800748B74 /* Build configuration list for PBXNativeTarget "Project Espinilla" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				C960EBD81E5E120800748B74 /* Debug */,
@@ -553,7 +554,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		C960EBDA1E5E120800748B74 /* Build configuration list for PBXNativeTarget "Project_EspinillaTests" */ = {
+		C960EBDA1E5E120800748B74 /* Build configuration list for PBXNativeTarget "Project EspinillaTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				C960EBDB1E5E120800748B74 /* Debug */,
@@ -562,7 +563,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		C960EBDD1E5E120800748B74 /* Build configuration list for PBXNativeTarget "Project_EspinillaUITests" */ = {
+		C960EBDD1E5E120800748B74 /* Build configuration list for PBXNativeTarget "Project EspinillaUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				C960EBDE1E5E120800748B74 /* Debug */,

@@ -16,13 +16,15 @@ class RoundCollectionViewDataSource: NSObject, UICollectionViewDataSource, UICol
     var names: Array<String>
     var cellInitializationIndex: Int
     var collectionLayout: UICollectionViewLayout
+    var issueDictionary: [String: [String]]
     
     //ToDo: Add init arguemnts for issue lists and GPS locations info
-    init(numberOfBuildings: Int, buildingNameList: Array<String>, collectionLayout: UICollectionViewLayout) {
+    init(numberOfBuildings: Int, buildingNameList: Array<String>, issueDictionary: [String: [String]],collectionLayout: UICollectionViewLayout) {
         self.items = numberOfBuildings
         self.names = buildingNameList
         self.cellInitializationIndex = 0
         self.collectionLayout = collectionLayout
+        self.issueDictionary = issueDictionary
     }
     
     
@@ -51,12 +53,19 @@ class RoundCollectionViewDataSource: NSObject, UICollectionViewDataSource, UICol
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "BuildingViewTileCell", for: indexPath) as! BuildingViewTileCell
+        
+        let tableDataAndDelegate = IssuePreviewCellDataAndDelegate(issuePreviewList: self.issueDictionary[names[indexPath.row]]!, numberOfPreviews: (self.issueDictionary[names[indexPath.row]]!.count))
+        
 
         cell.buildingLabel.text = names[indexPath.row]
         cell.buildingLabel.font = UIFont.init(name: "Gill Sans", size: 23.0)
         cell.contentView.backgroundColor = UIColor.white
         cell.buildingTileStack.addArrangedSubview(cell.buildingLabel)
         cell.buildingTileStack.addArrangedSubview(cell.issueTableView)
+        
+        cell.issueTableView!.register(UINib(nibName: "IssuePreviewCell", bundle: nil), forCellReuseIdentifier: "IssuePreviewBlock")
+        cell.issueTableView.dataSource = tableDataAndDelegate
+        cell.issueTableView.delegate = tableDataAndDelegate
         
         cell.round1Label.font = UIFont.init(name: "Gill Sans", size: 17.0)
         cell.round2Label.font = UIFont.init(name: "Gill Sans", size: 17.0)

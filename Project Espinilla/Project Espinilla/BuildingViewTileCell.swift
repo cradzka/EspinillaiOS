@@ -8,7 +8,7 @@
 
 import UIKit
 
-class BuildingViewTileCell: UICollectionViewCell {
+class BuildingViewTileCell: UICollectionViewCell{
     
     @IBOutlet weak var buildingTileStack: UIStackView!
     
