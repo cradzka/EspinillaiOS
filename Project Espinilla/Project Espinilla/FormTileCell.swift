@@ -10,14 +10,15 @@ import UIKit
 
 class FormTileCell: UICollectionViewCell {
 
-    
     @IBOutlet weak var FormName: UILabel!
     
     @IBOutlet weak var RAName: UILabel!
-
+    
     @IBOutlet weak var FieldsLeft: UILabel!
-
+    
     @IBOutlet weak var Hall: UILabel!
+    
+    @IBOutlet weak var formStackView: UIStackView!
     
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)

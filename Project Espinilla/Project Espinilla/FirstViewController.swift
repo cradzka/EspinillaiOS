@@ -21,11 +21,10 @@ class FirstViewController: UIViewController {
         super.viewDidLoad()
         
         MainCollectionView.backgroundColor = UIColor.lightGray
-        MainCollectionView.register(UINib(nibName: "FormTileCell", bundle: nil), forCellWithReuseIdentifier: "FormTileCell")
+        MainCollectionView.register(UINib(nibName: "FormTileCell", bundle: nil), forCellWithReuseIdentifier: "formTileCell")
         // Do any additional setup after loading the view, typically from a nib.
-        MainCollectionView.setCollectionViewLayout(MainCollectionViewLayout, animated: false)
         
-        dataAndDelegate = FormViewControllerDataAndDelegate(collectionLayout:MainCollectionViewLayout)
+        dataAndDelegate = FormViewControllerDataAndDelegate(collectionLayout: MainCollectionViewLayout)
         MainCollectionView.dataSource = dataAndDelegate
         MainCollectionView.delegate = dataAndDelegate
         

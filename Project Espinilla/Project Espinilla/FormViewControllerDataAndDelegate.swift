@@ -48,12 +48,17 @@ class FormViewControllerDataAndDelegate: NSObject, UICollectionViewDataSource, U
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         
 
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "FormTileCell", for: indexPath) as! FormTileCell
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "formTileCell", for: indexPath) as! FormTileCell
         
         cell.FormName.text = "What up"
         cell.FieldsLeft.text = "12 Fields Remaining"
         cell.Hall.text = "West Hall"
         cell.RAName.text = "hi, my name is"
+        cell.formStackView.addArrangedSubview(cell.FormName)
+        cell.formStackView.addArrangedSubview(cell.FieldsLeft)
+        cell.formStackView.addArrangedSubview(cell.Hall)
+        cell.formStackView.addArrangedSubview(cell.RAName)
+        cell.contentView.addSubview(cell.formStackView)
         return cell
     }
 }
