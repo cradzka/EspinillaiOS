@@ -52,9 +52,11 @@ class RoundCollectionViewDataSource: NSObject, UICollectionViewDataSource, UICol
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         
+        let buildingName = self.names[indexPath.row]
+        let buildingIssueList = self.issueDictionary[buildingName]
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "BuildingViewTileCell", for: indexPath) as! BuildingViewTileCell
         
-        let tableDataAndDelegate = IssuePreviewCellDataAndDelegate(issuePreviewList: self.issueDictionary[names[indexPath.row]]!, numberOfPreviews: (self.issueDictionary[names[indexPath.row]]!.count))
+        let tableDataAndDelegate = IssuePreviewCellDataAndDelegate(issuePreviewList: buildingIssueList!, numberOfPreviews: (buildingIssueList?.count)!)
         
 
         cell.buildingLabel.text = names[indexPath.row]
@@ -66,6 +68,7 @@ class RoundCollectionViewDataSource: NSObject, UICollectionViewDataSource, UICol
         cell.issueTableView!.register(UINib(nibName: "IssuePreviewCell", bundle: nil), forCellReuseIdentifier: "IssuePreviewBlock")
         cell.issueTableView.dataSource = tableDataAndDelegate
         cell.issueTableView.delegate = tableDataAndDelegate
+        cell.issueTableView.reloadData()
         
         cell.round1Label.font = UIFont.init(name: "Gill Sans", size: 17.0)
         cell.round2Label.font = UIFont.init(name: "Gill Sans", size: 17.0)

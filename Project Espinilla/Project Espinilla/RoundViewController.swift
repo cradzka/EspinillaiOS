@@ -18,19 +18,18 @@ class RoundViewController: UIViewController {
     var collectionDelegate: UICollectionViewDelegate!
     var buildingNames: Array<String> = ["West", "Presidents", "Driscoll"]
     var dataAndDelegate: RoundCollectionViewDataSource!
-    var buildingIssueLists: [String: [String]] = [:]
+    var buildingIssueLists: [String: Array<String>] = [:]
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        fillBuildingLists(buildings: buildingNames)
+        fillBuildingLists(buildings: self.buildingNames)
         
         initialCollectionView.backgroundColor = UIColor.lightGray
         initialCollectionView!.register(UINib(nibName: "BuildingViewTileCell", bundle: nil), forCellWithReuseIdentifier: "BuildingViewTileCell")
         initialCollectionView!.register(UINib(nibName: "BuildingTileCollectionViewHeader", bundle: nil), forSupplementaryViewOfKind: UICollectionElementKindSectionHeader, withReuseIdentifier: "initialCollectionViewHeader")
         
-        //initialCollectionView.setCollectionViewLayout(initialCollectionViewLayout, animated: false)
-        
         dataAndDelegate = RoundCollectionViewDataSource(numberOfBuildings: buildingNames.count,buildingNameList: buildingNames, issueDictionary: buildingIssueLists,collectionLayout: initialCollectionViewLayout)
+        
         initialCollectionView.dataSource = dataAndDelegate
         initialCollectionView.delegate = dataAndDelegate
         
@@ -41,22 +40,22 @@ class RoundViewController: UIViewController {
     //initialize dictionary of building names where each containes it's issue previews. **Hardcoded for now**
     func fillBuildingLists(buildings: Array<String>) {
     
-        var west: [String]
-        var pres: [String]
-        var drisc: [String]
+        var west: Array<String>
+        var pres: Array<String>
+        var drisc: Array<String>
         
-        west = [String]()
+        west = Array<String>()
         west.append("[Carter]: Slow water leak in second floor bathroom.")
         west.append("[Aaron]: Foul oder in lower lounge.")
         west.append("[Valentine]: 2nd floor east wing air conditioning not working.")
         
-        drisc = [String]()
+        drisc = Array<String>()
         drisc.append("[Lynda]: Slow water leak in second floor bathroom.")
         drisc.append("[Valentine]: Foul oder in lower lounge.")
         drisc.append("[Valentine]: 2nd floor east wing air conditioning not working.")
         
         
-        pres = [String]()
+        pres = Array<String>()
         pres.append("[Lynda]: Slow water leak in second floor bathroom.")
         pres.append("[Valentine]: Foul oder in lower lounge.")
         pres.append("[Valentine]: 2nd floor east wing air conditioning not working.")

@@ -9,17 +9,17 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="IssuePreviewCellDataAndDelegate" customModule="Project_Espinilla" customModuleProvider="target"/>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="RoundViewController" customModule="Project_Espinilla" customModuleProvider="target"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationLevel="5" indentationWidth="10" reuseIdentifier="IssuePreviewBlock" rowHeight="50" id="8aG-eK-bRE" customClass="IssuePreviewCell" customModule="Project_Espinilla" customModuleProvider="target">
+        <tableViewCell clipsSubviews="YES" tag="2" contentMode="TopLeft" selectionStyle="none" indentationLevel="5" indentationWidth="10" reuseIdentifier="IssuePreviewBlock" rowHeight="50" id="8aG-eK-bRE" customClass="IssuePreviewCell" customModule="Project_Espinilla" customModuleProvider="target">
             <rect key="frame" x="0.0" y="0.0" width="350" height="50"/>
             <autoresizingMask key="autoresizingMask"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" tag="1" contentMode="center" tableViewCell="8aG-eK-bRE" id="Rsh-MT-38Z">
-                <rect key="frame" x="0.0" y="0.0" width="350" height="50"/>
+                <rect key="frame" x="0.0" y="0.0" width="350" height="49.5"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Mitch: Blah Blah Blahsl jsdksjdl sdjkashd kjsahdj safhjsf sjkfhs jkdhas jdhsa jdkhsadj sadjksajaksdh " textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="jFs-sC-lbl">
-                        <rect key="frame" x="0.0" y="0.0" width="350" height="83"/>
+                        <rect key="frame" x="0.0" y="0.0" width="350" height="50"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
