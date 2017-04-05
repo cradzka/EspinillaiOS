@@ -46,14 +46,13 @@ class ReferenceCollectionViewDataSourceAndDelegate: NSObject, UICollectionViewDa
     }
     
     func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind: String, at: IndexPath) -> UICollectionReusableView {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "ReferenceCell", for: at) as! ReferenceCell
-        cell.ReferenceLabel.text = names[cellInitializationIndex]
+        let headerView = collectionView.dequeueReusableSupplementaryView(ofKind: UICollectionElementKindSectionHeader, withReuseIdentifier: "initialCollectionViewHeader", for: at) as! ReferenceCollectionReusableViewHeader
+        headerView.headerLabel.text = "HELLO"
+        headerView.headerLabel.font = UIFont.init(name: "Gill Sans", size: 17.0)
+        headerView.backgroundColor = UIColor.white
+        headerView.addSubview(headerView.headerLabel)
         
-        cell.ReferenceCellStack.addArrangedSubview(cell.ReferenceLabel)
-        cell.ReferenceCellStack.addArrangedSubview(cell.ReferenceImageView)
-        cell.contentView.addSubview(cell.ReferenceCellStack)
-        
-        return cell
+        return headerView
     }
     
     func collectionView(_ collectionView: UICollectionView, willDisplaySupplementaryView view: UICollectionReusableView, forElementKind elementKind: String, at indexPath: IndexPath) {

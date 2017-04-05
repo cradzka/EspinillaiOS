@@ -28,6 +28,7 @@ class SecondViewController: UIViewController {
         // Do any additional setup after loading the view, typically from a nib.
         initialCollectionView.backgroundColor = UIColor.lightGray
         initialCollectionView!.register(UINib(nibName: "ReferenceCell", bundle: nil), forCellWithReuseIdentifier: "ReferenceCell")
+        initialCollectionView!.register(UINib(nibName: "ReferenceCollectionReusableViewHeader", bundle: nil), forSupplementaryViewOfKind: UICollectionElementKindSectionHeader, withReuseIdentifier: "initialCollectionViewHeader")
         initialCollectionView.setCollectionViewLayout(initialCollectionViewLayout, animated: false)
         
         dataAndDelegate = ReferenceCollectionViewDataSourceAndDelegate(numberOfCategories: categoryNames.count, categoryNameList: categoryNames, collectionLayout: initialCollectionViewLayout)
