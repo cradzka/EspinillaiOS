@@ -26,6 +26,7 @@
 		E17E9B0C1E898C3B0015F8E2 /* IssuePreviewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E17E9B0B1E898C3B0015F8E2 /* IssuePreviewCell.xib */; };
 		E192C9CF1E8CD1A300286C9A /* BuildingTileCollectionViewHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = E192C9CE1E8CD1A300286C9A /* BuildingTileCollectionViewHeader.swift */; };
 		E192C9D11E8CD33400286C9A /* BuildingTileCollectionViewHeader.xib in Resources */ = {isa = PBXBuildFile; fileRef = E192C9D01E8CD33400286C9A /* BuildingTileCollectionViewHeader.xib */; };
+		E1D1AA361E94A3D40002FB20 /* UIDesignValues.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1D1AA351E94A3D40002FB20 /* UIDesignValues.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,6 +70,7 @@
 		E17E9B0B1E898C3B0015F8E2 /* IssuePreviewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = IssuePreviewCell.xib; sourceTree = "<group>"; };
 		E192C9CE1E8CD1A300286C9A /* BuildingTileCollectionViewHeader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BuildingTileCollectionViewHeader.swift; sourceTree = "<group>"; };
 		E192C9D01E8CD33400286C9A /* BuildingTileCollectionViewHeader.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BuildingTileCollectionViewHeader.xib; sourceTree = "<group>"; };
+		E1D1AA351E94A3D40002FB20 /* UIDesignValues.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIDesignValues.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -135,6 +137,7 @@
 				E192C9CE1E8CD1A300286C9A /* BuildingTileCollectionViewHeader.swift */,
 				E192C9D01E8CD33400286C9A /* BuildingTileCollectionViewHeader.xib */,
 				E104539B1E90992700F64FCF /* IssuePreviewCellDataAndDelegate.swift */,
+				E1D1AA351E94A3D40002FB20 /* UIDesignValues.swift */,
 			);
 			path = "Project Espinilla";
 			sourceTree = "<group>";
@@ -306,6 +309,7 @@
 				4137E1D31E65255A00EF3418 /* (null) in Sources */,
 				C960EBB31E5E120800748B74 /* FirstViewController.swift in Sources */,
 				E17E9B021E88BFAD0015F8E2 /* RoundViewController.swift in Sources */,
+				E1D1AA361E94A3D40002FB20 /* UIDesignValues.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -17,6 +17,8 @@ class RoundCollectionViewDataSource: NSObject, UICollectionViewDataSource, UICol
     var cellInitializationIndex: Int
     var collectionLayout: UICollectionViewLayout
     var issueDictionary: [String: [String]]
+    var designValue: UIDesignValue
+    var shadowLayer: CAShapeLayer!
     
     //ToDo: Add init arguemnts for issue lists and GPS locations info
     init(numberOfBuildings: Int, buildingNameList: Array<String>, issueDictionary: [String: [String]],collectionLayout: UICollectionViewLayout) {
@@ -25,6 +27,7 @@ class RoundCollectionViewDataSource: NSObject, UICollectionViewDataSource, UICol
         self.cellInitializationIndex = 0
         self.collectionLayout = collectionLayout
         self.issueDictionary = issueDictionary
+        self.designValue = UIDesignValue.init()
     }
     
     
@@ -56,28 +59,61 @@ class RoundCollectionViewDataSource: NSObject, UICollectionViewDataSource, UICol
         let buildingIssueList = self.issueDictionary[buildingName]
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "BuildingViewTileCell", for: indexPath) as! BuildingViewTileCell
 
+        /***********************
+         * Building Label init *
+         *                     */
         cell.buildingLabel.text = names[indexPath.row]
-        cell.buildingLabel.font = UIFont.init(name: "Gill Sans", size: 23.0)
-        cell.buildingLabel.layer.borderColor = UIColor.black.cgColor
-        cell.buildingLabel.layer.borderWidth = 0.35
-        cell.buildingLabel.layer.cornerRadius = 8
+        cell.buildingLabel.font = designValue.sectionLabelFont
+        cell.buildingLabel.layer.borderColor = designValue.boarderColor
+        cell.buildingLabel.layer.borderWidth = designValue.boarderWidth
+        //cell.buildingLabel.layer.cornerRadius = designValue.cornerRadius
         cell.buildingTileStack.addArrangedSubview(cell.buildingLabel)
         
+        /********************
+         * Issue stack init *
+         *                  */
         cell.firstIssuePreview.text = buildingIssueList?[0]
         cell.secondIssuePreview.text = buildingIssueList?[1]
         cell.thirdIssuePreview.text = buildingIssueList?[2]
+        cell.fourthIssuePreview.text = buildingIssueList?[3]
+        
         cell.firstIssuePreview.textColor = UIColor.blue
         cell.secondIssuePreview.textColor = UIColor.green
         cell.thirdIssuePreview.textColor = UIColor.purple
-        cell.issuePreviewStack.addArrangedSubview(cell.recentIssueLabel)
+        cell.fourthIssuePreview.textColor = UIColor.red
+        
+        cell.firstIssuePreview.textContainer.maximumNumberOfLines = 2
+        cell.secondIssuePreview.textContainer.maximumNumberOfLines = 2
+        cell.thirdIssuePreview.textContainer.maximumNumberOfLines = 2
+        cell.fourthIssuePreview.textContainer.maximumNumberOfLines = 2
+        
+        cell.firstIssuePreview.layer.borderWidth = designValue.boarderWidth
+        cell.secondIssuePreview.layer.borderWidth = designValue.boarderWidth
+        cell.thirdIssuePreview.layer.borderWidth = designValue.boarderWidth
+        cell.fourthIssuePreview.layer.borderWidth = CGFloat(0.7)
+        
+        cell.firstIssuePreview.layer.borderColor = designValue.boarderColor
+        cell.secondIssuePreview.layer.borderColor = designValue.boarderColor
+        cell.thirdIssuePreview.layer.borderColor = designValue.boarderColor
+        cell.fourthIssuePreview.layer.borderColor = designValue.boarderColor
+        
+        cell.firstIssuePreview.textContainer.lineBreakMode = .byTruncatingTail
+        cell.secondIssuePreview.textContainer.lineBreakMode = .byTruncatingTail
+        cell.thirdIssuePreview.textContainer.lineBreakMode = .byTruncatingTail
+        cell.fourthIssuePreview.textContainer.lineBreakMode = .byTruncatingTail
+        
         cell.issuePreviewStack.addArrangedSubview(cell.firstIssuePreview)
         cell.issuePreviewStack.addArrangedSubview(cell.secondIssuePreview)
         cell.issuePreviewStack.addArrangedSubview(cell.thirdIssuePreview)
+        cell.issuePreviewStack.addArrangedSubview(cell.fourthIssuePreview)
         cell.buildingTileStack.addArrangedSubview(cell.issuePreviewStack)
         
-        cell.round1Label.font = UIFont.init(name: "Gill Sans", size: 17.0)
-        cell.round2Label.font = UIFont.init(name: "Gill Sans", size: 17.0)
-        cell.round3Label.font = UIFont.init(name: "Gill Sans", size: 17.0)
+        /**************************
+         * Round label stack init *
+         *                        */
+        cell.round1Label.font = designValue.labelFont
+        cell.round2Label.font = designValue.labelFont
+        cell.round3Label.font = designValue.labelFont
         cell.round1Label.text = "Round #1"
         cell.round2Label.text = "Round #2"
         cell.round3Label.text = "Round #3"
@@ -85,6 +121,8 @@ class RoundCollectionViewDataSource: NSObject, UICollectionViewDataSource, UICol
         cell.roundLabelStack.addArrangedSubview(cell.round1Label)
         cell.roundLabelStack.addArrangedSubview(cell.round2Label)
         cell.roundLabelStack.addArrangedSubview(cell.round3Label)
+        cell.roundLabelStack.layer.borderWidth = designValue.boarderWidth
+        cell.roundLabelStack.layer.borderColor = designValue.boarderColor
         cell.buildingTileStack.addArrangedSubview(cell.roundLabelStack)
         
         cell.roundStar1Image.image = #imageLiteral(resourceName: "checkMark")
@@ -95,12 +133,36 @@ class RoundCollectionViewDataSource: NSObject, UICollectionViewDataSource, UICol
         cell.roundLabelStack.addArrangedSubview(cell.roundStar2Image)
         cell.roundLabelStack.addArrangedSubview(cell.roundStar3Image)
         cell.roundSwipeBar.image = #imageLiteral(resourceName: "outOfRangeImage")
+        cell.roundSwipeBar.layer.cornerRadius = designValue.cornerRadius
+        cell.roundSwipeBar.layer.masksToBounds = true
         cell.buildingTileStack.addArrangedSubview(cell.roundSwipeBar)
         
-        cell.contentView.backgroundColor = UIColor.white
-        cell.layer.borderColor = UIColor.black.cgColor
-        cell.layer.borderWidth = 0.35
-        cell.layer.cornerRadius = 8
+        /***************************
+         * Content view formatting *
+         *                         */
+        cell.contentView.backgroundColor = designValue.baseColor
+        cell.layer.borderColor = designValue.boarderColor
+        cell.layer.borderWidth = designValue.boarderWidth
+    
+        cell.layer.shadowRadius = designValue.shadowRadius
+        cell.layer.shadowOffset = designValue.shadowOffset
+        cell.layer.shadowOpacity = designValue.shadowOpacity
+        cell.layer.shadowColor = designValue.shadowColor
+        
+        if shadowLayer == nil {
+            shadowLayer = CAShapeLayer()
+            shadowLayer.path = UIBezierPath(roundedRect: cell.layer.bounds, cornerRadius: designValue.cornerRadius).cgPath
+            shadowLayer.fillColor = UIColor.white.cgColor
+            
+            shadowLayer.shadowColor = designValue.shadowColor
+            shadowLayer.shadowPath = shadowLayer.path
+            shadowLayer.shadowOffset = designValue.shadowOffset
+            shadowLayer.shadowOpacity = designValue.shadowOpacity
+            shadowLayer.shadowRadius = designValue.shadowRadius
+        }
+        cell.layer.masksToBounds = true
+        cell.layer.cornerRadius = designValue.cornerRadius
+        cell.layer.insertSublayer(shadowLayer, at: 0)
         cell.contentView.addSubview(cell.buildingTileStack)
         cell.contentView.addSubview(cell.swipeBarLabel)
         return cell
@@ -108,7 +170,7 @@ class RoundCollectionViewDataSource: NSObject, UICollectionViewDataSource, UICol
     
     func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind: String, at: IndexPath) -> UICollectionReusableView {
         let headerView = collectionView.dequeueReusableSupplementaryView(ofKind: UICollectionElementKindSectionHeader, withReuseIdentifier: "initialCollectionViewHeader", for: at) as! BuildingTileCollectionViewHeader
-        headerView.backgroundColor = UIColor.lightGray
+        headerView.backgroundColor = designValue.backgroundColor
 
         return headerView
     }

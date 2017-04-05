@@ -20,6 +20,8 @@ class BuildingViewTileCell: UICollectionViewCell{
     
     @IBOutlet weak var thirdIssuePreview: UITextView!
     
+    @IBOutlet weak var fourthIssuePreview: UITextView!
+    
     @IBOutlet weak var issuePreviewStack: UIStackView!
     
     @IBOutlet weak var swipeBarLabel: UILabel!

@@ -37,31 +37,32 @@
                                 </attributedString>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="-15" baselineRelativeArrangement="YES" translatesAutoresizingMaskIntoConstraints="NO" id="CTr-36-PO9">
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="CTr-36-PO9">
                                 <rect key="frame" x="0.0" y="24" width="375" height="170"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="bottomLeft" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Recent Issues" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QCt-Qg-ZIh">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="55"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                                        <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="GOP-xO-V2z">
-                                        <rect key="frame" x="0.0" y="35.5" width="375" height="55"/>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GOP-xO-V2z">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="42.5"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                     </textView>
-                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="wpY-r2-W48">
-                                        <rect key="frame" x="0.0" y="75.5" width="375" height="54.5"/>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="wpY-r2-W48">
+                                        <rect key="frame" x="0.0" y="42.5" width="375" height="42.5"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                     </textView>
-                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="vhJ-7W-eha">
-                                        <rect key="frame" x="0.0" y="115" width="375" height="55"/>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="vhJ-7W-eha">
+                                        <rect key="frame" x="0.0" y="85" width="375" height="42.5"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="IqY-7j-roo">
+                                        <rect key="frame" x="0.0" y="127.5" width="375" height="42.5"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -127,7 +128,6 @@
                             <constraint firstItem="KUR-M7-aR2" firstAttribute="top" secondItem="5OL-ND-s5f" secondAttribute="bottom" constant="0.5" id="aDs-9W-oBw"/>
                             <constraint firstItem="xW8-RZ-FLO" firstAttribute="top" secondItem="9dO-uK-DTR" secondAttribute="bottom" constant="0.5" id="ato-oF-oyq"/>
                             <constraint firstItem="p0V-W9-Pz4" firstAttribute="top" secondItem="mvM-vu-xlH" secondAttribute="top" constant="215" id="bHU-2t-iKG"/>
-                            <constraint firstItem="QCt-Qg-ZIh" firstAttribute="top" secondItem="bug-J8-Uau" secondAttribute="bottom" id="csX-XE-oqs"/>
                             <constraint firstItem="CTr-36-PO9" firstAttribute="top" secondItem="bug-J8-Uau" secondAttribute="bottom" id="dsO-DQ-M6I"/>
                             <constraint firstItem="dxj-1V-CZZ" firstAttribute="top" secondItem="Qwx-Wf-saC" secondAttribute="bottom" id="kTv-jw-5dD"/>
                             <constraint firstItem="Qwx-Wf-saC" firstAttribute="top" secondItem="5li-iN-BUU" secondAttribute="bottom" constant="0.5" id="u21-Vo-zcQ"/>
@@ -180,8 +180,8 @@
                 <outlet property="buildingLabel" destination="bug-J8-Uau" id="Je3-sl-hSH"/>
                 <outlet property="buildingTileStack" destination="mvM-vu-xlH" id="ax2-kN-2Xn"/>
                 <outlet property="firstIssuePreview" destination="GOP-xO-V2z" id="5zW-Qh-bLb"/>
+                <outlet property="fourthIssuePreview" destination="IqY-7j-roo" id="JSu-8m-d5z"/>
                 <outlet property="issuePreviewStack" destination="CTr-36-PO9" id="ybs-xp-sVH"/>
-                <outlet property="recentIssueLabel" destination="QCt-Qg-ZIh" id="Drr-AR-aDS"/>
                 <outlet property="round1Label" destination="5li-iN-BUU" id="4ZY-pM-fJK"/>
                 <outlet property="round2Label" destination="5OL-ND-s5f" id="9C0-Rv-h2i"/>
                 <outlet property="round3Label" destination="9dO-uK-DTR" id="Vjq-ZS-dXm"/>
