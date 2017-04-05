@@ -1,3 +1,4 @@
+
 //
 //  FirstViewController.swift
 //  Project Espinilla
@@ -15,6 +16,10 @@ class FirstViewController: UIViewController {
     
     @IBOutlet weak var MainCollectionViewLayout:UICollectionViewFlowLayout!
 
+    //@IBOutlet weak var SlideOut: UIImageView!
+    
+    //let tapRec = UITapGestureRecognizer()
+    
     var dataAndDelegate: FormViewControllerDataAndDelegate!
     
     override func viewDidLoad() {
@@ -30,8 +35,15 @@ class FirstViewController: UIViewController {
         
         MainCollectionViewLayout.minimumLineSpacing = 30
         
+        //tapRec.addTarget(self, action: #selector(FirstViewController.tappedView))
+        //SlideOut.addGestureRecognizer(tapRec)
+        
     }
 
+    func tappedView(){
+        print("image tapped")
+    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.

@@ -16,7 +16,7 @@ class FormTileCell: UICollectionViewCell {
     
     @IBOutlet weak var RAName: UILabel!
     
-    @IBOutlet weak var FieldsLeft: UILabel!
+    //@IBOutlet weak var FieldsLeft: UILabel!
     
     @IBOutlet weak var Hall: UILabel!
     
