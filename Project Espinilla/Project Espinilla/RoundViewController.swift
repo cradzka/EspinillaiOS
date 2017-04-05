@@ -45,7 +45,7 @@ class RoundViewController: UIViewController {
         var drisc: Array<String>
         
         west = Array<String>()
-        west.append("[Carter]: Slow water leak in second floor bathroom.")
+        west.append("[Carter]: Slow water leak in second floor bathroom. sheeeeeeeeeeeeeeeeeeeeeiudsh fjdhsfdskjf dskjfh jkf fjh fjkdhfjkdsfhkjsd hjkdsf hdsjkf hdsjkf hdsjkf hdsjkf hdsjkfh dskjfh dskjf hdsjkf shkjf dhskjf")
         west.append("[Aaron]: Foul oder in lower lounge.")
         west.append("[Valentine]: 2nd floor east wing air conditioning not working.")
         

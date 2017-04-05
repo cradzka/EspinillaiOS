@@ -14,8 +14,16 @@ class BuildingViewTileCell: UICollectionViewCell{
     
     @IBOutlet weak var buildingLabel: UILabel!
     
-    @IBOutlet weak var issueTableView: UITableView!
+    @IBOutlet weak var firstIssuePreview: UITextView!
     
+    @IBOutlet weak var secondIssuePreview: UITextView!
+    
+    @IBOutlet weak var thirdIssuePreview: UITextView!
+    
+    @IBOutlet weak var issuePreviewStack: UIStackView!
+    
+    @IBOutlet weak var swipeBarLabel: UILabel!
+    @IBOutlet weak var recentIssueLabel: UILabel!
     @IBOutlet weak var roundLabelStack: UIStackView!
     @IBOutlet weak var round1Label: UILabel!
     @IBOutlet weak var round2Label: UILabel!

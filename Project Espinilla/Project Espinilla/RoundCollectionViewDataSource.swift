@@ -55,20 +55,25 @@ class RoundCollectionViewDataSource: NSObject, UICollectionViewDataSource, UICol
         let buildingName = self.names[indexPath.row]
         let buildingIssueList = self.issueDictionary[buildingName]
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "BuildingViewTileCell", for: indexPath) as! BuildingViewTileCell
-        
-        let tableDataAndDelegate = IssuePreviewCellDataAndDelegate(issuePreviewList: buildingIssueList!, numberOfPreviews: (buildingIssueList?.count)!)
-        
 
         cell.buildingLabel.text = names[indexPath.row]
         cell.buildingLabel.font = UIFont.init(name: "Gill Sans", size: 23.0)
-        cell.contentView.backgroundColor = UIColor.white
+        cell.buildingLabel.layer.borderColor = UIColor.black.cgColor
+        cell.buildingLabel.layer.borderWidth = 0.35
+        cell.buildingLabel.layer.cornerRadius = 8
         cell.buildingTileStack.addArrangedSubview(cell.buildingLabel)
-        cell.buildingTileStack.addArrangedSubview(cell.issueTableView)
         
-        cell.issueTableView!.register(UINib(nibName: "IssuePreviewCell", bundle: nil), forCellReuseIdentifier: "IssuePreviewBlock")
-        cell.issueTableView.dataSource = tableDataAndDelegate
-        cell.issueTableView.delegate = tableDataAndDelegate
-        cell.issueTableView.reloadData()
+        cell.firstIssuePreview.text = buildingIssueList?[0]
+        cell.secondIssuePreview.text = buildingIssueList?[1]
+        cell.thirdIssuePreview.text = buildingIssueList?[2]
+        cell.firstIssuePreview.textColor = UIColor.blue
+        cell.secondIssuePreview.textColor = UIColor.green
+        cell.thirdIssuePreview.textColor = UIColor.purple
+        cell.issuePreviewStack.addArrangedSubview(cell.recentIssueLabel)
+        cell.issuePreviewStack.addArrangedSubview(cell.firstIssuePreview)
+        cell.issuePreviewStack.addArrangedSubview(cell.secondIssuePreview)
+        cell.issuePreviewStack.addArrangedSubview(cell.thirdIssuePreview)
+        cell.buildingTileStack.addArrangedSubview(cell.issuePreviewStack)
         
         cell.round1Label.font = UIFont.init(name: "Gill Sans", size: 17.0)
         cell.round2Label.font = UIFont.init(name: "Gill Sans", size: 17.0)
@@ -92,7 +97,12 @@ class RoundCollectionViewDataSource: NSObject, UICollectionViewDataSource, UICol
         cell.roundSwipeBar.image = #imageLiteral(resourceName: "outOfRangeImage")
         cell.buildingTileStack.addArrangedSubview(cell.roundSwipeBar)
         
+        cell.contentView.backgroundColor = UIColor.white
+        cell.layer.borderColor = UIColor.black.cgColor
+        cell.layer.borderWidth = 0.35
+        cell.layer.cornerRadius = 8
         cell.contentView.addSubview(cell.buildingTileStack)
+        cell.contentView.addSubview(cell.swipeBarLabel)
         return cell
     }
     
