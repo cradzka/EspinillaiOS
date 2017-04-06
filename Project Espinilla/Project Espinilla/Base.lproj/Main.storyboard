@@ -42,25 +42,25 @@
                                 <textInputTraits key="textInputTraits"/>
                             </searchBar>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="8is-iI-9Zy">
-                                <rect key="frame" x="0.0" y="139" width="375" height="558"/>
+                                <rect key="frame" x="0.0" y="139" width="375" height="471"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <gestureRecognizers/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="jCA-X7-Aul">
-                                    <size key="itemSize" width="344" height="65"/>
+                                    <size key="itemSize" width="344" height="64"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                     <size key="footerReferenceSize" width="0.0" height="0.0"/>
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
                                     <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" reuseIdentifier="FormTileCell" id="XID-2Q-oZm">
-                                        <rect key="frame" x="15.5" y="0.0" width="344" height="65"/>
+                                        <rect key="frame" x="15.5" y="0.0" width="344" height="64"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                                            <rect key="frame" x="0.0" y="0.0" width="344" height="65"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="344" height="64"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                         </view>
-                                        <size key="customSize" width="344" height="65"/>
+                                        <size key="customSize" width="344" height="64"/>
                                     </collectionViewCell>
                                 </cells>
                                 <connections>
