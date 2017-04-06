@@ -65,7 +65,7 @@ class RoundCollectionViewDataSource: NSObject, UICollectionViewDataSource, UICol
         cell.buildingLabel.text = names[indexPath.row]
         cell.buildingLabel.font = designValue.sectionLabelFont
         cell.buildingLabel.layer.borderColor = designValue.boarderColor
-        cell.buildingLabel.layer.borderWidth = designValue.boarderWidth
+        cell.buildingLabel.layer.borderWidth = designValue.boarderWidth + 0.4
         //cell.buildingLabel.layer.cornerRadius = designValue.cornerRadius
         cell.buildingTileStack.addArrangedSubview(cell.buildingLabel)
         
@@ -133,14 +133,13 @@ class RoundCollectionViewDataSource: NSObject, UICollectionViewDataSource, UICol
         cell.roundLabelStack.addArrangedSubview(cell.roundStar2Image)
         cell.roundLabelStack.addArrangedSubview(cell.roundStar3Image)
         cell.roundSwipeBar.image = #imageLiteral(resourceName: "outOfRangeImage")
-        cell.roundSwipeBar.layer.cornerRadius = designValue.cornerRadius
-        cell.roundSwipeBar.layer.masksToBounds = true
+        cell.roundSwipeBar.layer.borderWidth = designValue.boarderWidth + 0.30
         cell.buildingTileStack.addArrangedSubview(cell.roundSwipeBar)
         
         /***************************
          * Content view formatting *
          *                         */
-        cell.contentView.backgroundColor = designValue.baseColor
+        cell.contentView.backgroundColor = designValue.baseCellColor
         cell.layer.borderColor = designValue.boarderColor
         cell.layer.borderWidth = designValue.boarderWidth
     
@@ -160,9 +159,9 @@ class RoundCollectionViewDataSource: NSObject, UICollectionViewDataSource, UICol
             shadowLayer.shadowOpacity = designValue.shadowOpacity
             shadowLayer.shadowRadius = designValue.shadowRadius
         }
-        cell.layer.masksToBounds = true
-        cell.layer.cornerRadius = designValue.cornerRadius
-        cell.layer.insertSublayer(shadowLayer, at: 0)
+        cell.layer.mask = shadowLayer.mask
+        //cell.layer.cornerRadius = designValue.cornerRadius
+        //cell.layer.insertSublayer(shadowLayer, at: 0)
         cell.contentView.addSubview(cell.buildingTileStack)
         cell.contentView.addSubview(cell.swipeBarLabel)
         return cell
