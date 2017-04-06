@@ -17,17 +17,25 @@
                         <viewControllerLayoutGuide type="top" id="Ia1-K6-d13"/>
                         <viewControllerLayoutGuide type="bottom" id="4ug-Mw-9AY"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="tsR-hK-woN">
+                    <view key="view" contentMode="left" id="tsR-hK-woN" customClass="FormTileCell" customModule="Project_Espinilla">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Forms" image="second" id="acW-dT-cKf"/>
+                    <value key="contentSizeForViewInPopover" type="size" width="375" height="667"/>
                     <connections>
+                        <outlet property="MainCollectionView" destination="8is-iI-9Zy" id="2Cg-nF-UoL"/>
+                        <outlet property="MainCollectionViewLayout" destination="jCA-X7-Aul" id="8wj-XM-917"/>
                         <outlet property="searchDisplayController" destination="hm1-aV-bAE" id="FJu-0I-Hf4"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W5J-7L-Pyd" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="jyp-Ei-FB5">
+                    <connections>
+                        <action selector="didTap:" destination="9pv-A4-QxB" id="RLv-Ek-DHZ"/>
+                    </connections>
+                </tapGestureRecognizer>
                 <searchDisplayController id="hm1-aV-bAE">
                     <connections>
                         <outlet property="delegate" destination="9pv-A4-QxB" id="nJi-In-23T"/>
