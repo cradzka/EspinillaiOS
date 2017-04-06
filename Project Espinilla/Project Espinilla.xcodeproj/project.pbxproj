@@ -11,6 +11,10 @@
 		352C6A9B1E8CB07F00CEC21A /* FormViewControllerDataAndDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 352C6A9A1E8CB07F00CEC21A /* FormViewControllerDataAndDelegate.swift */; };
 		35F6C98F1E907E0D003B8952 /* FormTileCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 352C6A961E8CA39E00CEC21A /* FormTileCell.xib */; };
 		41028DB11E6E6D810007386A /* FormsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41028DB01E6E6D810007386A /* FormsTableViewCell.swift */; };
+		417430821E907114002E8373 /* ReferenceCollectionReusableViewHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 417430801E907114002E8373 /* ReferenceCollectionReusableViewHeader.swift */; };
+		417430831E907114002E8373 /* ReferenceCollectionReusableViewHeader.xib in Resources */ = {isa = PBXBuildFile; fileRef = 417430811E907114002E8373 /* ReferenceCollectionReusableViewHeader.xib */; };
+		41CBC3DE1E8CAB4100B06220 /* ReferenceCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 41CBC3DD1E8CAB4100B06220 /* ReferenceCell.xib */; };
+		41CBC3E01E8CAD7200B06220 /* ReferenceCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41CBC3DF1E8CAD7200B06220 /* ReferenceCell.swift */; };
 		C960EBB11E5E120800748B74 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C960EBB01E5E120800748B74 /* AppDelegate.swift */; };
 		C960EBB31E5E120800748B74 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C960EBB21E5E120800748B74 /* FirstViewController.swift */; };
 		C960EBB51E5E120800748B74 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C960EBB41E5E120800748B74 /* SecondViewController.swift */; };
@@ -22,6 +26,7 @@
 		E104539A1E90705500F64FCF /* IssuePreviewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E10453991E90705500F64FCF /* IssuePreviewCell.swift */; };
 		E104539C1E90992700F64FCF /* IssuePreviewCellDataAndDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E104539B1E90992700F64FCF /* IssuePreviewCellDataAndDelegate.swift */; };
 		E138C6531E96FD31002875F4 /* ThirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4137E1D21E65255A00EF3418 /* ThirdViewController.swift */; };
+		E138C6571E970457002875F4 /* ReferenceCollectionViewDataSourceAndDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41CBC3E11E8CB0E400B06220 /* ReferenceCollectionViewDataSourceAndDelegate.swift */; };
 		E17BE3B11E8B971D00D19EEC /* RoundCollectionViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = E17BE3B01E8B971D00D19EEC /* RoundCollectionViewDataSource.swift */; };
 		E17E9B021E88BFAD0015F8E2 /* RoundViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E17E9B011E88BFAD0015F8E2 /* RoundViewController.swift */; };
 		E17E9B061E8984A60015F8E2 /* BuildingViewTileCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E17E9B051E8984A60015F8E2 /* BuildingViewTileCell.swift */; };
@@ -144,6 +149,10 @@
 				C960EBB61E5E120800748B74 /* Main.storyboard */,
 				352C6A941E8CA37F00CEC21A /* FormTileCell.swift */,
 				352C6A961E8CA39E00CEC21A /* FormTileCell.xib */,
+				417430801E907114002E8373 /* ReferenceCollectionReusableViewHeader.swift */,
+				417430811E907114002E8373 /* ReferenceCollectionReusableViewHeader.xib */,
+				41CBC3DD1E8CAB4100B06220 /* ReferenceCell.xib */,
+				41CBC3E11E8CB0E400B06220 /* ReferenceCollectionViewDataSourceAndDelegate.swift */,
 				41028DB01E6E6D810007386A /* FormsTableViewCell.swift */,
 				C960EBB91E5E120800748B74 /* Assets.xcassets */,
 				C960EBBB1E5E120800748B74 /* LaunchScreen.storyboard */,
@@ -295,6 +304,7 @@
 				C960EBB81E5E120800748B74 /* Main.storyboard in Resources */,
 				E17E9B0C1E898C3B0015F8E2 /* IssuePreviewCell.xib in Resources */,
 				35F6C98F1E907E0D003B8952 /* FormTileCell.xib in Resources */,
+				417430831E907114002E8373 /* ReferenceCollectionReusableViewHeader.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -322,6 +332,7 @@
 				E104539A1E90705500F64FCF /* IssuePreviewCell.swift in Sources */,
 				E104539C1E90992700F64FCF /* IssuePreviewCellDataAndDelegate.swift in Sources */,
 				E192C9CF1E8CD1A300286C9A /* BuildingTileCollectionViewHeader.swift in Sources */,
+				417430821E907114002E8373 /* ReferenceCollectionReusableViewHeader.swift in Sources */,
 				C960EBB51E5E120800748B74 /* SecondViewController.swift in Sources */,
 				41CBC3E01E8CAD7200B06220 /* ReferenceCell.swift in Sources */,
 				41028DB11E6E6D810007386A /* FormsTableViewCell.swift in Sources */,
@@ -329,6 +340,7 @@
 				C960EBB11E5E120800748B74 /* AppDelegate.swift in Sources */,
 				E17BE3B11E8B971D00D19EEC /* RoundCollectionViewDataSource.swift in Sources */,
 				E138C6531E96FD31002875F4 /* ThirdViewController.swift in Sources */,
+				E138C6571E970457002875F4 /* ReferenceCollectionViewDataSourceAndDelegate.swift in Sources */,
 				352C6A951E8CA37F00CEC21A /* FormTileCell.swift in Sources */,
 				352C6A9B1E8CB07F00CEC21A /* FormViewControllerDataAndDelegate.swift in Sources */,
 				C960EBB31E5E120800748B74 /* FirstViewController.swift in Sources */,
