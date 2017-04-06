@@ -22,6 +22,8 @@ class FormTileCell: UICollectionViewCell {
     
     @IBOutlet weak var formStackView: UIStackView!
     
+    @IBOutlet weak var FieldsLeft: UILabel!
+    
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
     }

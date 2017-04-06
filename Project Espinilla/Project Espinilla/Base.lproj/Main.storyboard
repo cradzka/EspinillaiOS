@@ -45,6 +45,7 @@
                                 <rect key="frame" x="0.0" y="139" width="375" height="558"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <gestureRecognizers/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="jCA-X7-Aul">
                                     <size key="itemSize" width="344" height="65"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
@@ -62,6 +63,9 @@
                                         <size key="customSize" width="344" height="65"/>
                                     </collectionViewCell>
                                 </cells>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="jyp-Ei-FB5" appends="YES" id="Gmy-Dr-eTS"/>
+                                </connections>
                             </collectionView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -75,6 +79,11 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W5J-7L-Pyd" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="jyp-Ei-FB5">
+                    <connections>
+                        <action selector="didTap:" destination="9pv-A4-QxB" id="RLv-Ek-DHZ"/>
+                    </connections>
+                </tapGestureRecognizer>
                 <searchDisplayController id="hm1-aV-bAE">
                     <connections>
                         <outlet property="delegate" destination="9pv-A4-QxB" id="nJi-In-23T"/>
