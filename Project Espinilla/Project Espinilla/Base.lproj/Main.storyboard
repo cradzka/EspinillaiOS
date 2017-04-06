@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="15G1217" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="49e-Tb-3d3">
-    <device id="retina4_7" orientation="portrait">
+    <device id="retina5_5" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -12,21 +12,6 @@
         <!--Forms-->
         <scene sceneID="hNz-n2-bh7">
             <objects>
-                <viewController id="9pv-A4-QxB" customClass="FirstViewController" customModule="Project_Espinilla" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="Ia1-K6-d13"/>
-                        <viewControllerLayoutGuide type="bottom" id="4ug-Mw-9AY"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="tsR-hK-woN">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                    </view>
-                    <tabBarItem key="tabBarItem" title="Forms" image="second" id="acW-dT-cKf"/>
-                    <connections>
-                        <outlet property="searchDisplayController" destination="hm1-aV-bAE" id="FJu-0I-Hf4"/>
-                    </connections>
-                </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W5J-7L-Pyd" sceneMemberID="firstResponder"/>
                 <searchDisplayController id="hm1-aV-bAE">
                     <connections>
@@ -36,6 +21,21 @@
                         <outlet property="searchResultsDelegate" destination="9pv-A4-QxB" id="CWk-O7-Cvo"/>
                     </connections>
                 </searchDisplayController>
+                <viewController id="9pv-A4-QxB" customClass="FirstViewController" customModule="Project_Espinilla" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Ia1-K6-d13"/>
+                        <viewControllerLayoutGuide type="bottom" id="4ug-Mw-9AY"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="tsR-hK-woN">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Forms" image="second" id="acW-dT-cKf"/>
+                    <connections>
+                        <outlet property="searchDisplayController" destination="hm1-aV-bAE" id="FJu-0I-Hf4"/>
+                    </connections>
+                </viewController>
             </objects>
             <point key="canvasLocation" x="749.60000000000002" y="-320.68965517241384"/>
         </scene>
@@ -48,7 +48,7 @@
                         <viewControllerLayoutGuide type="bottom" id="KJz-Os-BUF"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="Iht-I4-iGU">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -57,41 +57,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="B1o-zb-eBB" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="71" y="764"/>
-        </scene>
-        <!--References-->
-        <scene sceneID="wg7-f3-ORb">
-            <objects>
-                <viewController id="8rJ-Kc-sve" customClass="SecondViewController" customModule="Project_Espinilla" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="L7p-HK-0SC"/>
-                        <viewControllerLayoutGuide type="bottom" id="Djb-ko-YwX"/>
-                    </layoutGuides>
-                    <stackView key="view" opaque="NO" contentMode="scaleToFill" axis="vertical" id="FP7-7W-2NZ">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
-                        <subviews>
-                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="2GV-Qp-Djm">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="UQX-PA-mAU">
-                                    <size key="itemSize" width="200" height="200"/>
-                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
-                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
-                                    <inset key="sectionInset" minX="0.0" minY="200" maxX="0.0" maxY="0.0"/>
-                                </collectionViewFlowLayout>
-                            </collectionView>
-                        </subviews>
-                    </stackView>
-                    <tabBarItem key="tabBarItem" title="References" image="second" id="2MA-6O-SVW"/>
-                    <connections>
-                        <outlet property="initialCollectionView" destination="2GV-Qp-Djm" id="0W1-iN-6rv"/>
-                        <outlet property="initialCollectionViewLayout" destination="UQX-PA-mAU" id="H2P-bs-0Vz"/>
-                        <outlet property="initialStackView" destination="FP7-7W-2NZ" id="MLS-0E-VJQ"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="4Nw-L8-lE0" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="749.60000000000002" y="359.37031484257875"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="yl2-sM-qoP">
@@ -105,13 +70,71 @@
                     </tabBar>
                     <connections>
                         <segue destination="9pv-A4-QxB" kind="relationship" relationship="viewControllers" id="u7Y-xg-7CH"/>
-                        <segue destination="8rJ-Kc-sve" kind="relationship" relationship="viewControllers" id="lzU-1b-eKA"/>
                         <segue destination="ben-ev-dkl" kind="relationship" relationship="viewControllers" id="NlL-yg-aAc"/>
+                        <segue destination="hQB-Yb-LrK" kind="relationship" relationship="viewControllers" id="XIL-Bg-DHX"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HuB-VB-40B" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="0.0" y="0.0"/>
+        </scene>
+        <!--Reference-->
+        <scene sceneID="rzt-9M-3BN">
+            <objects>
+                <viewController id="hQB-Yb-LrK" userLabel="Reference" customClass="SecondViewController" customModule="Project_Espinilla" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="QCh-5C-r3w"/>
+                        <viewControllerLayoutGuide type="bottom" id="hUA-D9-PZM"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="E1R-hX-iqJ">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="XCr-9h-Z11">
+                                <rect key="frame" x="0.0" y="105" width="414" height="580"/>
+                                <subviews>
+                                    <collectionView clipsSubviews="YES" contentMode="scaleToFill" bounces="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="SOc-hW-s00">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="580"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <inset key="scrollIndicatorInsets" minX="12" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="20" minimumInteritemSpacing="10" id="1XB-uh-I20">
+                                            <size key="itemSize" width="162" height="162"/>
+                                            <size key="headerReferenceSize" width="50" height="50"/>
+                                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                            <inset key="sectionInset" minX="20" minY="8" maxX="20" maxY="20"/>
+                                        </collectionViewFlowLayout>
+                                        <cells/>
+                                        <collectionReusableView key="sectionHeaderView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" reuseIdentifier="ReferenceCollectionReusableViewHeader" id="Gn0-Xd-qTz">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="50"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </collectionReusableView>
+                                    </collectionView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="SOc-hW-s00" firstAttribute="height" secondItem="XCr-9h-Z11" secondAttribute="height" id="NNf-Fn-fod"/>
+                                    <constraint firstItem="SOc-hW-s00" firstAttribute="width" secondItem="XCr-9h-Z11" secondAttribute="width" id="bwZ-oy-Dyl"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="hUA-D9-PZM" firstAttribute="top" secondItem="XCr-9h-Z11" secondAttribute="bottom" constant="2" id="59g-bJ-RNZ"/>
+                            <constraint firstAttribute="trailing" secondItem="XCr-9h-Z11" secondAttribute="trailing" id="IrQ-PA-QNV"/>
+                            <constraint firstItem="XCr-9h-Z11" firstAttribute="top" secondItem="QCh-5C-r3w" secondAttribute="bottom" constant="85" id="Ryd-nP-MOA"/>
+                            <constraint firstItem="XCr-9h-Z11" firstAttribute="leading" secondItem="E1R-hX-iqJ" secondAttribute="leading" id="kQy-By-xU2"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item" selectedImage="second" id="5hi-OL-e0Z"/>
+                    <connections>
+                        <outlet property="initialCollectionView" destination="SOc-hW-s00" id="sce-82-myZ"/>
+                        <outlet property="initialCollectionViewLayout" destination="1XB-uh-I20" id="rUl-Oc-UcC"/>
+                        <outlet property="initialStackView" destination="XCr-9h-Z11" id="uhj-FM-s5o"/>
+                        <outlet property="initialView" destination="E1R-hX-iqJ" id="Gtx-HD-nnO"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lF4-mf-Rcg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="826.39999999999998" y="350.37481259370315"/>
         </scene>
     </scenes>
     <resources>

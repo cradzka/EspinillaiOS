@@ -18,20 +18,23 @@
                 <rect key="frame" x="0.0" y="0.0" width="157" height="136"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="wn5-eo-cbE">
+                    <stackView opaque="NO" contentMode="center" fixedFrame="YES" axis="vertical" distribution="fillProportionally" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="wn5-eo-cbE">
                         <rect key="frame" x="8" y="0.0" width="141" height="136"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <label verifyAmbiguity="off" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lLM-b3-itL">
-                                <rect key="frame" x="50" y="0.0" width="42" height="21"/>
+                                <rect key="frame" x="50" y="0.0" width="42" height="20.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView verifyAmbiguity="off" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="alM-VD-Hhy">
-                                <rect key="frame" x="0.0" y="21" width="142" height="116"/>
+                                <rect key="frame" x="0.0" y="20.5" width="142" height="116"/>
                             </imageView>
                         </subviews>
+                        <constraints>
+                            <constraint firstItem="alM-VD-Hhy" firstAttribute="centerX" secondItem="lLM-b3-itL" secondAttribute="centerX" id="uwA-GK-FIK"/>
+                        </constraints>
                     </stackView>
                 </subviews>
             </view>
