@@ -55,6 +55,11 @@
 		352C6A9A1E8CB07F00CEC21A /* FormViewControllerDataAndDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FormViewControllerDataAndDelegate.swift; sourceTree = "<group>"; };
 		41028DB01E6E6D810007386A /* FormsTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FormsTableViewCell.swift; sourceTree = "<group>"; };
 		4137E1D21E65255A00EF3418 /* ThirdViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThirdViewController.swift; sourceTree = "<group>"; };
+		417430801E907114002E8373 /* ReferenceCollectionReusableViewHeader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReferenceCollectionReusableViewHeader.swift; sourceTree = "<group>"; };
+		417430811E907114002E8373 /* ReferenceCollectionReusableViewHeader.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ReferenceCollectionReusableViewHeader.xib; sourceTree = "<group>"; };
+		41CBC3DD1E8CAB4100B06220 /* ReferenceCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ReferenceCell.xib; sourceTree = "<group>"; };
+		41CBC3DF1E8CAD7200B06220 /* ReferenceCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReferenceCell.swift; sourceTree = "<group>"; };
+		41CBC3E11E8CB0E400B06220 /* ReferenceCollectionViewDataSourceAndDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReferenceCollectionViewDataSourceAndDelegate.swift; sourceTree = "<group>"; };
 		C960EBAD1E5E120800748B74 /* Project Espinilla.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Project Espinilla.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C960EBB01E5E120800748B74 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C960EBB21E5E120800748B74 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
@@ -133,6 +138,7 @@
 				C960EBB01E5E120800748B74 /* AppDelegate.swift */,
 				C960EBB21E5E120800748B74 /* FirstViewController.swift */,
 				C960EBB41E5E120800748B74 /* SecondViewController.swift */,
+				41CBC3DF1E8CAD7200B06220 /* ReferenceCell.swift */,
 				4137E1D21E65255A00EF3418 /* ThirdViewController.swift */,
 				352C6A9A1E8CB07F00CEC21A /* FormViewControllerDataAndDelegate.swift */,
 				C960EBB61E5E120800748B74 /* Main.storyboard */,
@@ -284,6 +290,7 @@
 				E17E9B0A1E898B6E0015F8E2 /* BuildingViewTileCell.xib in Resources */,
 				E192C9D11E8CD33400286C9A /* BuildingTileCollectionViewHeader.xib in Resources */,
 				C960EBBD1E5E120800748B74 /* LaunchScreen.storyboard in Resources */,
+				41CBC3DE1E8CAB4100B06220 /* ReferenceCell.xib in Resources */,
 				C960EBBA1E5E120800748B74 /* Assets.xcassets in Resources */,
 				C960EBB81E5E120800748B74 /* Main.storyboard in Resources */,
 				E17E9B0C1E898C3B0015F8E2 /* IssuePreviewCell.xib in Resources */,
@@ -316,6 +323,7 @@
 				E104539C1E90992700F64FCF /* IssuePreviewCellDataAndDelegate.swift in Sources */,
 				E192C9CF1E8CD1A300286C9A /* BuildingTileCollectionViewHeader.swift in Sources */,
 				C960EBB51E5E120800748B74 /* SecondViewController.swift in Sources */,
+				41CBC3E01E8CAD7200B06220 /* ReferenceCell.swift in Sources */,
 				41028DB11E6E6D810007386A /* FormsTableViewCell.swift in Sources */,
 				E17E9B061E8984A60015F8E2 /* BuildingViewTileCell.swift in Sources */,
 				C960EBB11E5E120800748B74 /* AppDelegate.swift in Sources */,

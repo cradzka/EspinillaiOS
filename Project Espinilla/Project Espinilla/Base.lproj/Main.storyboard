@@ -12,6 +12,15 @@
         <!--Forms-->
         <scene sceneID="hNz-n2-bh7">
             <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="W5J-7L-Pyd" sceneMemberID="firstResponder"/>
+                <searchDisplayController id="hm1-aV-bAE">
+                    <connections>
+                        <outlet property="delegate" destination="9pv-A4-QxB" id="nJi-In-23T"/>
+                        <outlet property="searchContentsController" destination="9pv-A4-QxB" id="JEN-ca-pm3"/>
+                        <outlet property="searchResultsDataSource" destination="9pv-A4-QxB" id="0eo-hU-J2S"/>
+                        <outlet property="searchResultsDelegate" destination="9pv-A4-QxB" id="CWk-O7-Cvo"/>
+                    </connections>
+                </searchDisplayController>
                 <viewController id="9pv-A4-QxB" customClass="FirstViewController" customModule="Project_Espinilla" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Ia1-K6-d13"/>
@@ -104,7 +113,7 @@
                         <viewControllerLayoutGuide type="bottom" id="KJz-Os-BUF"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="Iht-I4-iGU">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="D6F-eh-eMC" userLabel="Initial Stack View">
@@ -193,8 +202,8 @@
                     </tabBar>
                     <connections>
                         <segue destination="9pv-A4-QxB" kind="relationship" relationship="viewControllers" id="u7Y-xg-7CH"/>
-                        <segue destination="8rJ-Kc-sve" kind="relationship" relationship="viewControllers" id="lzU-1b-eKA"/>
                         <segue destination="ben-ev-dkl" kind="relationship" relationship="viewControllers" id="NlL-yg-aAc"/>
+                        <segue destination="hQB-Yb-LrK" kind="relationship" relationship="viewControllers" id="XIL-Bg-DHX"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HuB-VB-40B" sceneMemberID="firstResponder"/>
