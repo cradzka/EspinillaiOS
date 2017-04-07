@@ -47,10 +47,30 @@ class ReferenceCollectionViewDataSourceAndDelegate: NSObject, UICollectionViewDa
         
         cell.ReferenceImageView.image = #imageLiteral(resourceName: "refImage")
         cell.ReferenceCellStack.addArrangedSubview(cell.ReferenceImageView)
+        
         cell.backgroundColor = UIColor.blue
-        cell.contentView.backgroundColor = UIColor.blue
+        if cell.isSelected {
+            cell.backgroundColor = UIColor.white
+            cell.contentView.backgroundColor = UIColor.white
+        } else {
+            cell.backgroundColor = UIColor.blue
+            cell.contentView.backgroundColor = UIColor.blue
+        }
+        
         cell.contentView.addSubview(cell.ReferenceCellStack)
         return cell
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        let cell = collectionView.cellForItem(at: indexPath) as! ReferenceCell
+        cell.backgroundColor = UIColor.white
+        cell.contentView.backgroundColor = UIColor.white
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, didDeselectItemAt indexPath: IndexPath) {
+        let cell = collectionView.cellForItem(at: indexPath) as! ReferenceCell
+        cell.backgroundColor = UIColor.blue
+        cell.contentView.backgroundColor = UIColor.blue
     }
     
     func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind: String, at: IndexPath) -> UICollectionReusableView {
