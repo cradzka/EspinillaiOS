@@ -15,6 +15,11 @@
 		417430831E907114002E8373 /* ReferenceCollectionReusableViewHeader.xib in Resources */ = {isa = PBXBuildFile; fileRef = 417430811E907114002E8373 /* ReferenceCollectionReusableViewHeader.xib */; };
 		41CBC3DE1E8CAB4100B06220 /* ReferenceCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 41CBC3DD1E8CAB4100B06220 /* ReferenceCell.xib */; };
 		41CBC3E01E8CAD7200B06220 /* ReferenceCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41CBC3DF1E8CAD7200B06220 /* ReferenceCell.swift */; };
+		C93378A21E9AE05F008D9A1B /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C93378A11E9AE05F008D9A1B /* BaseViewController.swift */; };
+		C93378A71E9AE081008D9A1B /* AccountVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C93378A31E9AE081008D9A1B /* AccountVC.swift */; };
+		C93378A81E9AE081008D9A1B /* DutyScheduleVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C93378A41E9AE081008D9A1B /* DutyScheduleVC.swift */; };
+		C93378A91E9AE081008D9A1B /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C93378A51E9AE081008D9A1B /* MenuViewController.swift */; };
+		C93378AA1E9AE081008D9A1B /* SettingsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C93378A61E9AE081008D9A1B /* SettingsVC.swift */; };
 		C960EBB11E5E120800748B74 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C960EBB01E5E120800748B74 /* AppDelegate.swift */; };
 		C960EBB31E5E120800748B74 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C960EBB21E5E120800748B74 /* FirstViewController.swift */; };
 		C960EBB51E5E120800748B74 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C960EBB41E5E120800748B74 /* SecondViewController.swift */; };
@@ -65,6 +70,11 @@
 		41CBC3DD1E8CAB4100B06220 /* ReferenceCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ReferenceCell.xib; sourceTree = "<group>"; };
 		41CBC3DF1E8CAD7200B06220 /* ReferenceCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReferenceCell.swift; sourceTree = "<group>"; };
 		41CBC3E11E8CB0E400B06220 /* ReferenceCollectionViewDataSourceAndDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReferenceCollectionViewDataSourceAndDelegate.swift; sourceTree = "<group>"; };
+		C93378A11E9AE05F008D9A1B /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		C93378A31E9AE081008D9A1B /* AccountVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccountVC.swift; sourceTree = "<group>"; };
+		C93378A41E9AE081008D9A1B /* DutyScheduleVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DutyScheduleVC.swift; sourceTree = "<group>"; };
+		C93378A51E9AE081008D9A1B /* MenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
+		C93378A61E9AE081008D9A1B /* SettingsVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsVC.swift; sourceTree = "<group>"; };
 		C960EBAD1E5E120800748B74 /* Project Espinilla.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Project Espinilla.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C960EBB01E5E120800748B74 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C960EBB21E5E120800748B74 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
@@ -157,6 +167,11 @@
 				C960EBB91E5E120800748B74 /* Assets.xcassets */,
 				C960EBBB1E5E120800748B74 /* LaunchScreen.storyboard */,
 				C960EBBE1E5E120800748B74 /* Info.plist */,
+				C93378A11E9AE05F008D9A1B /* BaseViewController.swift */,
+				C93378A31E9AE081008D9A1B /* AccountVC.swift */,
+				C93378A41E9AE081008D9A1B /* DutyScheduleVC.swift */,
+				C93378A51E9AE081008D9A1B /* MenuViewController.swift */,
+				C93378A61E9AE081008D9A1B /* SettingsVC.swift */,
 				E17E9B011E88BFAD0015F8E2 /* RoundViewController.swift */,
 				E17BE3B01E8B971D00D19EEC /* RoundCollectionViewDataSource.swift */,
 				E17E9B051E8984A60015F8E2 /* BuildingViewTileCell.swift */,
@@ -334,18 +349,23 @@
 				E192C9CF1E8CD1A300286C9A /* BuildingTileCollectionViewHeader.swift in Sources */,
 				417430821E907114002E8373 /* ReferenceCollectionReusableViewHeader.swift in Sources */,
 				C960EBB51E5E120800748B74 /* SecondViewController.swift in Sources */,
+				C93378A21E9AE05F008D9A1B /* BaseViewController.swift in Sources */,
 				41CBC3E01E8CAD7200B06220 /* ReferenceCell.swift in Sources */,
 				41028DB11E6E6D810007386A /* FormsTableViewCell.swift in Sources */,
 				E17E9B061E8984A60015F8E2 /* BuildingViewTileCell.swift in Sources */,
 				C960EBB11E5E120800748B74 /* AppDelegate.swift in Sources */,
+				C93378A91E9AE081008D9A1B /* MenuViewController.swift in Sources */,
+				C93378AA1E9AE081008D9A1B /* SettingsVC.swift in Sources */,
 				E17BE3B11E8B971D00D19EEC /* RoundCollectionViewDataSource.swift in Sources */,
 				E138C6531E96FD31002875F4 /* ThirdViewController.swift in Sources */,
 				E138C6571E970457002875F4 /* ReferenceCollectionViewDataSourceAndDelegate.swift in Sources */,
+				C93378A71E9AE081008D9A1B /* AccountVC.swift in Sources */,
 				352C6A951E8CA37F00CEC21A /* FormTileCell.swift in Sources */,
 				352C6A9B1E8CB07F00CEC21A /* FormViewControllerDataAndDelegate.swift in Sources */,
 				C960EBB31E5E120800748B74 /* FirstViewController.swift in Sources */,
 				E17E9B021E88BFAD0015F8E2 /* RoundViewController.swift in Sources */,
 				E1D1AA361E94A3D40002FB20 /* UIDesignValues.swift in Sources */,
+				C93378A81E9AE081008D9A1B /* DutyScheduleVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
