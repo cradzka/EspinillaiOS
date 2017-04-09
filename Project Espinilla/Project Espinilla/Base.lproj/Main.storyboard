@@ -12,7 +12,7 @@
         <!--BaseView-->
         <scene sceneID="MtH-TR-IUX">
             <objects>
-                <viewController storyboardIdentifier="BaseVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="jq1-D3-nKY" customClass="BaseViewController" customModule="Project_Espinilla" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="jq1-D3-nKY" customClass="ViewController" customModule="Project_Espinilla" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="hlf-II-6Fu"/>
                         <viewControllerLayoutGuide type="bottom" id="UD3-YT-HJ1"/>

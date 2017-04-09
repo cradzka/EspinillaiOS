@@ -20,7 +20,6 @@
 		C93378A81E9AE081008D9A1B /* DutyScheduleVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C93378A41E9AE081008D9A1B /* DutyScheduleVC.swift */; };
 		C93378A91E9AE081008D9A1B /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C93378A51E9AE081008D9A1B /* MenuViewController.swift */; };
 		C93378AA1E9AE081008D9A1B /* SettingsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C93378A61E9AE081008D9A1B /* SettingsVC.swift */; };
-		C93378AC1E9AE2CF008D9A1B /* BaseVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C93378AB1E9AE2CF008D9A1B /* BaseVC.swift */; };
 		C960EBB11E5E120800748B74 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C960EBB01E5E120800748B74 /* AppDelegate.swift */; };
 		C960EBB31E5E120800748B74 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C960EBB21E5E120800748B74 /* FirstViewController.swift */; };
 		C960EBB51E5E120800748B74 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C960EBB41E5E120800748B74 /* SecondViewController.swift */; };
@@ -29,6 +28,7 @@
 		C960EBBD1E5E120800748B74 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C960EBBB1E5E120800748B74 /* LaunchScreen.storyboard */; };
 		C960EBC81E5E120800748B74 /* Project EspinillaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C960EBC71E5E120800748B74 /* Project EspinillaTests.swift */; };
 		C960EBD31E5E120800748B74 /* Project EspinillaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C960EBD21E5E120800748B74 /* Project EspinillaUITests.swift */; };
+		C9D270A91E9AEC79000F638F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9D270A81E9AEC79000F638F /* ViewController.swift */; };
 		E104539A1E90705500F64FCF /* IssuePreviewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E10453991E90705500F64FCF /* IssuePreviewCell.swift */; };
 		E104539C1E90992700F64FCF /* IssuePreviewCellDataAndDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E104539B1E90992700F64FCF /* IssuePreviewCellDataAndDelegate.swift */; };
 		E138C6531E96FD31002875F4 /* ThirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4137E1D21E65255A00EF3418 /* ThirdViewController.swift */; };
@@ -76,7 +76,6 @@
 		C93378A41E9AE081008D9A1B /* DutyScheduleVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DutyScheduleVC.swift; sourceTree = "<group>"; };
 		C93378A51E9AE081008D9A1B /* MenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
 		C93378A61E9AE081008D9A1B /* SettingsVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsVC.swift; sourceTree = "<group>"; };
-		C93378AB1E9AE2CF008D9A1B /* BaseVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseVC.swift; sourceTree = "<group>"; };
 		C960EBAD1E5E120800748B74 /* Project Espinilla.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Project Espinilla.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C960EBB01E5E120800748B74 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C960EBB21E5E120800748B74 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
@@ -91,6 +90,7 @@
 		C960EBCE1E5E120800748B74 /* Project EspinillaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Project EspinillaUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C960EBD21E5E120800748B74 /* Project EspinillaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Project EspinillaUITests.swift"; sourceTree = "<group>"; };
 		C960EBD41E5E120800748B74 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C9D270A81E9AEC79000F638F /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		E10453991E90705500F64FCF /* IssuePreviewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IssuePreviewCell.swift; sourceTree = "<group>"; };
 		E104539B1E90992700F64FCF /* IssuePreviewCellDataAndDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IssuePreviewCellDataAndDelegate.swift; sourceTree = "<group>"; };
 		E17BE3B01E8B971D00D19EEC /* RoundCollectionViewDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundCollectionViewDataSource.swift; sourceTree = "<group>"; };
@@ -171,7 +171,7 @@
 				C960EBBE1E5E120800748B74 /* Info.plist */,
 				C93378A11E9AE05F008D9A1B /* BaseViewController.swift */,
 				C93378A31E9AE081008D9A1B /* AccountVC.swift */,
-				C93378AB1E9AE2CF008D9A1B /* BaseVC.swift */,
+				C9D270A81E9AEC79000F638F /* ViewController.swift */,
 				C93378A41E9AE081008D9A1B /* DutyScheduleVC.swift */,
 				C93378A51E9AE081008D9A1B /* MenuViewController.swift */,
 				C93378A61E9AE081008D9A1B /* SettingsVC.swift */,
@@ -350,9 +350,9 @@
 				E104539A1E90705500F64FCF /* IssuePreviewCell.swift in Sources */,
 				E104539C1E90992700F64FCF /* IssuePreviewCellDataAndDelegate.swift in Sources */,
 				E192C9CF1E8CD1A300286C9A /* BuildingTileCollectionViewHeader.swift in Sources */,
-				C93378AC1E9AE2CF008D9A1B /* BaseVC.swift in Sources */,
 				417430821E907114002E8373 /* ReferenceCollectionReusableViewHeader.swift in Sources */,
 				C960EBB51E5E120800748B74 /* SecondViewController.swift in Sources */,
+				C9D270A91E9AEC79000F638F /* ViewController.swift in Sources */,
 				C93378A21E9AE05F008D9A1B /* BaseViewController.swift in Sources */,
 				41CBC3E01E8CAD7200B06220 /* ReferenceCell.swift in Sources */,
 				41028DB11E6E6D810007386A /* FormsTableViewCell.swift in Sources */,
