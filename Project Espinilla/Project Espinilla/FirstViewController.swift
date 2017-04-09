@@ -20,6 +20,14 @@ class FirstViewController: UIViewController {
     
     //let tapRec = UITapGestureRecognizer()
     
+    var formNames = ["Housing Survey", "Lockout Form", "Violation Form", "Other Form", "Housing Cancellation"]
+    var fieldsLeft = ["10 Fields Remaining", "12 Fields Remaining", "5 Fields Remaining", "Complete!", "4 Fields Remaining"]
+    var halls = ["Driscoll", "Torres", "Baca", "Presidents", "Alta"]
+    var RAs = ["Carter", "Raj", "Kristina", "Matt", "Raj"]
+    
+    var designValues = UIDesignValue.init()
+
+    
     var dataAndDelegate: FormViewControllerDataAndDelegate!
     
     override func viewDidLoad() {
@@ -29,11 +37,11 @@ class FirstViewController: UIViewController {
         MainCollectionView.register(UINib(nibName: "FormTileCell", bundle: nil), forCellWithReuseIdentifier: "formTileCell")
         // Do any additional setup after loading the view, typically from a nib.
         
-        dataAndDelegate = FormViewControllerDataAndDelegate(collectionLayout: MainCollectionViewLayout)
+        dataAndDelegate = FormViewControllerDataAndDelegate(collectionLayout: MainCollectionViewLayout, formNames: formNames, fieldsLeft: fieldsLeft, halls: halls, RAs: RAs)
         MainCollectionView.dataSource = dataAndDelegate
         MainCollectionView.delegate = dataAndDelegate
         
-        MainCollectionViewLayout.minimumLineSpacing = 30
+        MainCollectionViewLayout.minimumLineSpacing = designValues.spaceBetweenLines
         
         let tapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(FirstViewController.didTap(_:)))
 
