@@ -20,6 +20,7 @@
 		C93378A81E9AE081008D9A1B /* DutyScheduleVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C93378A41E9AE081008D9A1B /* DutyScheduleVC.swift */; };
 		C93378A91E9AE081008D9A1B /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C93378A51E9AE081008D9A1B /* MenuViewController.swift */; };
 		C93378AA1E9AE081008D9A1B /* SettingsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C93378A61E9AE081008D9A1B /* SettingsVC.swift */; };
+		C93378AC1E9AE2CF008D9A1B /* BaseVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C93378AB1E9AE2CF008D9A1B /* BaseVC.swift */; };
 		C960EBB11E5E120800748B74 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C960EBB01E5E120800748B74 /* AppDelegate.swift */; };
 		C960EBB31E5E120800748B74 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C960EBB21E5E120800748B74 /* FirstViewController.swift */; };
 		C960EBB51E5E120800748B74 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C960EBB41E5E120800748B74 /* SecondViewController.swift */; };
@@ -75,6 +76,7 @@
 		C93378A41E9AE081008D9A1B /* DutyScheduleVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DutyScheduleVC.swift; sourceTree = "<group>"; };
 		C93378A51E9AE081008D9A1B /* MenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
 		C93378A61E9AE081008D9A1B /* SettingsVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsVC.swift; sourceTree = "<group>"; };
+		C93378AB1E9AE2CF008D9A1B /* BaseVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseVC.swift; sourceTree = "<group>"; };
 		C960EBAD1E5E120800748B74 /* Project Espinilla.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Project Espinilla.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C960EBB01E5E120800748B74 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C960EBB21E5E120800748B74 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
@@ -169,6 +171,7 @@
 				C960EBBE1E5E120800748B74 /* Info.plist */,
 				C93378A11E9AE05F008D9A1B /* BaseViewController.swift */,
 				C93378A31E9AE081008D9A1B /* AccountVC.swift */,
+				C93378AB1E9AE2CF008D9A1B /* BaseVC.swift */,
 				C93378A41E9AE081008D9A1B /* DutyScheduleVC.swift */,
 				C93378A51E9AE081008D9A1B /* MenuViewController.swift */,
 				C93378A61E9AE081008D9A1B /* SettingsVC.swift */,
@@ -347,6 +350,7 @@
 				E104539A1E90705500F64FCF /* IssuePreviewCell.swift in Sources */,
 				E104539C1E90992700F64FCF /* IssuePreviewCellDataAndDelegate.swift in Sources */,
 				E192C9CF1E8CD1A300286C9A /* BuildingTileCollectionViewHeader.swift in Sources */,
+				C93378AC1E9AE2CF008D9A1B /* BaseVC.swift in Sources */,
 				417430821E907114002E8373 /* ReferenceCollectionReusableViewHeader.swift in Sources */,
 				C960EBB51E5E120800748B74 /* SecondViewController.swift in Sources */,
 				C93378A21E9AE05F008D9A1B /* BaseViewController.swift in Sources */,
