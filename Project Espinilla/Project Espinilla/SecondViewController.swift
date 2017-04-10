@@ -8,7 +8,7 @@
 
 import UIKit
 
-class SecondViewController: UIViewController {
+class SecondViewController: BaseViewController {
 
     //@IBOutlet weak var RefLabel: UILabel!
     //@IBOutlet weak var RefDescr: UILabel!
@@ -31,6 +31,7 @@ class SecondViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        self.addSlideMenuButton()
         
         fillsubsectionLists(sections: self.sectionHeaders)
         

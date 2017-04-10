@@ -8,7 +8,7 @@
 
 import UIKit
 
-class RoundViewController: UIViewController {
+class RoundViewController: BaseViewController {
     
     @IBOutlet var initialView: UIView!
     @IBOutlet weak var initialStackView: UIStackView!
@@ -23,6 +23,7 @@ class RoundViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.addSlideMenuButton()
         
         fillBuildingLists(buildings: self.buildingNames)
         

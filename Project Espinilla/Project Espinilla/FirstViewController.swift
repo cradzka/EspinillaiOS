@@ -9,7 +9,7 @@
 
 import UIKit
 
-class FirstViewController: UIViewController {
+class FirstViewController: BaseViewController {
 
     
     @IBOutlet weak var MainCollectionView: UICollectionView!
@@ -24,6 +24,7 @@ class FirstViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.addSlideMenuButton()
         
         MainCollectionView.backgroundColor = UIColor.lightGray
         MainCollectionView.register(UINib(nibName: "FormTileCell", bundle: nil), forCellWithReuseIdentifier: "formTileCell")
