@@ -13,7 +13,6 @@
 		352C6A9B1E8CB07F00CEC21A /* FormViewControllerDataAndDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 352C6A9A1E8CB07F00CEC21A /* FormViewControllerDataAndDelegate.swift */; };
 		354960D91E9EB61700432569 /* WindowVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 354960D81E9EB61700432569 /* WindowVC.swift */; };
 		359303D11E9EC484006B63A5 /* FormStoryBoard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 359303D01E9EC484006B63A5 /* FormStoryBoard.storyboard */; };
-		35DE88DE1E99F9AD008B8F77 /* UIDesignValues.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35DE88DD1E99F9AD008B8F77 /* UIDesignValues.swift */; };
 		35F6C98F1E907E0D003B8952 /* FormTileCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 352C6A961E8CA39E00CEC21A /* FormTileCell.xib */; };
 		41028DB11E6E6D810007386A /* FormsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41028DB01E6E6D810007386A /* FormsTableViewCell.swift */; };
 		4137E1D31E65255A00EF3418 /* ThirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4137E1D21E65255A00EF3418 /* ThirdViewController.swift */; };
@@ -52,7 +51,6 @@
 		352C6A9A1E8CB07F00CEC21A /* FormViewControllerDataAndDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FormViewControllerDataAndDelegate.swift; sourceTree = "<group>"; };
 		354960D81E9EB61700432569 /* WindowVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WindowVC.swift; path = ../WindowVC.swift; sourceTree = "<group>"; };
 		359303D01E9EC484006B63A5 /* FormStoryBoard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = FormStoryBoard.storyboard; sourceTree = "<group>"; };
-		35DE88DD1E99F9AD008B8F77 /* UIDesignValues.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIDesignValues.swift; sourceTree = "<group>"; };
 		41028DB01E6E6D810007386A /* FormsTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FormsTableViewCell.swift; sourceTree = "<group>"; };
 		4137E1D21E65255A00EF3418 /* ThirdViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThirdViewController.swift; sourceTree = "<group>"; };
 		C960EBAD1E5E120800748B74 /* Project Espinilla.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Project Espinilla.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -135,7 +133,6 @@
 				C960EBB91E5E120800748B74 /* Assets.xcassets */,
 				C960EBBB1E5E120800748B74 /* LaunchScreen.storyboard */,
 				C960EBBE1E5E120800748B74 /* Info.plist */,
-				35DE88DD1E99F9AD008B8F77 /* UIDesignValues.swift */,
 			);
 			path = "Project Espinilla";
 			sourceTree = "<group>";
@@ -305,7 +302,6 @@
 				4137E1D31E65255A00EF3418 /* ThirdViewController.swift in Sources */,
 				352C6A9B1E8CB07F00CEC21A /* FormViewControllerDataAndDelegate.swift in Sources */,
 				C960EBB31E5E120800748B74 /* FormViewController.swift in Sources */,
-				35DE88DE1E99F9AD008B8F77 /* UIDesignValues.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
