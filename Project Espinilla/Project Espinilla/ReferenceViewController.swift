@@ -8,7 +8,7 @@
 
 import UIKit
 
-class SecondViewController: UIViewController {
+class ReferenceViewController: UIViewController {
 
     //@IBOutlet weak var RefLabel: UILabel!
     //@IBOutlet weak var RefDescr: UILabel!
@@ -43,7 +43,7 @@ class SecondViewController: UIViewController {
         initialCollectionView.dataSource = dataAndDelegate
         initialCollectionView.delegate = dataAndDelegate
         
-        let tapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(SecondViewController.didTap(sender:)))
+        let tapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(ReferenceViewController.didTap(sender:)))
         
         initialCollectionView.isUserInteractionEnabled = true
         initialCollectionView.addGestureRecognizer(tapGestureRecognizer)
