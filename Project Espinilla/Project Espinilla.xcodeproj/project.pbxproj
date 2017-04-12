@@ -21,7 +21,6 @@
 		C960EBC81E5E120800748B74 /* Project_EspinillaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C960EBC71E5E120800748B74 /* Project_EspinillaTests.swift */; };
 		C960EBD31E5E120800748B74 /* Project_EspinillaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C960EBD21E5E120800748B74 /* Project_EspinillaUITests.swift */; };
 		E1DF6C981E9ED92B0053B0A6 /* References.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E1DF6C971E9ED92B0053B0A6 /* References.storyboard */; };
-		E1DF6C9A1E9EDAF10053B0A6 /* UIDesignValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1DF6C991E9EDAF10053B0A6 /* UIDesignValue.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,7 +61,6 @@
 		C960EBD21E5E120800748B74 /* Project_EspinillaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Project_EspinillaUITests.swift; sourceTree = "<group>"; };
 		C960EBD41E5E120800748B74 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E1DF6C971E9ED92B0053B0A6 /* References.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = References.storyboard; sourceTree = "<group>"; };
-		E1DF6C991E9EDAF10053B0A6 /* UIDesignValue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIDesignValue.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -126,7 +124,6 @@
 				C960EBB91E5E120800748B74 /* Assets.xcassets */,
 				C960EBBB1E5E120800748B74 /* LaunchScreen.storyboard */,
 				C960EBBE1E5E120800748B74 /* Info.plist */,
-				E1DF6C991E9EDAF10053B0A6 /* UIDesignValue.swift */,
 			);
 			path = "Project Espinilla";
 			sourceTree = "<group>";
@@ -289,7 +286,6 @@
 				417430821E907114002E8373 /* ReferenceCollectionReusableViewHeader.swift in Sources */,
 				C960EBB51E5E120800748B74 /* ReferenceViewController.swift in Sources */,
 				41CBC3E01E8CAD7200B06220 /* ReferenceCell.swift in Sources */,
-				E1DF6C9A1E9EDAF10053B0A6 /* UIDesignValue.swift in Sources */,
 				41028DB11E6E6D810007386A /* FormsTableViewCell.swift in Sources */,
 				C960EBB11E5E120800748B74 /* AppDelegate.swift in Sources */,
 				41CBC3E21E8CB0E400B06220 /* ReferenceCollectionViewDataSourceAndDelegate.swift in Sources */,

@@ -74,3 +74,5 @@ fastlane/test_output
 # End of https://www.gitignore.io/api/swift
 
 *.xcuserstate
+
+Project Espinilla/Project Espinilla/Base.lproj/Main.storyboard
