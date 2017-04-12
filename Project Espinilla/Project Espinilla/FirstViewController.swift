@@ -20,10 +20,10 @@ class FirstViewController: UIViewController {
     
     //let tapRec = UITapGestureRecognizer()
     
-    var formNames = ["Housing Survey", "Lockout Form", "Violation Form", "Other Form", "Housing Cancellation", "Housing Cancellation", "Housing Cancellation"]
-    var fieldsLeft = ["10 Fields Remaining", "12 Fields Remaining", "5 Fields Remaining", "Complete!", "4 Fields Remaining", "Housing Cancellation", "Housing Cancellation"]
-    var halls = ["Driscoll", "Torres", "Baca", "Presidents", "Alta", "Housing Cancellation", "Housing Cancellation"]
-    var RAs = ["Carter", "Raj", "Kristina", "Matt", "Raj", "Housing Cancellation", "Housing Cancellation"]
+    var formNames = ["Housing Survey", "Lockout Form", "Violation Form"]
+    var fieldsLeft = ["10 Fields Remaining", "12 Fields Remaining", "5 Fields Remaining"]
+    var halls = ["Driscoll", "Torres", "Baca"]
+    var RAs = ["Carter", "Raj", "Kristina"]
     
     var sectionHeaders: Array<String> = ["In Progress", "Completed"]
 

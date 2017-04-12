@@ -25,7 +25,7 @@ class FormViewControllerDataAndDelegate: NSObject, UICollectionViewDataSource, U
     
     //ToDo: Add init arguments for issue lists and GPS locations info
     init(collectionLayout: UICollectionViewLayout, formNames: Array<String>, fieldsLeft: Array<String>, sectionNames: Array<String>, halls: Array<String>, RAs: Array <String>) {
-        self.items = 7
+        self.items = 3
         self.cellInitializationIndex = 0
         self.collectionLayout = collectionLayout
         self.formNames = formNames
