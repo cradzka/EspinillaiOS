@@ -46,11 +46,11 @@
                         </constraints>
                     </stackView>
                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="HI1-hd-hg1">
-                        <rect key="frame" x="303" y="0.0" width="41" height="65"/>
+                        <rect key="frame" x="319" y="0.0" width="25" height="65"/>
                         <gestureRecognizers/>
                     </imageView>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Fields Left" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jHw-XF-0eO">
-                        <rect key="frame" x="185" y="0.0" width="79.5" height="21"/>
+                        <rect key="frame" x="203" y="0.0" width="79.5" height="21"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="21" id="4VS-Y6-sKB"/>
                         </constraints>
@@ -67,7 +67,7 @@
                 <constraint firstAttribute="bottom" secondItem="Ww1-Uh-lNd" secondAttribute="bottom" constant="12.5" id="7k6-t1-SnK"/>
                 <constraint firstAttribute="bottom" secondItem="jHw-XF-0eO" secondAttribute="bottom" constant="44" id="AZ7-jU-ZaY"/>
                 <constraint firstItem="Ww1-Uh-lNd" firstAttribute="leading" secondItem="JNb-DS-2Pf" secondAttribute="leading" constant="9" id="BBx-oq-bu4"/>
-                <constraint firstItem="HI1-hd-hg1" firstAttribute="leading" secondItem="JNb-DS-2Pf" secondAttribute="leading" constant="303" id="Q0w-Wm-4im"/>
+                <constraint firstItem="HI1-hd-hg1" firstAttribute="leading" secondItem="JNb-DS-2Pf" secondAttribute="leading" constant="319" id="Q0w-Wm-4im"/>
                 <constraint firstItem="Ww1-Uh-lNd" firstAttribute="top" secondItem="JNb-DS-2Pf" secondAttribute="top" constant="36.5" id="REc-1D-lJ8"/>
                 <constraint firstItem="XoV-Rr-Grv" firstAttribute="top" secondItem="JNb-DS-2Pf" secondAttribute="top" id="WZD-Ei-4F0"/>
                 <constraint firstItem="Dd3-MD-uim" firstAttribute="leading" secondItem="JNb-DS-2Pf" secondAttribute="leading" constant="9" id="aIc-O3-KsS"/>
@@ -75,7 +75,7 @@
                 <constraint firstItem="XoV-Rr-Grv" firstAttribute="leading" secondItem="JNb-DS-2Pf" secondAttribute="leading" constant="9" id="mNs-OI-qc2"/>
                 <constraint firstAttribute="bottom" secondItem="Dd3-MD-uim" secondAttribute="bottom" constant="28.5" id="nyL-ig-LOU"/>
                 <constraint firstAttribute="bottom" secondItem="HI1-hd-hg1" secondAttribute="bottom" id="ph5-E2-iKn"/>
-                <constraint firstItem="jHw-XF-0eO" firstAttribute="leading" secondItem="IpM-2P-tFk" secondAttribute="trailing" constant="-24" id="wdJ-Rj-q1a"/>
+                <constraint firstItem="jHw-XF-0eO" firstAttribute="leading" secondItem="IpM-2P-tFk" secondAttribute="trailing" constant="-6" id="wdJ-Rj-q1a"/>
                 <constraint firstItem="Dd3-MD-uim" firstAttribute="top" secondItem="JNb-DS-2Pf" secondAttribute="top" constant="20.5" id="z5P-pt-BCT"/>
             </constraints>
             <size key="customSize" width="346" height="76"/>
