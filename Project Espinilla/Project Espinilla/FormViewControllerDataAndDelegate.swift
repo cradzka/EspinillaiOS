@@ -10,29 +10,33 @@ import UIKit
 
 class FormViewControllerDataAndDelegate: NSObject, UICollectionViewDataSource, UICollectionViewDelegate {
     
-    var sections = 1
+    var sections = 2
     var items: Int
     var formNames: Array<String>
     var fieldsLeft: Array<String>
     var halls: Array<String>
     var RAs: Array<String>
+    var sectionNames: Array<String>
+
     var cellInitializationIndex: Int
     var collectionLayout: UICollectionViewLayout
     var designValue: UIDesignValue
     var shadowLayer: CAShapeLayer!
     
     //ToDo: Add init arguments for issue lists and GPS locations info
-    init(collectionLayout: UICollectionViewLayout, formNames: Array<String>, fieldsLeft: Array<String>, halls: Array<String>, RAs: Array <String>) {
+    init(collectionLayout: UICollectionViewLayout, formNames: Array<String>, fieldsLeft: Array<String>, sectionNames: Array<String>, halls: Array<String>, RAs: Array <String>) {
         self.items = 7
         self.cellInitializationIndex = 0
         self.collectionLayout = collectionLayout
         self.formNames = formNames
+        self.sectionNames = sectionNames
         self.fieldsLeft = fieldsLeft
         self.halls = halls
         self.RAs = RAs
         self.designValue = UIDesignValue.init()
 
     }
+    
     
     
     
@@ -61,7 +65,7 @@ class FormViewControllerDataAndDelegate: NSObject, UICollectionViewDataSource, U
         
         
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "formTileCell", for: indexPath) as! FormTileCell
-
+        
         cell.FormName.font = UIFont.boldSystemFont(ofSize: 18)
         cell.FieldsLeft.font = designValue.fieldTextFont
         cell.Hall.font = designValue.fieldTextFont
@@ -91,6 +95,19 @@ class FormViewControllerDataAndDelegate: NSObject, UICollectionViewDataSource, U
         cell.contentView.addSubview(cell.formStackView)
 
         return cell
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind: String, at: IndexPath) -> UICollectionReusableView {
+        let headerView = collectionView.dequeueReusableSupplementaryView(ofKind: UICollectionElementKindSectionHeader, withReuseIdentifier: "sectionHeader", for: at) as! FormHeader
+        headerView.headerLabel.text = sectionNames[at.section]
+        headerView.headerLabel.font = designValue.fieldTextFont
+        headerView.backgroundColor = UIColor.white
+        headerView.addSubview(headerView.headerLabel)
+        
+        return headerView
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, willDisplaySupplementaryView view: UICollectionReusableView, forElementKind elementKind: String, at indexPath: IndexPath) {
     }
     
 }

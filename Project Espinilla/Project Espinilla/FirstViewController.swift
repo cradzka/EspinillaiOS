@@ -25,6 +25,9 @@ class FirstViewController: UIViewController {
     var halls = ["Driscoll", "Torres", "Baca", "Presidents", "Alta", "Housing Cancellation", "Housing Cancellation"]
     var RAs = ["Carter", "Raj", "Kristina", "Matt", "Raj", "Housing Cancellation", "Housing Cancellation"]
     
+    var sectionHeaders: Array<String> = ["In Progress", "Completed"]
+
+    
     var designValues = UIDesignValue.init()
 
     
@@ -35,9 +38,11 @@ class FirstViewController: UIViewController {
         
         MainCollectionView.backgroundColor = designValues.backgroundColor
         MainCollectionView.register(UINib(nibName: "FormTileCell", bundle: nil), forCellWithReuseIdentifier: "formTileCell")
+        MainCollectionView.register(UINib(nibName: "FormHeader", bundle: nil), forSupplementaryViewOfKind: UICollectionElementKindSectionHeader, withReuseIdentifier: "sectionHeader")
+
         // Do any additional setup after loading the view, typically from a nib.
         
-        dataAndDelegate = FormViewControllerDataAndDelegate(collectionLayout: MainCollectionViewLayout, formNames: formNames, fieldsLeft: fieldsLeft, halls: halls, RAs: RAs)
+        dataAndDelegate = FormViewControllerDataAndDelegate(collectionLayout: MainCollectionViewLayout, formNames: formNames, fieldsLeft: fieldsLeft, sectionNames: sectionHeaders, halls: halls, RAs: RAs)
         MainCollectionView.dataSource = dataAndDelegate
         MainCollectionView.delegate = dataAndDelegate
         
