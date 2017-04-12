@@ -37,9 +37,6 @@ class FormViewControllerDataAndDelegate: NSObject, UICollectionViewDataSource, U
 
     }
     
-    
-    
-    
     /*
      func collectionView(_ collectionView: UICollectionView, canMoveItemAt: IndexPath) -> Bool {
      
