@@ -44,13 +44,13 @@ class ReferenceCollectionViewDataSourceAndDelegate: NSObject, UICollectionViewDa
 
         cell.ReferenceLabel.text = subsectionNames?[indexPath.row]
         cell.ReferenceLabel.font = UIFont.init(name: "Gill Sans", size: 17.0)
-        cell.contentView.backgroundColor = UIColor.lightGray
+        cell.contentView.backgroundColor = designValues.backgroundColor
         cell.ReferenceCellStack.addArrangedSubview(cell.ReferenceLabel)
-        
-        cell.backgroundColor = designValues.baseCellColor
         
         cell.ReferenceImageView.image = #imageLiteral(resourceName: "refImage")
         cell.ReferenceCellStack.addArrangedSubview(cell.ReferenceImageView)
+        
+        cell.backgroundColor = designValues.baseCellColor
         
         cell.layer.shadowColor = designValues.shadowColor
         cell.layer.shadowOffset = designValues.shadowOffset
@@ -64,18 +64,6 @@ class ReferenceCollectionViewDataSourceAndDelegate: NSObject, UICollectionViewDa
         return cell
     }
     
-    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        let cell = collectionView.cellForItem(at: indexPath) as! ReferenceCell
-        cell.backgroundColor = UIColor.white
-        cell.contentView.backgroundColor = UIColor.white
-    }
-    
-    func collectionView(_ collectionView: UICollectionView, didDeselectItemAt indexPath: IndexPath) {
-        let cell = collectionView.cellForItem(at: indexPath) as! ReferenceCell
-        cell.backgroundColor = UIColor.blue
-        cell.contentView.backgroundColor = UIColor.blue
-    }
-    
     func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind: String, at: IndexPath) -> UICollectionReusableView {
         let headerView = collectionView.dequeueReusableSupplementaryView(ofKind: UICollectionElementKindSectionHeader, withReuseIdentifier: "initialCollectionViewHeader", for: at) as! ReferenceCollectionReusableViewHeader
         headerView.headerLabel.text = sectionNames[at.section]
@@ -85,9 +73,5 @@ class ReferenceCollectionViewDataSourceAndDelegate: NSObject, UICollectionViewDa
         
         return headerView
     }
-    
-    func collectionView(_ collectionView: UICollectionView, willDisplaySupplementaryView view: UICollectionReusableView, forElementKind elementKind: String, at indexPath: IndexPath) {
-    }
-    
 
 }
