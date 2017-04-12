@@ -8,7 +8,7 @@
 
 import UIKit
 
-class SecondViewController: BaseViewController {
+class ReferenceViewController: BaseViewController {
 
     //@IBOutlet weak var RefLabel: UILabel!
     //@IBOutlet weak var RefDescr: UILabel!
@@ -44,6 +44,11 @@ class SecondViewController: BaseViewController {
         initialCollectionView.dataSource = dataAndDelegate
         initialCollectionView.delegate = dataAndDelegate
         
+        let tapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(ReferenceViewController.didTap(sender:)))
+        
+        initialCollectionView.isUserInteractionEnabled = true
+        initialCollectionView.addGestureRecognizer(tapGestureRecognizer)
+        
         initialStackView.addArrangedSubview(initialCollectionView)
     }
     
@@ -73,4 +78,29 @@ class SecondViewController: BaseViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
+    /* This function is called when the button is tapped (touch up inside sent event) */
+    
+    func didTap(sender: UITapGestureRecognizer) {
+        _ = sender.location(in: view)
+        self.openViewControllerBasedOnIdentifier("WindowVC")
+        print("yo")
+        // User tapped at the point above. Do something with that if you want.
+    }
+    
+    override func openViewControllerBasedOnIdentifier(_ strIdentifier:String){
+        /* Get the destination view controller (e.g. the controller to be opened by the button */
+        let destViewController : UIViewController = self.storyboard!.instantiateViewController(withIdentifier: strIdentifier)
+        
+        /* Get the current top view controller */
+        let topViewController : UIViewController = self.navigationController!.topViewController!
+        
+        if (topViewController.restorationIdentifier! == destViewController.restorationIdentifier!){
+            print("Same VC") // You clicked a button that takes you to the view you are currently on
+        } else {
+            /* Push the new view onto the navigation stack */
+            self.navigationController!.pushViewController(destViewController, animated: true)
+        }
+    }
+    
 }
