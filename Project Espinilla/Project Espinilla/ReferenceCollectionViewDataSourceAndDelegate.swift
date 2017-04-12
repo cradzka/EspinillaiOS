@@ -16,6 +16,7 @@ class ReferenceCollectionViewDataSourceAndDelegate: NSObject, UICollectionViewDa
     var cellInitializationIndex: Int
     var collectionLayout: UICollectionViewLayout
     var sectionDictionary: [String: [String]]
+    var designValues: UIDesignValue
     
     init(numberOfCategories: Int, sectionNameList: Array<String>, sectionDictionary: [String : [String]], collectionLayout: UICollectionViewLayout) {
         self.items = numberOfCategories
@@ -23,6 +24,7 @@ class ReferenceCollectionViewDataSourceAndDelegate: NSObject, UICollectionViewDa
         self.cellInitializationIndex = 0
         self.collectionLayout = collectionLayout
         self.sectionDictionary = sectionDictionary
+        self.designValues = UIDesignValue.init()
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection: Int) -> Int {
@@ -45,17 +47,18 @@ class ReferenceCollectionViewDataSourceAndDelegate: NSObject, UICollectionViewDa
         cell.contentView.backgroundColor = UIColor.lightGray
         cell.ReferenceCellStack.addArrangedSubview(cell.ReferenceLabel)
         
+        cell.backgroundColor = designValues.baseCellColor
+        
         cell.ReferenceImageView.image = #imageLiteral(resourceName: "refImage")
         cell.ReferenceCellStack.addArrangedSubview(cell.ReferenceImageView)
         
-        cell.backgroundColor = UIColor.blue
-        if cell.isSelected {
-            cell.backgroundColor = UIColor.white
-            cell.contentView.backgroundColor = UIColor.white
-        } else {
-            cell.backgroundColor = UIColor.blue
-            cell.contentView.backgroundColor = UIColor.blue
-        }
+        cell.layer.shadowColor = designValues.shadowColor
+        cell.layer.shadowOffset = designValues.shadowOffset
+        cell.layer.shadowRadius = designValues.shadowRadius
+        cell.layer.shadowOpacity = designValues.shadowOpacity
+        cell.layer.borderWidth = designValues.boarderWidth
+        cell.layer.borderColor = designValues.boarderColor
+        cell.layer.masksToBounds = false
         
         cell.contentView.addSubview(cell.ReferenceCellStack)
         return cell
@@ -76,7 +79,7 @@ class ReferenceCollectionViewDataSourceAndDelegate: NSObject, UICollectionViewDa
     func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind: String, at: IndexPath) -> UICollectionReusableView {
         let headerView = collectionView.dequeueReusableSupplementaryView(ofKind: UICollectionElementKindSectionHeader, withReuseIdentifier: "initialCollectionViewHeader", for: at) as! ReferenceCollectionReusableViewHeader
         headerView.headerLabel.text = sectionNames[at.section]
-        headerView.headerLabel.font = UIFont.init(name: "Gill Sans", size: 17.0)
+        headerView.headerLabel.font = designValues.fieldTextFont
         headerView.backgroundColor = UIColor.white
         headerView.addSubview(headerView.headerLabel)
         
@@ -84,6 +87,7 @@ class ReferenceCollectionViewDataSourceAndDelegate: NSObject, UICollectionViewDa
     }
     
     func collectionView(_ collectionView: UICollectionView, willDisplaySupplementaryView view: UICollectionReusableView, forElementKind elementKind: String, at indexPath: IndexPath) {
-        
     }
+    
+
 }

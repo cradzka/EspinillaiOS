@@ -12,15 +12,6 @@
         <!--Forms-->
         <scene sceneID="hNz-n2-bh7">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="W5J-7L-Pyd" sceneMemberID="firstResponder"/>
-                <searchDisplayController id="hm1-aV-bAE">
-                    <connections>
-                        <outlet property="delegate" destination="9pv-A4-QxB" id="nJi-In-23T"/>
-                        <outlet property="searchContentsController" destination="9pv-A4-QxB" id="JEN-ca-pm3"/>
-                        <outlet property="searchResultsDataSource" destination="9pv-A4-QxB" id="0eo-hU-J2S"/>
-                        <outlet property="searchResultsDelegate" destination="9pv-A4-QxB" id="CWk-O7-Cvo"/>
-                    </connections>
-                </searchDisplayController>
                 <viewController id="9pv-A4-QxB" customClass="FirstViewController" customModule="Project_Espinilla" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Ia1-K6-d13"/>
@@ -36,6 +27,15 @@
                         <outlet property="searchDisplayController" destination="hm1-aV-bAE" id="FJu-0I-Hf4"/>
                     </connections>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="W5J-7L-Pyd" sceneMemberID="firstResponder"/>
+                <searchDisplayController id="hm1-aV-bAE">
+                    <connections>
+                        <outlet property="delegate" destination="9pv-A4-QxB" id="nJi-In-23T"/>
+                        <outlet property="searchContentsController" destination="9pv-A4-QxB" id="JEN-ca-pm3"/>
+                        <outlet property="searchResultsDataSource" destination="9pv-A4-QxB" id="0eo-hU-J2S"/>
+                        <outlet property="searchResultsDelegate" destination="9pv-A4-QxB" id="CWk-O7-Cvo"/>
+                    </connections>
+                </searchDisplayController>
             </objects>
             <point key="canvasLocation" x="749.60000000000002" y="-320.68965517241384"/>
         </scene>
