@@ -20,10 +20,10 @@ class FirstViewController: UIViewController {
     
     //let tapRec = UITapGestureRecognizer()
     
-    var formNames = ["Housing Survey", "Lockout Form", "Violation Form", "Other Form", "Housing Cancellation"]
-    var fieldsLeft = ["10 Fields Remaining", "12 Fields Remaining", "5 Fields Remaining", "Complete!", "4 Fields Remaining"]
-    var halls = ["Driscoll", "Torres", "Baca", "Presidents", "Alta"]
-    var RAs = ["Carter", "Raj", "Kristina", "Matt", "Raj"]
+    var formNames = ["Housing Survey", "Lockout Form", "Violation Form", "Other Form", "Housing Cancellation", "Housing Cancellation", "Housing Cancellation"]
+    var fieldsLeft = ["10 Fields Remaining", "12 Fields Remaining", "5 Fields Remaining", "Complete!", "4 Fields Remaining", "Housing Cancellation", "Housing Cancellation"]
+    var halls = ["Driscoll", "Torres", "Baca", "Presidents", "Alta", "Housing Cancellation", "Housing Cancellation"]
+    var RAs = ["Carter", "Raj", "Kristina", "Matt", "Raj", "Housing Cancellation", "Housing Cancellation"]
     
     var designValues = UIDesignValue.init()
 
@@ -33,13 +33,18 @@ class FirstViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        MainCollectionView.backgroundColor = UIColor.lightGray
+        MainCollectionView.backgroundColor = designValues.backgroundColor
         MainCollectionView.register(UINib(nibName: "FormTileCell", bundle: nil), forCellWithReuseIdentifier: "formTileCell")
         // Do any additional setup after loading the view, typically from a nib.
         
         dataAndDelegate = FormViewControllerDataAndDelegate(collectionLayout: MainCollectionViewLayout, formNames: formNames, fieldsLeft: fieldsLeft, halls: halls, RAs: RAs)
         MainCollectionView.dataSource = dataAndDelegate
         MainCollectionView.delegate = dataAndDelegate
+        
+        MainCollectionView.isScrollEnabled = true
+        MainCollectionView.isUserInteractionEnabled = true
+        //MainCollectionView.bounces = true
+        //MainCollectionView.alwaysBounceVertical = true
         
         MainCollectionViewLayout.minimumLineSpacing = designValues.spaceBetweenLines
         

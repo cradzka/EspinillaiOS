@@ -23,7 +23,7 @@ class FormViewControllerDataAndDelegate: NSObject, UICollectionViewDataSource, U
     
     //ToDo: Add init arguments for issue lists and GPS locations info
     init(collectionLayout: UICollectionViewLayout, formNames: Array<String>, fieldsLeft: Array<String>, halls: Array<String>, RAs: Array <String>) {
-        self.items = 5
+        self.items = 7
         self.cellInitializationIndex = 0
         self.collectionLayout = collectionLayout
         self.formNames = formNames
@@ -67,8 +67,6 @@ class FormViewControllerDataAndDelegate: NSObject, UICollectionViewDataSource, U
         cell.Hall.font = designValue.fieldTextFont
         cell.RAName.font = designValue.fieldTextFont
         
-
-        
         cell.FormName.text = formNames[indexPath.row]
         cell.FieldsLeft.text = fieldsLeft[indexPath.row]
         cell.FieldsLeft.textColor = UIColor.red
@@ -76,62 +74,25 @@ class FormViewControllerDataAndDelegate: NSObject, UICollectionViewDataSource, U
         cell.RAName.text = RAs[indexPath.row]
         cell.SlideOut.image = #imageLiteral(resourceName: "3Dots")
         cell.backgroundColor = UIColor.white
-
-        if shadowLayer == nil {
-            shadowLayer = CAShapeLayer()
-            shadowLayer.path = UIBezierPath(roundedRect: cell.layer.bounds, cornerRadius: designValue.cornerRadius).cgPath
-            shadowLayer.fillColor = UIColor.white.cgColor
-            
-            shadowLayer.shadowColor = designValue.shadowColor
-            shadowLayer.shadowPath = shadowLayer.path
-            shadowLayer.shadowOffset = designValue.shadowOffset
-            shadowLayer.shadowOpacity = designValue.shadowOpacity
-            shadowLayer.shadowRadius = designValue.shadowRadius
-        }
+      
+        cell.layer.shadowColor = designValue.shadowColor
+        cell.layer.shadowOffset = designValue.shadowOffset
+        cell.layer.shadowRadius = designValue.shadowRadius
+        cell.layer.shadowOpacity = designValue.shadowOpacity
         
-        cell.layer.mask = shadowLayer.mask
+        cell.layer.borderWidth = designValue.boarderWidth
+        cell.layer.borderColor = designValue.boarderColor
+        
+        cell.layer.masksToBounds = false
         
         cell.formStackView.addArrangedSubview(cell.FormName)
-        //cell.formStackView.addArrangedSubview(cell.FieldsLeft)
         cell.formStackView.addArrangedSubview(cell.Hall)
         cell.formStackView.addArrangedSubview(cell.RAName)
-        //cell.formStackView.addArrangedSubview(cell.SlideOut)
         cell.contentView.addSubview(cell.formStackView)
 
         return cell
     }
+    
 }
 
 
-    
-            /*cell.buildingLabel.text = names[indexPath.row]
-            cell.buildingLabel.font = UIFont.init(name: "Gill Sans", size: 23.0)
-            cell.contentView.backgroundColor = UIColor.white
-            cell.buildingTileStack.addArrangedSubview(cell.buildingLabel)
-            cell.buildingTileStack.addArrangedSubview(cell.issueTableView)
-            
-            cell.round1Label.font = UIFont.init(name: "Gill Sans", size: 17.0)
-            cell.round2Label.font = UIFont.init(name: "Gill Sans", size: 17.0)
-            cell.round3Label.font = UIFont.init(name: "Gill Sans", size: 17.0)
-            cell.round1Label.text = "Round #1"
-            cell.round2Label.text = "Round #2"
-            cell.round3Label.text = "Round #3"
-            
-            cell.roundLabelStack.addArrangedSubview(cell.round1Label)
-            cell.roundLabelStack.addArrangedSubview(cell.round2Label)
-            cell.roundLabelStack.addArrangedSubview(cell.round3Label)
-            cell.buildingTileStack.addArrangedSubview(cell.roundLabelStack)
-            
-            cell.roundStar1Image.image = #imageLiteral(resourceName: "checkMark")
-            cell.roundStar2Image.image = #imageLiteral(resourceName: "checkMark")
-            cell.roundStar3Image.image = #imageLiteral(resourceName: "checkMark")
-            
-            cell.roundLabelStack.addArrangedSubview(cell.roundStar1Image)
-            cell.roundLabelStack.addArrangedSubview(cell.roundStar2Image)
-            cell.roundLabelStack.addArrangedSubview(cell.roundStar3Image)
-            cell.roundSwipeBar.image = #imageLiteral(resourceName: "outOfRangeImage")
-            cell.buildingTileStack.addArrangedSubview(cell.roundSwipeBar)
-            
-            cell.contentView.addSubview(cell.buildingTileStack)
-            return cell
-        }*/

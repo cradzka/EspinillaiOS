@@ -43,7 +43,7 @@ class UIDesignValue {
         self.baseCellColor = UIColor.white
         self.shadowRadius = 3
         self.shadowOffset = CGSize(width: 0, height: 6.0)
-        self.shadowOpacity = 0.55
+        self.shadowOpacity = 0.20
         self.shadowColor = UIColor.black.cgColor
         self.spaceBetweenLines = 30
     }
