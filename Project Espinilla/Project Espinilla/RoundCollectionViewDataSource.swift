@@ -19,6 +19,7 @@ class RoundCollectionViewDataSource: NSObject, UICollectionViewDataSource, UICol
     var issueDictionary: [String: [String]]
     var designValue: UIDesignValue
     var shadowLayer: CAShapeLayer!
+    var tapRecognizer: UITapGestureRecognizer
     
     //ToDo: Add init arguemnts for issue lists and GPS locations info
     init(numberOfBuildings: Int, buildingNameList: Array<String>, issueDictionary: [String: [String]],collectionLayout: UICollectionViewLayout) {
@@ -28,6 +29,10 @@ class RoundCollectionViewDataSource: NSObject, UICollectionViewDataSource, UICol
         self.collectionLayout = collectionLayout
         self.issueDictionary = issueDictionary
         self.designValue = UIDesignValue.init()
+        
+        self.tapRecognizer = UITapGestureRecognizer()
+        self.tapRecognizer.numberOfTapsRequired = 1
+        self.tapRecognizer.cancelsTouchesInView = false
     }
     
     
@@ -63,7 +68,9 @@ class RoundCollectionViewDataSource: NSObject, UICollectionViewDataSource, UICol
          * Building Label init *
          *                     */
         cell.buildingLabel.text = names[indexPath.row]
+        cell.buildingLabel.textColor = UIColor.white
         cell.buildingLabel.font = designValue.sectionLabelFont
+        cell.buildingLabel.backgroundColor = designValue.baseViewPrimaryColor
         cell.buildingLabel.layer.borderColor = designValue.boarderColor
         cell.buildingLabel.layer.borderWidth = designValue.boarderWidth + 0.4
         //cell.buildingLabel.layer.cornerRadius = designValue.cornerRadius
@@ -77,10 +84,10 @@ class RoundCollectionViewDataSource: NSObject, UICollectionViewDataSource, UICol
         cell.thirdIssuePreview.text = buildingIssueList?[2]
         cell.fourthIssuePreview.text = buildingIssueList?[3]
         
-        cell.firstIssuePreview.textColor = UIColor.blue
-        cell.secondIssuePreview.textColor = UIColor.green
-        cell.thirdIssuePreview.textColor = UIColor.purple
-        cell.fourthIssuePreview.textColor = UIColor.red
+        cell.firstIssuePreview.backgroundColor = UIColor.white
+        cell.secondIssuePreview.backgroundColor = UIColor.lightGray
+        cell.thirdIssuePreview.backgroundColor = UIColor.white
+        cell.fourthIssuePreview.backgroundColor = UIColor.lightGray
         
         cell.firstIssuePreview.textContainer.maximumNumberOfLines = 2
         cell.secondIssuePreview.textContainer.maximumNumberOfLines = 2
@@ -101,6 +108,8 @@ class RoundCollectionViewDataSource: NSObject, UICollectionViewDataSource, UICol
         cell.secondIssuePreview.textContainer.lineBreakMode = .byTruncatingTail
         cell.thirdIssuePreview.textContainer.lineBreakMode = .byTruncatingTail
         cell.fourthIssuePreview.textContainer.lineBreakMode = .byTruncatingTail
+        
+        //cell.firstIssuePreview.addGestureRecognizer(self.tapRecognizer)
         
         cell.issuePreviewStack.addArrangedSubview(cell.firstIssuePreview)
         cell.issuePreviewStack.addArrangedSubview(cell.secondIssuePreview)
@@ -147,21 +156,7 @@ class RoundCollectionViewDataSource: NSObject, UICollectionViewDataSource, UICol
         cell.layer.shadowOffset = designValue.shadowOffset
         cell.layer.shadowOpacity = designValue.shadowOpacity
         cell.layer.shadowColor = designValue.shadowColor
-        
-        if shadowLayer == nil {
-            shadowLayer = CAShapeLayer()
-            shadowLayer.path = UIBezierPath(roundedRect: cell.layer.bounds, cornerRadius: designValue.cornerRadius).cgPath
-            shadowLayer.fillColor = UIColor.white.cgColor
-            
-            shadowLayer.shadowColor = designValue.shadowColor
-            shadowLayer.shadowPath = shadowLayer.path
-            shadowLayer.shadowOffset = designValue.shadowOffset
-            shadowLayer.shadowOpacity = designValue.shadowOpacity
-            shadowLayer.shadowRadius = designValue.shadowRadius
-        }
-        cell.layer.mask = shadowLayer.mask
-        //cell.layer.cornerRadius = designValue.cornerRadius
-        //cell.layer.insertSublayer(shadowLayer, at: 0)
+
         cell.contentView.addSubview(cell.buildingTileStack)
         cell.contentView.addSubview(cell.swipeBarLabel)
         return cell

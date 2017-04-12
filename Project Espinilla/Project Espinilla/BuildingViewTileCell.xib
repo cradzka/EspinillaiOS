@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12118" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
-    <device id="retina4_7" orientation="portrait">
+    <device id="retina5_5" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -24,7 +24,6 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" preservesSuperviewLayoutMargins="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bug-J8-Uau">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="24"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="375" id="Mlw-Vs-eKj"/>
                                     <constraint firstAttribute="height" constant="24" id="PUV-cL-gJb"/>
                                 </constraints>
                                 <attributedString key="attributedText">
@@ -41,29 +40,41 @@
                                 <rect key="frame" x="0.0" y="24" width="375" height="170"/>
                                 <subviews>
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GOP-xO-V2z">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="42.5"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="43"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <accessibility key="accessibilityConfiguration">
+                                            <accessibilityTraits key="traits" button="YES" staticText="YES"/>
+                                        </accessibility>
                                         <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                     </textView>
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="wpY-r2-W48">
-                                        <rect key="frame" x="0.0" y="42.5" width="375" height="42.5"/>
+                                        <rect key="frame" x="0.0" y="43" width="375" height="42"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <accessibility key="accessibilityConfiguration">
+                                            <accessibilityTraits key="traits" button="YES" staticText="YES"/>
+                                        </accessibility>
                                         <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                     </textView>
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="vhJ-7W-eha">
-                                        <rect key="frame" x="0.0" y="85" width="375" height="42.5"/>
+                                        <rect key="frame" x="0.0" y="85" width="375" height="43"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <accessibility key="accessibilityConfiguration">
+                                            <accessibilityTraits key="traits" button="YES" staticText="YES"/>
+                                        </accessibility>
                                         <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                     </textView>
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="IqY-7j-roo">
-                                        <rect key="frame" x="0.0" y="127.5" width="375" height="42.5"/>
+                                        <rect key="frame" x="0.0" y="128" width="375" height="42"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <accessibility key="accessibilityConfiguration">
+                                            <accessibilityTraits key="traits" button="YES" staticText="YES"/>
+                                        </accessibility>
                                         <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -74,19 +85,19 @@
                                 <rect key="frame" x="0.0" y="194" width="375" height="21"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Round #1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5li-iN-BUU">
-                                        <rect key="frame" x="0.0" y="0.0" width="125" height="20.5"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="125" height="21"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Round #2" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5OL-ND-s5f">
-                                        <rect key="frame" x="125" y="0.0" width="125" height="20.5"/>
+                                        <rect key="frame" x="125" y="0.0" width="125" height="21"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" text="Round #3" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9dO-uK-DTR">
-                                        <rect key="frame" x="250" y="0.0" width="125" height="20.5"/>
+                                        <rect key="frame" x="250" y="0.0" width="125" height="21"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -126,15 +137,19 @@
                             <constraint firstItem="5OL-ND-s5f" firstAttribute="centerX" secondItem="KUR-M7-aR2" secondAttribute="centerX" id="NwV-54-ZAq"/>
                             <constraint firstItem="dxj-1V-CZZ" firstAttribute="top" secondItem="KUR-M7-aR2" secondAttribute="bottom" id="RfK-Au-xnx"/>
                             <constraint firstItem="KUR-M7-aR2" firstAttribute="top" secondItem="5OL-ND-s5f" secondAttribute="bottom" constant="0.5" id="aDs-9W-oBw"/>
+                            <constraint firstItem="bug-J8-Uau" firstAttribute="width" secondItem="mvM-vu-xlH" secondAttribute="width" id="aac-xS-QjJ"/>
                             <constraint firstItem="xW8-RZ-FLO" firstAttribute="top" secondItem="9dO-uK-DTR" secondAttribute="bottom" constant="0.5" id="ato-oF-oyq"/>
                             <constraint firstItem="p0V-W9-Pz4" firstAttribute="top" secondItem="mvM-vu-xlH" secondAttribute="top" constant="215" id="bHU-2t-iKG"/>
                             <constraint firstItem="CTr-36-PO9" firstAttribute="top" secondItem="bug-J8-Uau" secondAttribute="bottom" id="dsO-DQ-M6I"/>
+                            <constraint firstItem="fiL-MG-Ohz" firstAttribute="width" secondItem="mvM-vu-xlH" secondAttribute="width" id="fYU-Bk-8hv"/>
                             <constraint firstItem="dxj-1V-CZZ" firstAttribute="top" secondItem="Qwx-Wf-saC" secondAttribute="bottom" id="kTv-jw-5dD"/>
+                            <constraint firstItem="CTr-36-PO9" firstAttribute="width" secondItem="mvM-vu-xlH" secondAttribute="width" id="nOU-jS-JZ8"/>
                             <constraint firstItem="Qwx-Wf-saC" firstAttribute="top" secondItem="5li-iN-BUU" secondAttribute="bottom" constant="0.5" id="u21-Vo-zcQ"/>
+                            <constraint firstItem="p0V-W9-Pz4" firstAttribute="width" secondItem="mvM-vu-xlH" secondAttribute="width" id="uJm-TO-qD6"/>
                         </constraints>
                     </stackView>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ec1-Zh-KVX">
-                        <rect key="frame" x="138.5" y="288" width="97.5" height="21"/>
+                        <rect key="frame" x="138" y="288" width="98" height="21"/>
                         <attributedString key="attributedText">
                             <fragment content="Out Of Range">
                                 <attributes>
@@ -164,6 +179,7 @@
                 <constraint firstItem="Ec1-Zh-KVX" firstAttribute="centerX" secondItem="dxj-1V-CZZ" secondAttribute="centerX" id="RkG-Ld-lpB"/>
                 <constraint firstItem="Ec1-Zh-KVX" firstAttribute="centerY" secondItem="dxj-1V-CZZ" secondAttribute="centerY" id="S6P-cu-zt6"/>
                 <constraint firstAttribute="bottom" secondItem="Qwx-Wf-saC" secondAttribute="bottom" constant="66" id="U79-pm-jJq"/>
+                <constraint firstItem="dxj-1V-CZZ" firstAttribute="width" secondItem="AQz-wQ-qpZ" secondAttribute="width" id="WoQ-2y-Sgu"/>
                 <constraint firstAttribute="bottom" secondItem="fiL-MG-Ohz" secondAttribute="bottom" constant="116" id="enF-OF-KBi"/>
                 <constraint firstAttribute="bottom" secondItem="5li-iN-BUU" secondAttribute="bottom" constant="116.5" id="f5V-gQ-mMu"/>
                 <constraint firstItem="mvM-vu-xlH" firstAttribute="top" secondItem="AQz-wQ-qpZ" secondAttribute="top" id="jid-Cf-Wqz"/>
