@@ -75,4 +75,6 @@ fastlane/test_output
 
 *.xcuserstate
 
-Project Espinilla/Project Espinilla\.xcodeproj/
+Project Espinilla/Project Espinilla/Base.lproj/Main.storyboard
+
+
