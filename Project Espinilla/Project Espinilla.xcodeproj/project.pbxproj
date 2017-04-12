@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3514E7001E9E079500C99C69 /* FormHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3514E6FE1E9E079500C99C69 /* FormHeader.swift */; };
+		3514E7011E9E079500C99C69 /* FormHeader.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3514E6FF1E9E079500C99C69 /* FormHeader.xib */; };
 		352C6A951E8CA37F00CEC21A /* FormTileCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 352C6A941E8CA37F00CEC21A /* FormTileCell.swift */; };
 		352C6A9B1E8CB07F00CEC21A /* FormViewControllerDataAndDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 352C6A9A1E8CB07F00CEC21A /* FormViewControllerDataAndDelegate.swift */; };
 		35DE88DE1E99F9AD008B8F77 /* UIDesignValues.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35DE88DD1E99F9AD008B8F77 /* UIDesignValues.swift */; };
@@ -41,6 +43,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3514E6FE1E9E079500C99C69 /* FormHeader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FormHeader.swift; sourceTree = "<group>"; };
+		3514E6FF1E9E079500C99C69 /* FormHeader.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FormHeader.xib; sourceTree = "<group>"; };
 		352C6A941E8CA37F00CEC21A /* FormTileCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FormTileCell.swift; sourceTree = "<group>"; };
 		352C6A961E8CA39E00CEC21A /* FormTileCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FormTileCell.xib; sourceTree = "<group>"; };
 		352C6A9A1E8CB07F00CEC21A /* FormViewControllerDataAndDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FormViewControllerDataAndDelegate.swift; sourceTree = "<group>"; };
@@ -119,6 +123,8 @@
 				C960EBB61E5E120800748B74 /* Main.storyboard */,
 				352C6A941E8CA37F00CEC21A /* FormTileCell.swift */,
 				352C6A961E8CA39E00CEC21A /* FormTileCell.xib */,
+				3514E6FE1E9E079500C99C69 /* FormHeader.swift */,
+				3514E6FF1E9E079500C99C69 /* FormHeader.xib */,
 				41028DB01E6E6D810007386A /* FormsTableViewCell.swift */,
 				C960EBB91E5E120800748B74 /* Assets.xcassets */,
 				C960EBBB1E5E120800748B74 /* LaunchScreen.storyboard */,
@@ -254,6 +260,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3514E7011E9E079500C99C69 /* FormHeader.xib in Resources */,
 				C960EBBD1E5E120800748B74 /* LaunchScreen.storyboard in Resources */,
 				C960EBBA1E5E120800748B74 /* Assets.xcassets in Resources */,
 				C960EBB81E5E120800748B74 /* Main.storyboard in Resources */,
@@ -282,6 +289,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3514E7001E9E079500C99C69 /* FormHeader.swift in Sources */,
 				C960EBB51E5E120800748B74 /* SecondViewController.swift in Sources */,
 				41028DB11E6E6D810007386A /* FormsTableViewCell.swift in Sources */,
 				C960EBB11E5E120800748B74 /* AppDelegate.swift in Sources */,
