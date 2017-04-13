@@ -19,7 +19,6 @@ class RoundCollectionViewDataSource: NSObject, UICollectionViewDataSource, UICol
     var issueDictionary: [String: [String]]
     var designValue: UIDesignValue
     var shadowLayer: CAShapeLayer!
-    var tapRecognizer: UITapGestureRecognizer
     
     //ToDo: Add init arguemnts for issue lists and GPS locations info
     init(numberOfBuildings: Int, buildingNameList: Array<String>, issueDictionary: [String: [String]],collectionLayout: UICollectionViewLayout) {
@@ -29,10 +28,6 @@ class RoundCollectionViewDataSource: NSObject, UICollectionViewDataSource, UICol
         self.collectionLayout = collectionLayout
         self.issueDictionary = issueDictionary
         self.designValue = UIDesignValue.init()
-        
-        self.tapRecognizer = UITapGestureRecognizer()
-        self.tapRecognizer.numberOfTapsRequired = 1
-        self.tapRecognizer.cancelsTouchesInView = false
     }
     
     
@@ -109,8 +104,8 @@ class RoundCollectionViewDataSource: NSObject, UICollectionViewDataSource, UICol
         cell.thirdIssuePreview.textContainer.lineBreakMode = .byTruncatingTail
         cell.fourthIssuePreview.textContainer.lineBreakMode = .byTruncatingTail
         
-        //cell.firstIssuePreview.addGestureRecognizer(self.tapRecognizer)
         
+    
         cell.issuePreviewStack.addArrangedSubview(cell.firstIssuePreview)
         cell.issuePreviewStack.addArrangedSubview(cell.secondIssuePreview)
         cell.issuePreviewStack.addArrangedSubview(cell.thirdIssuePreview)

@@ -46,7 +46,6 @@
 		E1DF6C931E9ED1E60053B0A6 /* FormHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3514E6FE1E9E079500C99C69 /* FormHeader.swift */; };
 		E1DF6C941E9ED1EF0053B0A6 /* FormViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C960EBB21E5E120800748B74 /* FormViewController.swift */; };
 		E1DF6C951E9ED2100053B0A6 /* FormHeader.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3514E6FF1E9E079500C99C69 /* FormHeader.xib */; };
-		E1DF6C961E9ED23E0053B0A6 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C960EBBE1E5E120800748B74 /* Info.plist */; };
 		E1DF6C981E9ED92B0053B0A6 /* References.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E1DF6C971E9ED92B0053B0A6 /* References.storyboard */; };
 /* End PBXBuildFile section */
 
@@ -416,7 +415,6 @@
 				35F6C98F1E907E0D003B8952 /* FormTileCell.xib in Resources */,
 				E1DF6C981E9ED92B0053B0A6 /* References.storyboard in Resources */,
 				417430831E907114002E8373 /* ReferenceCollectionReusableViewHeader.xib in Resources */,
-				E1DF6C961E9ED23E0053B0A6 /* Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
