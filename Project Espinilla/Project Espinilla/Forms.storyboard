@@ -23,10 +23,10 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Yaj-Xc-s4Y">
-                                <rect key="frame" x="0.0" y="80" width="375" height="556"/>
+                                <rect key="frame" x="0.0" y="20" width="375" height="616"/>
                                 <subviews>
                                     <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="Wl3-Mg-kG0">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="556"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="616"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <gestureRecognizers/>
                                         <inset key="scrollIndicatorInsets" minX="12" minY="0.0" maxX="0.0" maxY="0.0"/>
@@ -52,14 +52,13 @@
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="Yaj-Xc-s4Y" firstAttribute="top" secondItem="NdK-9j-ITY" secondAttribute="bottom" constant="60" id="5i2-TT-Glx"/>
+                            <constraint firstItem="Yaj-Xc-s4Y" firstAttribute="top" secondItem="NdK-9j-ITY" secondAttribute="bottom" id="5i2-TT-Glx"/>
                             <constraint firstAttribute="trailing" secondItem="Yaj-Xc-s4Y" secondAttribute="trailing" id="Kk8-pp-NiP"/>
                             <constraint firstItem="Yaj-Xc-s4Y" firstAttribute="leading" secondItem="sIL-gR-cPh" secondAttribute="leading" id="MMV-tq-sFl"/>
                             <constraint firstAttribute="bottomMargin" secondItem="Yaj-Xc-s4Y" secondAttribute="bottom" constant="31" id="vCv-AN-chR"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Forms" image="second" id="a1E-wU-r7p"/>
-                    <navigationItem key="navigationItem" id="ocP-V2-WD1"/>
+                    <tabBarItem key="tabBarItem" title="Forms" image="second" selectedImage="first" id="a1E-wU-r7p"/>
                     <connections>
                         <outlet property="MainCollectionView" destination="Wl3-Mg-kG0" id="IoW-jp-4sL"/>
                         <outlet property="MainCollectionViewLayout" destination="szf-Gp-J5j" id="2zZ-uM-1qd"/>
@@ -112,6 +111,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="first" width="30" height="30"/>
         <image name="second" width="30" height="30"/>
     </resources>
 </document>

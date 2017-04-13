@@ -48,16 +48,16 @@ class FormViewController: BaseViewController {
         MainCollectionView.delegate = dataAndDelegate
         
         MainCollectionView.isScrollEnabled = true
-        MainCollectionView.isUserInteractionEnabled = true
+        //MainCollectionView.isUserInteractionEnabled = true
         //MainCollectionView.bounces = true
         //MainCollectionView.alwaysBounceVertical = true
         
         MainCollectionViewLayout.minimumLineSpacing = designValues.spaceBetweenLines
         
-        let tapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(FormViewController.didTap(sender:)))
+        //let tapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(FormViewController.didTap(sender:)))
 
-        MainCollectionView.isUserInteractionEnabled = true
-        MainCollectionView.addGestureRecognizer(tapGestureRecognizer)
+        //MainCollectionView.isUserInteractionEnabled = true
+        //MainCollectionView.addGestureRecognizer(tapGestureRecognizer)
     
         
         //tapRec.addTarget(self, action: #selector(FirstViewController.tappedView))

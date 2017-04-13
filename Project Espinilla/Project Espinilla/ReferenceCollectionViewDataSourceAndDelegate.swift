@@ -44,7 +44,7 @@ class ReferenceCollectionViewDataSourceAndDelegate: NSObject, UICollectionViewDa
 
         cell.ReferenceLabel.text = subsectionNames?[indexPath.row]
         cell.ReferenceLabel.font = UIFont.init(name: "Gill Sans", size: 17.0)
-        cell.contentView.backgroundColor = designValues.backgroundColor
+        cell.contentView.backgroundColor = designValues.baseCellColor
         cell.ReferenceCellStack.addArrangedSubview(cell.ReferenceLabel)
         
         cell.ReferenceImageView.image = #imageLiteral(resourceName: "refImage")
@@ -67,8 +67,8 @@ class ReferenceCollectionViewDataSourceAndDelegate: NSObject, UICollectionViewDa
     func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind: String, at: IndexPath) -> UICollectionReusableView {
         let headerView = collectionView.dequeueReusableSupplementaryView(ofKind: UICollectionElementKindSectionHeader, withReuseIdentifier: "initialCollectionViewHeader", for: at) as! ReferenceCollectionReusableViewHeader
         headerView.headerLabel.text = sectionNames[at.section]
-        headerView.headerLabel.font = designValues.fieldTextFont
-        headerView.backgroundColor = UIColor.white
+        headerView.headerLabel.font = designValues.sectionLabelFont
+        headerView.backgroundColor = designValues.backgroundColor
         headerView.addSubview(headerView.headerLabel)
         
         return headerView

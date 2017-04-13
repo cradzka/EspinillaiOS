@@ -28,6 +28,8 @@ class ReferenceViewController: BaseViewController {
     
     var dataAndDelegate: ReferenceCollectionViewDataSourceAndDelegate!
     
+    var designValues = UIDesignValue.init()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -44,11 +46,12 @@ class ReferenceViewController: BaseViewController {
         initialCollectionView.dataSource = dataAndDelegate
         initialCollectionView.delegate = dataAndDelegate
         
-        let tapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(ReferenceViewController.didTap(sender:)))
+        //let tapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(ReferenceViewController.didTap(sender:)))
         
-        initialCollectionView.isUserInteractionEnabled = true
-        initialCollectionView.addGestureRecognizer(tapGestureRecognizer)
+        //initialCollectionView.isUserInteractionEnabled = true
+        //initialCollectionView.addGestureRecognizer(tapGestureRecognizer)
         
+        initialCollectionView.backgroundColor = designValues.backgroundColor
         initialStackView.addArrangedSubview(initialCollectionView)
     }
     
