@@ -12,7 +12,6 @@
         <!--References-->
         <scene sceneID="5kM-oE-Fvr">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="2Td-EC-PoB" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController storyboardIdentifier="initialReference" useStoryboardIdentifierAsRestorationIdentifier="YES" id="vuO-Qb-GsS" userLabel="References" customClass="ReferenceViewController" customModule="Project_Espinilla" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="VFl-aE-zZe"/>
@@ -65,8 +64,41 @@
                         <outlet property="initialView" destination="04F-q8-aWB" id="YjT-vS-boD"/>
                     </connections>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2Td-EC-PoB" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="951" y="265"/>
+        </scene>
+        <!--MenuViewController-->
+        <scene sceneID="93W-BY-W0T">
+            <objects>
+                <viewControllerPlaceholder storyboardIdentifier="MenuViewController" storyboardName="Main" referencedIdentifier="MenuViewController" id="lmP-ej-qbn" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cR0-2X-yWY" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1624" y="184"/>
+        </scene>
+        <!--SettingsVC-->
+        <scene sceneID="J1f-JJ-nMW">
+            <objects>
+                <viewControllerPlaceholder storyboardIdentifier="SettingsVC" storyboardName="Main" referencedIdentifier="SettingsVC" id="Bpf-Wr-nHS" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="RtL-cl-W1v" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1587" y="279"/>
+        </scene>
+        <!--DutyScheduleVC-->
+        <scene sceneID="7Re-8D-6du">
+            <objects>
+                <viewControllerPlaceholder storyboardIdentifier="DutyScheduleVC" storyboardName="Main" referencedIdentifier="DutyScheduleVC" id="WvG-xd-2Ox" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tiu-Ry-1pD" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1706" y="343"/>
+        </scene>
+        <!--AccountVC-->
+        <scene sceneID="sgS-7K-U0v">
+            <objects>
+                <viewControllerPlaceholder storyboardIdentifier="AccountVC" storyboardName="Main" referencedIdentifier="AccountVC" id="ckp-t2-LrF" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5Lz-FH-lBJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1599" y="408"/>
         </scene>
     </scenes>
     <resources>

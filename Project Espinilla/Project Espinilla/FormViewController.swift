@@ -9,7 +9,7 @@
 
 import UIKit
 
-class FormViewController: UIViewController {
+class FormViewController: BaseViewController {
 
     
     @IBOutlet weak var MainCollectionView: UICollectionView!
@@ -35,6 +35,7 @@ class FormViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.addSlideMenuButton()
         
         MainCollectionView.backgroundColor = designValues.backgroundColor
         MainCollectionView.register(UINib(nibName: "FormTileCell", bundle: nil), forCellWithReuseIdentifier: "formTileCell")
@@ -74,7 +75,7 @@ class FormViewController: UIViewController {
         // User tapped at the point above. Do something with that if you want.
     }
 
-    func openViewControllerBasedOnIdentifier(_ strIdentifier:String){
+    override func openViewControllerBasedOnIdentifier(_ strIdentifier:String){
         /* Get the destination view controller (e.g. the controller to be opened by the button */
         let destViewController : UIViewController = self.storyboard!.instantiateViewController(withIdentifier: strIdentifier)
         

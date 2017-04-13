@@ -78,6 +78,38 @@
             </objects>
             <point key="canvasLocation" x="1025" y="-488"/>
         </scene>
+        <!--MenuViewController-->
+        <scene sceneID="DWV-tF-vsg">
+            <objects>
+                <viewControllerPlaceholder storyboardIdentifier="MenuViewController" storyboardName="Main" referencedIdentifier="MenuViewController" id="0C6-Jg-nhX" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5zG-Fc-NQf" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1024" y="-59"/>
+        </scene>
+        <!--SettingsVC-->
+        <scene sceneID="pRI-ag-Olj">
+            <objects>
+                <viewControllerPlaceholder storyboardIdentifier="SettingsVC" storyboardName="Main" referencedIdentifier="SettingsVC" id="X4q-Kn-tIC" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SVP-Bq-IzD" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1024" y="-11"/>
+        </scene>
+        <!--AccountVC-->
+        <scene sceneID="W67-II-e10">
+            <objects>
+                <viewControllerPlaceholder storyboardIdentifier="AccountVC" storyboardName="Main" referencedIdentifier="AccountVC" id="aOC-jk-q5A" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Jet-v3-gxh" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1024" y="66"/>
+        </scene>
+        <!--DutyScheduleVC-->
+        <scene sceneID="Qta-QW-IM6">
+            <objects>
+                <viewControllerPlaceholder storyboardIdentifier="DutyScheduleVC" storyboardName="Main" referencedIdentifier="DutyScheduleVC" id="M8H-Oh-AYj" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Tlf-EI-vjV" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1024" y="-124"/>
+        </scene>
     </scenes>
     <resources>
         <image name="second" width="30" height="30"/>
