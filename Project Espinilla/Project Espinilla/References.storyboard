@@ -12,7 +12,7 @@
         <!--References-->
         <scene sceneID="5kM-oE-Fvr">
             <objects>
-                <viewController storyboardIdentifier="initialReference" useStoryboardIdentifierAsRestorationIdentifier="YES" id="vuO-Qb-GsS" userLabel="References" customClass="ReferenceViewController" customModule="Project_Espinilla" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="initialReference" title="References" useStoryboardIdentifierAsRestorationIdentifier="YES" id="vuO-Qb-GsS" userLabel="References" customClass="ReferenceViewController" customModule="Project_Espinilla" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="VFl-aE-zZe"/>
                         <viewControllerLayoutGuide type="bottom" id="B8P-J1-LWl"/>
