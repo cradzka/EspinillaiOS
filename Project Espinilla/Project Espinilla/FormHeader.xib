@@ -16,9 +16,9 @@
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <subviews>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dn0-e0-eUT">
-                    <rect key="frame" x="16" y="15" width="62" height="21"/>
+                    <rect key="frame" x="16" y="15" width="343" height="21"/>
                     <constraints>
-                        <constraint firstAttribute="width" constant="62" id="JRf-A0-dWF"/>
+                        <constraint firstAttribute="width" constant="343" id="JRf-A0-dWF"/>
                     </constraints>
                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                     <nil key="textColor"/>
@@ -33,7 +33,7 @@
             <connections>
                 <outlet property="headerLabel" destination="dn0-e0-eUT" id="14b-jq-ivW"/>
             </connections>
-            <point key="canvasLocation" x="62" y="-50"/>
+            <point key="canvasLocation" x="61.5" y="-50"/>
         </collectionReusableView>
     </objects>
 </document>

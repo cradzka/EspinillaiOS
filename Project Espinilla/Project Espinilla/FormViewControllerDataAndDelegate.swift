@@ -97,8 +97,11 @@ class FormViewControllerDataAndDelegate: NSObject, UICollectionViewDataSource, U
     func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind: String, at: IndexPath) -> UICollectionReusableView {
         let headerView = collectionView.dequeueReusableSupplementaryView(ofKind: UICollectionElementKindSectionHeader, withReuseIdentifier: "sectionHeader", for: at) as! FormHeader
         headerView.headerLabel.text = sectionNames[at.section]
-        headerView.headerLabel.font = designValue.fieldTextFont
-        headerView.backgroundColor = UIColor.white
+        headerView.headerLabel.font = UIFont.boldSystemFont(ofSize: 18)
+        
+        //underline label
+        headerView.headerLabel.attributedText = NSAttributedString(string: sectionNames[at.section], attributes: [NSUnderlineStyleAttributeName: NSUnderlineStyle.styleSingle.rawValue])
+        headerView.backgroundColor = designValue.backgroundColor
         headerView.addSubview(headerView.headerLabel)
         
         return headerView
