@@ -46,10 +46,10 @@ class ReferenceViewController: BaseViewController {
         initialCollectionView.dataSource = dataAndDelegate
         initialCollectionView.delegate = dataAndDelegate
         
-        //let tapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(ReferenceViewController.didTap(sender:)))
+        let tapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(ReferenceViewController.didTap(sender:)))
         
-        //initialCollectionView.isUserInteractionEnabled = true
-        //initialCollectionView.addGestureRecognizer(tapGestureRecognizer)
+        initialCollectionView.isUserInteractionEnabled = true
+        initialCollectionView.addGestureRecognizer(tapGestureRecognizer)
         
         initialCollectionView.backgroundColor = designValues.backgroundColor
         initialStackView.addArrangedSubview(initialCollectionView)
@@ -86,7 +86,7 @@ class ReferenceViewController: BaseViewController {
     
     func didTap(sender: UITapGestureRecognizer) {
         _ = sender.location(in: view)
-        self.openViewControllerBasedOnIdentifier("WindowVC")
+        self.openViewControllerBasedOnIdentifier("OpenReferenceViewController")
         print("yo")
         // User tapped at the point above. Do something with that if you want.
     }

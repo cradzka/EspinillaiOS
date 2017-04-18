@@ -61,6 +61,7 @@
                         <outlet property="initialCollectionViewLayout" destination="Oc4-sw-G66" id="Bkc-da-afL"/>
                         <outlet property="initialStackView" destination="9wD-WJ-jEh" id="4nn-Sv-n7t"/>
                         <outlet property="initialView" destination="04F-q8-aWB" id="YjT-vS-boD"/>
+                        <segue destination="9yC-cs-Puz" kind="show" identifier="transition1" id="opS-tD-vku"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2Td-EC-PoB" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -98,6 +99,49 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5Lz-FH-lBJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1272" y="784"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="hOe-57-awE">
+            <objects>
+                <navigationController id="9yC-cs-Puz" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="AvD-EL-BBb">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="WIr-oz-PLR" kind="show" identifier="transition2" id="ITy-1y-RnA"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pcs-iS-eXO" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2044" y="265"/>
+        </scene>
+        <!--Open Reference View Controller-->
+        <scene sceneID="Puf-VW-Ljr">
+            <objects>
+                <viewController storyboardIdentifier="OpenReferenceViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="WIr-oz-PLR" customClass="OpenReferenceViewController" customModule="Project_Espinilla" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="yT3-Cc-4a0"/>
+                        <viewControllerLayoutGuide type="bottom" id="bje-ew-1e5"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="i2e-3n-g4B">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XVR-sK-iPu">
+                                <rect key="frame" x="126" y="264" width="42" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ZP8-55-IpV" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3015" y="265"/>
         </scene>
     </scenes>
     <resources>

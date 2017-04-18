@@ -12,6 +12,7 @@
 		359303D11E9EC484006B63A5 /* Forms.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 359303D01E9EC484006B63A5 /* Forms.storyboard */; };
 		35F6C98F1E907E0D003B8952 /* FormTileCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 352C6A961E8CA39E00CEC21A /* FormTileCell.xib */; };
 		41028DB11E6E6D810007386A /* FormsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41028DB01E6E6D810007386A /* FormsTableViewCell.swift */; };
+		415576981EA5698B008324C5 /* OpenReferenceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 415576971EA5698B008324C5 /* OpenReferenceViewController.swift */; };
 		417430821E907114002E8373 /* ReferenceCollectionReusableViewHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 417430801E907114002E8373 /* ReferenceCollectionReusableViewHeader.swift */; };
 		417430831E907114002E8373 /* ReferenceCollectionReusableViewHeader.xib in Resources */ = {isa = PBXBuildFile; fileRef = 417430811E907114002E8373 /* ReferenceCollectionReusableViewHeader.xib */; };
 		41CBC3DE1E8CAB4100B06220 /* ReferenceCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 41CBC3DD1E8CAB4100B06220 /* ReferenceCell.xib */; };
@@ -75,6 +76,7 @@
 		352C6A9A1E8CB07F00CEC21A /* FormViewControllerDataAndDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FormViewControllerDataAndDelegate.swift; sourceTree = "<group>"; };
 		359303D01E9EC484006B63A5 /* Forms.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Forms.storyboard; sourceTree = "<group>"; };
 		41028DB01E6E6D810007386A /* FormsTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FormsTableViewCell.swift; sourceTree = "<group>"; };
+		415576971EA5698B008324C5 /* OpenReferenceViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OpenReferenceViewController.swift; sourceTree = "<group>"; };
 		417430801E907114002E8373 /* ReferenceCollectionReusableViewHeader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReferenceCollectionReusableViewHeader.swift; sourceTree = "<group>"; };
 		417430811E907114002E8373 /* ReferenceCollectionReusableViewHeader.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ReferenceCollectionReusableViewHeader.xib; sourceTree = "<group>"; };
 		41CBC3DD1E8CAB4100B06220 /* ReferenceCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ReferenceCell.xib; sourceTree = "<group>"; };
@@ -257,6 +259,7 @@
 			children = (
 				41CBC3DF1E8CAD7200B06220 /* ReferenceCell.swift */,
 				C960EBB41E5E120800748B74 /* ReferenceViewController.swift */,
+				415576971EA5698B008324C5 /* OpenReferenceViewController.swift */,
 				417430801E907114002E8373 /* ReferenceCollectionReusableViewHeader.swift */,
 				41CBC3E11E8CB0E400B06220 /* ReferenceCollectionViewDataSourceAndDelegate.swift */,
 				E1DF6C901E9EC86C0053B0A6 /* xib */,
@@ -464,6 +467,7 @@
 				E1DF6C931E9ED1E60053B0A6 /* FormHeader.swift in Sources */,
 				352C6A9B1E8CB07F00CEC21A /* FormViewControllerDataAndDelegate.swift in Sources */,
 				E17E9B021E88BFAD0015F8E2 /* RoundViewController.swift in Sources */,
+				415576981EA5698B008324C5 /* OpenReferenceViewController.swift in Sources */,
 				E1D1AA361E94A3D40002FB20 /* UIDesignValue.swift in Sources */,
 				C93378A81E9AE081008D9A1B /* DutyScheduleVC.swift in Sources */,
 			);
