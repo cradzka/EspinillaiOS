@@ -6,7 +6,6 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
-        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -129,14 +128,14 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="65v-zf-7Gd">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Reference Sheet" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="65v-zf-7Gd">
                                 <rect key="frame" x="0.0" y="72" width="375" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" usesAttributedText="YES" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="alr-Qh-JDi">
-                                <rect key="frame" x="0.0" y="245" width="375" height="422"/>
+                                <rect key="frame" x="0.0" y="381" width="375" height="286"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <accessibility key="accessibilityConfiguration">
                                     <accessibilityTraits key="traits" notEnabled="YES"/>
@@ -153,29 +152,8 @@
                                 </attributedString>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" usesAttributedText="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7MW-q1-f8R">
-                                <rect key="frame" x="190" y="109" width="185" height="128"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <accessibility key="accessibilityConfiguration">
-                                    <accessibilityTraits key="traits" notEnabled="YES"/>
-                                    <bool key="isElement" value="NO"/>
-                                </accessibility>
-                                <attributedString key="attributedText">
-                                    <fragment>
-                                        <string key="content">Don'ts:
-
-Blah
-Blah</string>
-                                        <attributes>
-                                            <font key="NSFont" metaFont="menu" size="14"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                        </attributes>
-                                    </fragment>
-                                </attributedString>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" usesAttributedText="YES" translatesAutoresizingMaskIntoConstraints="NO" id="nLp-um-71c">
-                                <rect key="frame" x="0.0" y="109" width="185" height="128"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" usesAttributedText="YES" translatesAutoresizingMaskIntoConstraints="NO" id="v9b-xY-Yaz">
+                                <rect key="frame" x="0.0" y="109" width="375" height="128"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <accessibility key="accessibilityConfiguration">
                                     <accessibilityTraits key="traits" notEnabled="YES"/>
@@ -189,31 +167,41 @@ Blah
 Blah</string>
                                         <attributes>
                                             <font key="NSFont" metaFont="menu" size="14"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="1" tighteningFactorForTruncation="0.0"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                         </attributes>
                                     </fragment>
                                 </attributedString>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="O1t-vB-KqS">
+                                <rect key="frame" x="0.0" y="245" width="375" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <accessibility key="accessibilityConfiguration">
+                                    <accessibilityTraits key="traits" notEnabled="YES"/>
+                                    <bool key="isElement" value="NO"/>
+                                </accessibility>
+                                <string key="text">Don'ts:
+
+Blah
+Blah</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="65v-zf-7Gd" firstAttribute="width" secondItem="i2e-3n-g4B" secondAttribute="width" id="1SH-Ya-Isj"/>
-                            <constraint firstItem="alr-Qh-JDi" firstAttribute="top" secondItem="yT3-Cc-4a0" secondAttribute="bottom" constant="181" id="70i-FF-m8G"/>
+                            <constraint firstItem="alr-Qh-JDi" firstAttribute="top" secondItem="yT3-Cc-4a0" secondAttribute="bottom" constant="317" id="70i-FF-m8G"/>
+                            <constraint firstItem="v9b-xY-Yaz" firstAttribute="top" secondItem="65v-zf-7Gd" secondAttribute="bottom" constant="16" id="7Pp-dO-DPV"/>
                             <constraint firstItem="alr-Qh-JDi" firstAttribute="width" secondItem="i2e-3n-g4B" secondAttribute="width" id="BLM-dL-IOC"/>
                             <constraint firstItem="alr-Qh-JDi" firstAttribute="bottom" secondItem="bje-ew-1e5" secondAttribute="top" id="Btg-TE-wQY"/>
-                            <constraint firstItem="alr-Qh-JDi" firstAttribute="top" secondItem="nLp-um-71c" secondAttribute="bottom" constant="8" symbolic="YES" id="Pk9-b4-wvc"/>
+                            <constraint firstItem="v9b-xY-Yaz" firstAttribute="width" secondItem="i2e-3n-g4B" secondAttribute="width" id="Xw1-pt-T6q"/>
                             <constraint firstItem="65v-zf-7Gd" firstAttribute="top" secondItem="yT3-Cc-4a0" secondAttribute="bottom" constant="8" symbolic="YES" id="aQx-dq-eiF"/>
-                            <constraint firstItem="nLp-um-71c" firstAttribute="width" secondItem="i2e-3n-g4B" secondAttribute="width" constant="-190" id="cUe-f3-IzE"/>
                             <constraint firstItem="65v-zf-7Gd" firstAttribute="leading" secondItem="alr-Qh-JDi" secondAttribute="leading" id="cZ8-Be-uck"/>
                             <constraint firstItem="alr-Qh-JDi" firstAttribute="leading" secondItem="i2e-3n-g4B" secondAttribute="leading" id="clw-g7-4hr"/>
-                            <constraint firstItem="7MW-q1-f8R" firstAttribute="top" secondItem="nLp-um-71c" secondAttribute="top" id="eot-rw-3nZ"/>
-                            <constraint firstItem="nLp-um-71c" firstAttribute="top" secondItem="65v-zf-7Gd" secondAttribute="bottom" constant="16" id="jHA-vc-kJw"/>
-                            <constraint firstItem="nLp-um-71c" firstAttribute="width" secondItem="65v-zf-7Gd" secondAttribute="height" multiplier="185:21" id="jN8-Fk-dWn"/>
-                            <constraint firstItem="nLp-um-71c" firstAttribute="leading" secondItem="65v-zf-7Gd" secondAttribute="leading" id="nZw-VV-ySH"/>
-                            <constraint firstItem="alr-Qh-JDi" firstAttribute="top" secondItem="7MW-q1-f8R" secondAttribute="bottom" constant="8" symbolic="YES" id="pPn-EU-Pyn"/>
-                            <constraint firstItem="7MW-q1-f8R" firstAttribute="trailing" secondItem="65v-zf-7Gd" secondAttribute="trailing" id="rgB-u2-5D2"/>
-                            <constraint firstItem="7MW-q1-f8R" firstAttribute="width" secondItem="65v-zf-7Gd" secondAttribute="height" multiplier="185:21" id="xzo-57-PoW"/>
+                            <constraint firstItem="alr-Qh-JDi" firstAttribute="top" secondItem="v9b-xY-Yaz" secondAttribute="bottom" constant="144" id="rnU-WG-2f0"/>
+                            <constraint firstItem="v9b-xY-Yaz" firstAttribute="leading" secondItem="65v-zf-7Gd" secondAttribute="leading" id="xJA-vO-alj"/>
                         </constraints>
                     </view>
                     <connections>
