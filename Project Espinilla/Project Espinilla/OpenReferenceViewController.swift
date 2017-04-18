@@ -9,6 +9,8 @@ import UIKit
 
 class OpenReferenceViewController: UIViewController {
     
+    @IBOutlet weak var Text: UITextView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
