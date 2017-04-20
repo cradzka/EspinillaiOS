@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ReferenceViewController: BaseViewController {
+class ReferenceViewController: BaseViewController, UICollectionViewDataSource, UICollectionViewDelegate {
 
     //@IBOutlet weak var RefLabel: UILabel!
     //@IBOutlet weak var RefDescr: UILabel!
@@ -17,6 +17,9 @@ class ReferenceViewController: BaseViewController {
     @IBOutlet weak var initialCollectionView: UICollectionView!
     @IBOutlet weak var initialCollectionViewLayout: UICollectionViewFlowLayout!
     
+    var sections = 3
+    
+    var designValues = UIDesignValue.init()
     
     var collectionDelegate: UICollectionViewDelegate!
     var sectionHeaders: Array<String> = ["Conflict Resolution", "Crisis Prevention", "Rules and Regulations"]
@@ -25,10 +28,6 @@ class ReferenceViewController: BaseViewController {
     var conflictResolutionNames: Array<String> = ["Roomate Conflicts", "Noise Complaints", "Party Busting", "Confrontation"]
     var crisisPreventionNames: Array<String> = ["Suicidal Resident", "Medical Emergency", "Academic Crisis", "Prevention"]
     var rulesAndRegulationsNames: Array<String> = ["Other", "Kristina", "Tim"]
-    
-    var dataAndDelegate: ReferenceCollectionViewDataSourceAndDelegate!
-    
-    var designValues = UIDesignValue.init()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -42,10 +41,6 @@ class ReferenceViewController: BaseViewController {
         initialCollectionView!.register(UINib(nibName: "ReferenceCollectionReusableViewHeader", bundle: nil), forSupplementaryViewOfKind: UICollectionElementKindSectionHeader, withReuseIdentifier: "initialCollectionViewHeader")
         initialCollectionView.setCollectionViewLayout(initialCollectionViewLayout, animated: false)
         
-        dataAndDelegate = ReferenceCollectionViewDataSourceAndDelegate(numberOfCategories: sectionHeaders.count, sectionNameList: sectionHeaders, sectionDictionary: subsectionList, collectionLayout: initialCollectionViewLayout)
-        initialCollectionView.dataSource = dataAndDelegate
-        initialCollectionView.delegate = dataAndDelegate
-        
         let tapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(ReferenceViewController.didTap(sender:)))
         
         initialCollectionView.isUserInteractionEnabled = true
@@ -53,6 +48,10 @@ class ReferenceViewController: BaseViewController {
         
         initialCollectionView.backgroundColor = designValues.backgroundColor
         initialStackView.addArrangedSubview(initialCollectionView)
+    }
+    
+    required init?(coder aDecoder: NSCoder) {
+        super.init(coder: aDecoder)
     }
     
     //initialize dictionary of building names where each containes it's issue previews. **Hardcoded for now**
@@ -106,4 +105,54 @@ class ReferenceViewController: BaseViewController {
         }
     }
     
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection: Int) -> Int {
+        return self.subsectionList.count
+    }
+    
+    func numberOfSections(in: UICollectionView) -> Int {
+        return self.sections
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "ReferenceCell", for: indexPath) as! ReferenceCell
+        let sectionName = self.sectionHeaders[indexPath.section]
+        let subsectionNames = self.subsectionList[sectionName]
+        
+        cell.ReferenceLabel.text = subsectionNames?[indexPath.row]
+        cell.ReferenceLabel.font = UIFont.init(name: "Gill Sans", size: 17.0)
+        cell.contentView.backgroundColor = designValues.baseCellColor
+        cell.ReferenceCellStack.addArrangedSubview(cell.ReferenceLabel)
+        
+        cell.ReferenceImageView.image = #imageLiteral(resourceName: "refImage")
+        cell.ReferenceCellStack.addArrangedSubview(cell.ReferenceImageView)
+        
+        cell.backgroundColor = designValues.baseCellColor
+        
+        cell.layer.shadowColor = designValues.shadowColor
+        cell.layer.shadowOffset = designValues.shadowOffset
+        cell.layer.shadowRadius = designValues.shadowRadius
+        cell.layer.shadowOpacity = designValues.shadowOpacity
+        cell.layer.borderWidth = designValues.boarderWidth
+        cell.layer.borderColor = designValues.boarderColor
+        cell.layer.masksToBounds = false
+        
+        cell.contentView.addSubview(cell.ReferenceCellStack)
+        return cell
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind: String, at: IndexPath) -> UICollectionReusableView {
+        let headerView = collectionView.dequeueReusableSupplementaryView(ofKind: UICollectionElementKindSectionHeader, withReuseIdentifier: "initialCollectionViewHeader", for: at) as! ReferenceCollectionReusableViewHeader
+        headerView.headerLabel.text = sectionHeaders[at.section]
+        headerView.headerLabel.font = designValues.sectionLabelFont
+        headerView.backgroundColor = designValues.backgroundColor
+        headerView.addSubview(headerView.headerLabel)
+        
+        return headerView
+    }
+    
 }
+
+
+
+
