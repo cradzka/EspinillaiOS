@@ -24,14 +24,14 @@ class FormViewController: BaseViewController {
     var fieldsLeft = ["10 Fields Remaining", "12 Fields Remaining", "5 Fields Remaining"]
     var halls = ["Driscoll", "Torres", "Baca"]
     var RAs = ["Carter", "Raj", "Kristina"]
-    
     var sectionHeaders: Array<String> = ["In Progress", "Completed"]
-
-    
     var designValues = UIDesignValue.init()
-
-    
     var dataAndDelegate: FormViewControllerDataAndDelegate!
+    
+    //var presentationStyle = UIModalPresentationStyle.overCurrentContext
+    //var transitionStyle = UIModalTransitionStyle.coverVertical
+    var tempWindowVC: WindowVC!
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -54,13 +54,16 @@ class FormViewController: BaseViewController {
         
         MainCollectionViewLayout.minimumLineSpacing = designValues.spaceBetweenLines
         
-        //let tapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(FormViewController.didTap(sender:)))
+        let tapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(FormViewController.didTap(sender:)))
 
-        //MainCollectionView.isUserInteractionEnabled = true
-        //MainCollectionView.addGestureRecognizer(tapGestureRecognizer)
-    
+        MainCollectionView.isUserInteractionEnabled = true
+        MainCollectionView.addGestureRecognizer(tapGestureRecognizer)
         
-        //tapRec.addTarget(self, action: #selector(FirstViewController.tappedView))
+        
+//        tempWindowVC = WindowVC()
+//        self.present(tempWindowVC, animated: true, completion: nil)
+        
+        //tapRec.addTarget(self, action: #selector(FormViewController.tappedView))
         //SlideOut.addGestureRecognizer(tapRec)
         
     }
@@ -70,7 +73,7 @@ class FormViewController: BaseViewController {
     
     func didTap(sender: UITapGestureRecognizer) {
         _ = sender.location(in: view)
-        self.openViewControllerBasedOnIdentifier("WindowVC")
+        self.openViewControllerBasedOnIdentifier("openFormVC")
         //print("yo")
         // User tapped at the point above. Do something with that if you want.
     }
@@ -89,13 +92,26 @@ class FormViewController: BaseViewController {
             self.navigationController!.pushViewController(destViewController, animated: true)
         }
     }
-    
  
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
 
+    
+    @IBAction func doPresent(_ sender: Any?) {
+        let svc = WindowVC()
+        self.present(svc, animated:true)
+    }
+    
+    override func present(_ viewControllerToPresent: UIViewController,
+                 animated flag: Bool,
+                 completion: (() -> Void)? = nil) {
+        
+            print("presenting")
+        
+    }
+    
 
 }
 

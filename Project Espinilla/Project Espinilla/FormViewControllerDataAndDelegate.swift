@@ -23,6 +23,8 @@ class FormViewControllerDataAndDelegate: NSObject, UICollectionViewDataSource, U
     var designValue: UIDesignValue
     var shadowLayer: CAShapeLayer!
     
+    
+    
     //ToDo: Add init arguments for issue lists and GPS locations info
     init(collectionLayout: UICollectionViewLayout, formNames: Array<String>, fieldsLeft: Array<String>, sectionNames: Array<String>, halls: Array<String>, RAs: Array <String>) {
         self.items = 3
@@ -107,7 +109,7 @@ class FormViewControllerDataAndDelegate: NSObject, UICollectionViewDataSource, U
     
     func collectionView(_ collectionView: UICollectionView, willDisplaySupplementaryView view: UICollectionReusableView, forElementKind elementKind: String, at indexPath: IndexPath) {
     }
-    
+ 
 }
 
 

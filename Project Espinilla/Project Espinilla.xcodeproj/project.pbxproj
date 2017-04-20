@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3501E4141EA70421006A7792 /* WindowVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3501E4131EA70421006A7792 /* WindowVC.swift */; };
 		352C6A951E8CA37F00CEC21A /* FormTileCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 352C6A941E8CA37F00CEC21A /* FormTileCell.swift */; };
 		352C6A9B1E8CB07F00CEC21A /* FormViewControllerDataAndDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 352C6A9A1E8CB07F00CEC21A /* FormViewControllerDataAndDelegate.swift */; };
 		359303D11E9EC484006B63A5 /* Forms.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 359303D01E9EC484006B63A5 /* Forms.storyboard */; };
@@ -68,6 +69,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3501E4131EA70421006A7792 /* WindowVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WindowVC.swift; sourceTree = "<group>"; };
 		3514E6FE1E9E079500C99C69 /* FormHeader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FormHeader.swift; sourceTree = "<group>"; };
 		3514E6FF1E9E079500C99C69 /* FormHeader.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FormHeader.xib; sourceTree = "<group>"; };
 		352C6A941E8CA37F00CEC21A /* FormTileCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FormTileCell.swift; sourceTree = "<group>"; };
@@ -278,6 +280,7 @@
 			children = (
 				41028DB01E6E6D810007386A /* FormsTableViewCell.swift */,
 				3514E6FE1E9E079500C99C69 /* FormHeader.swift */,
+				3501E4131EA70421006A7792 /* WindowVC.swift */,
 				C960EBB21E5E120800748B74 /* FormViewController.swift */,
 				352C6A941E8CA37F00CEC21A /* FormTileCell.swift */,
 				352C6A9A1E8CB07F00CEC21A /* FormViewControllerDataAndDelegate.swift */,
@@ -449,6 +452,7 @@
 				C9D270A91E9AEC79000F638F /* ViewController.swift in Sources */,
 				E1DF6C941E9ED1EF0053B0A6 /* FormViewController.swift in Sources */,
 				C93378A21E9AE05F008D9A1B /* BaseViewController.swift in Sources */,
+				3501E4141EA70421006A7792 /* WindowVC.swift in Sources */,
 				C960EBB51E5E120800748B74 /* ReferenceViewController.swift in Sources */,
 				41CBC3E01E8CAD7200B06220 /* ReferenceCell.swift in Sources */,
 				41028DB11E6E6D810007386A /* FormsTableViewCell.swift in Sources */,

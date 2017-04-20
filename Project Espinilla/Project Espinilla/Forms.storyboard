@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12118" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12113" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12078"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -63,6 +63,7 @@
                         <outlet property="MainCollectionView" destination="Wl3-Mg-kG0" id="IoW-jp-4sL"/>
                         <outlet property="MainCollectionViewLayout" destination="szf-Gp-J5j" id="2zZ-uM-1qd"/>
                         <outlet property="searchDisplayController" destination="5dL-n5-mVE" id="Ycn-cm-XQy"/>
+                        <segue destination="VPk-Ua-1UT" kind="show" identifier="FormSegue1" id="CSA-bc-7IV"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LOs-0G-p79" sceneMemberID="firstResponder"/>
@@ -75,7 +76,53 @@
                     </connections>
                 </searchDisplayController>
             </objects>
-            <point key="canvasLocation" x="1025" y="-488"/>
+            <point key="canvasLocation" x="1024.8" y="-488.00599700149928"/>
+        </scene>
+        <!--WindowVC-->
+        <scene sceneID="Nsf-JY-Pzu">
+            <objects>
+                <viewController storyboardIdentifier="openFormVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Qcp-MD-0eu" customClass="WindowVC" customModule="Project_Espinilla" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="IOV-Lf-zUs"/>
+                        <viewControllerLayoutGuide type="bottom" id="UwX-VC-QyD"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="QEj-0n-eUq">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Somebody kill me please" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kov-tW-2UW">
+                                <rect key="frame" x="103" y="297" width="190" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="datLabel" destination="Kov-tW-2UW" id="azF-yT-4IO"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zXI-rD-8J6" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2661.5999999999999" y="-488.00599700149928"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="8RH-32-Jgw">
+            <objects>
+                <navigationController id="VPk-Ua-1UT" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="qQ6-Eg-8CG">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="Qcp-MD-0eu" kind="show" identifier="FormSegue2" id="R3m-Fh-Ggw"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dQu-u6-RVa" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1810" y="-488"/>
         </scene>
         <!--MenuViewController-->
         <scene sceneID="DWV-tF-vsg">
