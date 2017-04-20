@@ -41,6 +41,9 @@ class ReferenceViewController: BaseViewController, UICollectionViewDataSource, U
         initialCollectionView!.register(UINib(nibName: "ReferenceCollectionReusableViewHeader", bundle: nil), forSupplementaryViewOfKind: UICollectionElementKindSectionHeader, withReuseIdentifier: "initialCollectionViewHeader")
         initialCollectionView.setCollectionViewLayout(initialCollectionViewLayout, animated: false)
         
+        initialCollectionView.delegate = self
+        initialCollectionView.dataSource = self
+        
         let tapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(ReferenceViewController.didTap(sender:)))
         
         initialCollectionView.isUserInteractionEnabled = true
