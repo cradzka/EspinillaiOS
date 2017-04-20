@@ -13,9 +13,9 @@
 		35F6C98F1E907E0D003B8952 /* FormTileCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 352C6A961E8CA39E00CEC21A /* FormTileCell.xib */; };
 		41028DB11E6E6D810007386A /* FormsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41028DB01E6E6D810007386A /* FormsTableViewCell.swift */; };
 		415576981EA5698B008324C5 /* OpenReferenceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 415576971EA5698B008324C5 /* OpenReferenceViewController.swift */; };
+		4166A8201EA91CEB005BC01F /* ReferenceCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4166A81F1EA91CEB005BC01F /* ReferenceCell.xib */; };
 		417430821E907114002E8373 /* ReferenceCollectionReusableViewHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 417430801E907114002E8373 /* ReferenceCollectionReusableViewHeader.swift */; };
 		417430831E907114002E8373 /* ReferenceCollectionReusableViewHeader.xib in Resources */ = {isa = PBXBuildFile; fileRef = 417430811E907114002E8373 /* ReferenceCollectionReusableViewHeader.xib */; };
-		41CBC3DE1E8CAB4100B06220 /* ReferenceCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 41CBC3DD1E8CAB4100B06220 /* ReferenceCell.xib */; };
 		41CBC3E01E8CAD7200B06220 /* ReferenceCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41CBC3DF1E8CAD7200B06220 /* ReferenceCell.swift */; };
 		C93378A21E9AE05F008D9A1B /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C93378A11E9AE05F008D9A1B /* BaseViewController.swift */; };
 		C93378A71E9AE081008D9A1B /* AccountVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C93378A31E9AE081008D9A1B /* AccountVC.swift */; };
@@ -76,9 +76,9 @@
 		359303D01E9EC484006B63A5 /* Forms.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Forms.storyboard; sourceTree = "<group>"; };
 		41028DB01E6E6D810007386A /* FormsTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FormsTableViewCell.swift; sourceTree = "<group>"; };
 		415576971EA5698B008324C5 /* OpenReferenceViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OpenReferenceViewController.swift; sourceTree = "<group>"; };
+		4166A81F1EA91CEB005BC01F /* ReferenceCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ReferenceCell.xib; sourceTree = "<group>"; };
 		417430801E907114002E8373 /* ReferenceCollectionReusableViewHeader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReferenceCollectionReusableViewHeader.swift; sourceTree = "<group>"; };
 		417430811E907114002E8373 /* ReferenceCollectionReusableViewHeader.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ReferenceCollectionReusableViewHeader.xib; sourceTree = "<group>"; };
-		41CBC3DD1E8CAB4100B06220 /* ReferenceCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ReferenceCell.xib; sourceTree = "<group>"; };
 		41CBC3DF1E8CAD7200B06220 /* ReferenceCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReferenceCell.swift; sourceTree = "<group>"; };
 		C93378A11E9AE05F008D9A1B /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		C93378A31E9AE081008D9A1B /* AccountVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccountVC.swift; sourceTree = "<group>"; };
@@ -143,6 +143,7 @@
 		C960EBA41E5E120700748B74 = {
 			isa = PBXGroup;
 			children = (
+				4166A81F1EA91CEB005BC01F /* ReferenceCell.xib */,
 				C960EBAF1E5E120800748B74 /* Project Espinilla */,
 				C960EBC61E5E120800748B74 /* Project EspinillaTests */,
 				C960EBD11E5E120800748B74 /* Project EspinillaUITests */,
@@ -267,7 +268,6 @@
 		E1DF6C901E9EC86C0053B0A6 /* xib */ = {
 			isa = PBXGroup;
 			children = (
-				41CBC3DD1E8CAB4100B06220 /* ReferenceCell.xib */,
 				417430811E907114002E8373 /* ReferenceCollectionReusableViewHeader.xib */,
 			);
 			name = xib;
@@ -408,11 +408,11 @@
 				E192C9D11E8CD33400286C9A /* BuildingTileCollectionViewHeader.xib in Resources */,
 				C960EBBD1E5E120800748B74 /* LaunchScreen.storyboard in Resources */,
 				E1DF6C951E9ED2100053B0A6 /* FormHeader.xib in Resources */,
-				41CBC3DE1E8CAB4100B06220 /* ReferenceCell.xib in Resources */,
 				C960EBBA1E5E120800748B74 /* Assets.xcassets in Resources */,
 				359303D11E9EC484006B63A5 /* Forms.storyboard in Resources */,
 				C960EBB81E5E120800748B74 /* Main.storyboard in Resources */,
 				E17E9B0C1E898C3B0015F8E2 /* IssuePreviewCell.xib in Resources */,
+				4166A8201EA91CEB005BC01F /* ReferenceCell.xib in Resources */,
 				35F6C98F1E907E0D003B8952 /* FormTileCell.xib in Resources */,
 				E1DF6C981E9ED92B0053B0A6 /* References.storyboard in Resources */,
 				417430831E907114002E8373 /* ReferenceCollectionReusableViewHeader.xib in Resources */,
