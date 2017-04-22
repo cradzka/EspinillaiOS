@@ -28,6 +28,7 @@
 		C960EBBD1E5E120800748B74 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C960EBBB1E5E120800748B74 /* LaunchScreen.storyboard */; };
 		C960EBC81E5E120800748B74 /* Project EspinillaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C960EBC71E5E120800748B74 /* Project EspinillaTests.swift */; };
 		C960EBD31E5E120800748B74 /* Project EspinillaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C960EBD21E5E120800748B74 /* Project EspinillaUITests.swift */; };
+		C97158701EA6F5C000BC13DB /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C971586F1EA6F5C000BC13DB /* LoginVC.swift */; };
 		C9D270A91E9AEC79000F638F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9D270A81E9AEC79000F638F /* ViewController.swift */; };
 		E104539A1E90705500F64FCF /* IssuePreviewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E10453991E90705500F64FCF /* IssuePreviewCell.swift */; };
 		E104539C1E90992700F64FCF /* IssuePreviewCellDataAndDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E104539B1E90992700F64FCF /* IssuePreviewCellDataAndDelegate.swift */; };
@@ -99,6 +100,7 @@
 		C960EBCE1E5E120800748B74 /* Project EspinillaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Project EspinillaUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C960EBD21E5E120800748B74 /* Project EspinillaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Project EspinillaUITests.swift"; sourceTree = "<group>"; };
 		C960EBD41E5E120800748B74 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C971586F1EA6F5C000BC13DB /* LoginVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LoginVC.swift; path = ../LoginVC.swift; sourceTree = "<group>"; };
 		C9D270A81E9AEC79000F638F /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		E10453991E90705500F64FCF /* IssuePreviewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IssuePreviewCell.swift; sourceTree = "<group>"; };
 		E104539B1E90992700F64FCF /* IssuePreviewCellDataAndDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IssuePreviewCellDataAndDelegate.swift; sourceTree = "<group>"; };
@@ -168,6 +170,7 @@
 				C960EBB91E5E120800748B74 /* Assets.xcassets */,
 				C960EBBB1E5E120800748B74 /* LaunchScreen.storyboard */,
 				C960EBBE1E5E120800748B74 /* Info.plist */,
+				C971586F1EA6F5C000BC13DB /* LoginVC.swift */,
 				C93378A11E9AE05F008D9A1B /* BaseViewController.swift */,
 				C93378A31E9AE081008D9A1B /* AccountVC.swift */,
 				C9D270A81E9AEC79000F638F /* ViewController.swift */,
@@ -463,6 +466,7 @@
 				352C6A951E8CA37F00CEC21A /* FormTileCell.swift in Sources */,
 				E1DF6C931E9ED1E60053B0A6 /* FormHeader.swift in Sources */,
 				352C6A9B1E8CB07F00CEC21A /* FormViewControllerDataAndDelegate.swift in Sources */,
+				C97158701EA6F5C000BC13DB /* LoginVC.swift in Sources */,
 				E17E9B021E88BFAD0015F8E2 /* RoundViewController.swift in Sources */,
 				E1D1AA361E94A3D40002FB20 /* UIDesignValue.swift in Sources */,
 				C93378A81E9AE081008D9A1B /* DutyScheduleVC.swift in Sources */,
