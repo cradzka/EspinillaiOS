@@ -6,9 +6,8 @@
 //  Copyright © 2017 Matthew Crepeau. All rights reserved.
 //
 
-import Foundation
-
 import UIKit
+import LocalAuthentication
 
 class LoginViewController: UIViewController {
     
@@ -47,9 +46,53 @@ class LoginViewController: UIViewController {
     }
     
     @IBAction func onLoginPress() {
+
+        // 1. Create a authentication context
+        let authenticationContext = LAContext()
+        var error:NSError?
+        
+        // 2. Check if the device has a fingerprint sensor
+        // If not, show the user an alert view and bail out!
+        guard authenticationContext.canEvaluatePolicy(.deviceOwnerAuthenticationWithBiometrics, error: &error) else {
+            
+            //showAlertViewIfNoBiometricSensorHasBeenDetected()
+            return
+            
+        }
+        
+        // 3. Check the fingerprint
+        authenticationContext.evaluatePolicy(
+            .deviceOwnerAuthenticationWithBiometrics,
+            localizedReason: "Scan your finger to log in",
+            reply: { [unowned self] (success, error) -> Void in
+                
+                if( success ) {
+                    
+                    // Fingerprint recognized
+                    // Go to view controller
+                    let storyboard = UIStoryboard(name: "Main", bundle: nil)
+                    let controller = storyboard.instantiateViewController(withIdentifier:"TopBarNC")
+                    self.present(controller, animated: true, completion: nil)
+                    
+                }else {
+                    
+                    // Check if there is an error
+                    if error != nil {
+                        print("error")
+                        //let message = self.errorMessageForLAErrorCode(error.code)
+                        //self.showAlertViewAfterEvaluatingPolicyWithMessage(message)
+                    }
+                }
+                
+        })
+        
+        /*
+        
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
-        let controller = storyboard.instantiateViewController(withIdentifier:"TabBarController")
+        let controller = storyboard.instantiateViewController(withIdentifier:"TopBarNC")
         self.present(controller, animated: true, completion: nil)
+ 
+         */
     }
     
     /*

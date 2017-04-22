@@ -12,7 +12,6 @@ class AccountVC: BaseViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        addSlideMenuButton()
         // Do any additional setup after loading the view.
     }
     
@@ -20,5 +19,5 @@ class AccountVC: BaseViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
+    
 }

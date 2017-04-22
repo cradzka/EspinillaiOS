@@ -23,7 +23,6 @@ class RoundViewController: BaseViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.addSlideMenuButton()
         
         fillBuildingLists(buildings: self.buildingNames)
         

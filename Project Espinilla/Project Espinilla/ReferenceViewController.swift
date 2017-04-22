@@ -33,7 +33,6 @@ class ReferenceViewController: BaseViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        self.addSlideMenuButton()
         
         fillsubsectionLists(sections: self.sectionHeaders)
         

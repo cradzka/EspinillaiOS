@@ -25,8 +25,7 @@ class BaseViewController: UIViewController, SlideMenuDelegate {
         print("View Controller is : \(topViewController) \n", terminator: "")
         switch(index){
         case 0:
-            print("Profile (Not a view)\n", terminator: "")
-            
+            print("Welcome!\n", terminator: "")
             break
         case 1:
             print("DutySchedule\n", terminator: "")

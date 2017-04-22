@@ -35,7 +35,6 @@ class FormViewController: BaseViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.addSlideMenuButton()
         
         MainCollectionView.backgroundColor = designValues.backgroundColor
         MainCollectionView.register(UINib(nibName: "FormTileCell", bundle: nil), forCellWithReuseIdentifier: "formTileCell")

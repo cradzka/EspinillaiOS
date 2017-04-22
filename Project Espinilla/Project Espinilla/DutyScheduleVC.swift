@@ -14,7 +14,6 @@ class DutyScheduleVC: BaseViewController, UITableViewDelegate, UITableViewDataSo
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        addSlideMenuButton()
         self.tableView?.register(UITableViewCell.self, forCellReuseIdentifier: "cell")
     }
     

@@ -29,6 +29,9 @@
 		C960EBC81E5E120800748B74 /* Project EspinillaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C960EBC71E5E120800748B74 /* Project EspinillaTests.swift */; };
 		C960EBD31E5E120800748B74 /* Project EspinillaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C960EBD21E5E120800748B74 /* Project EspinillaUITests.swift */; };
 		C97158701EA6F5C000BC13DB /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C971586F1EA6F5C000BC13DB /* LoginVC.swift */; };
+		C97158721EABD18A00BC13DB /* TopBarVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C97158711EABD18A00BC13DB /* TopBarVC.swift */; };
+		C97158741EABF02C00BC13DB /* AccountTableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C97158731EABF02C00BC13DB /* AccountTableVC.swift */; };
+		C97158771EAC0CD600BC13DB /* LocalAuthentication.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C97158761EAC0CD600BC13DB /* LocalAuthentication.framework */; };
 		C9D270A91E9AEC79000F638F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9D270A81E9AEC79000F638F /* ViewController.swift */; };
 		E104539A1E90705500F64FCF /* IssuePreviewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E10453991E90705500F64FCF /* IssuePreviewCell.swift */; };
 		E104539C1E90992700F64FCF /* IssuePreviewCellDataAndDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E104539B1E90992700F64FCF /* IssuePreviewCellDataAndDelegate.swift */; };
@@ -101,6 +104,9 @@
 		C960EBD21E5E120800748B74 /* Project EspinillaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Project EspinillaUITests.swift"; sourceTree = "<group>"; };
 		C960EBD41E5E120800748B74 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C971586F1EA6F5C000BC13DB /* LoginVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LoginVC.swift; path = ../LoginVC.swift; sourceTree = "<group>"; };
+		C97158711EABD18A00BC13DB /* TopBarVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TopBarVC.swift; sourceTree = "<group>"; };
+		C97158731EABF02C00BC13DB /* AccountTableVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccountTableVC.swift; sourceTree = "<group>"; };
+		C97158761EAC0CD600BC13DB /* LocalAuthentication.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = LocalAuthentication.framework; path = System/Library/Frameworks/LocalAuthentication.framework; sourceTree = SDKROOT; };
 		C9D270A81E9AEC79000F638F /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		E10453991E90705500F64FCF /* IssuePreviewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IssuePreviewCell.swift; sourceTree = "<group>"; };
 		E104539B1E90992700F64FCF /* IssuePreviewCellDataAndDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IssuePreviewCellDataAndDelegate.swift; sourceTree = "<group>"; };
@@ -122,6 +128,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C97158771EAC0CD600BC13DB /* LocalAuthentication.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -149,6 +156,7 @@
 				C960EBC61E5E120800748B74 /* Project EspinillaTests */,
 				C960EBD11E5E120800748B74 /* Project EspinillaUITests */,
 				C960EBAE1E5E120800748B74 /* Products */,
+				C97158751EAC0CD500BC13DB /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -171,8 +179,10 @@
 				C960EBBB1E5E120800748B74 /* LaunchScreen.storyboard */,
 				C960EBBE1E5E120800748B74 /* Info.plist */,
 				C971586F1EA6F5C000BC13DB /* LoginVC.swift */,
+				C97158711EABD18A00BC13DB /* TopBarVC.swift */,
 				C93378A11E9AE05F008D9A1B /* BaseViewController.swift */,
 				C93378A31E9AE081008D9A1B /* AccountVC.swift */,
+				C97158731EABF02C00BC13DB /* AccountTableVC.swift */,
 				C9D270A81E9AEC79000F638F /* ViewController.swift */,
 				C93378A41E9AE081008D9A1B /* DutyScheduleVC.swift */,
 				C93378A51E9AE081008D9A1B /* MenuViewController.swift */,
@@ -202,6 +212,14 @@
 				C960EBD41E5E120800748B74 /* Info.plist */,
 			);
 			path = "Project EspinillaUITests";
+			sourceTree = "<group>";
+		};
+		C97158751EAC0CD500BC13DB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C97158761EAC0CD600BC13DB /* LocalAuthentication.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		E13C0B9B1E9E9A7700FD211C /* rounds */ = {
@@ -366,7 +384,7 @@
 				TargetAttributes = {
 					C960EBAC1E5E120700748B74 = {
 						CreatedOnToolsVersion = 8.2.1;
-						DevelopmentTeam = 2K2JUTG8W2;
+						DevelopmentTeam = C52HDD9D9Q;
 						ProvisioningStyle = Automatic;
 					};
 					C960EBC21E5E120800748B74 = {
@@ -449,6 +467,7 @@
 				E13C0B9A1E9C29DE00FD211C /* RA.swift in Sources */,
 				E192C9CF1E8CD1A300286C9A /* BuildingTileCollectionViewHeader.swift in Sources */,
 				417430821E907114002E8373 /* ReferenceCollectionReusableViewHeader.swift in Sources */,
+				C97158741EABF02C00BC13DB /* AccountTableVC.swift in Sources */,
 				C9D270A91E9AEC79000F638F /* ViewController.swift in Sources */,
 				E1DF6C941E9ED1EF0053B0A6 /* FormViewController.swift in Sources */,
 				C93378A21E9AE05F008D9A1B /* BaseViewController.swift in Sources */,
@@ -469,6 +488,7 @@
 				C97158701EA6F5C000BC13DB /* LoginVC.swift in Sources */,
 				E17E9B021E88BFAD0015F8E2 /* RoundViewController.swift in Sources */,
 				E1D1AA361E94A3D40002FB20 /* UIDesignValue.swift in Sources */,
+				C97158721EABD18A00BC13DB /* TopBarVC.swift in Sources */,
 				C93378A81E9AE081008D9A1B /* DutyScheduleVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -621,10 +641,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 2K2JUTG8W2;
+				DEVELOPMENT_TEAM = C52HDD9D9Q;
 				INFOPLIST_FILE = "Project Espinilla/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "cradzka.Project-EspinillaiOS";
+				PRODUCT_BUNDLE_IDENTIFIER = "mjcrepeau.Project-EspinillaiOS";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -634,10 +654,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 2K2JUTG8W2;
+				DEVELOPMENT_TEAM = C52HDD9D9Q;
 				INFOPLIST_FILE = "Project Espinilla/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "cradzka.Project-EspinillaiOS";
+				PRODUCT_BUNDLE_IDENTIFIER = "mjcrepeau.Project-EspinillaiOS";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
