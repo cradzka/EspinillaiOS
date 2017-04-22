@@ -13,6 +13,7 @@ class TopBarVC: BaseViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.addSlideMenuButton()
+        navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .compose, target: self, action: nil)
     }
     
     override func didReceiveMemoryWarning() {

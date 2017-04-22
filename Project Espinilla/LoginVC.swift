@@ -56,6 +56,9 @@ class LoginViewController: UIViewController {
         guard authenticationContext.canEvaluatePolicy(.deviceOwnerAuthenticationWithBiometrics, error: &error) else {
             
             //showAlertViewIfNoBiometricSensorHasBeenDetected()
+            let storyboard = UIStoryboard(name: "Main", bundle: nil)
+            let controller = storyboard.instantiateViewController(withIdentifier:"TopBarNC")
+            self.present(controller, animated: true, completion: nil)
             return
             
         }
