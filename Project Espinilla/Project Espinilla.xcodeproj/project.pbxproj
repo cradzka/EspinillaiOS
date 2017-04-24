@@ -7,10 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		3501E4141EA70421006A7792 /* WindowVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3501E4131EA70421006A7792 /* WindowVC.swift */; };
+		3501E4141EA70421006A7792 /* OpenFormViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3501E4131EA70421006A7792 /* OpenFormViewController.swift */; };
+		3520449B1EA889C90048A1C2 /* SectionDivider.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3520449A1EA889C90048A1C2 /* SectionDivider.xib */; };
 		352C6A951E8CA37F00CEC21A /* FormTileCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 352C6A941E8CA37F00CEC21A /* FormTileCell.swift */; };
 		352C6A9B1E8CB07F00CEC21A /* FormViewControllerDataAndDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 352C6A9A1E8CB07F00CEC21A /* FormViewControllerDataAndDelegate.swift */; };
+		3545C4AE1EAD6D8E008BA58B /* GeneralInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3545C4AC1EAD6D8E008BA58B /* GeneralInfo.swift */; };
+		3545C4AF1EAD6D8E008BA58B /* GeneralInfo.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3545C4AD1EAD6D8E008BA58B /* GeneralInfo.xib */; };
+		3545C4B11EAD72A3008BA58B /* YPDrawSignatureView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3545C4B01EAD72A3008BA58B /* YPDrawSignatureView.swift */; };
+		3545C4B31EAD8EAB008BA58B /* GeneralInfoTableDataAndDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3545C4B21EAD8EAB008BA58B /* GeneralInfoTableDataAndDelegate.swift */; };
 		359303D11E9EC484006B63A5 /* Forms.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 359303D01E9EC484006B63A5 /* Forms.storyboard */; };
+		35A44E241EA985E400E3C822 /* SectionDivider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35A44E231EA985E400E3C822 /* SectionDivider.swift */; };
+		35A44E261EA9A1E400E3C822 /* OpenFormViewDataAndDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35A44E251EA9A1E400E3C822 /* OpenFormViewDataAndDelegate.swift */; };
 		35F6C98F1E907E0D003B8952 /* FormTileCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 352C6A961E8CA39E00CEC21A /* FormTileCell.xib */; };
 		41028DB11E6E6D810007386A /* FormsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41028DB01E6E6D810007386A /* FormsTableViewCell.swift */; };
 		417430821E907114002E8373 /* ReferenceCollectionReusableViewHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 417430801E907114002E8373 /* ReferenceCollectionReusableViewHeader.swift */; };
@@ -69,13 +76,20 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		3501E4131EA70421006A7792 /* WindowVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WindowVC.swift; sourceTree = "<group>"; };
+		3501E4131EA70421006A7792 /* OpenFormViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OpenFormViewController.swift; sourceTree = "<group>"; };
 		3514E6FE1E9E079500C99C69 /* FormHeader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FormHeader.swift; sourceTree = "<group>"; };
 		3514E6FF1E9E079500C99C69 /* FormHeader.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FormHeader.xib; sourceTree = "<group>"; };
+		3520449A1EA889C90048A1C2 /* SectionDivider.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SectionDivider.xib; sourceTree = "<group>"; };
 		352C6A941E8CA37F00CEC21A /* FormTileCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FormTileCell.swift; sourceTree = "<group>"; };
 		352C6A961E8CA39E00CEC21A /* FormTileCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FormTileCell.xib; sourceTree = "<group>"; };
 		352C6A9A1E8CB07F00CEC21A /* FormViewControllerDataAndDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FormViewControllerDataAndDelegate.swift; sourceTree = "<group>"; };
+		3545C4AC1EAD6D8E008BA58B /* GeneralInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GeneralInfo.swift; sourceTree = "<group>"; };
+		3545C4AD1EAD6D8E008BA58B /* GeneralInfo.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GeneralInfo.xib; sourceTree = "<group>"; };
+		3545C4B01EAD72A3008BA58B /* YPDrawSignatureView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YPDrawSignatureView.swift; sourceTree = "<group>"; };
+		3545C4B21EAD8EAB008BA58B /* GeneralInfoTableDataAndDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GeneralInfoTableDataAndDelegate.swift; sourceTree = "<group>"; };
 		359303D01E9EC484006B63A5 /* Forms.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Forms.storyboard; sourceTree = "<group>"; };
+		35A44E231EA985E400E3C822 /* SectionDivider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SectionDivider.swift; sourceTree = "<group>"; };
+		35A44E251EA9A1E400E3C822 /* OpenFormViewDataAndDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OpenFormViewDataAndDelegate.swift; sourceTree = "<group>"; };
 		41028DB01E6E6D810007386A /* FormsTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FormsTableViewCell.swift; sourceTree = "<group>"; };
 		417430801E907114002E8373 /* ReferenceCollectionReusableViewHeader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReferenceCollectionReusableViewHeader.swift; sourceTree = "<group>"; };
 		417430811E907114002E8373 /* ReferenceCollectionReusableViewHeader.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ReferenceCollectionReusableViewHeader.xib; sourceTree = "<group>"; };
@@ -165,6 +179,7 @@
 		C960EBAF1E5E120800748B74 /* Project Espinilla */ = {
 			isa = PBXGroup;
 			children = (
+				3545C4B01EAD72A3008BA58B /* YPDrawSignatureView.swift */,
 				E13C0BA11E9E9E9B00FD211C /* storyboards */,
 				C960EBB01E5E120800748B74 /* AppDelegate.swift */,
 				C960EBB91E5E120800748B74 /* Assets.xcassets */,
@@ -278,12 +293,16 @@
 		E1DF6C911E9EC8BA0053B0A6 /* forms */ = {
 			isa = PBXGroup;
 			children = (
+				3545C4B21EAD8EAB008BA58B /* GeneralInfoTableDataAndDelegate.swift */,
 				41028DB01E6E6D810007386A /* FormsTableViewCell.swift */,
 				3514E6FE1E9E079500C99C69 /* FormHeader.swift */,
-				3501E4131EA70421006A7792 /* WindowVC.swift */,
+				3501E4131EA70421006A7792 /* OpenFormViewController.swift */,
 				C960EBB21E5E120800748B74 /* FormViewController.swift */,
 				352C6A941E8CA37F00CEC21A /* FormTileCell.swift */,
+				35A44E231EA985E400E3C822 /* SectionDivider.swift */,
+				3545C4AC1EAD6D8E008BA58B /* GeneralInfo.swift */,
 				352C6A9A1E8CB07F00CEC21A /* FormViewControllerDataAndDelegate.swift */,
+				35A44E251EA9A1E400E3C822 /* OpenFormViewDataAndDelegate.swift */,
 				E1DF6C921E9EC8E30053B0A6 /* xib */,
 			);
 			name = forms;
@@ -294,6 +313,8 @@
 			children = (
 				3514E6FF1E9E079500C99C69 /* FormHeader.xib */,
 				352C6A961E8CA39E00CEC21A /* FormTileCell.xib */,
+				3545C4AD1EAD6D8E008BA58B /* GeneralInfo.xib */,
+				3520449A1EA889C90048A1C2 /* SectionDivider.xib */,
 			);
 			name = xib;
 			sourceTree = "<group>";
@@ -410,11 +431,13 @@
 				E13C0BA01E9E9E9200FD211C /* Rounds.storyboard in Resources */,
 				E192C9D11E8CD33400286C9A /* BuildingTileCollectionViewHeader.xib in Resources */,
 				C960EBBD1E5E120800748B74 /* LaunchScreen.storyboard in Resources */,
+				3520449B1EA889C90048A1C2 /* SectionDivider.xib in Resources */,
 				E1DF6C951E9ED2100053B0A6 /* FormHeader.xib in Resources */,
 				41CBC3DE1E8CAB4100B06220 /* ReferenceCell.xib in Resources */,
 				C960EBBA1E5E120800748B74 /* Assets.xcassets in Resources */,
 				359303D11E9EC484006B63A5 /* Forms.storyboard in Resources */,
 				C960EBB81E5E120800748B74 /* Main.storyboard in Resources */,
+				3545C4AF1EAD6D8E008BA58B /* GeneralInfo.xib in Resources */,
 				E17E9B0C1E898C3B0015F8E2 /* IssuePreviewCell.xib in Resources */,
 				35F6C98F1E907E0D003B8952 /* FormTileCell.xib in Resources */,
 				E1DF6C981E9ED92B0053B0A6 /* References.storyboard in Resources */,
@@ -452,21 +475,26 @@
 				C9D270A91E9AEC79000F638F /* ViewController.swift in Sources */,
 				E1DF6C941E9ED1EF0053B0A6 /* FormViewController.swift in Sources */,
 				C93378A21E9AE05F008D9A1B /* BaseViewController.swift in Sources */,
-				3501E4141EA70421006A7792 /* WindowVC.swift in Sources */,
+				3501E4141EA70421006A7792 /* OpenFormViewController.swift in Sources */,
 				C960EBB51E5E120800748B74 /* ReferenceViewController.swift in Sources */,
 				41CBC3E01E8CAD7200B06220 /* ReferenceCell.swift in Sources */,
+				3545C4B11EAD72A3008BA58B /* YPDrawSignatureView.swift in Sources */,
+				3545C4B31EAD8EAB008BA58B /* GeneralInfoTableDataAndDelegate.swift in Sources */,
 				41028DB11E6E6D810007386A /* FormsTableViewCell.swift in Sources */,
 				E17E9B061E8984A60015F8E2 /* BuildingViewTileCell.swift in Sources */,
 				C960EBB11E5E120800748B74 /* AppDelegate.swift in Sources */,
 				C93378A91E9AE081008D9A1B /* MenuViewController.swift in Sources */,
+				35A44E261EA9A1E400E3C822 /* OpenFormViewDataAndDelegate.swift in Sources */,
 				C93378AA1E9AE081008D9A1B /* SettingsVC.swift in Sources */,
 				E17BE3B11E8B971D00D19EEC /* RoundCollectionViewDataSource.swift in Sources */,
 				E138C6531E96FD31002875F4 /* (null) in Sources */,
 				E138C6571E970457002875F4 /* ReferenceCollectionViewDataSourceAndDelegate.swift in Sources */,
 				C93378A71E9AE081008D9A1B /* AccountVC.swift in Sources */,
+				3545C4AE1EAD6D8E008BA58B /* GeneralInfo.swift in Sources */,
 				352C6A951E8CA37F00CEC21A /* FormTileCell.swift in Sources */,
 				E1DF6C931E9ED1E60053B0A6 /* FormHeader.swift in Sources */,
 				352C6A9B1E8CB07F00CEC21A /* FormViewControllerDataAndDelegate.swift in Sources */,
+				35A44E241EA985E400E3C822 /* SectionDivider.swift in Sources */,
 				E17E9B021E88BFAD0015F8E2 /* RoundViewController.swift in Sources */,
 				E1D1AA361E94A3D40002FB20 /* UIDesignValue.swift in Sources */,
 				C93378A81E9AE081008D9A1B /* DutyScheduleVC.swift in Sources */,

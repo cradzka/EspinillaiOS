@@ -30,7 +30,7 @@ class FormViewController: BaseViewController {
     
     //var presentationStyle = UIModalPresentationStyle.overCurrentContext
     //var transitionStyle = UIModalTransitionStyle.coverVertical
-    var tempWindowVC: WindowVC!
+    //var tempWindowVC: OpenFormView!
     
     
     override func viewDidLoad() {
@@ -100,8 +100,8 @@ class FormViewController: BaseViewController {
 
     
     @IBAction func doPresent(_ sender: Any?) {
-        let svc = WindowVC()
-        self.present(svc, animated:true)
+        //let svc = OpenFormView()
+        //self.present(svc, animated:true)
     }
     
     override func present(_ viewControllerToPresent: UIViewController,
