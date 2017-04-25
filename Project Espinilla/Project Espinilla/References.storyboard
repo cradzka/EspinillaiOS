@@ -233,6 +233,7 @@ Blah</string>
                     </view>
                     <navigationItem key="navigationItem" id="KHx-Au-GJp"/>
                     <connections>
+                        <outlet property="ReferenceLabel" destination="65v-zf-7Gd" id="0pq-ok-FGM"/>
                         <outlet property="Text" destination="alr-Qh-JDi" id="17P-jQ-Pnp"/>
                     </connections>
                 </viewController>

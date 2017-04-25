@@ -27,7 +27,7 @@ class ReferenceViewController: BaseViewController, UICollectionViewDataSource, U
     //var categoryNames: Array<String> = ["Conflict Resolution", "Crisis Prevention", "Rules and Regulations", "Tim's Diary", "Miscellaneous"]
     var conflictResolutionNames: Array<String> = ["Roomate Conflicts", "Noise Complaints", "Party Busting", "Confrontation"]
     var crisisPreventionNames: Array<String> = ["Suicidal Resident", "Medical Emergency", "Academic Crisis", "Prevention"]
-    var rulesAndRegulationsNames: Array<String> = ["Other", "Kristina", "Tim"]
+    var rulesAndRegulationsNames: Array<String> = ["Other", "Kristina", "Tim", "Another"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -113,7 +113,14 @@ class ReferenceViewController: BaseViewController, UICollectionViewDataSource, U
 //    }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection: Int) -> Int {
-        return self.subsectionList.count
+        if (numberOfItemsInSection == 0) {
+            return conflictResolutionNames.count
+        } else if (numberOfItemsInSection == 1) {
+            return crisisPreventionNames.count
+        } else if (numberOfItemsInSection == 2) {
+            return rulesAndRegulationsNames.count
+        }
+        return 0
     }
     
     func numberOfSections(in: UICollectionView) -> Int {
@@ -162,7 +169,7 @@ class ReferenceViewController: BaseViewController, UICollectionViewDataSource, U
         let cell = collectionView.cellForItem(at: indexPath) as! ReferenceCell
         cell.backgroundColor = UIColor.white
         cell.contentView.backgroundColor = UIColor.white
-        performSegue(withIdentifier: "openRef", sender: self);
+        performSegue(withIdentifier: "openRef", sender: cell);
     }
     
     func collectionView(_ collectionView: UICollectionView, didDeselectItemAt indexPath: IndexPath) {
@@ -173,7 +180,12 @@ class ReferenceViewController: BaseViewController, UICollectionViewDataSource, U
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "openRef" {
-            // Setup new view controller
+            let cell = sender as! ReferenceCell
+            let openVC:OpenReferenceViewController = segue.destination as! OpenReferenceViewController
+            print("cell refLab", cell.ReferenceLabel.text)
+//            print("openVC refLab", openVC.ReferenceLabel.text) // initialize ReferenceLabel?
+//            let indexPath = self.initialCollectionView.indexPathsForSelectedItems
+//            openVC.ReferenceLabel.text = "boot"//cell.ReferenceLabel.text
         }
     }
     

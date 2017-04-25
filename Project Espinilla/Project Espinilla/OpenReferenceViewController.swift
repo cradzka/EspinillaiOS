@@ -9,6 +9,8 @@ import UIKit
 
 class OpenReferenceViewController: UIViewController {
     
+    @IBOutlet weak var ReferenceLabel: UILabel!
+    
     @IBOutlet weak var Text: UITextView!
     
     override func viewDidLoad() {
