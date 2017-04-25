@@ -162,6 +162,7 @@ class ReferenceViewController: BaseViewController, UICollectionViewDataSource, U
         let cell = collectionView.cellForItem(at: indexPath) as! ReferenceCell
         cell.backgroundColor = UIColor.white
         cell.contentView.backgroundColor = UIColor.white
+        performSegue(withIdentifier: "openRef", sender: self);
     }
     
     func collectionView(_ collectionView: UICollectionView, didDeselectItemAt indexPath: IndexPath) {
@@ -171,7 +172,7 @@ class ReferenceViewController: BaseViewController, UICollectionViewDataSource, U
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if segue.identifier == "buttonToNav" {
+        if segue.identifier == "openRef" {
             // Setup new view controller
         }
     }
