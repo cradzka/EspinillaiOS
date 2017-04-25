@@ -35,7 +35,7 @@
                                             <inset key="sectionInset" minX="20" minY="8" maxX="20" maxY="20"/>
                                         </collectionViewFlowLayout>
                                         <cells>
-                                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="ReferenceCell" id="wzk-md-pXj">
+                                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="ReferenceCell" id="wzk-md-pXj" customClass="ReferenceCell" customModule="Project_Espinilla" customModuleProvider="target">
                                                 <rect key="frame" x="20" y="58" width="162" height="162"/>
                                                 <autoresizingMask key="autoresizingMask"/>
                                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
@@ -63,6 +63,14 @@
                                                                 <constraint firstItem="UqH-IM-IJO" firstAttribute="width" secondItem="leo-29-MAL" secondAttribute="width" id="nBN-oq-ATD"/>
                                                             </constraints>
                                                         </stackView>
+                                                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eAO-EI-cAH">
+                                                            <rect key="frame" x="0.0" y="81" width="162" height="0.0"/>
+                                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                            <state key="normal" title="Button"/>
+                                                            <connections>
+                                                                <segue destination="dnI-vr-wsp" kind="show" identifier="buttonToNav" id="bua-lT-gOY"/>
+                                                            </connections>
+                                                        </button>
                                                     </subviews>
                                                 </view>
                                                 <constraints>
@@ -71,6 +79,12 @@
                                                     <constraint firstItem="leo-29-MAL" firstAttribute="centerY" secondItem="wzk-md-pXj" secondAttribute="centerY" id="Pg9-PU-sgI"/>
                                                     <constraint firstItem="leo-29-MAL" firstAttribute="centerX" secondItem="wzk-md-pXj" secondAttribute="centerX" id="hBZ-Nc-cwz"/>
                                                 </constraints>
+                                                <connections>
+                                                    <outlet property="ReferenceCellStack" destination="leo-29-MAL" id="Dbp-Ow-2iQ"/>
+                                                    <outlet property="ReferenceImageView" destination="UqH-IM-IJO" id="ajh-9A-8C8"/>
+                                                    <outlet property="ReferenceLabel" destination="os6-ej-BBP" id="rKq-E4-bCk"/>
+                                                    <outlet property="testButton" destination="eAO-EI-cAH" id="kTZ-dc-WaR"/>
+                                                </connections>
                                             </collectionViewCell>
                                         </cells>
                                         <collectionReusableView key="sectionHeaderView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" reuseIdentifier="ReferenceCollectionReusableViewHeader" id="WT5-Nt-WnH">
@@ -99,7 +113,6 @@
                         <outlet property="initialCollectionViewLayout" destination="Oc4-sw-G66" id="Bkc-da-afL"/>
                         <outlet property="initialStackView" destination="9wD-WJ-jEh" id="4nn-Sv-n7t"/>
                         <outlet property="initialView" destination="04F-q8-aWB" id="YjT-vS-boD"/>
-                        <segue destination="9yC-cs-Puz" kind="show" identifier="transition1" id="opS-tD-vku"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2Td-EC-PoB" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -137,22 +150,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5Lz-FH-lBJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1272" y="784"/>
-        </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="hOe-57-awE">
-            <objects>
-                <navigationController id="9yC-cs-Puz" sceneMemberID="viewController">
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="AvD-EL-BBb">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <connections>
-                        <segue destination="WIr-oz-PLR" kind="show" identifier="transition2" id="ITy-1y-RnA"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="pcs-iS-eXO" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="2044" y="265"/>
         </scene>
         <!--Open Reference View Controller-->
         <scene sceneID="Puf-VW-Ljr">
@@ -242,13 +239,32 @@ Blah</string>
                             <constraint firstItem="v9b-xY-Yaz" firstAttribute="leading" secondItem="65v-zf-7Gd" secondAttribute="leading" id="xJA-vO-alj"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="KHx-Au-GJp"/>
                     <connections>
                         <outlet property="Text" destination="alr-Qh-JDi" id="17P-jQ-Pnp"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZP8-55-IpV" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3013.5999999999999" y="264.91754122938534"/>
+            <point key="canvasLocation" x="3952.8000000000002" y="264.91754122938534"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="l4c-Gk-PcJ">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="dnI-vr-wsp" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Fdg-UJ-H86">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="WIr-oz-PLR" kind="show" identifier="navToRef" id="Wpq-ZW-MBw"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tyZ-sR-vio" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2300" y="265"/>
         </scene>
     </scenes>
     <resources>
