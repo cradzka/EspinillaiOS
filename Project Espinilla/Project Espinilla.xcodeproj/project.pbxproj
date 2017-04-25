@@ -52,6 +52,8 @@
 		E1D9AB341EAEC24200FA1B15 /* IssueListHeaderCellTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1D9AB331EAEC24200FA1B15 /* IssueListHeaderCellTableViewCell.swift */; };
 		E1D9AB361EAECF1800FA1B15 /* Project EspinillaTests.xctest in Resources */ = {isa = PBXBuildFile; fileRef = C960EBC31E5E120800748B74 /* Project EspinillaTests.xctest */; };
 		E1D9AB391EAED02200FA1B15 /* Project EspinillaUITests.xctest in Resources */ = {isa = PBXBuildFile; fileRef = C960EBCE1E5E120800748B74 /* Project EspinillaUITests.xctest */; };
+		E1D9AB3B1EAEE1C400FA1B15 /* IssueDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1D9AB3A1EAEE1C400FA1B15 /* IssueDetailViewController.swift */; };
+		E1D9AB3E1EAF172500FA1B15 /* Issue.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1D9AB3D1EAF172500FA1B15 /* Issue.swift */; };
 		E1DF6C931E9ED1E60053B0A6 /* FormHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3514E6FE1E9E079500C99C69 /* FormHeader.swift */; };
 		E1DF6C941E9ED1EF0053B0A6 /* FormViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C960EBB21E5E120800748B74 /* FormViewController.swift */; };
 		E1DF6C951E9ED2100053B0A6 /* FormHeader.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3514E6FF1E9E079500C99C69 /* FormHeader.xib */; };
@@ -127,6 +129,8 @@
 		E1D1AA351E94A3D40002FB20 /* UIDesignValues.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIDesignValues.swift; sourceTree = "<group>"; };
 		E1D9AB311EAEC0D300FA1B15 /* IssuePreviewCellHeader.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = IssuePreviewCellHeader.xib; sourceTree = "<group>"; };
 		E1D9AB331EAEC24200FA1B15 /* IssueListHeaderCellTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IssueListHeaderCellTableViewCell.swift; sourceTree = "<group>"; };
+		E1D9AB3A1EAEE1C400FA1B15 /* IssueDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IssueDetailViewController.swift; sourceTree = "<group>"; };
+		E1D9AB3D1EAF172500FA1B15 /* Issue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Issue.swift; sourceTree = "<group>"; };
 		E1DF6C971E9ED92B0053B0A6 /* References.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = References.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -239,6 +243,7 @@
 				E104539B1E90992700F64FCF /* IssuePreviewCellDataAndDelegate.swift */,
 				E10453991E90705500F64FCF /* IssuePreviewCell.swift */,
 				E1D9AB331EAEC24200FA1B15 /* IssueListHeaderCellTableViewCell.swift */,
+				E1D9AB3A1EAEE1C400FA1B15 /* IssueDetailViewController.swift */,
 				E13C0B9E1E9E9BD500FD211C /* xibs */,
 			);
 			name = rounds;
@@ -257,6 +262,7 @@
 			children = (
 				E13C0B991E9C29DE00FD211C /* RA.swift */,
 				E178D2DD1EA800C8000A613D /* Building.swift */,
+				E1D9AB3D1EAF172500FA1B15 /* Issue.swift */,
 			);
 			name = core_data;
 			sourceTree = "<group>";
@@ -488,6 +494,8 @@
 				41028DB11E6E6D810007386A /* FormsTableViewCell.swift in Sources */,
 				E17E9B061E8984A60015F8E2 /* BuildingViewTileCell.swift in Sources */,
 				E178D2DC1EA7FD9E000A613D /* BuildingIssueListViewController.swift in Sources */,
+				E1D9AB3B1EAEE1C400FA1B15 /* IssueDetailViewController.swift in Sources */,
+				E1D9AB3E1EAF172500FA1B15 /* Issue.swift in Sources */,
 				C960EBB11E5E120800748B74 /* AppDelegate.swift in Sources */,
 				C93378A91E9AE081008D9A1B /* MenuViewController.swift in Sources */,
 				C93378AA1E9AE081008D9A1B /* SettingsVC.swift in Sources */,

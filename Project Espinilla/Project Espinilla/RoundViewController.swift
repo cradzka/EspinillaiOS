@@ -18,6 +18,7 @@ class RoundViewController: UIViewController, UICollectionViewDataSource, UIColle
     var collectionDelegate: UICollectionViewDelegate!
     var buildingNames: Array<String> = ["West", "Presidents", "Driscoll"]
     var buildingIssueLists: [String: Array<String>] = [:]
+    var fullIssueLists: [Issue] = []
     var indexPath = IndexPath.init()
     var designValue = UIDesignValue.init()
     
@@ -27,7 +28,7 @@ class RoundViewController: UIViewController, UICollectionViewDataSource, UIColle
         super.viewDidLoad()
         //self.addSlideMenuButton()
         
-        fillBuildingLists(buildings: self.buildingNames)
+        fillBuildingLists(buildings: self.buildingNames, issues: self.fullIssueLists)
         
         initialCollectionView.backgroundColor = designValue.backgroundColor
         initialCollectionView!.register(UINib(nibName: "BuildingViewTileCell", bundle: nil), forCellWithReuseIdentifier: "BuildingViewTileCell")
@@ -45,7 +46,7 @@ class RoundViewController: UIViewController, UICollectionViewDataSource, UIColle
     }
     
     //initialize dictionary of building names where each containes it's issue previews. **Hardcoded for now**
-    func fillBuildingLists(buildings: Array<String>) {
+    func fillBuildingLists(buildings: Array<String>, issues: [Issue]) {
     
         var west: Array<String>
         var pres: Array<String>
@@ -56,6 +57,8 @@ class RoundViewController: UIViewController, UICollectionViewDataSource, UIColle
         west.append("[Aaron]<3/23/17>: Foul oder in lower lounge.")
         west.append("[Valentine]<3/22/17>: 2nd floor east wing air conditioning not working.")
         west.append("[Illiana]<3/22/17>: Presidents' basement bathroom has toilet that won't stop running.")
+        
+        fullIssueLists.append(Issue.init(id: 0, date: "<3/31/17>", building: "West", author: "Carter", location: "Second floor - Bathroom", bodyText: "Slow water leak in second floor bathroom. Called facilities on-call who said they will repair it the next day", zoneImage: #imageLiteral(resourceName: "checkMark")))
         
         drisc = Array<String>()
         drisc.append("[Lynda]<4/1/17>: Slow water leak in second floor bathroom.")
@@ -215,9 +218,10 @@ class RoundViewController: UIViewController, UICollectionViewDataSource, UIColle
 
         if(segue.identifier == "openIssues") {
             if let issueListVC = segue.destination as? BuildingIssueListViewController {
-                print(segue.source)
+
                 issueListVC.issueLists = self.buildingIssueLists
                 issueListVC.buildingNames = self.buildingNames
+                issueListVC.realIssueLists = self.fullIssueLists
             }
         }
     }

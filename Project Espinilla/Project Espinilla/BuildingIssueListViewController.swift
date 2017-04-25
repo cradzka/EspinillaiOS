@@ -8,10 +8,12 @@
 
 import UIKit
 
-class BuildingIssueListViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
+class BuildingIssueListViewController: UIViewController, UITableViewDataSource, UITableViewDelegate, UIPopoverPresentationControllerDelegate {
 
     var buildingNames: Array<String>?
     var issueLists: [String: Array<String>] = [:]
+    var realIssueLists: [Issue] = []
+    
     @IBOutlet var issueTableView: UITableView!
     
     override func viewDidLoad() {
@@ -23,7 +25,7 @@ class BuildingIssueListViewController: UIViewController, UITableViewDataSource, 
         self.issueTableView.dataSource = self
         self.issueTableView.delegate = self
         
-        print(self.buildingNames)
+        print(self.buildingNames!)
         print(self.issueLists)
         /*
         if self.buildingNames == nil {
@@ -58,16 +60,49 @@ class BuildingIssueListViewController: UIViewController, UITableViewDataSource, 
         return (issueLists[self.buildingNames![section]]?.count)!
     }
 
+
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "IssuePreviewCell", for: indexPath) as! IssuePreviewCell
         let buildingIssueList = self.issueLists[self.buildingNames![indexPath.section]]
         cell.IssueTextView.text = buildingIssueList?[indexPath.row]
+        cell.IssueTextView.isEditable = false
+        cell.IssueTextView.canCancelContentTouches = false
+        cell.becomeFirstResponder()
         
         return cell
     }
     
     func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
         return self.buildingNames?[section]
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        performSegue(withIdentifier: "issueDetail", sender: self)
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?){
+        
+        let indexPath = issueTableView.indexPathForSelectedRow
+        let rect = issueTableView.rectForRow(at: indexPath!)
+        let issue = realIssueLists[(indexPath?.row)!]
+
+        
+        if(segue.identifier == "issueDetail") {
+            if let issueDetailVC = segue.destination as? IssueDetailViewController {
+                
+                issueDetailVC.issue = issue
+                issueDetailVC.popoverPresentationController?.permittedArrowDirections = UIPopoverArrowDirection.up
+                issueDetailVC.popoverPresentationController?.delegate = self
+                issueDetailVC.popoverPresentationController?.sourceView = self.issueTableView
+                issueDetailVC.popoverPresentationController?.sourceRect = CGRect.init(x: rect.minX, y: rect.maxY, width: 344, height: 334)
+                
+            }
+        }
+    }
+    
+    func adaptivePresentationStyle(for controller: UIPresentationController, traitCollection: UITraitCollection) -> UIModalPresentationStyle {
+        // return UIModalPresentationStyle.FullScreen
+        return UIModalPresentationStyle.none
     }
 
     /*
