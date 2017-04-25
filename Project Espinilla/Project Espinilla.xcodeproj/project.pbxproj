@@ -497,7 +497,8 @@
 				352C6A9B1E8CB07F00CEC21A /* FormViewControllerDataAndDelegate.swift in Sources */,
 				C97158701EA6F5C000BC13DB /* LoginVC.swift in Sources */,
 				E17E9B021E88BFAD0015F8E2 /* RoundViewController.swift in Sources */,
-				E1D1AA361E94A3D40002FB20 /* UIDesignValues.swift in Sources */,
+				E1D1AA361E94A3D40002FB20 /* UIDesignValue.swift in Sources */,
+				C97158721EABD18A00BC13DB /* TopBarVC.swift in Sources */,
 				C93378A81E9AE081008D9A1B /* DutyScheduleVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
