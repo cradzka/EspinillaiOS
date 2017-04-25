@@ -50,6 +50,8 @@
 		E1D1AA361E94A3D40002FB20 /* UIDesignValues.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1D1AA351E94A3D40002FB20 /* UIDesignValues.swift */; };
 		E1D9AB321EAEC0D300FA1B15 /* IssuePreviewCellHeader.xib in Resources */ = {isa = PBXBuildFile; fileRef = E1D9AB311EAEC0D300FA1B15 /* IssuePreviewCellHeader.xib */; };
 		E1D9AB341EAEC24200FA1B15 /* IssueListHeaderCellTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1D9AB331EAEC24200FA1B15 /* IssueListHeaderCellTableViewCell.swift */; };
+		E1D9AB361EAECF1800FA1B15 /* Project EspinillaTests.xctest in Resources */ = {isa = PBXBuildFile; fileRef = C960EBC31E5E120800748B74 /* Project EspinillaTests.xctest */; };
+		E1D9AB391EAED02200FA1B15 /* Project EspinillaUITests.xctest in Resources */ = {isa = PBXBuildFile; fileRef = C960EBCE1E5E120800748B74 /* Project EspinillaUITests.xctest */; };
 		E1DF6C931E9ED1E60053B0A6 /* FormHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3514E6FE1E9E079500C99C69 /* FormHeader.swift */; };
 		E1DF6C941E9ED1EF0053B0A6 /* FormViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C960EBB21E5E120800748B74 /* FormViewController.swift */; };
 		E1DF6C951E9ED2100053B0A6 /* FormHeader.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3514E6FF1E9E079500C99C69 /* FormHeader.xib */; };
@@ -392,7 +394,7 @@
 				TargetAttributes = {
 					C960EBAC1E5E120700748B74 = {
 						CreatedOnToolsVersion = 8.2.1;
-						DevelopmentTeam = C52HDD9D9Q;
+						DevelopmentTeam = 2K2JUTG8W2;
 						ProvisioningStyle = Automatic;
 					};
 					C960EBC21E5E120800748B74 = {
@@ -453,6 +455,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E1D9AB361EAECF1800FA1B15 /* Project EspinillaTests.xctest in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -460,6 +463,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E1D9AB391EAED02200FA1B15 /* Project EspinillaUITests.xctest in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -497,7 +501,7 @@
 				352C6A9B1E8CB07F00CEC21A /* FormViewControllerDataAndDelegate.swift in Sources */,
 				C97158701EA6F5C000BC13DB /* LoginVC.swift in Sources */,
 				E17E9B021E88BFAD0015F8E2 /* RoundViewController.swift in Sources */,
-				E1D1AA361E94A3D40002FB20 /* UIDesignValue.swift in Sources */,
+				E1D1AA361E94A3D40002FB20 /* UIDesignValues.swift in Sources */,
 				C97158721EABD18A00BC13DB /* TopBarVC.swift in Sources */,
 				C93378A81E9AE081008D9A1B /* DutyScheduleVC.swift in Sources */,
 			);
@@ -651,10 +655,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = C52HDD9D9Q;
+				DEVELOPMENT_TEAM = 2K2JUTG8W2;
 				INFOPLIST_FILE = "Project Espinilla/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "mjcrepeau.Project-EspinillaiOS";
+				PRODUCT_BUNDLE_IDENTIFIER = "cradzka.Project-EspinillaiOS";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -664,10 +668,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = C52HDD9D9Q;
+				DEVELOPMENT_TEAM = 2K2JUTG8W2;
 				INFOPLIST_FILE = "Project Espinilla/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "mjcrepeau.Project-EspinillaiOS";
+				PRODUCT_BUNDLE_IDENTIFIER = "cradzka.Project-EspinillaiOS";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
