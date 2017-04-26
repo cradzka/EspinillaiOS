@@ -145,7 +145,7 @@ class ReferenceViewController: BaseViewController, UICollectionViewDataSource, U
             print("cell refLab", cell.ReferenceLabel.text)
 //            print("openVC refLab", openVC.ReferenceLabel.text) // initialize ReferenceLabel?
 //            let indexPath = self.initialCollectionView.indexPathsForSelectedItems
-//            openVC.ReferenceLabel.text = "boot"//cell.ReferenceLabel.text
+            openVC.ReferenceLabel = cell.ReferenceLabel //"boot"//cell.ReferenceLabel.text
         }
     }
     

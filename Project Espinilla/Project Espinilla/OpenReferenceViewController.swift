@@ -13,9 +13,12 @@ class OpenReferenceViewController: UIViewController {
     
     @IBOutlet weak var Text: UITextView!
     
+    var ref: Reference?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        self.ReferenceLabel.text = ref?.name
     }
     
     override func didReceiveMemoryWarning() {
