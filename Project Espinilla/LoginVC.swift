@@ -169,7 +169,7 @@ class LoginViewController: UIViewController {
     {
         // Launch the home VC
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
-        let controller = storyboard.instantiateViewController(withIdentifier:"TabBarController")
+        let controller = storyboard.instantiateViewController(withIdentifier:"TopBarNC")
         self.present(controller, animated: true, completion: nil)
         
         // Set User data?
