@@ -23,10 +23,10 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Yaj-Xc-s4Y">
-                                <rect key="frame" x="0.0" y="20" width="375" height="616"/>
+                                <rect key="frame" x="0.0" y="80" width="375" height="556"/>
                                 <subviews>
                                     <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="Wl3-Mg-kG0">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="616"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="556"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <gestureRecognizers/>
                                         <inset key="scrollIndicatorInsets" minX="12" minY="0.0" maxX="0.0" maxY="0.0"/>
@@ -52,13 +52,14 @@
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="Yaj-Xc-s4Y" firstAttribute="top" secondItem="NdK-9j-ITY" secondAttribute="bottom" id="5i2-TT-Glx"/>
+                            <constraint firstItem="Yaj-Xc-s4Y" firstAttribute="top" secondItem="NdK-9j-ITY" secondAttribute="bottom" constant="60" id="5i2-TT-Glx"/>
                             <constraint firstAttribute="trailing" secondItem="Yaj-Xc-s4Y" secondAttribute="trailing" id="Kk8-pp-NiP"/>
                             <constraint firstItem="Yaj-Xc-s4Y" firstAttribute="leading" secondItem="sIL-gR-cPh" secondAttribute="leading" id="MMV-tq-sFl"/>
                             <constraint firstAttribute="bottomMargin" secondItem="Yaj-Xc-s4Y" secondAttribute="bottom" constant="31" id="vCv-AN-chR"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Forms" image="second" selectedImage="first" id="a1E-wU-r7p"/>
+                    <tabBarItem key="tabBarItem" title="Forms" image="second" id="a1E-wU-r7p"/>
+                    <navigationItem key="navigationItem" id="ocP-V2-WD1"/>
                     <connections>
                         <outlet property="MainCollectionView" destination="Wl3-Mg-kG0" id="IoW-jp-4sL"/>
                         <outlet property="MainCollectionViewLayout" destination="szf-Gp-J5j" id="2zZ-uM-1qd"/>
@@ -77,41 +78,8 @@
             </objects>
             <point key="canvasLocation" x="1025" y="-488"/>
         </scene>
-        <!--MenuViewController-->
-        <scene sceneID="DWV-tF-vsg">
-            <objects>
-                <viewControllerPlaceholder storyboardIdentifier="MenuViewController" storyboardName="Main" referencedIdentifier="MenuViewController" id="0C6-Jg-nhX" sceneMemberID="viewController"/>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="5zG-Fc-NQf" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1024" y="-59"/>
-        </scene>
-        <!--SettingsVC-->
-        <scene sceneID="pRI-ag-Olj">
-            <objects>
-                <viewControllerPlaceholder storyboardIdentifier="SettingsVC" storyboardName="Main" referencedIdentifier="SettingsVC" id="X4q-Kn-tIC" sceneMemberID="viewController"/>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="SVP-Bq-IzD" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1024" y="-11"/>
-        </scene>
-        <!--AccountVC-->
-        <scene sceneID="W67-II-e10">
-            <objects>
-                <viewControllerPlaceholder storyboardIdentifier="AccountVC" storyboardName="Main" referencedIdentifier="AccountVC" id="aOC-jk-q5A" sceneMemberID="viewController"/>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Jet-v3-gxh" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1024" y="66"/>
-        </scene>
-        <!--DutyScheduleVC-->
-        <scene sceneID="Qta-QW-IM6">
-            <objects>
-                <viewControllerPlaceholder storyboardIdentifier="DutyScheduleVC" storyboardName="Main" referencedIdentifier="DutyScheduleVC" id="M8H-Oh-AYj" sceneMemberID="viewController"/>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Tlf-EI-vjV" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1024" y="-124"/>
-        </scene>
     </scenes>
     <resources>
-        <image name="first" width="30" height="30"/>
         <image name="second" width="30" height="30"/>
     </resources>
 </document>

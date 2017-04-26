@@ -9,7 +9,7 @@
 
 import UIKit
 
-class FormViewController: BaseViewController {
+class FormViewController: UIViewController {
 
     
     @IBOutlet weak var MainCollectionView: UICollectionView!
@@ -47,16 +47,16 @@ class FormViewController: BaseViewController {
         MainCollectionView.delegate = dataAndDelegate
         
         MainCollectionView.isScrollEnabled = true
-        //MainCollectionView.isUserInteractionEnabled = true
+        MainCollectionView.isUserInteractionEnabled = true
         //MainCollectionView.bounces = true
         //MainCollectionView.alwaysBounceVertical = true
         
         MainCollectionViewLayout.minimumLineSpacing = designValues.spaceBetweenLines
         
-        //let tapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(FormViewController.didTap(sender:)))
+        let tapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(FormViewController.didTap(sender:)))
 
-        //MainCollectionView.isUserInteractionEnabled = true
-        //MainCollectionView.addGestureRecognizer(tapGestureRecognizer)
+        MainCollectionView.isUserInteractionEnabled = true
+        MainCollectionView.addGestureRecognizer(tapGestureRecognizer)
     
         
         //tapRec.addTarget(self, action: #selector(FirstViewController.tappedView))
@@ -74,7 +74,7 @@ class FormViewController: BaseViewController {
         // User tapped at the point above. Do something with that if you want.
     }
 
-    override func openViewControllerBasedOnIdentifier(_ strIdentifier:String){
+    func openViewControllerBasedOnIdentifier(_ strIdentifier:String){
         /* Get the destination view controller (e.g. the controller to be opened by the button */
         let destViewController : UIViewController = self.storyboard!.instantiateViewController(withIdentifier: strIdentifier)
         
