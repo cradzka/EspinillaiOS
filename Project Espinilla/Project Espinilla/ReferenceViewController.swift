@@ -10,8 +10,6 @@ import UIKit
 
 class ReferenceViewController: BaseViewController, UICollectionViewDataSource, UICollectionViewDelegate {
 
-    //@IBOutlet weak var RefLabel: UILabel!
-    //@IBOutlet weak var RefDescr: UILabel!
     @IBOutlet var initialView: UIView!
     @IBOutlet weak var initialStackView: UIStackView!
     @IBOutlet weak var initialCollectionView: UICollectionView!
@@ -43,16 +41,7 @@ class ReferenceViewController: BaseViewController, UICollectionViewDataSource, U
         
         initialCollectionView.delegate = self
         initialCollectionView.dataSource = self
-        
-        //let tapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(ReferenceViewController.didTap(sender:)))
-        
         initialCollectionView.isUserInteractionEnabled = true
-        //initialCollectionView.addGestureRecognizer(tapGestureRecognizer)
-        
-//        let storyboard = UIStoryboard(name: "References.storyboard", bundle: Bundle.main)
-//        let destination = storyboard.instantiateViewController(withIdentifier: "OpenReferenceViewController") as! OpenReferenceViewController
-//        navigationController?.pushViewController(destination, animated: true)
-        
         initialCollectionView.backgroundColor = designValues.backgroundColor
         initialStackView.addArrangedSubview(initialCollectionView)
     }
@@ -87,30 +76,6 @@ class ReferenceViewController: BaseViewController, UICollectionViewDataSource, U
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
-    /* This function is called when the button is tapped (touch up inside sent event) */
-    
-//    func didTap(sender: UITapGestureRecognizer) {
-//        _ = sender.location(in: view)
-//        self.openViewControllerBasedOnIdentifier("OpenReferenceViewController")
-//        print("yo")
-//        // User tapped at the point above. Do something with that if you want.
-//    }
-//    
-//    override func openViewControllerBasedOnIdentifier(_ strIdentifier:String){
-//        /* Get the destination view controller (e.g. the controller to be opened by the button */
-//        let destViewController : UIViewController = self.storyboard!.instantiateViewController(withIdentifier: strIdentifier)
-//        
-//        /* Get the current top view controller */
-//        let topViewController : UIViewController = self.navigationController!.topViewController!
-//        
-//        if (topViewController.restorationIdentifier! == destViewController.restorationIdentifier!){
-//            print("Same VC") // You clicked a button that takes you to the view you are currently on
-//        } else {
-//            /* Push the new view onto the navigation stack */
-//            self.navigationController!.pushViewController(destViewController, animated: true)
-//        }
-//    }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection: Int) -> Int {
         if (numberOfItemsInSection == 0) {
