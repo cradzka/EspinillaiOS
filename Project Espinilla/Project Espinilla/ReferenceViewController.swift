@@ -25,7 +25,8 @@ class ReferenceViewController: BaseViewController, UICollectionViewDataSource, U
     //var categoryNames: Array<String> = ["Conflict Resolution", "Crisis Prevention", "Rules and Regulations", "Tim's Diary", "Miscellaneous"]
     var conflictResolutionNames: Array<String> = ["Roomate Conflicts", "Noise Complaints", "Party Busting", "Confrontation"]
     var crisisPreventionNames: Array<String> = ["Suicidal Resident", "Medical Emergency", "Academic Crisis", "Prevention"]
-    var rulesAndRegulationsNames: Array<String> = ["Other", "Kristina", "Tim", "Another"]
+    var rulesAndRegulationsNames: Array<String> = ["Other", "Kristina", "Tim", "Another", "First Name"]
+    var refNames: [Reference] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -69,6 +70,8 @@ class ReferenceViewController: BaseViewController, UICollectionViewDataSource, U
         self.subsectionList[sectionHeaders[0]] = conflictResolution
         self.subsectionList[sectionHeaders[1]] = crisisPrevention
         self.subsectionList[sectionHeaders[2]] = rulesRegulations
+        
+        refNames.append(Reference.init(name: "First Name"))
         
     }
 
@@ -141,11 +144,15 @@ class ReferenceViewController: BaseViewController, UICollectionViewDataSource, U
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "openRef" {
             let cell = sender as! ReferenceCell
-            let openVC:OpenReferenceViewController = segue.destination as! OpenReferenceViewController
+            let openVC: OpenReferenceViewController = segue.destination as! OpenReferenceViewController
             print("cell refLab", cell.ReferenceLabel.text)
 //            print("openVC refLab", openVC.ReferenceLabel.text) // initialize ReferenceLabel?
-//            let indexPath = self.initialCollectionView.indexPathsForSelectedItems
-            openVC.ReferenceLabel = cell.ReferenceLabel //"boot"//cell.ReferenceLabel.text
+            let findCell = Reference.init(name: cell.ReferenceLabel.text!)
+            let indexPath = refNames.index{$0.name == findCell.name}
+            print("indexPath", indexPath)
+            print("refNames", refNames[0].name)
+            let ref = refNames[indexPath!]
+            openVC.ref = ref
         }
     }
     
