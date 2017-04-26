@@ -167,15 +167,10 @@ class ReferenceViewController: BaseViewController, UICollectionViewDataSource, U
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         let cell = collectionView.cellForItem(at: indexPath) as! ReferenceCell
-        cell.backgroundColor = UIColor.white
-        cell.contentView.backgroundColor = UIColor.white
         performSegue(withIdentifier: "openRef", sender: cell);
     }
     
     func collectionView(_ collectionView: UICollectionView, didDeselectItemAt indexPath: IndexPath) {
-        let cell = collectionView.cellForItem(at: indexPath) as! ReferenceCell
-        cell.backgroundColor = UIColor.blue
-        cell.contentView.backgroundColor = UIColor.blue
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
