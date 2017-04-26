@@ -168,8 +168,9 @@
                             <constraint firstAttribute="trailingMargin" secondItem="RHs-dd-6rv" secondAttribute="trailing" constant="-17" id="z1H-h3-Mlp"/>
                         </constraints>
                     </view>
-                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
-                    <size key="freeformSize" width="344" height="334"/>
+                    <nil key="simulatedStatusBarMetrics"/>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <nil key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="issueScrollView" destination="RHs-dd-6rv" id="FME-NJ-KLT"/>
                         <outlet property="issueText" destination="JXF-gX-jIe" id="i3N-nH-LLv"/>

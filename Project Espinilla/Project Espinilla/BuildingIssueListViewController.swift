@@ -20,7 +20,6 @@ class BuildingIssueListViewController: UIViewController, UITableViewDataSource, 
         super.viewDidLoad()
         
         issueTableView.register(UINib(nibName: "IssuePreviewCell", bundle: nil), forCellReuseIdentifier: "IssuePreviewCell")
-
         
         self.issueTableView.dataSource = self
         self.issueTableView.delegate = self
@@ -91,10 +90,10 @@ class BuildingIssueListViewController: UIViewController, UITableViewDataSource, 
             if let issueDetailVC = segue.destination as? IssueDetailViewController {
                 
                 issueDetailVC.issue = issue
-                issueDetailVC.popoverPresentationController?.permittedArrowDirections = UIPopoverArrowDirection.up
+                issueDetailVC.popoverPresentationController?.permittedArrowDirections = UIPopoverArrowDirection.unknown
                 issueDetailVC.popoverPresentationController?.delegate = self
                 issueDetailVC.popoverPresentationController?.sourceView = self.issueTableView
-                issueDetailVC.popoverPresentationController?.sourceRect = CGRect.init(x: rect.minX, y: rect.maxY, width: 344, height: 334)
+                issueDetailVC.popoverPresentationController?.sourceRect = CGRect.init(x: rect.midX, y: rect.midY, width: 0, height: 0)
                 
             }
         }

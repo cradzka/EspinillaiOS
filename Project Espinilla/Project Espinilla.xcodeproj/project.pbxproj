@@ -239,11 +239,7 @@
 				E17E9B011E88BFAD0015F8E2 /* RoundViewController.swift */,
 				E17E9B051E8984A60015F8E2 /* BuildingViewTileCell.swift */,
 				E192C9CE1E8CD1A300286C9A /* BuildingTileCollectionViewHeader.swift */,
-				E178D2DB1EA7FD9E000A613D /* BuildingIssueListViewController.swift */,
-				E104539B1E90992700F64FCF /* IssuePreviewCellDataAndDelegate.swift */,
-				E10453991E90705500F64FCF /* IssuePreviewCell.swift */,
-				E1D9AB331EAEC24200FA1B15 /* IssueListHeaderCellTableViewCell.swift */,
-				E1D9AB3A1EAEE1C400FA1B15 /* IssueDetailViewController.swift */,
+				E1D9AB3F1EB01D5300FA1B15 /* issues */,
 				E13C0B9E1E9E9BD500FD211C /* xibs */,
 			);
 			name = rounds;
@@ -287,6 +283,18 @@
 				C960EBB61E5E120800748B74 /* Main.storyboard */,
 			);
 			name = storyboards;
+			sourceTree = "<group>";
+		};
+		E1D9AB3F1EB01D5300FA1B15 /* issues */ = {
+			isa = PBXGroup;
+			children = (
+				E1D9AB3A1EAEE1C400FA1B15 /* IssueDetailViewController.swift */,
+				E10453991E90705500F64FCF /* IssuePreviewCell.swift */,
+				E1D9AB331EAEC24200FA1B15 /* IssueListHeaderCellTableViewCell.swift */,
+				E178D2DB1EA7FD9E000A613D /* BuildingIssueListViewController.swift */,
+				E104539B1E90992700F64FCF /* IssuePreviewCellDataAndDelegate.swift */,
+			);
+			name = issues;
 			sourceTree = "<group>";
 		};
 		E1DF6C8F1E9EC8610053B0A6 /* references */ = {
