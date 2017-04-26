@@ -13,9 +13,16 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
 
-
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        
+        /* This code changes the top bar colors, but it also srews with button colors... Will fix lter if there's time.
+        var navigationBarAppearace = UINavigationBar.appearance()
+    
+        navigationBarAppearace.tintColor = UIColor.red
+        navigationBarAppearace.barTintColor = UIColor.red
+         */
+        
         return true
     }
 

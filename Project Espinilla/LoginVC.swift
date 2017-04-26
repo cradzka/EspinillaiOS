@@ -36,17 +36,8 @@ class LoginViewController: UIViewController {
         {
             LoginToDo()
         }
-
-        // Do any additional setup after loading the view.
-    }
-    
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-    
-    @IBAction func onLoginPress() {
-
+        
+        // Show TouchID if available
         // 1. Create a authentication context
         let authenticationContext = LAContext()
         var error:NSError?
@@ -55,10 +46,6 @@ class LoginViewController: UIViewController {
         // If not, show the user an alert view and bail out!
         guard authenticationContext.canEvaluatePolicy(.deviceOwnerAuthenticationWithBiometrics, error: &error) else {
             
-            //showAlertViewIfNoBiometricSensorHasBeenDetected()
-            let storyboard = UIStoryboard(name: "Main", bundle: nil)
-            let controller = storyboard.instantiateViewController(withIdentifier:"TopBarNC")
-            self.present(controller, animated: true, completion: nil)
             return
             
         }
@@ -89,13 +76,21 @@ class LoginViewController: UIViewController {
                 
         })
         
-        /*
+
+        // Do any additional setup after loading the view.
+    }
+    
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
+        // Dispose of any resources that can be recreated.
+    }
+    
+    @IBAction func onLoginPress() {
         
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
         let controller = storyboard.instantiateViewController(withIdentifier:"TopBarNC")
         self.present(controller, animated: true, completion: nil)
  
-         */
     }
     
     /*
