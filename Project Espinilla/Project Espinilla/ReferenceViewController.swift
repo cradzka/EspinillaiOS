@@ -153,12 +153,8 @@ class ReferenceViewController: BaseViewController, UICollectionViewDataSource, U
         if segue.identifier == "openRef" {
             let cell = sender as! ReferenceCell
             let openVC: OpenReferenceViewController = segue.destination as! OpenReferenceViewController
-            print("cell refLab", cell.ReferenceLabel.text)
-//            print("openVC refLab", openVC.ReferenceLabel.text) // initialize ReferenceLabel?
             let findCell = Reference.init(name: cell.ReferenceLabel.text!)
             let indexPath = refNames.index{$0.name == findCell.name}
-            print("indexPath", indexPath)
-            print("refNames", refNames[0].name)
             let ref = refNames[indexPath!]
             openVC.ref = ref
         }
