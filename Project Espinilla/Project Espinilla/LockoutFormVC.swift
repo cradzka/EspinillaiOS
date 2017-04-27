@@ -45,10 +45,9 @@ class LockoutFormVC: UIViewController {
         self.RoomNumberField.text = "113"
     }
 
-    func sendForm(){
-        
+    @IBAction func sendForm(_ sender: Any) {
         let dict = NSMutableDictionary()
-        
+        //var img: NSData!
         //formbase fields
         dict["author"] = "Carter"
         dict["hall"] = self.HallName.text
@@ -58,37 +57,47 @@ class LockoutFormVC: UIViewController {
         
         //room entry request form fields
         dict["student"] = self.ResidentName.text
+        
+        
+//        img =  UIImageJPEGRepresentation(self.StudentSignatureBox.getSignature()!, 1.0)! as NSData
+
         //returns a data object with the jpeg representation
-        dict["student_sig"] = UIImageJPEGRepresentation(self.StudentSignatureBox.getSignature()!, 1.0)
+        
+        //dict["student_sig"] = img
+        
         dict["verification_method"] = self.VerificationMethod.text
         
-//        
-//        do {
-//            let jsonData = try JSONSerialization.data(withJSONObject: dict, options: .prettyPrinted)
-//            // here "jsonData" is the dictionary encoded in JSON data
-//            
-//            let decoded = try JSONSerialization.jsonObject(with: jsonData, options: [])
-//            // here "decoded" is of type `Any`, decoded from JSON data
-//            
-//            // you can now cast it with the right type
-//            if let dictFromJSON = decoded as? [String:String] {
-//                // use dictFromJSON
-//            }
-//        } catch {
-//            print(error.localizedDescription)
-//        }
+        //
+        //        do {
+        //            let jsonData = try JSONSerialization.data(withJSONObject: dict, options: .prettyPrinted)
+        //            // here "jsonData" is the dictionary encoded in JSON data
+        //
+        //            let decoded = try JSONSerialization.jsonObject(with: jsonData, options: [])
+        //            // here "decoded" is of type `Any`, decoded from JSON data
+        //
+        //            // you can now cast it with the right type
+        //            if let dictFromJSON = decoded as? [String:String] {
+        //                // use dictFromJSON
+        //            }
+        //        } catch {
+        //            print(error.localizedDescription)
+        //        }
         //        let dictionary = ["aKey": "aValue", "anotherKey": "anotherValue"]
-        if let jsonData = try? JSONSerialization.data(
-            withJSONObject: dict,
-            options: []) {
-            let theJSONText = String(data: jsonData,
-                                     encoding: .ascii)
-            
-            print("JSON string = \(theJSONText!)")
-            //outputs "JSON string = {"anotherKey":"anotherValue","aKey":"aValue"}".. backwards?
-        }
         
-        let url = URL(string: "http://httpbin.org/post")!
+        //        if let jsonData = try? JSONSerialization.data(
+        //            withJSONObject: dict,
+        //            options: []) {
+        //            let theJSONText = String(data: jsonData,
+        //                                     encoding: .ascii)
+        //
+        //            print("JSON string = \(theJSONText!)")
+        //            //if the dict was dictionary, it outputs "JSON string = {"anotherKey":"anotherValue","aKey":"aValue"}".. backwards?
+        //        }
+        //
+        
+        let _ : NSData = NSKeyedArchiver.archivedData(withRootObject: dict) as NSData
+        let jsonData = try? JSONSerialization.data(withJSONObject: dict)
+        let url = URL(string: "https://httpbin.org/post")!
         var request = URLRequest(url: url)
         request.httpMethod = "POST"
         
@@ -103,15 +112,12 @@ class LockoutFormVC: UIViewController {
             }
             let responseJSON = try? JSONSerialization.jsonObject(with: data, options: [])
             if let responseJSON = responseJSON as? [String: Any] {
+                print("HOLY FUCK")
                 print(responseJSON)
             }
         }
         
         task.resume()
-        
-        
+    
     }
-    
-    
-    
 }
