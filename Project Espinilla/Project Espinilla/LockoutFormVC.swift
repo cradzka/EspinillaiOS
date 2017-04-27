@@ -39,10 +39,13 @@ class LockoutFormVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
       
-        self.Date.text = "05/02/2017"
-        self.ResidentNameField.text = "Yung Raj Macgyver"
+        
         self.HallNameField.text = "Torres"
         self.RoomNumberField.text = "113"
+        self.ResidentNameField.text = "Yung Raj Macgyver"
+        self.Date.text = "05/02/2017"
+        self.VerificationMethod.text = "Student ID"
+        
     }
 
     @IBAction func sendForm(_ sender: Any) {
@@ -66,35 +69,7 @@ class LockoutFormVC: UIViewController {
         //dict["student_sig"] = img
         
         dict["verification_method"] = self.VerificationMethod.text
-        
-        //
-        //        do {
-        //            let jsonData = try JSONSerialization.data(withJSONObject: dict, options: .prettyPrinted)
-        //            // here "jsonData" is the dictionary encoded in JSON data
-        //
-        //            let decoded = try JSONSerialization.jsonObject(with: jsonData, options: [])
-        //            // here "decoded" is of type `Any`, decoded from JSON data
-        //
-        //            // you can now cast it with the right type
-        //            if let dictFromJSON = decoded as? [String:String] {
-        //                // use dictFromJSON
-        //            }
-        //        } catch {
-        //            print(error.localizedDescription)
-        //        }
-        //        let dictionary = ["aKey": "aValue", "anotherKey": "anotherValue"]
-        
-        //        if let jsonData = try? JSONSerialization.data(
-        //            withJSONObject: dict,
-        //            options: []) {
-        //            let theJSONText = String(data: jsonData,
-        //                                     encoding: .ascii)
-        //
-        //            print("JSON string = \(theJSONText!)")
-        //            //if the dict was dictionary, it outputs "JSON string = {"anotherKey":"anotherValue","aKey":"aValue"}".. backwards?
-        //        }
-        //
-        
+
         let _ : NSData = NSKeyedArchiver.archivedData(withRootObject: dict) as NSData
         let jsonData = try? JSONSerialization.data(withJSONObject: dict)
         let url = URL(string: "https://httpbin.org/post")!
