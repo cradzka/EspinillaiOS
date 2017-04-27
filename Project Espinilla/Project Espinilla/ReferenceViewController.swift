@@ -71,7 +71,15 @@ class ReferenceViewController: BaseViewController, UICollectionViewDataSource, U
         self.subsectionList[sectionHeaders[1]] = crisisPrevention
         self.subsectionList[sectionHeaders[2]] = rulesRegulations
         
-        refNames.append(Reference.init(name: "First Name"))
+        for names in conflictResolution {
+            refNames.append(Reference.init(name: names))
+        }
+        for names in crisisPrevention {
+            refNames.append(Reference.init(name: names))
+        }
+        for names in rulesRegulations {
+            refNames.append(Reference.init(name: names))
+        }
         
     }
 
