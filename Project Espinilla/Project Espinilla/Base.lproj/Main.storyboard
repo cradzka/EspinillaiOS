@@ -44,17 +44,36 @@
                                     <segue destination="49e-Tb-3d3" kind="embed" id="LKt-fc-oK9"/>
                                 </connections>
                             </containerView>
-                            <searchBar contentMode="redraw" fixedFrame="YES" placeholder="Student Search" showsCancelButton="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Mzd-G0-DVg">
+                            <searchBar contentMode="redraw" fixedFrame="YES" placeholder="Student Search" showsCancelButton="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2Tl-Xe-xjw">
                                 <rect key="frame" x="0.0" y="64" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                 <textInputTraits key="textInputTraits"/>
+                                <scopeButtonTitles>
+                                    <string>Title</string>
+                                    <string>Title</string>
+                                </scopeButtonTitles>
+                                <connections>
+                                    <outlet property="delegate" destination="tPq-u7-gHp" id="XrG-DZ-zv8"/>
+                                </connections>
                             </searchBar>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" title="Home" id="N7N-WB-iXy"/>
+                    <connections>
+                        <outlet property="searchDisplayController" destination="W59-Nl-9UH" id="d5X-S5-Npn"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Gni-Sd-WwL" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <searchDisplayController id="W59-Nl-9UH">
+                    <connections>
+                        <outlet property="delegate" destination="tPq-u7-gHp" id="kF5-3u-mJS"/>
+                        <outlet property="searchBar" destination="2Tl-Xe-xjw" id="F0k-3y-sxJ"/>
+                        <outlet property="searchContentsController" destination="tPq-u7-gHp" id="gRJ-Mc-Yhz"/>
+                        <outlet property="searchResultsDataSource" destination="tPq-u7-gHp" id="Qsm-0X-ck3"/>
+                        <outlet property="searchResultsDelegate" destination="tPq-u7-gHp" id="QfZ-8c-5Rg"/>
+                    </connections>
+                </searchDisplayController>
             </objects>
             <point key="canvasLocation" x="-999.20000000000005" y="-0.44977511244377816"/>
         </scene>

@@ -28,7 +28,6 @@
 		C960EBBD1E5E120800748B74 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C960EBBB1E5E120800748B74 /* LaunchScreen.storyboard */; };
 		C960EBC81E5E120800748B74 /* Project EspinillaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C960EBC71E5E120800748B74 /* Project EspinillaTests.swift */; };
 		C960EBD31E5E120800748B74 /* Project EspinillaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C960EBD21E5E120800748B74 /* Project EspinillaUITests.swift */; };
-		C96E90541EB030A10014C923 /* SearchDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C96E90531EB030A10014C923 /* SearchDelegate.swift */; };
 		C97158701EA6F5C000BC13DB /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C971586F1EA6F5C000BC13DB /* LoginVC.swift */; };
 		C97158721EABD18A00BC13DB /* TopBarVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C97158711EABD18A00BC13DB /* TopBarVC.swift */; };
 		C97158741EABF02C00BC13DB /* AccountTableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C97158731EABF02C00BC13DB /* AccountTableVC.swift */; };
@@ -110,7 +109,6 @@
 		C960EBCE1E5E120800748B74 /* Project EspinillaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Project EspinillaUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C960EBD21E5E120800748B74 /* Project EspinillaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Project EspinillaUITests.swift"; sourceTree = "<group>"; };
 		C960EBD41E5E120800748B74 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		C96E90531EB030A10014C923 /* SearchDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchDelegate.swift; sourceTree = "<group>"; };
 		C971586F1EA6F5C000BC13DB /* LoginVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LoginVC.swift; path = ../LoginVC.swift; sourceTree = "<group>"; };
 		C97158711EABD18A00BC13DB /* TopBarVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TopBarVC.swift; sourceTree = "<group>"; };
 		C97158731EABF02C00BC13DB /* AccountTableVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccountTableVC.swift; sourceTree = "<group>"; };
@@ -193,7 +191,6 @@
 				C960EBBE1E5E120800748B74 /* Info.plist */,
 				C971586F1EA6F5C000BC13DB /* LoginVC.swift */,
 				C97158711EABD18A00BC13DB /* TopBarVC.swift */,
-				C96E90531EB030A10014C923 /* SearchDelegate.swift */,
 				C93378A11E9AE05F008D9A1B /* BaseViewController.swift */,
 				C93378A31E9AE081008D9A1B /* AccountVC.swift */,
 				C97158731EABF02C00BC13DB /* AccountTableVC.swift */,
@@ -516,7 +513,6 @@
 				E1D9AB341EAEC24200FA1B15 /* IssueListHeaderCellTableViewCell.swift in Sources */,
 				C93378A71E9AE081008D9A1B /* AccountVC.swift in Sources */,
 				352C6A951E8CA37F00CEC21A /* FormTileCell.swift in Sources */,
-				C96E90541EB030A10014C923 /* SearchDelegate.swift in Sources */,
 				E1DF6C931E9ED1E60053B0A6 /* FormHeader.swift in Sources */,
 				352C6A9B1E8CB07F00CEC21A /* FormViewControllerDataAndDelegate.swift in Sources */,
 				C97158701EA6F5C000BC13DB /* LoginVC.swift in Sources */,

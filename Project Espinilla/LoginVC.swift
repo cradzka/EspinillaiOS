@@ -11,8 +11,8 @@ import LocalAuthentication
 
 class LoginViewController: UIViewController {
     
-    let login_url = ""
-    let checksession_url = ""
+    let login_url = "https://httpbin.org/post"
+    let checksession_url = "https://httpbin.org/post"
     
     @IBOutlet var username_input: UITextField!
     @IBOutlet var password_input: UITextField!
@@ -85,6 +85,7 @@ class LoginViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    /*
     @IBAction func onLoginPress() {
         
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
@@ -92,12 +93,15 @@ class LoginViewController: UIViewController {
         self.present(controller, animated: true, completion: nil)
  
     }
+    */
     
-    /*
     @IBAction func onLoginPress() {
         
         let username = username_input.text!
         let password = password_input.text!
+        
+        print(username)
+        print(password)
         
         let post_data: NSDictionary = NSMutableDictionary()
         
@@ -163,7 +167,7 @@ class LoginViewController: UIViewController {
         
         task.resume()
         
-    }*/
+    }
     
     func LoginDone()
     {

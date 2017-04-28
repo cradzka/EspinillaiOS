@@ -8,12 +8,17 @@
 
 import UIKit
 
-class TopBarVC: BaseViewController {
+class TopBarVC: BaseViewController, UISearchBarDelegate {
+    
+    @IBOutlet weak var searchBar: UISearchBar!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         self.addSlideMenuButton()
         navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .compose, target: self, action: nil)
+        
+        searchBar.showsCancelButton = false
+        searchBar.delegate = self
 
     }
     
