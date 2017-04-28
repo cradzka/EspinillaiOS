@@ -28,9 +28,9 @@ class OpenReferenceViewController: UIViewController, UITextViewDelegate {
         dontsText.delegate = self
         contentText.delegate = self
         
-        self.dosText.text = "Dos: \n"
+        self.dosText.text = "Do: \n"
         self.dosText.text.append((ref?.dosText)!)
-        self.dontsText.text = "Dont's: \n"
+        self.dontsText.text = "Don't: \n"
         self.dontsText.text.append((ref?.dontsText)!)
         self.contentText.text = "Content: Blah Blah \n"
         self.contentText.text.append((ref?.contentText)!)
