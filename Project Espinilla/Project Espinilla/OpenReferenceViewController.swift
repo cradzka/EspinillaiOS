@@ -7,7 +7,7 @@
 //
 import UIKit
 
-class OpenReferenceViewController: UIViewController {
+class OpenReferenceViewController: UIViewController, UITextViewDelegate {
     
     @IBOutlet weak var ReferenceLabel: UILabel!
     
@@ -24,6 +24,13 @@ class OpenReferenceViewController: UIViewController {
         // Do any additional setup after loading the view, typically from a nib.
         self.ReferenceLabel.text = ref?.name
         
+        dosText.delegate = self
+        dontsText.delegate = self
+        contentText.delegate = self
+        
+        self.dosText.text = "Dos: \n"
+        self.dontsText.text = "Dont's: \n"
+        self.contentText.text = "Content: Blah Blah \n"
     }
     
     override func didReceiveMemoryWarning() {
