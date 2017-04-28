@@ -22,10 +22,12 @@ class ReferenceViewController: BaseViewController, UICollectionViewDataSource, U
     var collectionDelegate: UICollectionViewDelegate!
     var sectionHeaders: Array<String> = ["Conflict Resolution", "Crisis Prevention", "Rules and Regulations"]
     var subsectionList: [String: Array<String>] = [:]
-    //var categoryNames: Array<String> = ["Conflict Resolution", "Crisis Prevention", "Rules and Regulations", "Tim's Diary", "Miscellaneous"]
     var conflictResolutionNames: Array<String> = ["Roomate Conflicts", "Noise Complaints", "Party Busting", "Confrontation"]
+    var doCR: Array<String> = ["Stay calm\nMeet in a public place", "Stay calm", "Stay calm\nCall Campus Police", "Stay calm"]
     var crisisPreventionNames: Array<String> = ["Suicidal Resident", "Medical Emergency", "Academic Crisis", "Prevention"]
-    var rulesAndRegulationsNames: Array<String> = ["Other", "Kristina", "Tim", "Another", "First Name"]
+    var doCP: Array<String> = ["", "", "", ""]
+    var rulesAndRegulationsNames: Array<String> = ["Other"]
+    var doRR: Array<String> = [""]
     var refNames: [Reference] = []
     
     override func viewDidLoad() {
@@ -71,14 +73,14 @@ class ReferenceViewController: BaseViewController, UICollectionViewDataSource, U
         self.subsectionList[sectionHeaders[1]] = crisisPrevention
         self.subsectionList[sectionHeaders[2]] = rulesRegulations
         
-        for names in conflictResolution {
-            refNames.append(Reference.init(name: names, dosText: "", dontsText: "", contentText: ""))
+        for (i,names) in conflictResolution.enumerated() {
+            refNames.append(Reference.init(name: names, dosText: doCR[i], dontsText: "", contentText: ""))
         }
-        for names in crisisPrevention {
-            refNames.append(Reference.init(name: names, dosText: "", dontsText: "", contentText: ""))
+        for (i,names) in crisisPrevention.enumerated() {
+            refNames.append(Reference.init(name: names, dosText: doCP[i], dontsText: "", contentText: ""))
         }
-        for names in rulesRegulations {
-            refNames.append(Reference.init(name: names, dosText: "", dontsText: "", contentText: ""))
+        for (i,names) in rulesRegulations.enumerated() {
+            refNames.append(Reference.init(name: names, dosText: doRR[i], dontsText: "", contentText: ""))
         }
         
     }
