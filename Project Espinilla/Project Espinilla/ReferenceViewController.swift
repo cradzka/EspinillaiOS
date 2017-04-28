@@ -72,13 +72,13 @@ class ReferenceViewController: BaseViewController, UICollectionViewDataSource, U
         self.subsectionList[sectionHeaders[2]] = rulesRegulations
         
         for names in conflictResolution {
-            refNames.append(Reference.init(name: names))
+            refNames.append(Reference.init(name: names, dosText: "", dontsText: "", contentText: ""))
         }
         for names in crisisPrevention {
-            refNames.append(Reference.init(name: names))
+            refNames.append(Reference.init(name: names, dosText: "", dontsText: "", contentText: ""))
         }
         for names in rulesRegulations {
-            refNames.append(Reference.init(name: names))
+            refNames.append(Reference.init(name: names, dosText: "", dontsText: "", contentText: ""))
         }
         
     }
@@ -153,7 +153,7 @@ class ReferenceViewController: BaseViewController, UICollectionViewDataSource, U
         if segue.identifier == "openRef" {
             let cell = sender as! ReferenceCell
             let openVC: OpenReferenceViewController = segue.destination as! OpenReferenceViewController
-            let findCell = Reference.init(name: cell.ReferenceLabel.text!)
+            let findCell = Reference.init(name: cell.ReferenceLabel.text!, dosText: "", dontsText: "", contentText: "")
             let indexPath = refNames.index{$0.name == findCell.name}
             let ref = refNames[indexPath!]
             openVC.ref = ref

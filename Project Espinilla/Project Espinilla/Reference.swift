@@ -14,7 +14,10 @@ class Reference {
     var dontsText: String!
     var contentText: String!
     
-    init(name: String) {
+    init(name: String, dosText: String, dontsText: String, contentText: String) {
         self.name = name
+        self.dosText = dosText
+        self.dontsText = dontsText
+        self.contentText = contentText
     }
 }
