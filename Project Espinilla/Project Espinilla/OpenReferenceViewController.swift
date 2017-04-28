@@ -11,6 +11,12 @@ class OpenReferenceViewController: UIViewController {
     
     @IBOutlet weak var ReferenceLabel: UILabel!
     
+    @IBOutlet weak var dosText: UITextView!
+    
+    @IBOutlet weak var dontsText: UITextView!
+    
+    @IBOutlet weak var contentText: UITextView!
+    
     var ref: Reference?
     
     override func viewDidLoad() {

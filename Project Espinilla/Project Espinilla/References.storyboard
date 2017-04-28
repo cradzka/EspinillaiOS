@@ -234,6 +234,9 @@ Blah</string>
                     <navigationItem key="navigationItem" id="KHx-Au-GJp"/>
                     <connections>
                         <outlet property="ReferenceLabel" destination="65v-zf-7Gd" id="0pq-ok-FGM"/>
+                        <outlet property="contentText" destination="alr-Qh-JDi" id="jQa-TR-aOW"/>
+                        <outlet property="dontsText" destination="O1t-vB-KqS" id="rUn-Ma-V1t"/>
+                        <outlet property="dosText" destination="v9b-xY-Yaz" id="t6I-Uh-LEo"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZP8-55-IpV" userLabel="First Responder" sceneMemberID="firstResponder"/>
