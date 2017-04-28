@@ -11,7 +11,6 @@ import AVFoundation
 
 class LockoutFormVC: UIViewController {
 
-
     
     @IBOutlet weak var Date: UILabel!
     @IBOutlet weak var ResidentName: UILabel!
@@ -26,15 +25,17 @@ class LockoutFormVC: UIViewController {
     @IBOutlet weak var StudentSignatureBox: YPDrawSignatureView!
     @IBOutlet weak var StudentSignature: UILabel!
     @IBOutlet weak var ClearButton: UIButton!
+    var img = NSData.init()
     
     @IBAction func buttonPressed(_ sender: Any) {
         StudentSignatureBox.clear()
     }
     
-//    @IBAction func getSig(_ sender: Any) -> UIImage {
-//        let img = StudentSignatureBox.getSignature()
-//        return img!
-//    }
+    @IBAction func getSig(_ sender: Any) {
+        print("Howdy")
+        self.img =  UIImageJPEGRepresentation(self.StudentSignatureBox.getSignature()!, 1.0)! as NSData
+        print("\(type(of: self.img))")
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -62,17 +63,20 @@ class LockoutFormVC: UIViewController {
         dict["student"] = self.ResidentName.text
         
         
-//        img =  UIImageJPEGRepresentation(self.StudentSignatureBox.getSignature()!, 1.0)! as NSData
+        //img =  UIImageJPEGRepresentation(self.StudentSignatureBox.getSignature()!, 1.0)! as NSData
 
         //returns a data object with the jpeg representation
         
-        //dict["student_sig"] = img
+        //fucking lmao
+        dict["student_sig"] = self.img.base64EncodedString(options: NSData.Base64EncodingOptions.lineLength64Characters)
         
         dict["verification_method"] = self.VerificationMethod.text
 
-        let _ : NSData = NSKeyedArchiver.archivedData(withRootObject: dict) as NSData
+        //let _ : NSData = NSKeyedArchiver.archivedData(withRootObject: dict) as NSData
+        
         let jsonData = try? JSONSerialization.data(withJSONObject: dict)
         let url = URL(string: "https://httpbin.org/post")!
+        //let url = URL(string: "https://34.209.25.21:8000/api/endpoint/")!
         var request = URLRequest(url: url)
         request.httpMethod = "POST"
         
