@@ -109,61 +109,48 @@ class LoginViewController: UIViewController {
         post_data.setValue(username, forKey: "username")
         post_data.setValue(password, forKey: "password")
         
-        let url:URL = URL(string: login_url)!
-        let session = URLSession.shared
-        
-        let request = NSMutableURLRequest(url: url)
+        let _ : NSData = NSKeyedArchiver.archivedData(withRootObject: post_data) as NSData
+        let jsonData = try? JSONSerialization.data(withJSONObject: post_data)
+        let url = URL(string: "https://httpbin.org/post")!
+        var request = URLRequest(url: url)
         request.httpMethod = "POST"
-        request.cachePolicy = NSURLRequest.CachePolicy.reloadIgnoringCacheData
         
-        var paramString = ""
+        // insert json data to the request
+        request.httpBody = jsonData
         
-        // Create parameter string
-        for (key, value) in post_data
-        {
-            paramString = paramString + (key as! String) + "=" + (value as! String) + "&"
-        }
-        
-        // Encode paramater string
-        request.httpBody = paramString.data(using: String.Encoding.utf8)
-        
-        // Send POST request
-        let task = session.dataTask(with: request as URLRequest, completionHandler: {
-            (data, response, error) in guard let _:Data = data, let _:URLResponse = response  , error == nil else {
+        // create and send post request
+        let task = URLSession.shared.dataTask(with: request) { data, response, error in
+            guard let data = data, error == nil else {
+                print(error?.localizedDescription ?? "No data")
+                return
+            }
+
+            // JSON Serializaiton
+            let responseJSON = try? JSONSerialization.jsonObject(with: data, options: [])
+
+            // Start grabbing server response
+            if let responseJSON = responseJSON as? [String: Any] {
                 
-                return
-            }
-            
-            let json: Any?
-            
-            do
-            {
-                json = try JSONSerialization.jsonObject(with: data!, options: [])
-            }
-            catch
-            {
-                return
-            }
-            
-            guard let server_response = json as? NSDictionary else
-            {
-                return
-            }
-            
-            if let data_block = server_response["data"] as? NSDictionary
-            {
-                if let session_data = data_block["session"] as? String
+                // Get user session
+                if let data_block = responseJSON["data"] as? NSDictionary
                 {
-                    self.login_session = session_data
-                    
-                    let preferences = UserDefaults.standard
-                    preferences.set(session_data, forKey: "session")
-                    
-                    DispatchQueue.main.async(execute: self.LoginDone)
+                    if let session_data = data_block["session"] as? String
+                    {
+                        self.login_session = session_data
+                        
+                        let preferences = UserDefaults.standard
+                        preferences.set(session_data, forKey: "session")
+                        
+                        print("Stored Session");
+                        
+                        DispatchQueue.main.async(execute: self.LoginDone)
+                    }
                 }
+                //Test response
+                print("HOLY FUCK")
+                print(responseJSON)
             }
-            
-        })
+        }
         
         task.resume()
         
