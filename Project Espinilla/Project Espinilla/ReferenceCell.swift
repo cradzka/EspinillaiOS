@@ -16,8 +16,6 @@ class ReferenceCell: UICollectionViewCell {
     
     @IBOutlet weak var ReferenceImageView: UIImageView!
     
-    @IBOutlet weak var testButton: UIButton!
-    
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
     }

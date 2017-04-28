@@ -10,6 +10,9 @@ import UIKit
 
 class Reference {
     var name: String!
+    var dosText: String!
+    var dontsText: String!
+    var contentText: String!
     
     init(name: String) {
         self.name = name
