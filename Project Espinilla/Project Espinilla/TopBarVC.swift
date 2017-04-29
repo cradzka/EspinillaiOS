@@ -8,18 +8,16 @@
 
 import UIKit
 
-class TopBarVC: BaseViewController, UISearchBarDelegate {
+class TopBarVC: BaseViewController {
     
-    @IBOutlet weak var searchBar: UISearchBar!
+    var tableSearch = TableSearchController()
     
+    let searchController = UISearchController(searchResultsController: tableSearch)
+            
     override func viewDidLoad() {
         super.viewDidLoad()
         self.addSlideMenuButton()
         navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .compose, target: self, action: nil)
-        
-        searchBar.showsCancelButton = false
-        searchBar.delegate = self
-
     }
     
     override func didReceiveMemoryWarning() {

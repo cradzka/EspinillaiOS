@@ -37,25 +37,20 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <searchBar contentMode="redraw" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="IOg-WA-gUZ">
+                                <rect key="frame" x="0.0" y="64" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </searchBar>
                             <containerView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Ruy-Ee-YAb">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                                 <connections>
-                                    <segue destination="49e-Tb-3d3" kind="embed" id="LKt-fc-oK9"/>
+                                    <segue destination="03s-KB-an8" kind="popoverPresentation" identifier="PresentSearch" popoverAnchorView="Ruy-Ee-YAb" id="E8w-t5-Xoh">
+                                        <popoverArrowDirection key="popoverArrowDirection" up="YES" down="YES" left="YES" right="YES"/>
+                                    </segue>
                                 </connections>
                             </containerView>
-                            <searchBar contentMode="redraw" fixedFrame="YES" placeholder="Student Search" showsCancelButton="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2Tl-Xe-xjw">
-                                <rect key="frame" x="0.0" y="64" width="375" height="44"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
-                                <textInputTraits key="textInputTraits"/>
-                                <scopeButtonTitles>
-                                    <string>Title</string>
-                                    <string>Title</string>
-                                </scopeButtonTitles>
-                                <connections>
-                                    <outlet property="delegate" destination="tPq-u7-gHp" id="XrG-DZ-zv8"/>
-                                </connections>
-                            </searchBar>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -68,7 +63,6 @@
                 <searchDisplayController id="W59-Nl-9UH">
                     <connections>
                         <outlet property="delegate" destination="tPq-u7-gHp" id="kF5-3u-mJS"/>
-                        <outlet property="searchBar" destination="2Tl-Xe-xjw" id="F0k-3y-sxJ"/>
                         <outlet property="searchContentsController" destination="tPq-u7-gHp" id="gRJ-Mc-Yhz"/>
                         <outlet property="searchResultsDataSource" destination="tPq-u7-gHp" id="Qsm-0X-ck3"/>
                         <outlet property="searchResultsDelegate" destination="tPq-u7-gHp" id="QfZ-8c-5Rg"/>
@@ -106,6 +100,34 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="39e-0i-qOO" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-365" y="434"/>
+        </scene>
+        <!--Table View Controller-->
+        <scene sceneID="LIL-gi-9bi">
+            <objects>
+                <tableViewController storyboardIdentifier="TableSearchVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="03s-KB-an8" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="cMi-1X-uBd">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="Kqx-pK-0YG">
+                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Kqx-pK-0YG" id="NRL-hh-hoS">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="03s-KB-an8" id="GIP-bD-3h0"/>
+                            <outlet property="delegate" destination="03s-KB-an8" id="zZS-QR-24G"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="VUF-9S-Pqa" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-999" y="769"/>
         </scene>
         <!--initialReference-->
         <scene sceneID="QDB-eh-awD">

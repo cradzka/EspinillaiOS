@@ -143,12 +143,13 @@ class LoginViewController: UIViewController {
                         
                         print("Stored Session");
                         
-                        DispatchQueue.main.async(execute: self.LoginDone)
+                        //DispatchQueue.main.async(execute: self.LoginDone)
                     }
                 }
                 //Test response
                 print("HOLY FUCK")
                 print(responseJSON)
+                DispatchQueue.main.async(execute: self.LoginDone)
             }
         }
         

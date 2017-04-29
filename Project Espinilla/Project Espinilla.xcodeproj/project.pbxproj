@@ -32,6 +32,7 @@
 		C97158721EABD18A00BC13DB /* TopBarVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C97158711EABD18A00BC13DB /* TopBarVC.swift */; };
 		C97158741EABF02C00BC13DB /* AccountTableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C97158731EABF02C00BC13DB /* AccountTableVC.swift */; };
 		C97158771EAC0CD600BC13DB /* LocalAuthentication.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C97158761EAC0CD600BC13DB /* LocalAuthentication.framework */; };
+		C9C073DA1EB4067600A2FCE0 /* TableSearchController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9C073D91EB4067600A2FCE0 /* TableSearchController.swift */; };
 		C9D270A91E9AEC79000F638F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9D270A81E9AEC79000F638F /* ViewController.swift */; };
 		E104539A1E90705500F64FCF /* IssuePreviewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E10453991E90705500F64FCF /* IssuePreviewCell.swift */; };
 		E104539C1E90992700F64FCF /* IssuePreviewCellDataAndDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E104539B1E90992700F64FCF /* IssuePreviewCellDataAndDelegate.swift */; };
@@ -113,6 +114,7 @@
 		C97158711EABD18A00BC13DB /* TopBarVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TopBarVC.swift; sourceTree = "<group>"; };
 		C97158731EABF02C00BC13DB /* AccountTableVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccountTableVC.swift; sourceTree = "<group>"; };
 		C97158761EAC0CD600BC13DB /* LocalAuthentication.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = LocalAuthentication.framework; path = System/Library/Frameworks/LocalAuthentication.framework; sourceTree = SDKROOT; };
+		C9C073D91EB4067600A2FCE0 /* TableSearchController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableSearchController.swift; sourceTree = "<group>"; };
 		C9D270A81E9AEC79000F638F /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		E10453991E90705500F64FCF /* IssuePreviewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IssuePreviewCell.swift; sourceTree = "<group>"; };
 		E104539B1E90992700F64FCF /* IssuePreviewCellDataAndDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IssuePreviewCellDataAndDelegate.swift; sourceTree = "<group>"; };
@@ -191,6 +193,7 @@
 				C960EBBE1E5E120800748B74 /* Info.plist */,
 				C971586F1EA6F5C000BC13DB /* LoginVC.swift */,
 				C97158711EABD18A00BC13DB /* TopBarVC.swift */,
+				C9C073D91EB4067600A2FCE0 /* TableSearchController.swift */,
 				C93378A11E9AE05F008D9A1B /* BaseViewController.swift */,
 				C93378A31E9AE081008D9A1B /* AccountVC.swift */,
 				C97158731EABF02C00BC13DB /* AccountTableVC.swift */,
@@ -498,6 +501,7 @@
 				E1DF6C941E9ED1EF0053B0A6 /* FormViewController.swift in Sources */,
 				C93378A21E9AE05F008D9A1B /* BaseViewController.swift in Sources */,
 				C960EBB51E5E120800748B74 /* ReferenceViewController.swift in Sources */,
+				C9C073DA1EB4067600A2FCE0 /* TableSearchController.swift in Sources */,
 				41CBC3E01E8CAD7200B06220 /* ReferenceCell.swift in Sources */,
 				41028DB11E6E6D810007386A /* FormsTableViewCell.swift in Sources */,
 				E17E9B061E8984A60015F8E2 /* BuildingViewTileCell.swift in Sources */,
