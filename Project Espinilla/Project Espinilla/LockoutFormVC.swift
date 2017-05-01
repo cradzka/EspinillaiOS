@@ -12,7 +12,6 @@ import AVFoundation
 class LockoutFormVC: UIViewController {
 
     
-    @IBOutlet weak var Date: UILabel!
     @IBOutlet weak var ResidentName: UILabel!
     @IBOutlet weak var ResidentNameField: UITextField!
     @IBOutlet weak var HallName: UILabel!
@@ -21,12 +20,17 @@ class LockoutFormVC: UIViewController {
     @IBOutlet weak var RoomNumberField: UITextField!
     @IBOutlet weak var IDMethodName: UILabel!
     
+    @IBOutlet weak var formTitle: UILabel!
+    
     @IBOutlet weak var mainScrollView: UIScrollView!
     
     @IBOutlet weak var VerificationMethod: UITextField!
     @IBOutlet weak var StudentSignatureBox: YPDrawSignatureView!
     @IBOutlet weak var StudentSignature: UILabel!
     @IBOutlet weak var ClearButton: UIButton!
+    
+    @IBOutlet weak var submitFormButton: UIButton!
+    
     var img = NSData.init()
     var designValues = UIDesignValue.init()
 
@@ -60,6 +64,15 @@ class LockoutFormVC: UIViewController {
         //self.Date.text = "2017-05-02"
         self.VerificationMethod.text = "Student ID"
         self.view.layer.backgroundColor = designValues.backgroundColor.cgColor
+        self.ClearButton.layer.borderColor = designValues.boarderColor
+        self.ClearButton.layer.borderWidth = designValues.boarderWidth
+        self.ClearButton.layer.backgroundColor = designValues.baseCellColor.cgColor
+        
+        self.submitFormButton.layer.borderColor = designValues.boarderColor
+        self.submitFormButton.layer.borderWidth = designValues.boarderWidth
+        self.submitFormButton.layer.backgroundColor = designValues.baseCellColor.cgColor
+
+        self.formTitle.font = designValues.labelFont
         
     }
 
@@ -106,7 +119,7 @@ class LockoutFormVC: UIViewController {
             }
             let responseJSON = try? JSONSerialization.jsonObject(with: data, options: [])
             if let responseJSON = responseJSON as? [String: Any] {
-                print("HOLY FUCK")
+                //print("HOLY FUCK")
                 print(responseJSON)
             }
         }
