@@ -87,7 +87,6 @@ class LoginViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    /*
     @IBAction func onLoginPress() {
         
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
@@ -95,8 +94,8 @@ class LoginViewController: UIViewController {
         self.present(controller, animated: true, completion: nil)
  
     }
-    */
-    
+ 
+    /*
     @IBAction func onLoginPress() {
         
         let username = username_input.text!
@@ -158,6 +157,7 @@ class LoginViewController: UIViewController {
         task.resume()
         
     }
+    */
     
     func LoginDone()
     {
