@@ -21,7 +21,7 @@ class FormViewController: BaseViewController {
     //let tapRec = UITapGestureRecognizer()
     
     var formNames = ["Housing Survey", "Lockout Form", "Violation Form"]
-    var fieldsLeft = ["10 Fields Remaining", "12 Fields Remaining", "5 Fields Remaining"]
+    var fieldsLeft = ["10 Fields Remaining", "1 Field Remaining", "5 Fields Remaining"]
     var halls = ["Driscoll", "Torres", "Baca"]
     var RAs = ["Carter", "Raj", "Kristina"]
     var sectionHeaders: Array<String> = ["In Progress", "Completed"]

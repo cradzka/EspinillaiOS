@@ -92,7 +92,7 @@ class FormViewControllerDataAndDelegate: NSObject, UICollectionViewDataSource, U
         cell.formStackView.addArrangedSubview(cell.Hall)
         cell.formStackView.addArrangedSubview(cell.RAName)
         cell.contentView.addSubview(cell.formStackView)
-
+        
         return cell
     }
     
