@@ -22,6 +22,8 @@ class LoginViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+                
+        self.view.layer.backgroundColor = UIColor(colorLiteralRed: 0.943, green: 0.921, blue: 0.903, alpha: 1.0).cgColor
         
         let preferences = UserDefaults.standard // Contains the session info
         

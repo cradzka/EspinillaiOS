@@ -21,7 +21,6 @@
 		C93378A81E9AE081008D9A1B /* DutyScheduleVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C93378A41E9AE081008D9A1B /* DutyScheduleVC.swift */; };
 		C93378A91E9AE081008D9A1B /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C93378A51E9AE081008D9A1B /* MenuViewController.swift */; };
 		C93378AA1E9AE081008D9A1B /* SettingsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C93378A61E9AE081008D9A1B /* SettingsVC.swift */; };
-		C94A69D41EB6CEEF00CBCE0B /* NavigationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C94A69D31EB6CEEF00CBCE0B /* NavigationVC.swift */; };
 		C960EBB11E5E120800748B74 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C960EBB01E5E120800748B74 /* AppDelegate.swift */; };
 		C960EBB51E5E120800748B74 /* ReferenceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C960EBB41E5E120800748B74 /* ReferenceViewController.swift */; };
 		C960EBB81E5E120800748B74 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C960EBB61E5E120800748B74 /* Main.storyboard */; };
@@ -97,7 +96,6 @@
 		C93378A41E9AE081008D9A1B /* DutyScheduleVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DutyScheduleVC.swift; sourceTree = "<group>"; };
 		C93378A51E9AE081008D9A1B /* MenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
 		C93378A61E9AE081008D9A1B /* SettingsVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsVC.swift; sourceTree = "<group>"; };
-		C94A69D31EB6CEEF00CBCE0B /* NavigationVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavigationVC.swift; sourceTree = "<group>"; };
 		C960EBAD1E5E120800748B74 /* Project Espinilla.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Project Espinilla.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C960EBB01E5E120800748B74 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C960EBB21E5E120800748B74 /* FormViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormViewController.swift; sourceTree = "<group>"; };
@@ -195,7 +193,6 @@
 				C960EBBE1E5E120800748B74 /* Info.plist */,
 				C971586F1EA6F5C000BC13DB /* LoginVC.swift */,
 				C97158711EABD18A00BC13DB /* TopBarVC.swift */,
-				C94A69D31EB6CEEF00CBCE0B /* NavigationVC.swift */,
 				C9C073D91EB4067600A2FCE0 /* TableSearchController.swift */,
 				C93378A11E9AE05F008D9A1B /* BaseViewController.swift */,
 				C93378A31E9AE081008D9A1B /* AccountVC.swift */,
@@ -514,7 +511,6 @@
 				C960EBB11E5E120800748B74 /* AppDelegate.swift in Sources */,
 				C93378A91E9AE081008D9A1B /* MenuViewController.swift in Sources */,
 				C93378AA1E9AE081008D9A1B /* SettingsVC.swift in Sources */,
-				C94A69D41EB6CEEF00CBCE0B /* NavigationVC.swift in Sources */,
 				E138C6531E96FD31002875F4 /* (null) in Sources */,
 				E138C6571E970457002875F4 /* ReferenceCollectionViewDataSourceAndDelegate.swift in Sources */,
 				E178D2DE1EA800C8000A613D /* Building.swift in Sources */,

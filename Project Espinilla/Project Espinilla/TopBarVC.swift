@@ -20,11 +20,6 @@ class TopBarVC: BaseViewController {
         navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .compose, target: self, action: nil)
     }
     
-    /* For Search
-    func searchBarSearchButtonClicked( searchBar: UISearchBar!) {
-        performSegue(withIdentifier: "PresentSearch", sender: self)
-    }*/
-    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
