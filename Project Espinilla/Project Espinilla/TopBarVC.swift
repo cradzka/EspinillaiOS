@@ -9,15 +9,17 @@
 import UIKit
 
 class TopBarVC: BaseViewController {
+
+    @IBOutlet weak var searchBar: UISearchBar!
     
-    var tableSearch = TableSearchController()
-    
-    let searchController = UISearchController(searchResultsController: tableSearch)
-            
     override func viewDidLoad() {
         super.viewDidLoad()
         self.addSlideMenuButton()
         navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .compose, target: self, action: nil)
+    }
+    
+    func searchBarSearchButtonClicked( searchBar: UISearchBar!) {
+        performSegue(withIdentifier: "PresentSearch", sender: self)
     }
     
     override func didReceiveMemoryWarning() {
