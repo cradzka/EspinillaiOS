@@ -5,6 +5,10 @@
 //  Created by Matthew Crepeau on 4/18/17.
 //  Copyright © 2017 Matthew Crepeau. All rights reserved.
 //
+// Login functionality was sourced from:
+// http://www.kaleidosblog.com/how-to-create-a-login-screen-page-in-swift-3-authenticate-an-user-and-keep-the-session-active
+// TouchID Implementation was sourced from:
+// https://github.com/frederik-jacques/touchid-swift-tutorial/blob/master/TouchIDTutorial/AuthenticationViewController.swift
 
 import UIKit
 import LocalAuthentication

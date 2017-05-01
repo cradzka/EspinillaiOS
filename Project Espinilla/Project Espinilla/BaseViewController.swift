@@ -5,6 +5,9 @@
 //  Created by Ashish on 21/09/15.
 //  Copyright (c) 2015 Kode. All rights reserved.
 //
+// Parts of this code are from: 
+//https://github.com/ashishkakkad8/AKSwiftSlideMenu
+//http://ashishkakkad.com/2015/09/create-your-own-slider-menu-drawer-in-swift/
 
 import UIKit
 
