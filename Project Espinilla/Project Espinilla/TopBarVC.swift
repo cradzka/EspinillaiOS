@@ -15,12 +15,15 @@ class TopBarVC: BaseViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.addSlideMenuButton()
+        self.searchBar.layer.borderWidth = 0
+        
         navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .compose, target: self, action: nil)
     }
     
+    /* For Search
     func searchBarSearchButtonClicked( searchBar: UISearchBar!) {
         performSegue(withIdentifier: "PresentSearch", sender: self)
-    }
+    }*/
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
