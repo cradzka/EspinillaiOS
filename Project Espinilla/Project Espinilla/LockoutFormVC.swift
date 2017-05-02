@@ -46,21 +46,21 @@ class LockoutFormVC: UIViewController {
     @IBAction func getSig(_ sender: Any) {
         print("Howdy")
         self.img =  UIImageJPEGRepresentation(self.StudentSignatureBox.getSignature()!, 1.0)! as NSData
-        print("\(type(of: self.img))")
+        //print("\(type(of: self.img))")
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
       
         
-        self.HallNameField.text = "Torres"
+        self.HallNameField.text = "West Hall"
         self.HallName.font = designValues.labelFont
         self.ResidentName.font = designValues.labelFont
         self.RoomNumber.font = designValues.labelFont
         self.IDMethodName.font = designValues.labelFont
         self.StudentSignature.font = designValues.labelFont
         self.RoomNumberField.text = "113"
-        self.ResidentNameField.text = "Raj"
+        self.ResidentNameField.text = "Roger Smith"
         //self.Date.text = "2017-05-02"
         self.VerificationMethod.text = "Student ID"
         self.view.layer.backgroundColor = designValues.backgroundColor.cgColor
@@ -78,17 +78,18 @@ class LockoutFormVC: UIViewController {
 
     @IBAction func sendForm(_ sender: Any) {
         let dict = NSMutableDictionary()
+        let dict2 = NSMutableDictionary()
         getSig((Any).self)
         //var img: NSData!
         //formbase fields
         dict["author"] = "Carter Radzka"
-        dict["hall"] = self.HallName.text
-        dict["room_number"] = self.RoomNumber.text
+        dict["hall"] = self.HallNameField.text
+        dict["room_number"] = self.RoomNumberField.text
         //dict["id"] = arc4random()
         //dict["date"] = self.Date.text;
         
         //room entry request form fields
-        dict["student"] = self.ResidentName.text
+        dict["student"] = self.ResidentNameField.text
         
         
         //img =  UIImageJPEGRepresentation(self.StudentSignatureBox.getSignature()!, 1.0)! as NSData
@@ -96,20 +97,30 @@ class LockoutFormVC: UIViewController {
         //returns a data object with the jpeg representation
         
         //fucking lmao
-        dict["student_sig"] = self.img.base64EncodedString(options: NSData.Base64EncodingOptions.lineLength64Characters)
+        //dict["student_sig"] = self.img.base64EncodedString(options: NSData.Base64EncodingOptions.lineLength64Characters)
         
         dict["verification_method"] = self.VerificationMethod.text
 
+        
         //let _ : NSData = NSKeyedArchiver.archivedData(withRootObject: dict) as NSData
         
-        let jsonData = try? JSONSerialization.data(withJSONObject: dict)
-        let url = URL(string: "https://httpbin.org/post")!
-        //let url = URL(string: "https://34.209.25.21:8000/api/submitlockoutform/")!
+        //let jsonData = try? JSONSerialization.data(withJSONObject: dict)
+        //print("\(type(of: jsonData))")
+        
+        
+        dict2["data"] = dict
+        let jsonData2 = try? JSONSerialization.data(withJSONObject: dict2)
+
+        //let url = URL(string: "https://httpbin.org/post")!
+        let url = URL(string: "http://35.161.216.206:8000/api/submitlockoutform/")!
         var request = URLRequest(url: url)
         request.httpMethod = "POST"
+        request.allHTTPHeaderFields = ["Authorization" : "Token 4IVbciC5WwDTn4m9KtzL8cSA9ICK_-Z2pqS8y-X3KSw="]
         
         // insert json data to the request
-        request.httpBody = jsonData
+        request.httpBody = jsonData2
+        
+        //print(String(data: jsonData2!, encoding: String.Encoding.utf8) as Any)
         
         // create post request
         let task = URLSession.shared.dataTask(with: request) { data, response, error in
