@@ -17,7 +17,8 @@ class IssueDetailViewController: UIViewController{
     @IBOutlet weak var issueText: UITextView!
     @IBOutlet weak var nodeZonePath: UILabel!
     @IBOutlet weak var zoneImage: UIImageView!
-    
+    @IBOutlet weak var extraImage: UIImageView!
+    @IBOutlet weak var imageLabel: UILabel!
     var issue: Issue?
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -26,12 +27,16 @@ class IssueDetailViewController: UIViewController{
         self.issueText.text = issue?.bodyText
         self.metaInfo.text = (issue?.author)! + " " + (issue?.date)!
         self.nodeZonePath.text = issue?.location
-        self.zoneImage.image = issue?.zoneImage
+        self.zoneImage.image = #imageLiteral(resourceName: "mapPlaceHolder")
+        self.imageLabel.text = "Additional Images"
+        self.extraImage.image = #imageLiteral(resourceName: "sleepingStudent")
         
         self.issueScrollView.addSubview(self.issueText)
         self.issueScrollView.addSubview(self.metaInfo)
         self.issueScrollView.addSubview(self.nodeZonePath)
         self.issueScrollView.addSubview(self.zoneImage)
+        self.issueScrollView.addSubview(self.imageLabel)
+        self.issueScrollView.addSubview(self.extraImage)
         // Do any additional setup after loading the view.
     }
 

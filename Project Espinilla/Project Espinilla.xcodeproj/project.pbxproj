@@ -54,10 +54,15 @@
 		E1D9AB391EAED02200FA1B15 /* Project EspinillaUITests.xctest in Resources */ = {isa = PBXBuildFile; fileRef = C960EBCE1E5E120800748B74 /* Project EspinillaUITests.xctest */; };
 		E1D9AB3B1EAEE1C400FA1B15 /* IssueDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1D9AB3A1EAEE1C400FA1B15 /* IssueDetailViewController.swift */; };
 		E1D9AB3E1EAF172500FA1B15 /* Issue.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1D9AB3D1EAF172500FA1B15 /* Issue.swift */; };
+		E1D9AB411EB02C4C00FA1B15 /* LocationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1D9AB401EB02C4B00FA1B15 /* LocationController.swift */; };
 		E1DF6C931E9ED1E60053B0A6 /* FormHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3514E6FE1E9E079500C99C69 /* FormHeader.swift */; };
 		E1DF6C941E9ED1EF0053B0A6 /* FormViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C960EBB21E5E120800748B74 /* FormViewController.swift */; };
 		E1DF6C951E9ED2100053B0A6 /* FormHeader.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3514E6FF1E9E079500C99C69 /* FormHeader.xib */; };
 		E1DF6C981E9ED92B0053B0A6 /* References.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E1DF6C971E9ED92B0053B0A6 /* References.storyboard */; };
+		E1E5802C1EB3FB5A003F76EF /* BuildingRegion.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1E5802B1EB3FB5A003F76EF /* BuildingRegion.swift */; };
+		E1E5802E1EB4064A003F76EF /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E1E5802D1EB4064A003F76EF /* CoreLocation.framework */; };
+		E1E580301EB596DC003F76EF /* RoundsMap.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1E5802F1EB596DC003F76EF /* RoundsMap.swift */; };
+		E1E580321EB81F4C003F76EF /* RoundsMapIssue.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1E580311EB81F4C003F76EF /* RoundsMapIssue.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -131,7 +136,12 @@
 		E1D9AB331EAEC24200FA1B15 /* IssueListHeaderCellTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IssueListHeaderCellTableViewCell.swift; sourceTree = "<group>"; };
 		E1D9AB3A1EAEE1C400FA1B15 /* IssueDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IssueDetailViewController.swift; sourceTree = "<group>"; };
 		E1D9AB3D1EAF172500FA1B15 /* Issue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Issue.swift; sourceTree = "<group>"; };
+		E1D9AB401EB02C4B00FA1B15 /* LocationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationController.swift; sourceTree = "<group>"; };
 		E1DF6C971E9ED92B0053B0A6 /* References.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = References.storyboard; sourceTree = "<group>"; };
+		E1E5802B1EB3FB5A003F76EF /* BuildingRegion.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BuildingRegion.swift; sourceTree = "<group>"; };
+		E1E5802D1EB4064A003F76EF /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		E1E5802F1EB596DC003F76EF /* RoundsMap.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundsMap.swift; sourceTree = "<group>"; };
+		E1E580311EB81F4C003F76EF /* RoundsMapIssue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundsMapIssue.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -139,6 +149,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E1E5802E1EB4064A003F76EF /* CoreLocation.framework in Frameworks */,
 				C97158771EAC0CD600BC13DB /* LocalAuthentication.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -201,8 +212,8 @@
 				E13C0B9D1E9E9B9C00FD211C /* core_data */,
 				E1DF6C911E9EC8BA0053B0A6 /* forms */,
 				E1DF6C8F1E9EC8610053B0A6 /* references */,
-				E13C0B9B1E9E9A7700FD211C /* rounds */,
 				E13C0B9C1E9E9B6300FD211C /* utility */,
+				E13C0B9B1E9E9A7700FD211C /* rounds */,
 			);
 			path = "Project Espinilla";
 			sourceTree = "<group>";
@@ -228,6 +239,7 @@
 		C97158751EAC0CD500BC13DB /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				E1E5802D1EB4064A003F76EF /* CoreLocation.framework */,
 				C97158761EAC0CD600BC13DB /* LocalAuthentication.framework */,
 			);
 			name = Frameworks;
@@ -236,9 +248,13 @@
 		E13C0B9B1E9E9A7700FD211C /* rounds */ = {
 			isa = PBXGroup;
 			children = (
-				E17E9B011E88BFAD0015F8E2 /* RoundViewController.swift */,
-				E17E9B051E8984A60015F8E2 /* BuildingViewTileCell.swift */,
 				E192C9CE1E8CD1A300286C9A /* BuildingTileCollectionViewHeader.swift */,
+				E17E9B051E8984A60015F8E2 /* BuildingViewTileCell.swift */,
+				E17E9B011E88BFAD0015F8E2 /* RoundViewController.swift */,
+				E1D9AB401EB02C4B00FA1B15 /* LocationController.swift */,
+				E1E5802B1EB3FB5A003F76EF /* BuildingRegion.swift */,
+				E1E5802F1EB596DC003F76EF /* RoundsMap.swift */,
+				E1E580311EB81F4C003F76EF /* RoundsMapIssue.swift */,
 				E1D9AB3F1EB01D5300FA1B15 /* issues */,
 				E13C0B9E1E9E9BD500FD211C /* xibs */,
 			);
@@ -410,6 +426,11 @@
 						CreatedOnToolsVersion = 8.2.1;
 						DevelopmentTeam = 2K2JUTG8W2;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+						};
 					};
 					C960EBC21E5E120800748B74 = {
 						CreatedOnToolsVersion = 8.2.1;
@@ -496,12 +517,16 @@
 				C97158741EABF02C00BC13DB /* AccountTableVC.swift in Sources */,
 				C9D270A91E9AEC79000F638F /* ViewController.swift in Sources */,
 				E1DF6C941E9ED1EF0053B0A6 /* FormViewController.swift in Sources */,
+				E1E580301EB596DC003F76EF /* RoundsMap.swift in Sources */,
+				E1E580321EB81F4C003F76EF /* RoundsMapIssue.swift in Sources */,
 				C93378A21E9AE05F008D9A1B /* BaseViewController.swift in Sources */,
 				C960EBB51E5E120800748B74 /* ReferenceViewController.swift in Sources */,
 				41CBC3E01E8CAD7200B06220 /* ReferenceCell.swift in Sources */,
 				41028DB11E6E6D810007386A /* FormsTableViewCell.swift in Sources */,
 				E17E9B061E8984A60015F8E2 /* BuildingViewTileCell.swift in Sources */,
 				E178D2DC1EA7FD9E000A613D /* BuildingIssueListViewController.swift in Sources */,
+				E1D9AB411EB02C4C00FA1B15 /* LocationController.swift in Sources */,
+				E1E5802C1EB3FB5A003F76EF /* BuildingRegion.swift in Sources */,
 				E1D9AB3B1EAEE1C400FA1B15 /* IssueDetailViewController.swift in Sources */,
 				E1D9AB3E1EAF172500FA1B15 /* Issue.swift in Sources */,
 				C960EBB11E5E120800748B74 /* AppDelegate.swift in Sources */,
