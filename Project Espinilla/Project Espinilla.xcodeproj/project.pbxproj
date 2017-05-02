@@ -579,6 +579,8 @@
 				E1DF6C931E9ED1E60053B0A6 /* FormHeader.swift in Sources */,
 				352C6A9B1E8CB07F00CEC21A /* FormViewControllerDataAndDelegate.swift in Sources */,
 				C97158701EA6F5C000BC13DB /* LoginVC.swift in Sources */,
+				35A44E241EA985E400E3C822 /* SectionDivider.swift in Sources */,
+				358B68601EB01ED00024B77D /* LockoutFormVC.swift in Sources */,
 				E17E9B021E88BFAD0015F8E2 /* RoundViewController.swift in Sources */,
 				E1D1AA361E94A3D40002FB20 /* UIDesignValues.swift in Sources */,
 				C97158721EABD18A00BC13DB /* TopBarVC.swift in Sources */,
