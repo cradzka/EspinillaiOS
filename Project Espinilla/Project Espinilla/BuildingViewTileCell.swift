@@ -8,6 +8,7 @@
 
 import UIKit
 
+
 class BuildingViewTileCell: UICollectionViewCell {
     
     @IBOutlet weak var buildingTileStack: UIStackView!
@@ -21,11 +22,12 @@ class BuildingViewTileCell: UICollectionViewCell {
     
     @IBOutlet weak var swipeBarLabel: UILabel!
     @IBOutlet weak var recentIssueLabel: UILabel!
-    
+
     @IBOutlet weak var roundLabelStack: UIStackView!
     @IBOutlet weak var round1Label: UILabel!
     @IBOutlet weak var round2Label: UILabel!
     @IBOutlet weak var round3Label: UILabel!
+
     @IBOutlet weak var roundStarStack: UIStackView!
     
     @IBOutlet weak var roundSwipeBar: UIImageView!
@@ -36,7 +38,7 @@ class BuildingViewTileCell: UICollectionViewCell {
     
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
-        
+
     }
 }
 

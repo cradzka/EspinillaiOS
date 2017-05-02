@@ -22,10 +22,10 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="9wD-WJ-jEh">
-                                <rect key="frame" x="0.0" y="105" width="375" height="560"/>
+                                <rect key="frame" x="0.0" y="20" width="375" height="645"/>
                                 <subviews>
                                     <collectionView clipsSubviews="YES" contentMode="scaleToFill" bounces="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="LvY-AJ-pRN">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="560"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="645"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <inset key="scrollIndicatorInsets" minX="12" minY="0.0" maxX="0.0" maxY="0.0"/>
                                         <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="20" minimumInteritemSpacing="10" id="Oc4-sw-G66">
@@ -34,7 +34,50 @@
                                             <size key="footerReferenceSize" width="0.0" height="0.0"/>
                                             <inset key="sectionInset" minX="20" minY="8" maxX="20" maxY="20"/>
                                         </collectionViewFlowLayout>
-                                        <cells/>
+                                        <cells>
+                                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="ReferenceCell" id="wzk-md-pXj" customClass="ReferenceCell" customModule="Project_Espinilla" customModuleProvider="target">
+                                                <rect key="frame" x="20" y="58" width="162" height="162"/>
+                                                <autoresizingMask key="autoresizingMask"/>
+                                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                                    <rect key="frame" x="0.0" y="0.0" width="162" height="162"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <subviews>
+                                                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="leo-29-MAL">
+                                                            <rect key="frame" x="0.0" y="0.0" width="162" height="162"/>
+                                                            <subviews>
+                                                                <label verifyAmbiguity="off" opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="os6-ej-BBP">
+                                                                    <rect key="frame" x="0.0" y="0.0" width="162" height="21"/>
+                                                                    <constraints>
+                                                                        <constraint firstAttribute="height" constant="21" id="UzW-Yt-YYv"/>
+                                                                    </constraints>
+                                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                    <nil key="textColor"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                                <imageView verifyAmbiguity="off" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="UqH-IM-IJO">
+                                                                    <rect key="frame" x="0.0" y="21" width="162" height="141"/>
+                                                                </imageView>
+                                                            </subviews>
+                                                            <constraints>
+                                                                <constraint firstItem="os6-ej-BBP" firstAttribute="width" secondItem="leo-29-MAL" secondAttribute="width" id="lAk-uW-GOM"/>
+                                                                <constraint firstItem="UqH-IM-IJO" firstAttribute="width" secondItem="leo-29-MAL" secondAttribute="width" id="nBN-oq-ATD"/>
+                                                            </constraints>
+                                                        </stackView>
+                                                    </subviews>
+                                                </view>
+                                                <constraints>
+                                                    <constraint firstItem="leo-29-MAL" firstAttribute="height" secondItem="wzk-md-pXj" secondAttribute="height" id="3D5-vF-C9t"/>
+                                                    <constraint firstItem="leo-29-MAL" firstAttribute="width" secondItem="wzk-md-pXj" secondAttribute="width" id="CvP-EA-V1C"/>
+                                                    <constraint firstItem="leo-29-MAL" firstAttribute="centerY" secondItem="wzk-md-pXj" secondAttribute="centerY" id="Pg9-PU-sgI"/>
+                                                    <constraint firstItem="leo-29-MAL" firstAttribute="centerX" secondItem="wzk-md-pXj" secondAttribute="centerX" id="hBZ-Nc-cwz"/>
+                                                </constraints>
+                                                <connections>
+                                                    <outlet property="ReferenceCellStack" destination="leo-29-MAL" id="Dbp-Ow-2iQ"/>
+                                                    <outlet property="ReferenceImageView" destination="UqH-IM-IJO" id="ajh-9A-8C8"/>
+                                                    <outlet property="ReferenceLabel" destination="os6-ej-BBP" id="rKq-E4-bCk"/>
+                                                </connections>
+                                            </collectionViewCell>
+                                        </cells>
                                         <collectionReusableView key="sectionHeaderView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" reuseIdentifier="ReferenceCollectionReusableViewHeader" id="WT5-Nt-WnH">
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="50"/>
                                             <autoresizingMask key="autoresizingMask"/>
@@ -49,7 +92,7 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="9wD-WJ-jEh" firstAttribute="top" secondItem="VFl-aE-zZe" secondAttribute="bottom" constant="85" id="7Hz-ru-Y6z"/>
+                            <constraint firstItem="9wD-WJ-jEh" firstAttribute="top" secondItem="VFl-aE-zZe" secondAttribute="bottom" id="7Hz-ru-Y6z"/>
                             <constraint firstItem="9wD-WJ-jEh" firstAttribute="leading" secondItem="04F-q8-aWB" secondAttribute="leading" id="AaJ-Z0-O3m"/>
                             <constraint firstItem="B8P-J1-LWl" firstAttribute="top" secondItem="9wD-WJ-jEh" secondAttribute="bottom" constant="2" id="bdd-vL-ARv"/>
                             <constraint firstAttribute="trailing" secondItem="9wD-WJ-jEh" secondAttribute="trailing" id="qXP-8Y-jjc"/>
@@ -62,11 +105,144 @@
                         <outlet property="initialCollectionViewLayout" destination="Oc4-sw-G66" id="Bkc-da-afL"/>
                         <outlet property="initialStackView" destination="9wD-WJ-jEh" id="4nn-Sv-n7t"/>
                         <outlet property="initialView" destination="04F-q8-aWB" id="YjT-vS-boD"/>
+                        <segue destination="WIr-oz-PLR" kind="show" identifier="openRef" id="Toq-dQ-v9a"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2Td-EC-PoB" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="951" y="265"/>
+            <point key="canvasLocation" x="949.60000000000002" y="264.91754122938534"/>
+        </scene>
+        <!--MenuViewController-->
+        <scene sceneID="93W-BY-W0T">
+            <objects>
+                <viewControllerPlaceholder storyboardIdentifier="MenuViewController" storyboardName="Main" referencedIdentifier="MenuViewController" id="lmP-ej-qbn" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cR0-2X-yWY" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1317" y="613"/>
+        </scene>
+        <!--SettingsVC-->
+        <scene sceneID="J1f-JJ-nMW">
+            <objects>
+                <viewControllerPlaceholder storyboardIdentifier="SettingsVC" storyboardName="Main" referencedIdentifier="SettingsVC" id="Bpf-Wr-nHS" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="RtL-cl-W1v" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1272" y="670"/>
+        </scene>
+        <!--DutyScheduleVC-->
+        <scene sceneID="7Re-8D-6du">
+            <objects>
+                <viewControllerPlaceholder storyboardIdentifier="DutyScheduleVC" storyboardName="Main" referencedIdentifier="DutyScheduleVC" id="WvG-xd-2Ox" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tiu-Ry-1pD" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1299" y="725"/>
+        </scene>
+        <!--AccountVC-->
+        <scene sceneID="sgS-7K-U0v">
+            <objects>
+                <viewControllerPlaceholder storyboardIdentifier="AccountVC" storyboardName="Main" referencedIdentifier="AccountVC" id="ckp-t2-LrF" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5Lz-FH-lBJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1272" y="784"/>
+        </scene>
+        <!--Open Reference View Controller-->
+        <scene sceneID="Puf-VW-Ljr">
+            <objects>
+                <viewController storyboardIdentifier="OpenReferenceViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="WIr-oz-PLR" customClass="OpenReferenceViewController" customModule="Project_Espinilla" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="yT3-Cc-4a0"/>
+                        <viewControllerLayoutGuide type="bottom" id="bje-ew-1e5"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="i2e-3n-g4B">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Reference Sheet" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="65v-zf-7Gd">
+                                <rect key="frame" x="0.0" y="28" width="375" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" usesAttributedText="YES" translatesAutoresizingMaskIntoConstraints="NO" id="v9b-xY-Yaz">
+                                <rect key="frame" x="0.0" y="65" width="375" height="128"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <accessibility key="accessibilityConfiguration">
+                                    <accessibilityTraits key="traits" notEnabled="YES"/>
+                                    <bool key="isElement" value="NO"/>
+                                </accessibility>
+                                <attributedString key="attributedText">
+                                    <fragment>
+                                        <string key="content">Dos:
+
+Blah
+Blah</string>
+                                        <attributes>
+                                            <font key="NSFont" metaFont="menu" size="14"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="O1t-vB-KqS">
+                                <rect key="frame" x="0.0" y="245" width="375" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <accessibility key="accessibilityConfiguration">
+                                    <accessibilityTraits key="traits" notEnabled="YES"/>
+                                    <bool key="isElement" value="NO"/>
+                                </accessibility>
+                                <string key="text">Don'ts:
+
+Blah
+Blah</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" usesAttributedText="YES" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="alr-Qh-JDi">
+                                <rect key="frame" x="0.0" y="337" width="375" height="330"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <accessibility key="accessibilityConfiguration">
+                                    <accessibilityTraits key="traits" notEnabled="YES"/>
+                                    <bool key="isElement" value="NO"/>
+                                </accessibility>
+                                <attributedString key="attributedText">
+                                    <fragment>
+                                        <string key="content">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.   Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.   Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.   Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                        <attributes>
+                                            <font key="NSFont" metaFont="menu" size="14"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineSpacing="1" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="65v-zf-7Gd" firstAttribute="width" secondItem="i2e-3n-g4B" secondAttribute="width" id="1SH-Ya-Isj"/>
+                            <constraint firstItem="alr-Qh-JDi" firstAttribute="top" secondItem="yT3-Cc-4a0" secondAttribute="bottom" constant="317" id="70i-FF-m8G"/>
+                            <constraint firstItem="v9b-xY-Yaz" firstAttribute="top" secondItem="65v-zf-7Gd" secondAttribute="bottom" constant="16" id="7Pp-dO-DPV"/>
+                            <constraint firstItem="alr-Qh-JDi" firstAttribute="width" secondItem="i2e-3n-g4B" secondAttribute="width" id="BLM-dL-IOC"/>
+                            <constraint firstItem="alr-Qh-JDi" firstAttribute="bottom" secondItem="bje-ew-1e5" secondAttribute="top" id="Btg-TE-wQY"/>
+                            <constraint firstItem="v9b-xY-Yaz" firstAttribute="width" secondItem="i2e-3n-g4B" secondAttribute="width" id="Xw1-pt-T6q"/>
+                            <constraint firstItem="65v-zf-7Gd" firstAttribute="top" secondItem="yT3-Cc-4a0" secondAttribute="bottom" constant="8" symbolic="YES" id="aQx-dq-eiF"/>
+                            <constraint firstItem="65v-zf-7Gd" firstAttribute="leading" secondItem="alr-Qh-JDi" secondAttribute="leading" id="cZ8-Be-uck"/>
+                            <constraint firstItem="alr-Qh-JDi" firstAttribute="leading" secondItem="i2e-3n-g4B" secondAttribute="leading" id="clw-g7-4hr"/>
+                            <constraint firstItem="alr-Qh-JDi" firstAttribute="top" secondItem="v9b-xY-Yaz" secondAttribute="bottom" constant="144" id="rnU-WG-2f0"/>
+                            <constraint firstItem="v9b-xY-Yaz" firstAttribute="leading" secondItem="65v-zf-7Gd" secondAttribute="leading" id="xJA-vO-alj"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="KHx-Au-GJp"/>
+                    <connections>
+                        <outlet property="ReferenceLabel" destination="65v-zf-7Gd" id="0pq-ok-FGM"/>
+                        <outlet property="contentText" destination="alr-Qh-JDi" id="jQa-TR-aOW"/>
+                        <outlet property="dontsText" destination="O1t-vB-KqS" id="rUn-Ma-V1t"/>
+                        <outlet property="dosText" destination="v9b-xY-Yaz" id="t6I-Uh-LEo"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ZP8-55-IpV" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2289" y="265"/>
         </scene>
     </scenes>
     <resources>

@@ -21,10 +21,12 @@
 		35A44E261EA9A1E400E3C822 /* OpenFormViewDataAndDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35A44E251EA9A1E400E3C822 /* OpenFormViewDataAndDelegate.swift */; };
 		35F6C98F1E907E0D003B8952 /* FormTileCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 352C6A961E8CA39E00CEC21A /* FormTileCell.xib */; };
 		41028DB11E6E6D810007386A /* FormsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41028DB01E6E6D810007386A /* FormsTableViewCell.swift */; };
+		415576981EA5698B008324C5 /* OpenReferenceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 415576971EA5698B008324C5 /* OpenReferenceViewController.swift */; };
+		4166A8201EA91CEB005BC01F /* ReferenceCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4166A81F1EA91CEB005BC01F /* ReferenceCell.xib */; };
 		417430821E907114002E8373 /* ReferenceCollectionReusableViewHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 417430801E907114002E8373 /* ReferenceCollectionReusableViewHeader.swift */; };
 		417430831E907114002E8373 /* ReferenceCollectionReusableViewHeader.xib in Resources */ = {isa = PBXBuildFile; fileRef = 417430811E907114002E8373 /* ReferenceCollectionReusableViewHeader.xib */; };
-		41CBC3DE1E8CAB4100B06220 /* ReferenceCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 41CBC3DD1E8CAB4100B06220 /* ReferenceCell.xib */; };
 		41CBC3E01E8CAD7200B06220 /* ReferenceCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41CBC3DF1E8CAD7200B06220 /* ReferenceCell.swift */; };
+		41E10E0C1EB032BC006276CD /* Reference.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41E10E0B1EB032BC006276CD /* Reference.swift */; };
 		C93378A21E9AE05F008D9A1B /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C93378A11E9AE05F008D9A1B /* BaseViewController.swift */; };
 		C93378A71E9AE081008D9A1B /* AccountVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C93378A31E9AE081008D9A1B /* AccountVC.swift */; };
 		C93378A81E9AE081008D9A1B /* DutyScheduleVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C93378A41E9AE081008D9A1B /* DutyScheduleVC.swift */; };
@@ -47,7 +49,6 @@
 		E104539C1E90992700F64FCF /* IssuePreviewCellDataAndDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E104539B1E90992700F64FCF /* IssuePreviewCellDataAndDelegate.swift */; };
 		E11801EE1EB865B50069D7A9 /* NavBarVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E11801ED1EB865B50069D7A9 /* NavBarVC.swift */; };
 		E138C6531E96FD31002875F4 /* (null) in Sources */ = {isa = PBXBuildFile; };
-		E138C6571E970457002875F4 /* ReferenceCollectionViewDataSourceAndDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41CBC3E11E8CB0E400B06220 /* ReferenceCollectionViewDataSourceAndDelegate.swift */; };
 		E13C0B9A1E9C29DE00FD211C /* RA.swift in Sources */ = {isa = PBXBuildFile; fileRef = E13C0B991E9C29DE00FD211C /* RA.swift */; };
 		E13C0BA01E9E9E9200FD211C /* Rounds.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E13C0B9F1E9E9E9200FD211C /* Rounds.storyboard */; };
 		E178D2DC1EA7FD9E000A613D /* BuildingIssueListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E178D2DB1EA7FD9E000A613D /* BuildingIssueListViewController.swift */; };
@@ -110,11 +111,12 @@
 		35A44E231EA985E400E3C822 /* SectionDivider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SectionDivider.swift; sourceTree = "<group>"; };
 		35A44E251EA9A1E400E3C822 /* OpenFormViewDataAndDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OpenFormViewDataAndDelegate.swift; sourceTree = "<group>"; };
 		41028DB01E6E6D810007386A /* FormsTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FormsTableViewCell.swift; sourceTree = "<group>"; };
+		415576971EA5698B008324C5 /* OpenReferenceViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OpenReferenceViewController.swift; sourceTree = "<group>"; };
+		4166A81F1EA91CEB005BC01F /* ReferenceCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = ReferenceCell.xib; path = ../ReferenceCell.xib; sourceTree = "<group>"; };
 		417430801E907114002E8373 /* ReferenceCollectionReusableViewHeader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReferenceCollectionReusableViewHeader.swift; sourceTree = "<group>"; };
 		417430811E907114002E8373 /* ReferenceCollectionReusableViewHeader.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ReferenceCollectionReusableViewHeader.xib; sourceTree = "<group>"; };
-		41CBC3DD1E8CAB4100B06220 /* ReferenceCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ReferenceCell.xib; sourceTree = "<group>"; };
 		41CBC3DF1E8CAD7200B06220 /* ReferenceCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReferenceCell.swift; sourceTree = "<group>"; };
-		41CBC3E11E8CB0E400B06220 /* ReferenceCollectionViewDataSourceAndDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReferenceCollectionViewDataSourceAndDelegate.swift; sourceTree = "<group>"; };
+		41E10E0B1EB032BC006276CD /* Reference.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Reference.swift; sourceTree = "<group>"; };
 		C93378A11E9AE05F008D9A1B /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		C93378A31E9AE081008D9A1B /* AccountVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccountVC.swift; sourceTree = "<group>"; };
 		C93378A41E9AE081008D9A1B /* DutyScheduleVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DutyScheduleVC.swift; sourceTree = "<group>"; };
@@ -343,8 +345,9 @@
 			children = (
 				41CBC3DF1E8CAD7200B06220 /* ReferenceCell.swift */,
 				C960EBB41E5E120800748B74 /* ReferenceViewController.swift */,
+				41E10E0B1EB032BC006276CD /* Reference.swift */,
+				415576971EA5698B008324C5 /* OpenReferenceViewController.swift */,
 				417430801E907114002E8373 /* ReferenceCollectionReusableViewHeader.swift */,
-				41CBC3E11E8CB0E400B06220 /* ReferenceCollectionViewDataSourceAndDelegate.swift */,
 				E1DF6C901E9EC86C0053B0A6 /* xib */,
 			);
 			name = references;
@@ -353,7 +356,7 @@
 		E1DF6C901E9EC86C0053B0A6 /* xib */ = {
 			isa = PBXGroup;
 			children = (
-				41CBC3DD1E8CAB4100B06220 /* ReferenceCell.xib */,
+				4166A81F1EA91CEB005BC01F /* ReferenceCell.xib */,
 				417430811E907114002E8373 /* ReferenceCollectionReusableViewHeader.xib */,
 			);
 			name = xib;
@@ -509,12 +512,12 @@
 				C960EBBD1E5E120800748B74 /* LaunchScreen.storyboard in Resources */,
 				3520449B1EA889C90048A1C2 /* SectionDivider.xib in Resources */,
 				E1DF6C951E9ED2100053B0A6 /* FormHeader.xib in Resources */,
-				41CBC3DE1E8CAB4100B06220 /* ReferenceCell.xib in Resources */,
 				C960EBBA1E5E120800748B74 /* Assets.xcassets in Resources */,
 				359303D11E9EC484006B63A5 /* Forms.storyboard in Resources */,
 				C960EBB81E5E120800748B74 /* Main.storyboard in Resources */,
 				3545C4AF1EAD6D8E008BA58B /* GeneralInfo.xib in Resources */,
 				E17E9B0C1E898C3B0015F8E2 /* IssuePreviewCell.xib in Resources */,
+				4166A8201EA91CEB005BC01F /* ReferenceCell.xib in Resources */,
 				35F6C98F1E907E0D003B8952 /* FormTileCell.xib in Resources */,
 				E1DF6C981E9ED92B0053B0A6 /* References.storyboard in Resources */,
 				417430831E907114002E8373 /* ReferenceCollectionReusableViewHeader.xib in Resources */,
@@ -577,6 +580,7 @@
 				E138C6571E970457002875F4 /* ReferenceCollectionViewDataSourceAndDelegate.swift in Sources */,
 				E178D2DE1EA800C8000A613D /* Building.swift in Sources */,
 				E1D9AB341EAEC24200FA1B15 /* IssueListHeaderCellTableViewCell.swift in Sources */,
+				41E10E0C1EB032BC006276CD /* Reference.swift in Sources */,
 				C93378A71E9AE081008D9A1B /* AccountVC.swift in Sources */,
 				3545C4AE1EAD6D8E008BA58B /* GeneralInfo.swift in Sources */,
 				352C6A951E8CA37F00CEC21A /* FormTileCell.swift in Sources */,
@@ -588,6 +592,7 @@
 				E17E9B021E88BFAD0015F8E2 /* RoundViewController.swift in Sources */,
 				E1D1AA361E94A3D40002FB20 /* UIDesignValues.swift in Sources */,
 				C97158721EABD18A00BC13DB /* TopBarVC.swift in Sources */,
+				415576981EA5698B008324C5 /* OpenReferenceViewController.swift in Sources */,
 				C93378A81E9AE081008D9A1B /* DutyScheduleVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

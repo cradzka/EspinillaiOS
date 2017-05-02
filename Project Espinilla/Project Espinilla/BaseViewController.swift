@@ -5,14 +5,14 @@
 //  Created by Ashish on 21/09/15.
 //  Copyright (c) 2015 Kode. All rights reserved.
 //
+
 // Parts of this code are from: 
 //https://github.com/ashishkakkad8/AKSwiftSlideMenu
 //http://ashishkakkad.com/2015/09/create-your-own-slider-menu-drawer-in-swift/
-
 import UIKit
 
 class BaseViewController: UIViewController, SlideMenuDelegate {
-        
+
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
@@ -72,6 +72,7 @@ class BaseViewController: UIViewController, SlideMenuDelegate {
         btnShowMenu.frame = CGRect(x: 0, y: 0, width: 30, height: 30)
         btnShowMenu.addTarget(self, action: #selector(BaseViewController.onSlideMenuButtonPressed(_:)), for: UIControlEvents.touchUpInside)
         btnShowMenu.tintColor = UIColor.white
+
         let customBarItem = UIBarButtonItem(customView: btnShowMenu)
         self.navigationItem.leftBarButtonItem = customBarItem;
     }
