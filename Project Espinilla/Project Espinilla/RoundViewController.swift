@@ -7,8 +7,10 @@
 //
 
 import UIKit
+import CoreLocation
+//import CoreGraphics
 
-class RoundViewController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate{
+class RoundViewController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate {
     
     @IBOutlet var initialView: UIView!
     @IBOutlet weak var initialStackView: UIStackView!
@@ -16,7 +18,8 @@ class RoundViewController: UIViewController, UICollectionViewDataSource, UIColle
     @IBOutlet weak var initialCollectionViewLayout: UICollectionViewFlowLayout!
     
     var collectionDelegate: UICollectionViewDelegate!
-    var buildingNames: Array<String> = ["West", "Presidents", "Driscoll"]
+    var locationController: LocationController!
+    var buildingNames: Array<String> = ["West", "Presidents", "Driscoll", "Cramer"]
     var buildingIssueLists: [String: Array<String>] = [:]
     var fullIssueLists: [Issue] = []
     var indexPath = IndexPath.init()
@@ -27,7 +30,6 @@ class RoundViewController: UIViewController, UICollectionViewDataSource, UIColle
     override func viewDidLoad() {
         super.viewDidLoad()
         //self.addSlideMenuButton()
-        
         fillBuildingLists(buildings: self.buildingNames, issues: self.fullIssueLists)
         
         initialCollectionView.backgroundColor = designValue.backgroundColor
@@ -38,6 +40,8 @@ class RoundViewController: UIViewController, UICollectionViewDataSource, UIColle
         initialCollectionView.delegate = self
         initialCollectionViewLayout.minimumLineSpacing = designValue.spaceBetweenLines
         initialStackView.addArrangedSubview(initialCollectionView)
+        self.locationController = LocationController(collectionView: initialCollectionView)
+        
     }
     
     override func didReceiveMemoryWarning() {
@@ -51,6 +55,7 @@ class RoundViewController: UIViewController, UICollectionViewDataSource, UIColle
         var west: Array<String>
         var pres: Array<String>
         var drisc: Array<String>
+        var cramer: Array<String>
         
         west = Array<String>()
         west.append("[Carter]<3/31/17>: Slow water leak in second floor bathroom. sheiudsh fjdhsfdskjf dskjfh jkf fjh fjkdhfjkdsfhkjsd hjkdsf hdsjkf hdsjkf hdsjkf hdsjkf hdsjkfh dskjfh dskjf hdsjkf shkjf dhskjf")
@@ -73,9 +78,16 @@ class RoundViewController: UIViewController, UICollectionViewDataSource, UIColle
         pres.append("[Aaron]<3/19/17>: 2nd floor east wing air conditioning not working.")
         pres.append("[Carter]<2/28/17>: Lock front door has trouble opening.")
         
+        cramer = Array<String>()
+        cramer.append("[Dr. Shin]<3/27/17>: Student not paying attention.")
+        cramer.append("None.")
+        cramer.append("None.")
+        cramer.append("None.")
+        
         self.buildingIssueLists[buildings[0]] = west
         self.buildingIssueLists[buildings[1]] = pres
         self.buildingIssueLists[buildings[2]] = drisc
+        self.buildingIssueLists[buildings[3]] = cramer
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection: Int) -> Int {
@@ -95,6 +107,7 @@ class RoundViewController: UIViewController, UICollectionViewDataSource, UIColle
         let secondPreviewTapRecognizer = UITapGestureRecognizer(target: self, action: #selector(self.handleTap(sender:)))
         let thirdPreviewTapRecognizer = UITapGestureRecognizer(target: self, action: #selector(self.handleTap(sender:)))
         let fourthPreviewTapRecognizer = UITapGestureRecognizer(target: self, action: #selector(self.handleTap(sender:)))
+        let roundsMapSwipeRecognizer = UISwipeGestureRecognizer(target: self, action: #selector(self.handleSwipe(sender:)))
         
         /***********************
          * Building Label init *
@@ -182,6 +195,7 @@ class RoundViewController: UIViewController, UICollectionViewDataSource, UIColle
         cell.roundLabelStack.addArrangedSubview(cell.roundStar3Image)
         cell.roundSwipeBar.image = #imageLiteral(resourceName: "outOfRangeImage")
         cell.roundSwipeBar.layer.borderWidth = designValue.boarderWidth + 0.30
+        cell.roundSwipeBar.addGestureRecognizer(roundsMapSwipeRecognizer)
         cell.buildingTileStack.addArrangedSubview(cell.roundSwipeBar)
         
         /***************************
@@ -214,6 +228,12 @@ class RoundViewController: UIViewController, UICollectionViewDataSource, UIColle
         }
     }
     
+    func handleSwipe(sender: UISwipeGestureRecognizer) {
+        if sender.state == .ended {
+            performSegue(withIdentifier: "roundsMap", sender: self)
+        }
+    }
+    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?){
 
         if(segue.identifier == "openIssues") {
@@ -223,6 +243,11 @@ class RoundViewController: UIViewController, UICollectionViewDataSource, UIColle
                 issueListVC.buildingNames = self.buildingNames
                 issueListVC.realIssueLists = self.fullIssueLists
             }
+        }
+        else if(segue.identifier == "roundsMap") {
+            //if let roundsMapVC = segue.destination as? RoundsMap {
+              //  roundsMapVC
+            //}
         }
     }
 }

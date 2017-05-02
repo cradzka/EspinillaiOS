@@ -23,9 +23,7 @@ class BuildingIssueListViewController: UIViewController, UITableViewDataSource, 
         
         self.issueTableView.dataSource = self
         self.issueTableView.delegate = self
-        
-        print(self.buildingNames!)
-        print(self.issueLists)
+    
         /*
         if self.buildingNames == nil {
             fatalError("buildingNames == nil")

@@ -34,23 +34,4 @@ class Issue {
         self.zoneImage = zoneImage
     }
     
-    func getDate() -> String {
-        return self.date
-    }
-    
-    func getAuthor() -> String {
-        return self.author
-    }
-    
-    func getLocation() -> String {
-        return self.location
-    }
-    
-    func getBody() -> String {
-        return self.bodyText
-    }
-    
-    func getZoneImage() -> UIImage {
-        return self.zoneImage
-    }
 }
