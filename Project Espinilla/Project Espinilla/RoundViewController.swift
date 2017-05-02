@@ -58,7 +58,7 @@ class RoundViewController: UIViewController, UICollectionViewDataSource, UIColle
         var cramer: Array<String>
         
         west = Array<String>()
-        west.append("[Carter]<3/31/17>: Slow water leak in second floor bathroom. sheiudsh fjdhsfdskjf dskjfh jkf fjh fjkdhfjkdsfhkjsd hjkdsf hdsjkf hdsjkf hdsjkf hdsjkf hdsjkfh dskjfh dskjf hdsjkf shkjf dhskjf")
+        west.append("[Carter]<3/31/17>: Slow water leak in second floor bathroom.")
         west.append("[Aaron]<3/23/17>: Foul oder in lower lounge.")
         west.append("[Valentine]<3/22/17>: 2nd floor east wing air conditioning not working.")
         west.append("[Illiana]<3/22/17>: Presidents' basement bathroom has toilet that won't stop running.")
@@ -194,6 +194,7 @@ class RoundViewController: UIViewController, UICollectionViewDataSource, UIColle
         cell.roundLabelStack.addArrangedSubview(cell.roundStar2Image)
         cell.roundLabelStack.addArrangedSubview(cell.roundStar3Image)
         cell.roundSwipeBar.image = #imageLiteral(resourceName: "outOfRangeImage")
+        cell.swipeBarLabel.text = "Swipe To Begin Round"
         cell.roundSwipeBar.layer.borderWidth = designValue.boarderWidth + 0.30
         cell.roundSwipeBar.addGestureRecognizer(roundsMapSwipeRecognizer)
         cell.buildingTileStack.addArrangedSubview(cell.roundSwipeBar)

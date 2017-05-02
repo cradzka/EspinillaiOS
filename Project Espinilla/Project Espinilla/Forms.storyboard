@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12113" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12078"/>
-        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12120"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -23,17 +22,17 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Yaj-Xc-s4Y">
-                                <rect key="frame" x="0.0" y="80" width="375" height="556"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="668"/>
                                 <subviews>
                                     <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="Wl3-Mg-kG0">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="556"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="668"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <gestureRecognizers/>
                                         <inset key="scrollIndicatorInsets" minX="12" minY="0.0" maxX="0.0" maxY="0.0"/>
-                                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="szf-Gp-J5j">
-                                            <size key="itemSize" width="344" height="64"/>
+                                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="5" minimumInteritemSpacing="10" id="szf-Gp-J5j">
+                                            <size key="itemSize" width="344" height="75"/>
                                             <size key="headerReferenceSize" width="50" height="50"/>
-                                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                            <size key="footerReferenceSize" width="50" height="50"/>
                                             <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                         </collectionViewFlowLayout>
                                         <cells/>
@@ -42,23 +41,23 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <gestureRecognizers/>
                                         </collectionReusableView>
+                                        <collectionReusableView key="sectionFooterView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="I82-pd-a4Q">
+                                            <rect key="frame" x="0.0" y="50" width="375" height="50"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </collectionReusableView>
                                     </collectionView>
                                 </subviews>
-                                <constraints>
-                                    <constraint firstItem="Wl3-Mg-kG0" firstAttribute="height" secondItem="Yaj-Xc-s4Y" secondAttribute="height" id="4Kf-uA-JMK"/>
-                                    <constraint firstItem="Wl3-Mg-kG0" firstAttribute="width" secondItem="Yaj-Xc-s4Y" secondAttribute="width" id="cZH-sd-CKx"/>
-                                </constraints>
                             </stackView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="Yaj-Xc-s4Y" firstAttribute="top" secondItem="NdK-9j-ITY" secondAttribute="bottom" constant="60" id="5i2-TT-Glx"/>
-                            <constraint firstAttribute="trailing" secondItem="Yaj-Xc-s4Y" secondAttribute="trailing" id="Kk8-pp-NiP"/>
-                            <constraint firstItem="Yaj-Xc-s4Y" firstAttribute="leading" secondItem="sIL-gR-cPh" secondAttribute="leading" id="MMV-tq-sFl"/>
-                            <constraint firstAttribute="bottomMargin" secondItem="Yaj-Xc-s4Y" secondAttribute="bottom" constant="31" id="vCv-AN-chR"/>
+                            <constraint firstItem="Yaj-Xc-s4Y" firstAttribute="centerY" secondItem="sIL-gR-cPh" secondAttribute="centerY" id="NvZ-Dg-2lT"/>
+                            <constraint firstAttribute="trailing" secondItem="Yaj-Xc-s4Y" secondAttribute="trailing" id="YEd-4U-zh1"/>
+                            <constraint firstItem="Yaj-Xc-s4Y" firstAttribute="top" secondItem="sIL-gR-cPh" secondAttribute="top" id="eIO-kF-fPL"/>
+                            <constraint firstItem="Yaj-Xc-s4Y" firstAttribute="leading" secondItem="sIL-gR-cPh" secondAttribute="leading" id="n2E-DM-Qav"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Forms" image="second" id="a1E-wU-r7p"/>
+                    <tabBarItem key="tabBarItem" title="Forms" image="first" selectedImage="second" id="a1E-wU-r7p"/>
                     <navigationItem key="navigationItem" id="ocP-V2-WD1"/>
                     <connections>
                         <outlet property="MainCollectionView" destination="Wl3-Mg-kG0" id="IoW-jp-4sL"/>
@@ -190,7 +189,7 @@
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Room Entry Request Form - 2017-05-02 " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="N24-0B-gJ9">
                                         <rect key="frame" x="8" y="16" width="319" height="21"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
@@ -222,6 +221,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="first" width="30" height="30"/>
         <image name="second" width="30" height="30"/>
     </resources>
 </document>

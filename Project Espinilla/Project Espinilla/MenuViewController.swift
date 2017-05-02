@@ -42,6 +42,7 @@ class MenuViewController: UIViewController, UITableViewDataSource, UITableViewDe
     override func viewDidLoad() {
         super.viewDidLoad()
         tblMenuOptions.tableFooterView = UIView()
+        self.view.layer.backgroundColor = UIColor(colorLiteralRed: 0.943, green: 0.921, blue: 0.903, alpha: 1.0).cgColor
         // Do any additional setup after loading the view.
     }
     
@@ -56,7 +57,7 @@ class MenuViewController: UIViewController, UITableViewDataSource, UITableViewDe
     }
     
     func updateArrayMenuOptions(){
-        arrayMenuOptions.append(["title":"Hello Matt!", "icon":"ProfileIcon"])
+        arrayMenuOptions.append(["title":"Hello RA!", "icon":"ProfileIcon"])
         arrayMenuOptions.append(["title":"Duty Schedule", "icon":"DutyIcon"])
         arrayMenuOptions.append(["title":"Settings", "icon":"SettingsIcon"])
         arrayMenuOptions.append(["title":"Account", "icon":"AccountIcon"])

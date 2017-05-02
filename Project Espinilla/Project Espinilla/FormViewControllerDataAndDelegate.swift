@@ -65,14 +65,19 @@ class FormViewControllerDataAndDelegate: NSObject, UICollectionViewDataSource, U
         
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "formTileCell", for: indexPath) as! FormTileCell
         
-        cell.FormName.font = UIFont.boldSystemFont(ofSize: 18)
+        cell.FormName.font = designValue.labelFont
         cell.FieldsLeft.font = designValue.fieldTextFont
         cell.Hall.font = designValue.fieldTextFont
         cell.RAName.font = designValue.fieldTextFont
         
         cell.FormName.text = formNames[indexPath.row]
-        cell.FieldsLeft.text = fieldsLeft[indexPath.row]
-        cell.FieldsLeft.textColor = UIColor.red
+        if indexPath.section > 0 {
+            cell.FieldsLeft.text = ""
+        }
+        else {
+            cell.FieldsLeft.text = fieldsLeft[indexPath.row]
+            cell.FieldsLeft.textColor = UIColor.red
+        }
         cell.Hall.text = halls[indexPath.row]
         cell.RAName.text = RAs[indexPath.row]
         cell.SlideOut.image = #imageLiteral(resourceName: "3Dots")
@@ -88,10 +93,10 @@ class FormViewControllerDataAndDelegate: NSObject, UICollectionViewDataSource, U
         
         cell.layer.masksToBounds = false
         
-        cell.formStackView.addArrangedSubview(cell.FormName)
-        cell.formStackView.addArrangedSubview(cell.Hall)
-        cell.formStackView.addArrangedSubview(cell.RAName)
-        cell.contentView.addSubview(cell.formStackView)
+        //cell.formStackView.addArrangedSubview(cell.FormName)
+        //cell.formStackView.addArrangedSubview(cell.Hall)
+        //cell.formStackView.addArrangedSubview(cell.RAName)
+        //cell.contentView.addSubview(cell.formStackView)
         
         return cell
     }
@@ -100,8 +105,8 @@ class FormViewControllerDataAndDelegate: NSObject, UICollectionViewDataSource, U
         let headerView = collectionView.dequeueReusableSupplementaryView(ofKind: UICollectionElementKindSectionHeader, withReuseIdentifier: "sectionHeader", for: at) as! FormHeader
             
         headerView.headerLabel.text = sectionNames[at.section]
-        headerView.headerLabel.font = designValue.fieldTextFont
-        headerView.backgroundColor = UIColor.white
+        headerView.headerLabel.font = designValue.sectionLabelFont
+        headerView.backgroundColor = designValue.backgroundColor
         headerView.addSubview(headerView.headerLabel)
         
         return headerView

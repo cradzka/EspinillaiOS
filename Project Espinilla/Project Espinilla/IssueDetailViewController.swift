@@ -24,9 +24,9 @@ class IssueDetailViewController: UIViewController{
         super.viewDidLoad()
         
         
-        self.issueText.text = issue?.bodyText
-        self.metaInfo.text = (issue?.author)! + " " + (issue?.date)!
-        self.nodeZonePath.text = issue?.location
+        self.issueText.text = "Student was sleeping in class. Going to call parent-professor conference if this continues."
+        self.metaInfo.text = "Dongwan Shin " + (issue?.date)!
+        self.nodeZonePath.text = "Cramer - 2nd Floor - Room 203"
         self.zoneImage.image = #imageLiteral(resourceName: "mapPlaceHolder")
         self.imageLabel.text = "Additional Images"
         self.extraImage.image = #imageLiteral(resourceName: "sleepingStudent")
