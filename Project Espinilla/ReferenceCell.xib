@@ -21,7 +21,7 @@
                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="sd4-80-K3V">
                         <rect key="frame" x="0.0" y="0.0" width="162" height="162"/>
                         <subviews>
-                            <label verifyAmbiguity="off" opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rTg-lz-BuQ">
+                            <label verifyAmbiguity="off" opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rTg-lz-BuQ">
                                 <rect key="frame" x="0.0" y="0.0" width="162" height="21"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="21" id="qSN-Cv-HVa"/>

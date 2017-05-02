@@ -32,8 +32,8 @@ class OpenReferenceViewController: UIViewController, UITextViewDelegate {
         self.dosText.text.append((ref?.dosText)!)
         self.dontsText.text = "Don't: \n"
         self.dontsText.text.append((ref?.dontsText)!)
-        self.contentText.text = "Content: Blah Blah \n"
-        self.contentText.text.append((ref?.contentText)!)
+//        self.contentText.text = "Content: Blah Blah \n"
+//        self.contentText.text.append((ref?.contentText)!)
     }
     
     override func didReceiveMemoryWarning() {

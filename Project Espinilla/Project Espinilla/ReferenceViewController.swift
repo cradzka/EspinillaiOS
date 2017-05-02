@@ -22,7 +22,7 @@ class ReferenceViewController: BaseViewController, UICollectionViewDataSource, U
     var collectionDelegate: UICollectionViewDelegate!
     var sectionHeaders: Array<String> = ["Conflict Resolution", "Crisis Prevention", "Rules and Regulations"]
     var subsectionList: [String: Array<String>] = [:]
-    var conflictResolutionNames: Array<String> = ["Roomate Conflicts", "Noise Complaints", "Party Busting", "Confrontation"]
+    var conflictResolutionNames: Array<String> = ["Roommate Conflicts", "Noise Complaints", "Party Busting", "Confrontation"]
     var doCR: Array<String> = ["Stay calm\nMeet in a public place", "Stay calm", "Stay calm\nCall Campus Police", "Stay calm"]
     var dontCR: Array<String> = ["Yell\nPick sides", "Yell\nOverreact", "Drink the confescated alcohol\nLet the criminals run", ""]
     var crisisPreventionNames: Array<String> = ["Suicidal Resident", "Medical Emergency", "Academic Crisis"]
@@ -119,7 +119,23 @@ class ReferenceViewController: BaseViewController, UICollectionViewDataSource, U
         cell.contentView.backgroundColor = designValues.baseCellColor
         cell.ReferenceCellStack.addArrangedSubview(cell.ReferenceLabel)
         
-        cell.ReferenceImageView.image = #imageLiteral(resourceName: "roommateConflict")
+        if (cell.ReferenceLabel.text == "Roommate Conflicts") {
+            cell.ReferenceImageView.image = #imageLiteral(resourceName: "roommateConflict")
+        } else if (cell.ReferenceLabel.text == "Noise Complaints") {
+            cell.ReferenceImageView.image = #imageLiteral(resourceName: "noiseComplaints")
+        } else if (cell.ReferenceLabel.text == "Party Busting") {
+            cell.ReferenceImageView.image = #imageLiteral(resourceName: "partyBusting")
+        } else if (cell.ReferenceLabel.text == "Academic Crisis") {
+            cell.ReferenceImageView.image = #imageLiteral(resourceName: "academicCrisis")
+        } else if (cell.ReferenceLabel.text == "Confrontation") {
+            cell.ReferenceImageView.image = #imageLiteral(resourceName: "confrontation")
+        } else if (cell.ReferenceLabel.text == "Suicidal Resident") {
+            cell.ReferenceImageView.image = #imageLiteral(resourceName: "suicidalResident")
+        } else if (cell.ReferenceLabel.text == "Medical Emergency") {
+            cell.ReferenceImageView.image = #imageLiteral(resourceName: "medicalEmergency")
+        } else if (sectionName == "Rules and Regulations") {
+            cell.ReferenceImageView.image = #imageLiteral(resourceName: "rulesAndRegulations")
+        }
         cell.ReferenceCellStack.addArrangedSubview(cell.ReferenceImageView)
         
         cell.backgroundColor = designValues.baseCellColor
