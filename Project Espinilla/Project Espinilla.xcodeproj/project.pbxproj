@@ -16,6 +16,8 @@
 		4166A8201EA91CEB005BC01F /* ReferenceCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4166A81F1EA91CEB005BC01F /* ReferenceCell.xib */; };
 		417430821E907114002E8373 /* ReferenceCollectionReusableViewHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 417430801E907114002E8373 /* ReferenceCollectionReusableViewHeader.swift */; };
 		417430831E907114002E8373 /* ReferenceCollectionReusableViewHeader.xib in Resources */ = {isa = PBXBuildFile; fileRef = 417430811E907114002E8373 /* ReferenceCollectionReusableViewHeader.xib */; };
+		41A39C0F1EB91393006858E2 /* ReferenceViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41A39C0E1EB91393006858E2 /* ReferenceViewControllerTests.swift */; };
+		41A39C111EB914D0006858E2 /* OpenReferenceViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41A39C101EB914D0006858E2 /* OpenReferenceViewControllerTests.swift */; };
 		41CBC3E01E8CAD7200B06220 /* ReferenceCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41CBC3DF1E8CAD7200B06220 /* ReferenceCell.swift */; };
 		41E10E0C1EB032BC006276CD /* Reference.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41E10E0B1EB032BC006276CD /* Reference.swift */; };
 		C93378A21E9AE05F008D9A1B /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C93378A11E9AE05F008D9A1B /* BaseViewController.swift */; };
@@ -80,6 +82,8 @@
 		4166A81F1EA91CEB005BC01F /* ReferenceCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = ReferenceCell.xib; path = ../ReferenceCell.xib; sourceTree = "<group>"; };
 		417430801E907114002E8373 /* ReferenceCollectionReusableViewHeader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReferenceCollectionReusableViewHeader.swift; sourceTree = "<group>"; };
 		417430811E907114002E8373 /* ReferenceCollectionReusableViewHeader.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ReferenceCollectionReusableViewHeader.xib; sourceTree = "<group>"; };
+		41A39C0E1EB91393006858E2 /* ReferenceViewControllerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ReferenceViewControllerTests.swift; path = "../Project Espinilla/ReferenceViewControllerTests.swift"; sourceTree = "<group>"; };
+		41A39C101EB914D0006858E2 /* OpenReferenceViewControllerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OpenReferenceViewControllerTests.swift; sourceTree = "<group>"; };
 		41CBC3DF1E8CAD7200B06220 /* ReferenceCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReferenceCell.swift; sourceTree = "<group>"; };
 		41E10E0B1EB032BC006276CD /* Reference.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Reference.swift; sourceTree = "<group>"; };
 		C93378A11E9AE05F008D9A1B /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
@@ -188,6 +192,8 @@
 		C960EBC61E5E120800748B74 /* Project EspinillaTests */ = {
 			isa = PBXGroup;
 			children = (
+				41A39C0E1EB91393006858E2 /* ReferenceViewControllerTests.swift */,
+				41A39C101EB914D0006858E2 /* OpenReferenceViewControllerTests.swift */,
 				C960EBC71E5E120800748B74 /* Project EspinillaTests.swift */,
 				C960EBC91E5E120800748B74 /* Info.plist */,
 			);
@@ -477,7 +483,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				41A39C0F1EB91393006858E2 /* ReferenceViewControllerTests.swift in Sources */,
 				C960EBC81E5E120800748B74 /* Project EspinillaTests.swift in Sources */,
+				41A39C111EB914D0006858E2 /* OpenReferenceViewControllerTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
