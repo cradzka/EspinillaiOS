@@ -10,7 +10,7 @@ import UIKit
 
 class DutyScheduleVC: BaseViewController, UITableViewDelegate, UITableViewDataSource {
     @IBOutlet var tableView: UITableView?
-    var items: [String] = ["4.14.2017: 5pm to 4.15.2017: 5pm", "4.16.2017: 5pm to 4.17.2017: 5pm", "4.20.2017: 5pm to 4.21.2017: 5pm"]
+    var items: [String] = ["5.4.2017: 5pm to 5.5.2017: 5pm", "5.6.2017: 5pm to 5.7.2017: 5pm", "5.10.2017: 5pm to 5.11.2017: 5pm"]
     
     override func viewDidLoad() {
         super.viewDidLoad()

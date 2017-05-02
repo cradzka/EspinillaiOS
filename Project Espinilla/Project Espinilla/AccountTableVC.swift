@@ -5,6 +5,8 @@
 //  Created by Matthew Crepeau on 4/22/17.
 //  Copyright © 2017 Matthew Crepeau. All rights reserved.
 //
+// Some table view code was used from:
+// https://www.weheartswift.com/how-to-make-a-simple-table-view-with-ios-8-and-swift/
 
 import UIKit
 
